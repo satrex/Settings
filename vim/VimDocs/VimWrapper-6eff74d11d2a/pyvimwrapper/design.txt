@@ -1,0 +1,37 @@
+
+
+VimLauncher:
+- launch vim and with the arguments to connect to netbeans
+- can launch vim to talk in server mode to the running vim
+- need to find the vim executable
+
+
+VimNetbeanLink:
+- start the tcp/ip server
+- receive connection message to vim
+- notify events and replies to upper class
+- can send message to vim
+- utilities to format messages
+- utilities to unpack communication messages
+
+
+VimController:
+- open file
+- close file
+- know the current buffer
+- know the buffer list
+- control the geometry
+
+Logging:
+- all classes use configurable advanced login
+
+Tests:
+- a few unit tests
+- mostly functional tests:
+    + launch vim
+    + do a few things using the VimController
+    + check the result on real files
+    + do a few things using the vim server protocol
+    + check the results with the VimController
+
+

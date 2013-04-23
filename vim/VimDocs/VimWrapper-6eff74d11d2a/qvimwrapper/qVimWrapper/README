@@ -1,0 +1,10 @@
+
+
+                    A Qt Wrapper for a TextEditor widget using vim.
+
+
+This software provides a Qt wrapper for Vim, enabling embedding of Vim as Qt widget inside an
+application.
+
+TODO:
+- Qt widget providing vim services

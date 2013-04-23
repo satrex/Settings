@@ -1,0 +1,582 @@
+# この viminfo ファイルは Vim 7.3 によって生成されました.
+# 変更する際には十分注意してください!
+
+# このファイルが書かれた時の 'encoding' の値
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# 最後の 検索パターン:
+~MSle0~/tab
+
+# 最後の Substitute 検索パターン:
+~MSle0&/test.rb
+
+# 最後に置換された文字列:
+$
+
+# コマンドライン 項目の履歴 (新しいものから古いものへ):
+:verb map <Tab>
+:verb map Tab
+:verb map
+:verb map tab
+:help tab
+:o ./.vimrc
+:q!
+:o ~/.vimrc
+:help
+:help iccf
+:w
+:map
+:map <TAB>
+:w ~/Dropbox/Ic
+:q
+:o ~/Dropbox/Documents/Chromeについて.txt
+:o ~/Dropbox/Documents/Chromeについて
+:o 
+:n
+:o
+
+# 検索文字列 項目の履歴 (新しいものから古いものへ):
+?/tab
+? /test.rb
+?/<C-I>
+?/SnipMapKeys
+?/スワップ
+?/スワップ[
+?/ スワップ
+?  
+?/置換
+? vimrc
+? vimrc
+? vimrc
+? vimrc
+? vimrc
+? vimrc
+? vimrc
+? vimrc
+?  
+? vimrc
+? vimrc
+
+# 式 項目の履歴 (新しいものから古いものへ):
+
+# 入力行 項目の履歴 (新しいものから古いものへ):
+
+# 入力行 項目の履歴 (新しいものから古いものへ):
+
+# レジスタ:
+""0	LINE	0
+	<M-...>		altまたはmetaキー		*meta* *alt* *<M-*
+"1	CHAR	0
+	.
+"2	CHAR	0
+	な
+"3	CHAR	0
+	か
+"4	CHAR	0
+	っ
+"5	CHAR	0
+	た
+"6	CHAR	0
+	り
+"7	CHAR	0
+	w
+"8	CHAR	0
+	 
+"9	CHAR	0
+	m
+"z	BLOCK	0
+	"
+"-	CHAR	0
+	C
+
+# ファイルマーク:
+'0  447  48  ~/Dropbox/docfile/.vim/doc/intro.jax
+'1  323  0  ~/Dropbox/docfile/.vim/doc/usr_24.jax
+'2  1  0  ~/mynu/examples/workflow.rb
+'3  1  0  ~/temp/test.rb
+'4  3  0  ~/Dropbox/Documents/Temp/test.rb
+'5  187  11  ~/.vimrc
+'6  188  0  ~/.vimrc
+'7  1  0  ~/Dropbox/Projects/nchak/nchak/vimrc
+'8  1  0  ~/.vimr
+'9  164  22  ~/.vimrc
+
+# ジャンプリスト (新しいものが先):
+-'  447  48  ~/Dropbox/docfile/.vim/doc/intro.jax
+-'  507  36  ~/Dropbox/docfile/.vim/doc/usr_24.jax
+-'  509  9  ~/Dropbox/docfile/.vim/doc/usr_24.jax
+-'  180  0  ~/Dropbox/docfile/.vim/doc/usr_24.jax
+-'  1  0  ~/Dropbox/docfile/.vim/doc/usr_24.jax
+-'  323  0  ~/Dropbox/docfile/.vim/doc/usr_24.jax
+-'  396  27  ~/Dropbox/docfile/.vim/doc/intro.jax
+-'  1  0  ~/Dropbox/docfile/.vim/doc/intro.jax
+-'  1  0  ~/.vimrc
+-'  187  11  ~/.vimrc
+-'  15  0  ~/Dropbox/docfile/.vim/doc/usr_24.jax
+-'  151  0  ~/Dropbox/docfile/.vim/doc/usr_24.jax
+-'  334  9  ~/Dropbox/docfile/.vim/doc/usr_23.jax
+-'  1  0  ~/Dropbox/docfile/.vim/doc/usr_23.jax
+-'  28  0  ~/Dropbox/docfile/.vim/doc/usr_toc.jax
+-'  292  0  ~/Dropbox/docfile/.vim/doc/usr_09.jax
+-'  12  0  ~/Dropbox/docfile/.vim/doc/usr_09.jax
+-'  1  0  ~/Dropbox/docfile/.vim/doc/usr_09.jax
+-'  19  0  ~/Dropbox/docfile/.vim/doc/usr_toc.jax
+-'  1  0  ~/SMYVIMRC
+-'  196  0  ~/Dropbox/docfile/.vim/doc/usr_05.jax
+-'  15  0  ~/Dropbox/docfile/.vim/doc/usr_toc.jax
+-'  1  0  ~/Dropbox/Documents/Chromeについて
+-'  2  0  ~/Dropbox/Documents/Chromeについて
+-'  1  0  ~/mynu/examples/workflow.rb
+-'  1  0  ~/temp/test.rb
+-'  5  8  ~/test.rb
+-'  1  0  ~/test.rb
+-'  3  0  ~/Dropbox/Documents/Temp/test.rb
+-'  2  0  ~/Dropbox/Documents/Temp/test.rb
+-'  187  11  ~/.vimrc
+-'  188  0  ~/.vimrc
+-'  182  22  ~/.vimrc
+-'  1  0  ~/Dropbox/Projects/nchak/nchak/vimrc
+-'  1  0  ~/.vimr
+-'  164  22  ~/.vimrc
+-'  65  4  ~/.vimrc
+-'  63  9  ~/.vimrc
+-'  51  20  ~/.vimrc
+-'  43  10  ~/.vimrc
+-'  180  18  ~/.vimrc
+-'  209  0  ~/.vimrc
+-'  175  0  ~/.vimrc
+-'  1  0  ~/vimrc
+-'  15  55  ~/Library/LaunchAgents/dolipo.plist
+-'  10  13  ~/Library/LaunchAgents/dolipo.plist
+-'  1  0  ~/Library/LaunchAgents/dolipo.plist
+-'  143  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  201  1  ~/.vimrc
+-'  197  0  ~/.vimrc
+-'  1  0  ~/Dropbox/Settings/vim/.vim/plugin/snippetsEmu.vim
+-'  173  7  ~/Dropbox/Settings/vim/.vim/plugin/snippetsEmu.vim
+-'  189  7  ~/Dropbox/Settings/vim/.vim/plugin/snippetsEmu.vim
+-'  174  12  ~/Dropbox/Settings/vim/.vim/plugin/snippetsEmu.vim
+-'  657  11  ~/Dropbox/Settings/vim/.vim/plugin/snippetsEmu.vim
+-'  221  11  ~/Dropbox/Settings/vim/.vim/plugin/snippetsEmu.vim
+-'  176  12  ~/Dropbox/Settings/vim/.vim/plugin/snippetsEmu.vim
+-'  28  1  ~/Dropbox/Settings/vim/.vim/plugin/snippetsEmu.vim
+-'  78  0  ~/.vimrc
+-'  92  0  ~/.vimrc
+-'  124  0  ~/.viminfo
+-'  1  0  ~/.viminfo
+-'  5  0  ~/.bashrc
+-'  4  0  ~/.bashrc
+-'  3  0  ~/.bashrc
+-'  1  0  ~/.bashrc
+-'  1  0  ~/.rvm/log/macruby-0.10/macruby/extract.log
+-'  32  2  ~/mynu/examples/workflow.rb
+-'  1  0  ~/Library/Application Support/Firefox/Profiles/s1x6iu29.default/itsalltext/www.atmarkit.co.jp.3b17322d1e.txt
+-'  14  0  ~/ruby.dict
+-'  1  0  ~/ruby.dict
+-'  1  0  ~/Dropbox/docfile/.vimrc
+-'  44  0  ~/Dropbox/docfile/.vimrc
+-'  42  5  ~/Dropbox/docfile/.vimrc
+-'  69  0  ~/Dropbox/docfile/.vimrc
+-'  55  11  ~/Dropbox/docfile/.vimrc
+-'  10  145  ~/Desktop/マイノート.enex
+-'  1  0  ~/Desktop/マイノート.enex
+-'  23  0  ~/Library/Application Support/Firefox/Profiles/s1x6iu29.default/itsalltext/mail.google.com.21211e3a2g.txt
+-'  1  0  ~/Library/Application Support/Firefox/Profiles/s1x6iu29.default/itsalltext/mail.google.com.21211e3a2g.txt
+-'  63  18  ~/arcCurveTest.rb
+-'  1  0  ~/arcCurveTest.rb
+-'  1  0  ~/Library/Application Support/Firefox/Profiles/s1x6iu29.default/itsalltext/www.facebook.com.3e1u1g3920.txt
+-'  15  2  ~/Dropbox/Projects/hinagiku-volume1/Gemfile
+
+# ファイル内マークの履歴 (新しいものから古いもの):
+
+> ~/.vimrc
+	"	209	11
+	^	187	13
+	.	187	12
+	+	201	3
+	+	201	0
+	+	63	0
+	+	187	0
+	+	63	0
+	+	187	12
+	p	62	23
+
+> ~/Dropbox/docfile/.vim/doc/uganda.jax
+	"	41	0
+
+> ~/Dropbox/docfile/.vim/doc/help.jax
+	"	58	0
+	n	1	0
+
+> ~/Dropbox/docfile/.vim/doc/usr_10.jax
+	"	688	0
+
+> ~/.vimrc
+	"	1	0
+	^	187	13
+	.	187	12
+	+	201	3
+	+	201	0
+	+	63	0
+	+	187	0
+	+	63	0
+	+	187	12
+	p	62	23
+
+> ~/Dropbox/docfile/.vim/doc/intro.jax
+	"	447	48
+
+> ~/Dropbox/docfile/.vim/doc/usr_24.jax
+	"	524	16
+	^	509	15
+	.	507	0
+	+	507	39
+	+	509	0
+	+	507	0
+	m	241	0
+
+> ~/Dropbox/Documents/Chromeについて
+	"	34	63
+	^	31	119
+	.	31	119
+	+	3	14
+	+	1	15
+	+	3	39
+	+	4	6
+	+	12	1
+	+	3	1
+	+	13	1
+	+	15	89
+	+	18	0
+	+	12	0
+	+	6	14
+	+	6	81
+	+	6	125
+	+	6	0
+	+	12	0
+	+	7	2
+	+	6	78
+	+	7	33
+	+	7	68
+	+	8	57
+	+	11	0
+	+	10	78
+	+	12	0
+	+	33	0
+	+	12	35
+	+	17	0
+	+	16	74
+	+	33	87
+	+	34	63
+	+	24	53
+	+	25	37
+	+	32	0
+	+	28	14
+	+	30	34
+	+	28	0
+	+	30	38
+	+	31	119
+
+> ~/option-window
+	"	813	4
+	.	855	0
+	+	2719	0
+	+	1813	0
+	+	908	0
+	+	862	0
+	+	855	0
+
+> ~/Dropbox/docfile/.vim/doc/usr_toc.jax
+	"	18	0
+
+> ~/Dropbox/docfile/.vim/doc/usr_05.jax
+	"	632	9
+
+> ~/SMYVIMRC
+	"	1	0
+
+> ~/Dropbox/docfile/.vim/doc/usr_09.jax
+	"	16	0
+	j	88	0
+
+> ~/Dropbox/docfile/.vim/doc/usr_23.jax
+	"	334	9
+
+> ~/Dropbox/docfile/.vim/doc/usr_08.jax
+	"	332	0
+
+> ~/Dropbox/Documents/Chromeについて
+	"	1	0
+
+> ~/Dropbox/Documents/Chromeについて.txt
+	"	1	0
+
+> ~/mynu/examples/workflow.rb
+	"	1	0
+
+> ~/test.rb
+	"	7	0
+	.	8	0
+	+	1	17
+	+	5	4
+	+	8	4
+	+	8	4
+	+	8	5
+	+	8	0
+	+	8	0
+	+	8	4
+	+	8	0
+	+	8	9
+	+	8	0
+	+	8	0
+	+	8	0
+	+	8	0
+	+	8	0
+	+	8	0
+
+> ~/Dropbox/docfile/.vim/doc/usr_02.jax
+	"	1	0
+
+> ~/Dropbox/Documents/Temp/test.rb
+	"	3	0
+	^	3	0
+	.	3	0
+	+	2	22
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	23
+	+	3	4
+	+	2	15
+	+	1	0
+	+	1	0
+	+	3	0
+
+> ~/Dropbox/Projects/nchak/nchak/vimrc
+	"	1	0
+
+> ~/Dropbox/Settings/vim/.vim/plugin/snippetsEmu.vim
+	"	106	7
+	^	126	33
+	.	126	33
+	+	126	33
+
+> ~/.vimr
+	"	1	0
+
+> ~/vimrc
+	"	1	0
+
+> ~/.viminfo
+	"	124	0
+
+> ~/.bashrc
+	"	5	0
+	^	5	0
+	.	4	11
+	+	4	3
+	+	3	4
+	+	4	61
+	+	4	60
+	+	3	4
+	+	3	0
+	+	5	0
+	+	4	11
+
+> ~/.rvm/log/macruby-0.10/macruby/extract.log
+	"	1	0
+
+> ~/Library/Application Support/Firefox/Profiles/s1x6iu29.default/itsalltext/www.atmarkit.co.jp.3b17322d1e.txt
+	"	1	0
+
+> ~/Library/Application Support/Firefox/Profiles/s1x6iu29.default/itsalltext/www.atmarkit.co.jp.261j2c1i1b.txt
+	"	1	0
+
+> ~/ruby.dict
+	"	14	0
+
+> ~/Dropbox/docfile/.vimrc
+	"	209	26
+	.	42	0
+	+	42	40
+	+	42	0
+	+	42	16
+	+	42	13
+	+	42	0
+
+> ~/Dropbox/docfile/.vim/plugin/im_control.vim
+	"	45	20
+	.	45	20
+	+	45	20
+
+> ~/Dropbox/docfile/.vim/doc/pattern.jax
+	"	1	0
+
+> ~/Dropbox/docfile/.vim/doc/usr_27.jax
+	"	8	69
+
+> ~/Dropbox/docfile/.vim/doc/usr_03.jax
+	"	368	10
+
+> ~/Desktop/マイノート.enex
+	"	10	145
+
+> ~/Documents/quickMemo.enex
+	"	6	0
+	.	6	0
+	+	6	0
+	+	6	0
+
+> ~/Library/Application Support/Firefox/Profiles/s1x6iu29.default/itsalltext/mail.google.com.21211e3a2g.txt
+	"	23	0
+	^	22	30
+	.	20	38
+	+	14	0
+	+	15	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	13	0
+	+	14	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	38
+
+> /Applications/MacVim.app/Contents/Resources/vim/runtime/doc/gui_mac.txt
+	"	1	0
+
+> ~/Dropbox/docfile/.vim/doc/usr_04.jax
+	"	1	0
+
+> ~/arcCurveTest.rb
+	"	63	18
+
+> ~/Library/Application Support/Firefox/Profiles/s1x6iu29.default/itsalltext/www.facebook.com.3e1u1g3920.txt
+	"	1	0
+
+> ~/Dropbox/Projects/hinagiku-volume1/Gemfile
+	"	15	2
+	^	15	3
+	.	15	2
+	+	6	18
+	+	26	0
+	+	27	0
+	+	33	0
+	+	32	0
+	+	28	0
+	+	1	1
+	+	28	1
+	+	29	2
+	+	30	2
+	+	31	2
+	+	1	1
+	+	32	2
+	+	33	1
+	+	19	28
+	+	19	21
+	+	26	0
+	+	20	19
+	+	21	13
+	+	22	15
+	+	23	16
+	+	24	26
+	+	25	2
+	+	22	7
+	+	16	0
+	+	8	28
+	+	9	19
+	+	10	13
+	+	11	15
+	+	12	16
+	+	13	24
+	+	14	26
+	+	15	2
+
+> ~/Downloads/usb/hinagiku/Gemfile
+	"	1	0
+
+> ~/Dropbox/Projects/hinagiku-volume1/spec/models/task_spec.rb
+	"	1	0
+
+> ~/Downloads/MacPorts-1.7.1/install.sh
+	"	1	0
+
+> ~/Library/Application Support/Firefox/Profiles/s1x6iu29.default/itsalltext/mixi.jp.1f1u1w1k1t.txt
+	"	7	3
+	^	7	6
+	.	7	3
+	+	4	24
+	+	3	21
+	+	4	45
+	+	7	3
+
+> ~/Library/Application Support/Firefox/Profiles/s1x6iu29.default/itsalltext/mail.google.com.17363a2z3a.txt
+	"	11	0
+	^	9	6
+	.	9	3
+	+	6	78
+	+	1	15
+	+	6	75
+	+	6	0
+	+	6	78
+	+	12	60
+	+	13	54
+	+	15	3
+	+	13	0
+	+	13	0
+	+	6	78
+	+	13	48
+	+	10	72
+	+	8	12
+	+	9	3
+
+> /Applications/Firefox.app/Contents/MacOS/chrome.manifest
+	"	1	0
+
+> /Library/Application Support/Mozilla/Extensions/{ec8030f7-c20a-464f-9b0e-13a3a9e97384}/{6904342A-8307-11DF-A508-4AE2DFD72085}/chrome.manifest
+	"	1	0
+
+> /Library/Mozilla/Global.regs
+	"	1	0
+
+> ~/Dropbox/docfile/.vim/doc/usr_41.jax
+	"	1	0
+
+> ~/Dropbox/docfile/.vim/doc/eval.jax
+	"	1	0
+
+> ~/Dropbox/docfile/.vim/doc/change.jax
+	"	1	0
+
+> ~/Dropbox/docfile/.vim/doc/if_ruby.jax
+	"	211	0
+
+> ~/Dropbox/docfile/.vim/doc/netbeans.jax
+	"	582	0

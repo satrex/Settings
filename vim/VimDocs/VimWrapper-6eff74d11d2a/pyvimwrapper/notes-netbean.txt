@@ -1,0 +1,70 @@
+
+===================
+Problem in the doc
+==================
+
+No way to track the current buffer if the user switches it.
+
+--> will poll the socket continusly for getCursor but not a pretty solution.
+
+====
+
+No way to send keys through the netbean protocol.
+
+===
+
+editBuffer is rather counter-intuitive with notification about bufId 0
+
+===
+
+No way of knowing current short filename and long filename of the buffer.
+
+====
+
+mapping does not seem to apply to --remote-send
+
+===
+
+:nbkey generates hotkey messages even if there are no hotkey mapping.
+
+
+===================
+        TODO
+===================
+
+Untested:
+- addAnno
+- getAnno
+- defineAnnoType
+- removeAnno
+
+- guard
+- unguard
+
+- netbeansBuffer
+- raise
+- setModTime
+- setReadOnly
+
+- showBalloon
+- balloonEval
+- balloonText
+- buttonRelease
+
+- startAtomic
+- startDocumentationListen
+- stopDocumentationListen
+- saveAndExit
+
+- fileClosed
+- fileModified
+- unmodified
+
+
+
+
+ 
+
+
+
+

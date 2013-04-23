@@ -1,0 +1,29 @@
+
+syntax: glob
+
+# python
+*.pyc
+*.pyd
+
+# Editor, patch
+.*.sw?
+*.orig
+*.rej
+
+# SCM
+.svn
+CVS
+hg.diff
+svn.diff
+hg.msg
+hg_msg.txt
+
+# Qt
+# *_ui.py
+
+# vimWrapper
+*.log
+
+# object files
+CMakeFiles
+build

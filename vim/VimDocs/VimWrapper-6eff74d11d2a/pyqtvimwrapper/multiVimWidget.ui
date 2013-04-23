@@ -1,0 +1,70 @@
+<ui version="4.0" >
+ <class>multiVimWidget</class>
+ <widget class="QWidget" name="multiVimWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>855</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MultiVim</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QTabWidget" name="tabWidget" >
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab" >
+      <attribute name="title" >
+       <string>Tab 1</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" >
+     <item>
+      <widget class="QLabel" name="label_2" >
+       <property name="text" >
+        <string>Python :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit" />
+     </item>
+     <item>
+      <widget class="QPushButton" name="evaluateButton" >
+       <property name="text" >
+        <string>Evaluate</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>evaluateButton</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>713</x>
+     <y>432</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>844</x>
+     <y>439</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

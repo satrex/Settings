@@ -1,0 +1,114 @@
+set guioptions+=mTb
+set wildoptions=auto
+set complete=sl
+set hintchars=asdfghjkl;
+hi Hint z-index:5000; font-size:14px; color:white; background-color:red; border-color:ButtonShadow; border-width:0px; border-style:solid; padding:0px 2px 0px 2px; position:absolute; font-family: Menlo, Consolas, Monaco, monospace; text-transform: uppercase;
+
+
+" INSERTモードとTEXTEREAモードで<C-i> を押した時のエディタ
+" set editor=/usr/bin/vim
+" set editor=C:\Tools\xyzzy\xyzzy.exe
+" set editor=C:\Program Files\sakura\sakura.exe
+" set editor='/Applications/MacVim.app/Contents/MacOS/MacVim -f'
+" set editor='bash -lc "gvim -f \S*" gvim'
+" set editor='/Users/suzukisatoshi/Dropbox/Tools/mvim'
+set editor='/Applications/Byword.app/Contents/MacOS/Byword'
+
+" ブラウザタイトルの変更
+set titlestring=Firefox
+
+" migemo_hint.js
+"set hintmatching=custom
+
+" その他
+" set history=1000
+" set verbose=9
+
+" キーマップ<<<
+" 設定ファイル再読み込み
+map x :source ~/.vimperatorrc<CR>
+map q <C-q>
+　>>>
+
+" feedSomeKeys.js
+:command! -nargs=+ lazy autocmd VimperatorEnter .* &lt;args>
+fmaps -u='www\.google\.co\.jp/reader' -events=vkeypress j k n p m s v A r o S N P X O gh ga gs gt gu u / ? J Kset runtimepath+=~/.myvimperatorset runtimepath+=~/.myvimperator
+fmaps -u='(fastladder|livedoor)\.com/reader' j k s a p o v c i,p &lt;Space> &lt;S-Space> z b &lt; > q w e,g
+fmaps -u='(fastladder|livedoor)\.com/headline' r j k s a p o v c i,p &lt;Space> &lt;S-Space> z b &lt; > q w e,g
+fmaps -u='https?://www\.rememberthemilk\.com/home/' j k m i c t ? d F,f G,g S,s L,l Y,y H,h M,m &lt;Del> &lt;C-S-Left> &lt;C-S-Right>
+:lazy fmaps -u='http://code.google.com/p/vimperator-labs/issues/list' o j k
+:lazy fmaps -u='http://code.google.com/p/vimperator-labs/issues/detail' u
+fmaps -u='^https://mail\.google\.com/mail' -frame=4 -events=vkeydown,keypress,vkeyup j k
+fmaps -u='^https://mail\.google\.com/mail' -frame=4  j k # c n p o u x s r a ? gi gs gt gd ga gc gl I
+fmaps -u='^https://mail\.google\.com/mail' -frame=4 -p=<Leader> d,# s,! e
+fmaps -u='^https://mail\.google\.com/mail/.*/[0-9a-f]+$' -frame=4 c j,n k,p n,j p,k o u x s r a ? gi gs gt gd ga gc
+fmaps -u='^https://mail\.google\.com/mail/.*/[0-9a-f]+$' -frame=4 -p=<Leader> d,# s,! e
+fmaps -u='^http://www.codecademy.com.*' -p=<Leader>  c
+
+"" ステータスバーのフォントサイズを大きくする
+style chrome://* <<EOM
+#liberator-statusline {
+    font-family: Menlo, Consolas, Monaco, monospace !important;
+    font-weight: normal !important;
+    font-size: 10pt !important;
+    padding:2px 2px !important;
+}
+EOM
+
+"" ステータスバー
+hi StatusLine color: #000; background: #BBB; font-weight: normal; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace;
+hi StatusLineSecure color: #000; background: #9CF; font-weight: normal;
+hi StatusLineExtended color: #000; background: #9FF; font-weight: normal;
+hi StatusLineBroken color: #FFF; background: #900; font-weight: normal;
+
+"" コマンドライン
+hi CmdLine color: #000; background: #FFF; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace; padding: 2px;
+hi Normal color: #000; background: #FFF; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace; " 通常時テキスト
+hi InfoMsg color: #000; background: #FFF; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace; "通知メッセージ
+hi ModeMsg color: #000; background: #FFF; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace; "モード表示
+hi MoreMsg color: #000; background: #FFF; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace; "さらにモード表示
+hi ErrorMsg color: #FFF; background: #F00; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace; " エラーメッセージ
+hi LineNr color: #F00; background: #FFF; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace; " エラーの行番号
+
+"" 補完リスト
+hi CompTitle font-weight: bold; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace; " タイトル
+hi CompResult width: 45%; overflow: hidden; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace; " 結果欄（左側）
+hi CompDesc width: 50%; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace; " 説明欄（右側）
+hi CompItem font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace; " 補完リストの1行
+hi CompItem[selected] color: #FFF; background: #000; font-weight: normal; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace; " 補完リストの選択している行
+hi Filter color: #06E; font-weight: bold; " 補完リストでマッチしたテキスト
+
+
+
+""" twittperator.js
+nmap ,tt :<C-u>tw<Space>
+nmap ,tf :<C-u>tw!<CR>
+nmap ,tu :<C-u>tw!@<CR>
+nmap ,tp :<C-u>twuri<CR><C-a><Right><Right><Right>
+
+js <<EOM
+commands.addUserCommand(
+    ["twuri"],
+    "Twittperator tweet with URI",
+    function(){
+        let uri = 'https://www.googleapis.com/urlshortener/v1/url';
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", uri, false);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(JSON.stringify({ longUrl: buffer.URI }));
+        let result = JSON.parse(xhr.responseText).id;
+        commandline.open(":",["tw"," /",buffer.title,result].join(" "),modes.EX);
+    }
+);
+EOM
+
+
+
+"" hatenabookmark
+" https://github.com/hatena/hatena-bookmark-xul/wiki/Vimperator-%E3%81%A7%E3%81%AF%E3%81%A6%E3%81%AA%E3%83%96%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%AF%E6%8B%A1%E5%BC%B5%E3%82%92%E4%BD%BF%E3%81%86
+javascript if (typeof hBookmark != 'undefined') liberator.loadScript('chrome://hatenabookmark/content/vimperator/plugin/hatenabookmark.js', {__proto__: this});
+nnoremap s :hbt<Space>
+nnoremap S :hbtc<Space>
+set complete+=H
+
+echo ".vimperatorrc sourced"
