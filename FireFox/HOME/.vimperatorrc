@@ -1,3 +1,7 @@
+command! -nargs=+ lazy autocmd VimperatorEnter .* <args>
+set go=rb
+lazy set go+=D
+
 set guioptions+=mTb
 set wildoptions=auto
 set complete=sl
@@ -38,11 +42,8 @@ fmaps -u='(fastladder|livedoor)\.com/headline' r j k s a p o v c i,p &lt;Space> 
 fmaps -u='https?://www\.rememberthemilk\.com/home/' j k m i c t ? d F,f G,g S,s L,l Y,y H,h M,m &lt;Del> &lt;C-S-Left> &lt;C-S-Right>
 :lazy fmaps -u='http://code.google.com/p/vimperator-labs/issues/list' o j k
 :lazy fmaps -u='http://code.google.com/p/vimperator-labs/issues/detail' u
-fmaps -u='^https://mail\.google\.com/mail' -frame=4 -events=vkeydown,keypress,vkeyup j k
-fmaps -u='^https://mail\.google\.com/mail' -frame=4  j k # c n p o u x s r a ? gi gs gt gd ga gc gl I
-fmaps -u='^https://mail\.google\.com/mail' -frame=4 -p=<Leader> d,# s,! e
-fmaps -u='^https://mail\.google\.com/mail/.*/[0-9a-f]+$' -frame=4 c j,n k,p n,j p,k o u x s r a ? gi gs gt gd ga gc
-fmaps -u='^https://mail\.google\.com/mail/.*/[0-9a-f]+$' -frame=4 -p=<Leader> d,# s,! e
+:ignorekeys add mail\\.google\\.com -except :,t,d,<C-n>,<C-p>,b
+
 fmaps -u='^http://www.codecademy.com.*' -p=<Leader>  c
 
 "" ステータスバーのフォントサイズを大きくする
