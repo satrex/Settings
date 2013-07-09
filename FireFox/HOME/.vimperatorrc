@@ -37,12 +37,11 @@ map q <C-q>
 " feedSomeKeys.js
 :command! -nargs=+ lazy autocmd VimperatorEnter .* &lt;args>
 fmaps -u='www\.google\.co\.jp/reader' -events=vkeypress j k n p m s v A r o S N P X O gh ga gs gt gu u / ? J Kset runtimepath+=~/.myvimperatorset runtimepath+=~/.myvimperator
-fmaps -u='(fastladder|livedoor)\.com/reader' j k s a p o v c i,p &lt;Space> &lt;S-Space> z b &lt; > q w e,g
-fmaps -u='(fastladder|livedoor)\.com/headline' r j k s a p o v c i,p &lt;Space> &lt;S-Space> z b &lt; > q w e,g
 fmaps -u='https?://www\.rememberthemilk\.com/home/' j k m i c t ? d F,f G,g S,s L,l Y,y H,h M,m &lt;Del> &lt;C-S-Left> &lt;C-S-Right>
 :lazy fmaps -u='http://code.google.com/p/vimperator-labs/issues/list' o j k
 :lazy fmaps -u='http://code.google.com/p/vimperator-labs/issues/detail' u
 :ignorekeys add mail\\.google\\.com -except :,t,d,<C-n>,<C-p>,b
+:ignorekeys add reader\\.livedoor\\.com -except :,t,d,<C-n>,<C-p>,b
 
 fmaps -u='^http://www.codecademy.com.*' -p=<Leader>  c
 
