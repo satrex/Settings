@@ -9,8 +9,6 @@ export LANG=ja_JP.UTF-8
 # set prompt
 #
 
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-
 autoload colors
 colors
 case ${UID} in
@@ -138,5 +136,5 @@ setopt extended_history
 function history-all {history -E 1 }
 
 alias rake="noglob rake"
-PATH=$PATH:$HOME/.rvm/bin
 export RUBYLIB=.:$RUBYLIB
+eval "$(rbenv init - zsh)"

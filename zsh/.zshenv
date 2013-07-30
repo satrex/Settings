@@ -140,3 +140,12 @@ function history-all {history -E 1 }
 alias rake="noglob rake"
 PATH=$PATH:$HOME/.rvm/bin
 export RUBYLIB=.:$RUBYLIB
+
+#=============================
+## rbenv
+##=============================
+if [ -d ${HOME}/.rbenv ] ; then
+PATH=${HOME}/.rbenv/bin:${PATH}
+export PATH
+eval "$(rbenv init -)"
+fi
