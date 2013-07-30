@@ -3,6 +3,7 @@
 ln -s Settings/vim/.vimrc .vimrc
 ln -s Settings/vim/.vim .vim
 mkdir ~/.vimswap
+mkdir ~/.vimbackup
 
 chsh -s /usr/local/bin/zsh
 ln -s Settings/zsh/.zshrc .zshrc
