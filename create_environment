@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ln -s Settings/vim/.vimrc .vimrc
+ln -s Settings/vim/.vim .vim
+mkdir ~/.vimswap
+
+chsh -s /usr/local/bin/zsh
+ln -s Settings/zsh/.zshrc .zshrc
+ln -s Settings/zsh/.zshenv .zshenv
+ln -s Settings/zsh/.zsh_history .zsh_history
