@@ -653,6 +653,7 @@ Bundle 'Shougo/vimproc'
 Bundle 'satrex/VimSketchUpRuby'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kana/vim-smartinput'
+Bundle 'ack.vim'
 
 " non github repos
 
