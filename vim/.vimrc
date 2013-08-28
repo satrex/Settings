@@ -550,6 +550,7 @@ let g:quickrun_config['coffee'] = {'command' : 'coffee', 'exec' : ['%c -cbp %s']
 
        
 nnoremap ,to :NERDTree<CR>
+nnoremap <C-E> :NERDTree<CR>
 
 "inoremap <c-r>=InsertTabWrapper()<cr>
 let g:NeoComplCache_EnableAtStartUp = 1
@@ -565,15 +566,15 @@ let g:NeoComplCache_EnableAtStartUp = 1
 "vnoremap ') "zdi'<C-R>z'<ESC>
 
 " オリジナル定義:Ruby用
-noremap class class<CR>end<UP><RIGHT><RIGHT>
-inoremap module module<CR>end<UP><RIGHT><RIGHT><RIGHT>
-inoremap while while<CR>end<UP><RIGHT><RIGHT>
-inoremap {\| {\|\|<CR>}<ESC><UP>$i
-inoremap do\| do\|\|<CR>end<ESC><UP>$i
-inoremap do# do  <CR><CR>end<UP>
-inoremap if# if  then<CR>end<UP>
-nnoremap <S-CR> $a<CR>
-inoremap <S-CR> <ESC>$<CR>i
+"noremap class class<cr>end<up><right><right>
+"inoremap module module<cr>end<up><right><right><right>
+"inoremap while while<cr>end<up><right><right>
+"inoremap {\| {\|\|<cr>}<esc><up>$i
+"inoremap do\| do\|\|<cr>end<esc><up>$i
+"inoremap do# do  <cr><cr>end<up>
+"inoremap if# if  then<cr>end<up>
+"nnoremap <s-cr> $a<cr>
+"inoremap <s-cr> <esc>$<cr>i
 " オリジナル定義:emacsライクな動作
 inoremap <C-CR> <CR><UP>
 nnoremap <C-CR> ^i<CR><UP> 
@@ -605,6 +606,12 @@ command! W w
 " タブ切り替え
 noremap <C-n> <ESC>:tabnext<CR> 
 noremap <C-p> <ESC>:tabprev<CR>
+
+" バッファ切り替え
+noremap <C-b> <ESC>:bn<CR>
+
+" ウィンドウを閉じずにバッファを閉じるKwbd
+:com! Kwbd let kwbd_bn= bufnr("%")|enew|exe "bdel ".kwbd_bn|unlet kwbd_bn 
 
 filetype off                   " (1)
 set rtp+=~/.vim/vundle.git/    " (2)
@@ -726,3 +733,27 @@ let ruby_space_errors=1
 " Kwbd{{{
  nnoremap <silent> q :Kwbd<CR>
 " Kwbd}}}
+
+" ウィンドウを閉じずにバッファを閉じる
+command! Ebd call EBufdelete()
+function! EBufdelete()
+    let l:currentBufNum = bufnr("%")
+    let l:alternateBufNum = bufnr("#")
+
+    if buflisted(l:alternateBufNum)
+        buffer #
+    else
+        bnext
+    endif
+
+    if buflisted(l:currentBufNum)
+        execute "silent bwipeout".l:currentBufNum
+        " bwipeoutに失敗した場合はウインド
+        " ウ上のバッファを復元
+        if bufloaded(l:currentBufNum) != 0
+            execute "buffer " . l:currentBufNum
+        endif
+    endif
+endfunction
+
+noremap <C-c> <ESC>:Ebd<CR> 
