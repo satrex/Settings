@@ -1,0 +1,3 @@
+#!/usr/bin/zsh 
+sudo cp -Tf ~/fukudanet-ifcfg /etc/network/interfaces
+sudo ifdown eth0 && sudo ifup eth0
