@@ -1,3 +1,5 @@
 #!/usr/bin/zsh 
-sudo cp -Tf ~/fukudanet-ifcfg /etc/network/interfaces
+cd `dirname $0`
+sudo cp -Tf ./fukudanet-ifcfg /etc/network/interfaces
+sudo cp -Tf ./fukudahead /etc/resolvconf/resolv.conf.d/head
 sudo ifdown eth0 && sudo ifup eth0

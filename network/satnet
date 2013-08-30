@@ -1,3 +1,5 @@
 #!/usr/bin/zsh 
-sudo cp -Tf ~/satnet-ifcfg /etc/network/interfaces
+cd `dirname $0`
+sudo cp -Tf ./satnet-ifcfg /etc/network/interfaces
+sudo cp -Tf ./sathead /etc/resolvconf/resolv.conf.d/head
 sudo ifdown eth0 && sudo ifup eth0
