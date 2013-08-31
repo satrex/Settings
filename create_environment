@@ -10,12 +10,14 @@ sudo wget https://www.ubuntulinux.jp/sources.list.d/precise.list -O /etc/apt/sou
 sudo apt-get update
 
 # shell,vim
-sudo apt-get install zsh
 ln -s Settings/vim/.vimrc .vimrc
 ln -s Settings/vim/.vim .vim
 mkdir ~/.vimswap
 mkdir ~/.vimbackup
+sudo apt-get install vim
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
+sudo apt-get install zsh
 shpath=$(which zsh) 
 chsh -s ${shpath}
 ln -s Settings/zsh/.zshrc .zshrc
