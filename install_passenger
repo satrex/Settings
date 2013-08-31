@@ -1,0 +1,8 @@
+#!/bin/sh
+
+sudo gem install passenger
+sudo apt-get install libssl-doc
+sudo apt-get install libssl-dev
+sudo apt-get install apache2-prefork-dev
+sudo passenger-install-apache2-module
+
