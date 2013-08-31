@@ -1,5 +1,6 @@
 #!/bin/sh
 
+sudo apt-get install zsh
 ln -s Settings/vim/.vimrc .vimrc
 ln -s Settings/vim/.vim .vim
 mkdir ~/.vimswap
