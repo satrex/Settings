@@ -13,7 +13,8 @@ ln -s Settings/vim/.vim .vim
 mkdir ~/.vimswap
 mkdir ~/.vimbackup
 
-chsh -s /usr/local/bin/zsh
+shpath=$(which zsh) 
+chsh -s ${shpath}
 ln -s Settings/zsh/.zshrc .zshrc
 ln -s Settings/zsh/.zshenv .zshenv
 ln -s Settings/zsh/.zsh_history .zsh_history
