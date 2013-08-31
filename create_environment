@@ -1,5 +1,8 @@
 #!/bin/sh
      
+echo setting root password
+passwd root
+
 # Japanese-environment
 wget -q https://www.ubuntulinux.jp/ubuntu-ja-archive-keyring.gpg -O- | sudo apt-key add -
 wget -q https://www.ubuntulinux.jp/ubuntu-jp-ppa-keyring.gpg -O- | sudo apt-key add -
