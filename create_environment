@@ -9,7 +9,7 @@ wget -q https://www.ubuntulinux.jp/ubuntu-jp-ppa-keyring.gpg -O- | sudo apt-key 
 sudo wget https://www.ubuntulinux.jp/sources.list.d/precise.list -O /etc/apt/sources.list.d/ubuntu-ja.list
 sudo apt-get update
 
-# shell,vim
+# vim
 ln -s Settings/vim/.vimrc .vimrc
 ln -s Settings/vim/.vim .vim
 mkdir ~/.vimswap
@@ -17,6 +17,7 @@ mkdir ~/.vimbackup
 sudo apt-get install vim
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
+# zsh
 sudo apt-get install zsh
 shpath=$(which zsh) 
 chsh -s ${shpath}
