@@ -1,5 +1,12 @@
 #!/bin/sh
+     
+# Japanese-environment
+wget -q https://www.ubuntulinux.jp/ubuntu-ja-archive-keyring.gpg -O- | sudo apt-key add -
+wget -q https://www.ubuntulinux.jp/ubuntu-jp-ppa-keyring.gpg -O- | sudo apt-key add -
+sudo wget https://www.ubuntulinux.jp/sources.list.d/precise.list -O /etc/apt/sources.list.d/ubuntu-ja.list
+sudo apt-get update
 
+# shell,vim
 sudo apt-get install zsh
 ln -s Settings/vim/.vimrc .vimrc
 ln -s Settings/vim/.vim .vim
