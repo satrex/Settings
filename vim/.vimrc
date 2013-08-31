@@ -614,7 +614,7 @@ noremap <C-b> <ESC>:bn<CR>
 :com! Kwbd let kwbd_bn= bufnr("%")|enew|exe "bdel ".kwbd_bn|unlet kwbd_bn 
 
 filetype off                   " (1)
-set rtp+=~/.vim/vundle.git/    " (2)
+set rtp+=~/.vim/bundle/vundle/  " (2)
 call vundle#rc()               " (3)
 filetype on
 
