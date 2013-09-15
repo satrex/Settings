@@ -710,6 +710,8 @@ else
   endif
 endfunction " s:GetTargetName() 
 
+"<leader>Wで現在のファイルをFirefoxで開く
+noremap <Leader>W :silent !open -a firefox %<CR>
 augroup MyBrowserReload
   command! -bar BrowserReload silent !osascript $HOME/bin/reload.scpt
 augroup END

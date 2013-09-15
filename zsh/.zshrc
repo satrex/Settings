@@ -140,3 +140,9 @@ alias rake="noglob rake"
 export RUBYLIB=.:$RUBYLIB
 eval "$(rbenv init - zsh)"
 export MAILCHECK=0
+
+# RUBYENV 
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export CC=/usr/bin/gcc-4.2
+
