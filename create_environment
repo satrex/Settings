@@ -1,7 +1,7 @@
 #!/bin/sh
      
 echo setting root password
-passwd root
+sudo passwd root
 
 # Japanese-environment
 wget -q https://www.ubuntulinux.jp/ubuntu-ja-archive-keyring.gpg -O- | sudo apt-key add -
@@ -26,3 +26,7 @@ ln -s Settings/zsh/.zshenv .zshenv
 ln -s Settings/zsh/.zsh_history .zsh_history
 ln -s Settings/networK/satnet satnet
 ln -s Settings/networK/fukudanet fukudanet
+
+# enable ssh
+sudo mv /etc/init/ssh.conf.back /etc/init/ssh.conf
+
