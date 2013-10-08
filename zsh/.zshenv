@@ -138,7 +138,7 @@ setopt extended_history
 function history-all {history -E 1 }
 
 alias rake="noglob rake"
-PATH=/opt/bitnami/ruby/bin/:${PATH}
+# PATH=/opt/bitnami/ruby/bin/:${PATH}
 export RUBYLIB=.:$RUBYLIB
 
 #=============================

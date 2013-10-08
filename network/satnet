@@ -1,5 +1,9 @@
 #!/usr/bin/zsh 
-cd `dirname $0`
+PRG="$0"
+while [ -h "$PRG" ] ; do
+    PRG=`readlink "$PRG"`
+done
+cd `dirname "$PRG"`
 sudo cp -Tf ./satnet-ifcfg /etc/network/interfaces
 sudo cp -Tf ./sathead /etc/resolvconf/resolv.conf.d/head
 sudo ifdown eth0 && sudo ifup eth0

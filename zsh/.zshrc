@@ -136,7 +136,9 @@ setopt nullglob
 setopt extended_history
 function history-all {history -E 1 }
 
-alias rake="noglob rake"
+# RUBY
+export PATH="/opt/bitnami/ruby/bin:$PATH"
+alias brake="bundle exec rake"
 export RUBYLIB=.:$RUBYLIB
 eval "$(rbenv init - zsh)"
 export MAILCHECK=0
