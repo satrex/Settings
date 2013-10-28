@@ -26,6 +26,7 @@ ln -s Settings/zsh/.zshenv .zshenv
 ln -s Settings/zsh/.zsh_history .zsh_history
 ln -s Settings/networK/satnet satnet
 ln -s Settings/networK/fukudanet fukudanet
+echo "PATH=/opt/bitnami/ruby/bin/:${PATH}" >> Settings/zsh/.zshrc
 
 # enable ssh
 sudo mv /etc/init/ssh.conf.back /etc/init/ssh.conf

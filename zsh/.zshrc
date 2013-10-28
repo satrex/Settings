@@ -92,7 +92,7 @@ alias ll="ls -l"
 alias du="du -h"
 alias df="df -h"
 alias su="su -l"
-alias rm="rmtrash"
+# alias rm="rmtrash"
 alias vi-="vim"
 
 ## terminal configuration
@@ -136,7 +136,9 @@ setopt nullglob
 setopt extended_history
 function history-all {history -E 1 }
 
-alias rake="noglob rake"
+# RUBY
+export PATH="/opt/bitnami/ruby/bin:$PATH"
+alias brake="bundle exec rake"
 export RUBYLIB=.:$RUBYLIB
 eval "$(rbenv init - zsh)"
 export MAILCHECK=0
