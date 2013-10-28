@@ -46,7 +46,7 @@ set timeoutlen=3500
 "編集結果非保存のバッファから、新しいバッファを開くときに警告を出さない
 set hidden
 "ヒストリの保存数
-set history=10000
+set history=100000
 "日本語の行の連結時には空白を入力しない
 set formatoptions+=mM
 "Visual blockモードでフリーカーソルを有効にする
@@ -59,6 +59,8 @@ set backspace=indent,eol,start
 set ambiwidth=double
 "コマンドライン補完するときに強化されたものを使う
 set wildmenu wildmode=list:full
+" sudo権限で上書き保存する
+cmap w!! w !sudo tee > /dev/null %
 
 "マウスを有効にする
 if has('mouse')
@@ -576,14 +578,14 @@ let g:NeoComplCache_EnableAtStartUp = 1
 "nnoremap <s-cr> $a<cr>
 "inoremap <s-cr> <esc>$<cr>i
 " オリジナル定義:emacsライクな動作
-inoremap <C-CR> <CR><UP>
-nnoremap <C-CR> ^i<CR><UP> 
-inoremap <C-n> <DOWN>
-inoremap <C-p> <UP>
-inoremap <C-F> <RIGHT>
-inoremap <C-B> <LEFT>
-inoremap <C-a> <ESC>^i
-inoremap <C-e> <Esc>$a
+inoremap <C-CR> <CR><ESC>ki
+nnoremap <C-CR> ^i<CR><ESC>k
+"inoremap <C-n> <DOWN>
+"inoremap <C-p> <UP>
+"inoremap <C-F> <RIGHT>
+"inoremap <C-B> <LEFT>
+"inoremap <C-a> <ESC>^i
+"inoremap <C-e> <Esc>$a
 ""inoremap <DOWN> <C-N>
 ""imap <silent> <C-D><C-D> <C-R>=strftime("%d %m %Y")<CR>
 
