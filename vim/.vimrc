@@ -580,12 +580,12 @@ let g:NeoComplCache_EnableAtStartUp = 1
 " オリジナル定義:emacsライクな動作
 inoremap <C-CR> <CR><ESC>ki
 nnoremap <C-CR> ^i<CR><ESC>k
-"inoremap <C-n> <DOWN>
-"inoremap <C-p> <UP>
-"inoremap <C-F> <RIGHT>
-"inoremap <C-B> <LEFT>
-"inoremap <C-a> <ESC>^i
-"inoremap <C-e> <Esc>$a
+inoremap <C-n> <DOWN>
+inoremap <C-p> <UP>
+inoremap <C-F> <RIGHT>
+inoremap <C-B> <LEFT>
+inoremap <C-a> <ESC>^i
+inoremap <C-e> <Esc>$a
 ""inoremap <DOWN> <C-N>
 ""imap <silent> <C-D><C-D> <C-R>=strftime("%d %m %Y")<CR>
 
