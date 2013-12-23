@@ -260,6 +260,9 @@ nnoremap h <Left>zv
 "nnoremap j gj
 "nnoremap k gk
 nnoremap l <Right>zv
+nnoremap bd :Kwbd<CR>
+nnoremap bn :bn<CR>
+nnoremap bp :bp<CR>
 
 "swapファイルをまとめて置く場所(DropBox対策)
 set swapfile
