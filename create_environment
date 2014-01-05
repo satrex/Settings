@@ -34,3 +34,5 @@ echo "PATH=/opt/bitnami/ruby/bin/:${PATH}" >> Settings/zsh/.zshrc
 # enable ssh
 sudo mv /etc/init/ssh.conf.back /etc/init/ssh.conf
 
+# enable bonjour
+sudo apt-get install avahi-daemon avahi-autoipd libnss-mdns
