@@ -1,1 +1,0 @@
-snippy_plugin.vba: call delete('/Users/suzukisatoshi/.vim/plugin/snippetsEmu.vim')|call delete('/Users/suzukisatoshi/.vim/doc/snippets_emu.txt')

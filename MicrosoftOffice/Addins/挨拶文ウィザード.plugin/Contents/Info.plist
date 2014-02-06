@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>10K540</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>ja</string>
+	<key>CFBundleDisplayName</key>
+	<string>JGreeting Wizard</string>
+	<key>CFBundleExecutable</key>
+	<string>JGreeting Wizard</string>
+	<key>CFBundleGetInfoString</key>
+	<string>14.3.9 (131030), © 2010 Microsoft Corporation. All rights reserved.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.microsoft.wizards.jgreeting</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>JGreeting Wizard</string>
+	<key>CFBundlePackageType</key>
+	<string>WDP9</string>
+	<key>CFBundleShortVersionString</key>
+	<string>14.3.9</string>
+	<key>CFBundleSignature</key>
+	<string>MSWD</string>
+	<key>CFBundleVersion</key>
+	<string>14.3.9</string>
+	<key>DTCompiler</key>
+	<string>4.2</string>
+	<key>DTPlatformBuild</key>
+	<string>10M2518</string>
+	<key>DTPlatformVersion</key>
+	<string>PG</string>
+	<key>DTSDKBuild</key>
+	<string>9L31a</string>
+	<key>DTSDKName</key>
+	<string>macosx10.5</string>
+	<key>DTXcode</key>
+	<string>0400</string>
+	<key>DTXcodeBuild</key>
+	<string>10M2518</string>
+	<key>LSHasLocalizedDisplayName</key>
+	<true/>
+	<key>LSRequiresNativeExecution</key>
+	<true/>
+	<key>MicrosoftBuildNumber</key>
+	<string>131030</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>© 2010 Microsoft Corporation. All rights reserved.</string>
+</dict>
+</plist>

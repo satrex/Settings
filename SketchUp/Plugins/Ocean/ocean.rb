@@ -1,4 +1,4 @@
-# Copyright 2012, Trimble Navigation Limited
+# Copyright 2005-2009, Google, Inc.
 
 # This script enables placing a model in Google Earth relative to the ocean floor,
 # instead of relative to ground (sea level).

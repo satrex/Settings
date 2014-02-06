@@ -1,4 +1,4 @@
-# Copyright 2012, Trimble Navigation Limited
+# Copyright 2005-2008, Google, Inc.
 
 # This software is provided as an example of using the Ruby interface
 # to SketchUp.
@@ -45,7 +45,5 @@ $exStrings = LanguageHandler.new("Examples.strings")
 examplesExtension = SketchupExtension.new $exStrings.GetString("Ruby Script Examples"), "examples/exampleScripts.rb"
                     
 examplesExtension.description=$exStrings.GetString("Adds examples of tools created in Ruby to the SketchUp interface.  The example tools are Draw->Box, Plugins->Cost and Camera->Animations.")
-examplesExtension.creator="SketchUp"
-examplesExtension.copyright="2012, Trimble Navigation Limited"
-       
+                        
 Sketchup.register_extension examplesExtension, false

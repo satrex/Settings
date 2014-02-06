@@ -1,4 +1,4 @@
-# Copyright 2012, Trimble Navigation Limited
+# Copyright 2005-2008, Google, Inc.
 
 # This software is provided as an example of using the Ruby interface
 # to SketchUp.
@@ -22,7 +22,5 @@ $uStrings = LanguageHandler.new("Utilities.strings")
 utilitiesExtension = SketchupExtension.new $uStrings.GetString("Utilities Tools"), "Utilities/utilitiesTools.rb"
                     
 utilitiesExtension.description=$uStrings.GetString("Adds Tools->Utilities to the SketchUp interface.  The Utilities submenu contains two tools: Create Face and Query Tool.")
-utilitiesExtension.creator="SketchUp"
-utilitiesExtension.copyright="2012, Trimble Navigation Limited"
-
+                        
 Sketchup.register_extension utilitiesExtension, false

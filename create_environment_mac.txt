@@ -1,0 +1,3 @@
+
+# Officeのアドイン
+sudo ln -s ~/Dropbox/Settings/MicrosoftOffice/Addins  /Applications/Microsoft\ Office\ 2011/Office/Add-Ins 

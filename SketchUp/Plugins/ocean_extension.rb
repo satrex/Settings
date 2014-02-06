@@ -1,4 +1,4 @@
-# Copyright 2012, Trimble Navigation Limited
+# Copyright 2005-2009, Google, Inc.
 
 # This extension enables placing a model in Google Earth relative to the ocean floor,
 # instead of relative to ground (sea level).
@@ -19,9 +19,6 @@ $oceanStrings = LanguageHandler.new("ocean.strings")
 
 oceanExtension = SketchupExtension.new $oceanStrings.GetString("Ocean Modeling"), "ocean/ocean.rb"
 
-oceanExtension.description=$oceanStrings.GetString("Adds the ability to model on the ocean floor after using Add Location to import ocean terrain.")
-oceanExtension.creator="SketchUp"
-oceanExtension.copyright="2012, Trimble Navigation Limited"
-
+oceanExtension .description=$oceanStrings.GetString("Adds the ability to model on the ocean floor after using Add Location to import ocean terrain.")
 
 Sketchup.register_extension oceanExtension, false

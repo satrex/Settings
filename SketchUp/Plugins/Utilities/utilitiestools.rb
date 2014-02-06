@@ -1,4 +1,4 @@
-# Copyright 2012, Trimble Navigation Limited
+# Copyright 2005-2008, Google, Inc.
 
 # This software is provided as an example of using the Ruby interface
 # to SketchUp.

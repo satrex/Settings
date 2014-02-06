@@ -577,6 +577,8 @@ let g:NeoComplCache_EnableAtStartUp = 1
 "inoremap if# if  then<cr>end<up>
 "nnoremap <s-cr> $a<cr>
 "inoremap <s-cr> <esc>$<cr>i
+
+nnoremap <Leader>rb a# -*- coding: utf-8 -*-<ESC>o
 " オリジナル定義:emacsライクな動作
 inoremap <C-CR> <CR><ESC>ki
 nnoremap <C-CR> ^i<CR><ESC>k
