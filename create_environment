@@ -3,6 +3,9 @@
 echo setting root password
 sudo passwd root
 
+echo setting timezone
+sudo dpkg-reconfigure tzdata
+
 # Japanese-environment
 wget -q https://www.ubuntulinux.jp/ubuntu-ja-archive-keyring.gpg -O- | sudo apt-key add -
 wget -q https://www.ubuntulinux.jp/ubuntu-jp-ppa-keyring.gpg -O- | sudo apt-key add -
@@ -31,3 +34,5 @@ echo "PATH=/opt/bitnami/ruby/bin/:${PATH}" >> Settings/zsh/.zshrc
 # enable ssh
 sudo mv /etc/init/ssh.conf.back /etc/init/ssh.conf
 
+# enable bonjour
+sudo apt-get install avahi-daemon avahi-autoipd libnss-mdns

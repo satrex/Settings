@@ -92,7 +92,6 @@ alias ll="ls -l"
 alias du="du -h"
 alias df="df -h"
 alias su="su -l"
-# alias rm="rmtrash"
 alias vi-="vim"
 
 ## terminal configuration
@@ -140,11 +139,12 @@ function history-all {history -E 1 }
 export PATH="/opt/bitnami/ruby/bin:$PATH"
 alias brake="bundle exec rake"
 export RUBYLIB=.:$RUBYLIB
-eval "$(rbenv init - zsh)"
 export MAILCHECK=0
 
 # RUBYENV 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export CC=/usr/bin/gcc-4.2
-
+if [ -d ${HOME}/.rbenv ] ; then
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    # eval "$(rbenv init -)"
+    eval "$(rbenv init - zsh)"
+    export CC=/usr/bin/gcc-4.2
+fi
