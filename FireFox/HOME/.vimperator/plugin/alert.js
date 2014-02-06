@@ -7,13 +7,13 @@
 }}} */
 
 // PLUGIN_INFO {{{
-let PLUGIN_INFO =
+let PLUGIN_INFO = xml`
 <VimperatorPlugin>
   <name>Alert</name>
   <name lang="ja">アラート</name>
   <description>Displays an alert after the specified time.</description>
   <description lang="ja">指定時間後にアラートダイアログを出したりする。タイマー。</description>
-  <version>1.01</version>
+  <version>1.0.2</version>
   <author mail="anekos@snca.net" homepage="http://d.hatena.ne.jp/nokturnalmortum/">anekos</author>
   <minVersion>2.0pre</minVersion>
   <maxVersion>2.0pre</maxVersion>
@@ -48,7 +48,7 @@ let PLUGIN_INFO =
       JavaScriptでSLを走らせる「SL.JS」を作りました ::: creazy photograph
       http://creazy.net/2008/02/sl_js.html
   ]]></detail>
-</VimperatorPlugin>;
+</VimperatorPlugin>`;
 // }}}
 
 (function () {
@@ -388,14 +388,14 @@ let PLUGIN_INFO =
       let sleep = parseFloat(arg || 3) * 1000;
       let sz = innerWidth / msg.length / 1.5;
       liberator.echo(
-        <div style="background: white; color: black;">
+        xml`<div style="background: white; color: black;">
           <table>
             <tr>
               <td><img src={gunsou}/></td>
               <td style={"font-size: " + sz + "px; white-space: nowrap;"}>{msg}</td>
             </tr>
           </table>
-        </div>
+        </div>`
       );
       setTimeout(next, sleep);
     },
@@ -446,7 +446,7 @@ let PLUGIN_INFO =
       });
       if (!message)
           message = defaults.message;
-      if (!time)
+      if (typeof time != 'number')
         time = defaults.time;
       if (!methods.length)
           methods = defaults.methods;

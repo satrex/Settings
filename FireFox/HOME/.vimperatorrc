@@ -1,9 +1,9 @@
 command! -nargs=+ lazy autocmd VimperatorEnter .* <args>
-set go=rb
-lazy set go+=D
+""lazy set go==rb
+""lazy set go+=D
 
-set guioptions+=mTb
-set wildoptions=auto
+""set guioptions+=mTb
+""set wildoptions=auto
 set complete=sl
 set hintchars=asdfghjkl;
 hi Hint z-index:5000; font-size:14px; color:white; background-color:red; border-color:ButtonShadow; border-width:0px; border-style:solid; padding:0px 2px 0px 2px; position:absolute; font-family: Menlo, Consolas, Monaco, monospace; text-transform: uppercase;
@@ -32,18 +32,17 @@ set titlestring=Firefox
 " 設定ファイル再読み込み
 map x :source ~/.vimperatorrc<CR>
 map q <C-q>
-　>>>
+""　>>>
 
 " feedSomeKeys.js
 :command! -nargs=+ lazy autocmd VimperatorEnter .* &lt;args>
-fmaps -u='www\.google\.co\.jp/reader' -events=vkeypress j k n p m s v A r o S N P X O gh ga gs gt gu u / ? J Kset runtimepath+=~/.myvimperatorset runtimepath+=~/.myvimperator
-fmaps -u='https?://www\.rememberthemilk\.com/home/' j k m i c t ? d F,f G,g S,s L,l Y,y H,h M,m &lt;Del> &lt;C-S-Left> &lt;C-S-Right>
+:lazy fmaps -u='https?://www\.rememberthemilk\.com/home/' j k m i c t ? d F,f G,g S,s L,l Y,y H,h M,m &lt;Del> &lt;C-S-Left> &lt;C-S-Right>
 :lazy fmaps -u='http://code.google.com/p/vimperator-labs/issues/list' o j k
 :lazy fmaps -u='http://code.google.com/p/vimperator-labs/issues/detail' u
 :ignorekeys add mail\\.google\\.com -except :,t,d,<C-n>,<C-p>,b
 :ignorekeys add reader\\.livedoor\\.com -except :,t,d,<C-n>,<C-p>,b
 
-fmaps -u='^http://www.codecademy.com.*' -p=<Leader>  c
+:lazy fmaps -u='^http://www.codecademy.com.*' -p=<Leader>  c
 
 "" ステータスバーのフォントサイズを大きくする
 style chrome://* <<EOM
@@ -57,9 +56,9 @@ EOM
 
 "" ステータスバー
 hi StatusLine color: #000; background: #BBB; font-weight: normal; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace;
-hi StatusLineSecure color: #000; background: #9CF; font-weight: normal;
-hi StatusLineExtended color: #000; background: #9FF; font-weight: normal;
-hi StatusLineBroken color: #FFF; background: #900; font-weight: normal;
+""hi StatusLineSecure color: #000; background: #9CF; font-weight: normal;
+""hi StatusLineExtended color: #000; background: #9FF; font-weight: normal;
+""hi StatusLineBroken color: #FFF; background: #900; font-weight: normal;
 
 "" コマンドライン
 hi CmdLine color: #000; background: #FFF; font-size: 10pt; font-family: Menlo, Consolas, Monaco, monospace; padding: 2px;
@@ -81,13 +80,15 @@ hi Filter color: #06E; font-weight: bold; " 補完リストでマッチしたテキスト
 
 
 """ twittperator.js
-nmap ,tt :<C-u>tw<Space>
-nmap ,tf :<C-u>tw!<CR>
-nmap ,tu :<C-u>tw!@<CR>
+nmap ,tt :<C-u>twittperator<Space>
+nmap ,tf :<C-u>twittperator!<CR>
+nmap ,tu :<C-u>twittperator!@<CR>
 nmap ,tp :<C-u>twuri<CR><C-a><Right><Right><Right>
 
+let g:twittperator_use_ssl_connection_for_api_ep = 1
+
 js <<EOM
-commands.addUserCommand(
+commands.addUserCommand!(
     ["twuri"],
     "Twittperator tweet with URI",
     function(){
@@ -97,7 +98,7 @@ commands.addUserCommand(
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(JSON.stringify({ longUrl: buffer.URI }));
         let result = JSON.parse(xhr.responseText).id;
-        commandline.open(":",["tw"," /",buffer.title,result].join(" "),modes.EX);
+        commandline.open(":",["twittperator"," /",buffer.title,result].join(" "),modes.EX);
     }
 );
 EOM
@@ -107,8 +108,12 @@ EOM
 "" hatenabookmark
 " https://github.com/hatena/hatena-bookmark-xul/wiki/Vimperator-%E3%81%A7%E3%81%AF%E3%81%A6%E3%81%AA%E3%83%96%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%AF%E6%8B%A1%E5%BC%B5%E3%82%92%E4%BD%BF%E3%81%86
 javascript if (typeof hBookmark != 'undefined') liberator.loadScript('chrome://hatenabookmark/content/vimperator/plugin/hatenabookmark.js', {__proto__: this});
-nnoremap s :hbt<Space>
-nnoremap S :hbtc<Space>
-set complete+=H
+""nnoremap s :hbt<Space>
+""nnoremap S :hbtc<Space>
+
+"" sはsearchのs
+set complete+=s
+nnoremap s :tabopen<Space>google<Space>
 
 echo ".vimperatorrc sourced"
+
