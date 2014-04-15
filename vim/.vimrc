@@ -545,6 +545,7 @@ let g:octopress_post_suffix = "md"
 let g:octopress_post_date = "%Y-%m-%d %H:%M"
 " octoeditor }}}
 let g:screenshot_dir = "$HOME" . "\/Desktop"
+let g:octopress_bundle_exec = 1
 " octopressの絡みで、zshとrvmを有効にしたい
 
 
