@@ -7,7 +7,7 @@ endif
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
- set nocompatible
+set nocompatible
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -108,8 +108,9 @@ set showmatch matchtime=1
 set ts=2 sw=4 sts=4
 set expandtab
 "自動的にインデントする
-set autoindent
-set smartindent
+"set autoindent
+"set smartindent
+set cindent
 "インデントの設定
 set cinoptions+=:0
 "タイトルを表示
@@ -221,7 +222,7 @@ if has('win32') || has('win64')
     let opt = '-a --binary '
     if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
     if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
-    let arg1 = v:fname_in
+
     if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
     let arg2 = v:fname_new
     if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
@@ -280,8 +281,18 @@ if has('win32') && !has('gui_running')
 	match zenkakuda /\%u8140/
 else
 	match zenkakuda /　/ "←全角スペース
+  set nocompatible
+  inoremap OA <ESC>ki
+  inoremap OB gi<Down>
+  inoremap OC gi<Right>
+  inoremap OD gi<Left>
+  set whichwrap=b,s,[,],<,>,h,l
 endif
 
+" 「日本語入力固定モード」の動作モード
+let IM_CtrlMode = 4
+" 「日本語入力固定モード」切替キー
+inoremap <silent> <C-j> <C-^><C-r>=IMState('FixMode')<CR>
 
 set foldmethod=marker
 
@@ -557,6 +568,10 @@ let g:quickrun_config['coffee'] = {'command' : 'coffee', 'exec' : ['%c -cbp %s']
        
 nnoremap ,to :NERDTree<CR>
 nnoremap <C-E> :NERDTree<CR>
+" NERDTree {{{
+let g:NERDTreeShowHidden=1
+
+" }}}
 
 "inoremap <c-r>=InsertTabWrapper()<cr>
 let g:NeoComplCache_EnableAtStartUp = 1
@@ -630,7 +645,7 @@ filetype on
 map <Leader>mn  :MemoNew<CR>
 map <Leader>ml  :MemoList<CR>
 map <Leader>mg  :MemoGrep<CR>
-let g:memolist_path = " ~/Dropbox/Documents/memo"
+let g:memolist_path = "~/Dropbox/Documents/memo/"
 
 " surround.vim
   let g:surround_insert_tail = "<++>"
@@ -741,7 +756,7 @@ let ruby_space_errors=1
 " vim-ruby }}}
 
 " Kwbd{{{
- nnoremap <silent> q :Kwbd<CR>
+ nnoremap <silent> \q :Kwbd<CR>
 " Kwbd}}}
 
 " ウィンドウを閉じずにバッファを閉じる
