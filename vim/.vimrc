@@ -61,6 +61,8 @@ set ambiwidth=double
 set wildmenu wildmode=list:full
 " sudo権限で上書き保存する
 cmap w!! w !sudo tee > /dev/null %
+autocmd FileType * setlocal formatoptions-=r
+autocmd FileType * setlocal formatoptions-=o
 
 "マウスを有効にする
 if has('mouse')
@@ -110,7 +112,6 @@ set expandtab
 "自動的にインデントする
 "set autoindent
 "set smartindent
-set cindent
 "インデントの設定
 set cinoptions+=:0
 "タイトルを表示
@@ -183,7 +184,7 @@ map <silent> [Tag]n :tabnext<CR>
 map <silent> [Tag]p :tabprevious<CR>
 " tp 前のタブ
 
-
+set tags=./tags,tags;$HOME
 
 
 """"""""""""""""""""""""""""""
@@ -310,41 +311,6 @@ inoremap <C-U> <C-G>u<C-U>
 if has('mouse')
   set mouse=a
 endif
-
-" Only do this part when compiled with support for autocommands.
-if has("autocmd")
-
-  " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
-  filetype plugin indent on
-
-  " Put these in an autocmd group, so that we can delete them easily.
-  augroup vimrcEx
-  au!
-
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
-
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  " (happens when dropping a file on gvim).
-  " Also don't do it when the mark is in the first line, that is the default
-  " position when opening a file.
-  autocmd BufReadPost *
-    \ if line("'\"") > 1 && line("'\"") <= line("$") |
-    \   exe "normal! g`\"" |
-    \ endif
-
-  augroup END
-
-else
-
-  set autoindent		" always set autoindenting on
-
-endif " has("autocmd")
-
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
 " Only define it when not defined already.
@@ -484,23 +450,6 @@ let g:rails_modelines=0
 " let g:rails_url='http://localhost:3000'
 " let g:rails_ctags_arguments='--languages=-javascript'
 " let g:rails_ctags_arguments = ''
-function! SetUpRailsSetting()
-nnoremap <buffer><Space>r :R<CR>
-nnoremap <buffer><Space>a :A<CR>
-nnoremap <buffer><Space>m :Rmodel<Space>
-nnoremap <buffer><Space>c :Rcontroller<Space>
-nnoremap <buffer><Space>v :Rview<Space>
-nnoremap <buffer><Space>p :Rpreview<CR>
-endfunction
- 
-aug MyAutoCmd
-au User Rails call SetUpRailsSetting()
-aug END
- 
-aug RailsDictSetting
-au!
-aug END
-"}}}
 
 "<TAB>で補完
 function! InsertTabWrapper()
@@ -517,7 +466,7 @@ function! InsertTabWrapper()
   endif
 endfunction
 
-inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+"inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 " Set augroup.
 augroup MyAutoCmd
     autocmd!
@@ -534,7 +483,7 @@ else
     autocmd MyAutoCmd BufWritePost $MYGVIMRC if has('gui_running') | source $MYGVIMRC
 endif
 
-" magic comment{{{
+" magic comment{{
 function! MagicComment()
     let magic_comment = "# -*- coding: utf-8 -*-\n"
     let pos = getpos(".")
@@ -575,39 +524,8 @@ let g:NERDTreeShowHidden=1
 
 "inoremap <c-r>=InsertTabWrapper()<cr>
 let g:NeoComplCache_EnableAtStartUp = 1
-"inoremap { {}<LEFT>
-"inoremap [ []<LEFT>
-"inoremap ( ()<LEFT>
-"inoremap " ""<LEFT>
-"inoremap ' ''<LEFT>
-"vnoremap { "zdi{<C-R>z}<ESC>
-"vnoremap [ "zdi[<C-R>z]<ESC>
-"vnoremap ( "zdi(<C-R>z)<ESC>
-"vnoremap " "zdi"<C-R>z"<ESC>
-"vnoremap ') "zdi'<C-R>z'<ESC>
 
-" オリジナル定義:Ruby用
-"noremap class class<cr>end<up><right><right>
-"inoremap module module<cr>end<up><right><right><right>
-"inoremap while while<cr>end<up><right><right>
-"inoremap {\| {\|\|<cr>}<esc><up>$i
-"inoremap do\| do\|\|<cr>end<esc><up>$i
-"inoremap do# do  <cr><cr>end<up>
-"inoremap if# if  then<cr>end<up>
-"nnoremap <s-cr> $a<cr>
-"inoremap <s-cr> <esc>$<cr>i
-
-nnoremap <Leader>rb a# -*- coding: utf-8 -*-<ESC>o
-" オリジナル定義:emacsライクな動作
-inoremap <C-CR> <CR><ESC>ki
-nnoremap <C-CR> ^i<CR><ESC>k
-inoremap <C-n> <DOWN>
-inoremap <C-p> <UP>
-inoremap <C-F> <RIGHT>
-inoremap <C-B> <LEFT>
-inoremap <C-a> <ESC>^i
-inoremap <C-e> <Esc>$a
-""inoremap <DOWN> <C-N>
+"inoremap <DOWN> <C-N>
 ""imap <silent> <C-D><C-D> <C-R>=strftime("%d %m %Y")<CR>
 
 
@@ -665,17 +583,8 @@ Bundle 'glidenote/memolist.vim'
 Bundle 'mattn/zencoding-vim'
 " Bundle 'Markdown'
 Bundle 'glidenote/octoeditor.vim'
-nmap mf :FufFile <C-r>=expand(g:memolist_path."/")<CR><CR>
 Bundle 'kchmck/vim-coffee-script.git'
 Bundle 'kana/vim-textobj-user'
-
-" Ruby用
-Bundle 'tpope/vim-rvm.git'
-Bundle 'rhysd/unite-ruby-require.vim'
-Bundle 'rhysd/neco-ruby-keyword-args'
-Bundle 'rhysd/vim-textobj-ruby'
-Bundle 'Shougo/neocomplcache-rsense'
-Bundle 'tpope/vim-rails'
 
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'Shougo/vimshell'
