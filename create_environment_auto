@@ -10,9 +10,9 @@ apt-get update -y
 # vim
 ln -s Settings/vim/.vimrc .vimrc
 ln -s Settings/vim/.vim .vim
-mkdir ~/.vimswap
-mkdir ~/.vimbackup
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+mkdir /home/satrex/.vimswap
+mkdir /home/satrex/.vimbackup
+git clone https://github.com/gmarik/vundle.git /home/satrex/.vim/bundle/vundle
 
 # zsh
 shpath=$(which zsh) 
