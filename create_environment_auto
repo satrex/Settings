@@ -7,17 +7,6 @@ wget -q https://www.ubuntulinux.jp/ubuntu-jp-ppa-keyring.gpg -O- | sudo apt-key 
 sudo wget https://www.ubuntulinux.jp/sources.list.d/precise.list -O /etc/apt/sources.list.d/ubuntu-ja.list
 apt-get update -y
 
-# set locale
-echo en_US.UTF-8 UTF-8 >> /etc/locale.gen
-aptitude -y install language-pack-ja-base language-pack-ja
-update-locale LANG=ja_JP.UTF-8 LANGUAGE="ja_JP:ja"
-LC_COUNT=`grep -c -e LC_ALL=ja_JP.UTF-8 /etc/default/locale` 
-#if test $LC_COUNT -eq 0 ; then
-  echo "LC_ALL=ja_JP.UTF-8" >> /etc/default/locale
-fi
-dpkg-reconfigure locales
-exit
-
 # vim
 ln -s Settings/vim/.vimrc .vimrc
 ln -s Settings/vim/.vim .vim
