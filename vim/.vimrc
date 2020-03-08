@@ -9,18 +9,13 @@ endif
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
-
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
   set backup		" keep a backup file
 endif
-set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
-
 "----------------------------------------
 " システム設定
 "----------------------------------------
@@ -46,13 +41,13 @@ set timeoutlen=3500
 "編集結果非保存のバッファから、新しいバッファを開くときに警告を出さない
 set hidden
 "ヒストリの保存数
-set history=100000
+set history=10000
 "日本語の行の連結時には空白を入力しない
 set formatoptions+=mM
 "Visual blockモードでフリーカーソルを有効にする
 set virtualedit=block
 "カーソルキーで行末／行頭の移動可能に設定
-set whichwrap=b,s,[,],<,>,h,l
+"set whichwrap=b,s,[,],<,>,h,l
 "バックスペースでインデントや改行を削除できるようにする
 set backspace=indent,eol,start
 "□や○の文字があってもカーソル位置がずれないようにする
@@ -69,7 +64,7 @@ if has('mouse')
   set mouse=a
 endif
 "pluginを使用可能にする
-filetype plugin indent on
+"filetype plugin indent on
 
 "----------------------------------------
 " 検索
@@ -107,7 +102,7 @@ set number
 "括弧の対応表示時間
 set showmatch matchtime=1
 "タブを設定
-set ts=2 sw=4 sts=4
+set ts=2 sw=2 sts=2
 set expandtab
 "自動的にインデントする
 "set autoindent
@@ -131,10 +126,21 @@ syntax on
 set nohlsearch
 set cursorline
 
+" TypeScript
 
 "色テーマ設定
 "gvimの色テーマは.gvimrcで指定する
-"colorscheme mycolor
+
+"カラースキーマを設定
+colorscheme molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
+set background=dark
+if &term == "xterm-256color"
+  colorscheme molokai
+  hi Comment ctermfg=102
+  hi Visual  ctermbg=236
+endif
 
 "----------------------------------------
 " タブ表示設定
@@ -287,7 +293,7 @@ else
   inoremap OB gi<Down>
   inoremap OC gi<Right>
   inoremap OD gi<Left>
-  set whichwrap=b,s,[,],<,>,h,l
+  "set whichwrap=[,],<,>,h,l,b,s
 endif
 
 " 「日本語入力固定モード」の動作モード
@@ -319,79 +325,6 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
-" unite.vim {{{
-" 入力モードで開始する
-let g:unite_enable_start_insert=1
-" }}}
-
-" NeoComplCache {{{
-" Use neocomplcache.
-let g:neocomplcache_enable_at_startup = 1
-" Use smartcase.
-let g:neocomplcache_enable_smart_case = 1
-" Use auto select
-"let g:neocomplcache_enable_auto_select = 1
-" Use camel case completion.
-let g:neocomplcache_enable_camel_case_completion = 0
-" Use underbar completion.
-let g:neocomplcache_enable_underbar_completion = 1
-" Set minimum syntax keyword length.
-let g:neocomplcache_min_syntax_length = 3
-" Set manual completion length.
-let g:neocomplcache_manual_completion_start_length = 2
-" Define dictionary.
-let g:neocomplcache_dictionary_filetype_lists = {
-            \ 'default' : '',
-            \ 'vimshell' : $HOME.'/.vimshell_hist',
-            \ 'scheme' : $HOME.'/.gosh_completions', 
-            \ 'scala' : $DOTVIM.'/dict/scala.dict', 
-            \ 'ruby' : $DOTVIM.'/dict/ruby.dict'
-            \ }
-
-" Define keyword.
-if !exists('g:neocomplcache_keyword_patterns')
-   let g:neocomplcache_keyword_patterns = {}
-endif
-let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
-"
-"ilet g:neocomplcache_snippets_dir = $HOME.'/snippets'
-autocmd! FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd! FileType eruby,html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd! FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd! FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd! FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-      
-" Enable heavy omni completion.
-    if !exists('g:neocomplcache_omni_patterns')
-        let g:neocomplcache_omni_patterns = {}
-    endif
-    let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
-autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete   
-autocmd FileType ruby :set dictionary=~/.vim/dict/ruby.dict
-set complete+=k
-
-" Customized key-mappings.
-inoremap <expr><C-j>  neocomplcache#manual_filename_complete()
-
-" <CR>: close popup and save indent.
-inoremap <expr><CR> pumvisible() ? neocomplcache#smart_close_popup() : "\<CR>" 
-" <TAB>: completion.
-""inoremap <expr><Tab>  neocomplcache#start_manual_complete()
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
-" <C-h>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y>  neocomplcache#close_popup()
-inoremap <expr><C-e>  neocomplcache#cancel_popup()
-" <Esc>,<Del>,<BS>: Cancel Popup (VSライクな動作)
-inoremap <expr><Esc>  neocomplcache#cancel_popup()."\<ESC>"     
-inoremap <expr><Del>  neocomplcache#cancel_popup()."\<Del>"
-inoremap <expr><BS>  neocomplcache#cancel_popup()."\<BS>"
-" カーソルでポップアップさせない
-inoremap <expr><Up> pumvisible() ? neocomplcache#close_popup()."\<Up>" : "\<Up>"
-inoremap <expr><Down> pumvisible() ? neocomplcache#close_popup()."\<Down>" : "\<Down>"
-
-" NeoComplCache }}}
 
 " QuickRunの設定 {{{
  let g:quickrun_config = {'runmode': 'async:vimproc'}
@@ -499,7 +432,7 @@ let g:octopress_path = '~/satrex.github.com/octopress'
 map <Leader>on  :OctopressNew<CR>
 map <Leader>ol  :OctopressList<CR>
 map <Leader>og  :OctopressGrep<CR>
-nmap ,og  :OctopressGenerate<CR>:!open http://blog.satrex.dev<CR>
+nmap ,og  :OctopressGenerate<CR>
 nmap ,od  :OctopressDeploy<CR>:!open http://blog.satrex.jp<CR>
 let g:octopress_post_suffix = "md"
 let g:octopress_post_date = "%Y-%m-%d %H:%M"
@@ -507,12 +440,9 @@ let g:octopress_post_date = "%Y-%m-%d %H:%M"
 let g:screenshot_dir = "$HOME" . "\/Desktop"
 let g:octopress_bundle_exec = 1
 " octopressの絡みで、zshとrvmを有効にしたい
+nmap ,om :!ruby ~/tool/content_build.rb %<CR>:tabnew ~/Documents/output.html<CR>
 
 
-" CoffeeScript {{{
-let g:quickrun_config = {}
-let g:quickrun_config['coffee'] = {'command' : 'coffee', 'exec' : ['%c -cbp %s']}
-" }}}
 
        
 nnoremap ,to :NERDTree<CR>
@@ -554,10 +484,92 @@ noremap <C-b> <ESC>:bn<CR>
 " ウィンドウを閉じずにバッファを閉じるKwbd
 :com! Kwbd let kwbd_bn= bufnr("%")|enew|exe "bdel ".kwbd_bn|unlet kwbd_bn 
 
-filetype off                   " (1)
-set rtp+=~/.vim/bundle/vundle/  " (2)
-call vundle#rc()               " (3)
-filetype on
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line[  
+ 
+" My Bundles here:
+Plugin 'Shougo/neosnippet.vim'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'kien/ctrlp.vim'
+Plugin 'flazz/vim-colorschemes'
+ 
+" You can specify revision/branch/tag.
+Plugin 'Shougo/vimshell'
+Plugin 'tpope/vim-surround'
+"Plugin 'Shougo/neocomplete.vim'
+"Plugin 'Shougo/neosnippet.vim'
+Plugin 'thinca/vim-quickrun'
+Plugin 'thinca/vim-ref'
+Plugin 'closetag.vim'
+Plugin 'glidenote/memolist.vim'
+Plugin 'mattn/zencoding-vim'
+Plugin 'mattn/emmet-vim'
+" Bundle 'Markdown'
+Plugin 'kana/vim-textobj-user'
+
+"Plugin 'Shougo/vimshell'
+Plugin 'Shougo/vimproc'
+Plugin 'satrex/VimSketchUpRuby'
+Plugin 'scrooloose/nerdtree'
+":w
+"Bundle 'kana/vim-smartinput'
+Plugin 'ack.vim'
+
+" non github repos
+
+
+" neobundle.vim
+Plugin 'lambdalisue/vim-gista'
+
+" neobundle.vim (Lazy)
+let g:gista#github_user = 'satrex'
+
+
+
+ 
+" Required:
+filetype plugin indent on
+ 
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
 
 " memolist.vim
 map <Leader>mn  :MemoNew<CR>
@@ -569,78 +581,6 @@ let g:memolist_path = "~/Dropbox/Documents/memo/"
   let g:surround_insert_tail = "<++>"
 
 " original repos on github
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-"Bundle 'msanders/snipmate.vim'
-Bundle 'unite.vim'
-Bundle 'Shougo/neocomplcache.git'
-Bundle 'thinca/vim-quickrun'
-Bundle 'thinca/vim-ref'
-Bundle 'glidenote/memolist.vim'
-" Bundle 'L9'
-" Bundle 'FuzzyFinder'
-Bundle 'mattn/zencoding-vim'
-" Bundle 'Markdown'
-Bundle 'glidenote/octoeditor.vim'
-Bundle 'kchmck/vim-coffee-script.git'
-Bundle 'kana/vim-textobj-user'
-
-Bundle 'git://git.wincent.com/command-t.git'
-Bundle 'Shougo/vimshell'
-Bundle 'Shougo/vimproc'
-Bundle 'satrex/VimSketchUpRuby'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kana/vim-smartinput'
-Bundle 'ack.vim'
-
-" non github repos
-
-
-command! -nargs=0 CopyTestMethod call <SID>CopyTestMethod()
-function! s:CopyTestMethod()
-    execute search('\[TestMethod', 'bc')
-    let defLine = line('.') 
-    let defStr = getbufline('%', defLine + 1)
-    let endLine = searchpair('{','','}', '')
-    let testMethodBody = getbufline('%', defLine - 1, endLine - 1) 
-    let endLine = defLine + len(testMethodBody) - 2
-    
-    let times = str2nr( input("How many times copy method?"))
-    while(0 < times)
-
-      let testMethodDef = substitute( defStr[0], "Test", printf("Test%03d", times), 'c')
-"      echo testMethodDef
-      let testMethodBody[2] = testMethodDef
-      ""    echo "start = " . defLine "end = " . endLine
-      let failed = append(endLine , testMethodBody)
-      let   times = times - 1
-    endwhile
-endfunction
-
-nnoremap yt :CopyTestMethod<CR>
-" paste as imageRef
-function! InsertImageRef()
-    let image = input("Image title: ", "")
-endfunction
-
-command! -nargs=0 UtestAppend call <SID>UtestAppend()
-
-function! s:UtestAppend()
-   let target = s:GetTargetName()
-  if strlen(target) <= 0
-    echomsg 'Not test target file: ' . expand('%')
-    return 0
-  endif
-endfunction " s:UtestAppend()
-
-function! s:GetTargetName()
-  if expand('%:e') ==# 'cs'
-    return expand('%')
-else
-    return ''
-  endif
-endfunction " s:GetTargetName() 
 
 "<leader>Wで現在のファイルをFirefoxで開く
 noremap <Leader>W :silent !open -a firefox %<CR>
@@ -663,6 +603,11 @@ compiler ruby
 
 let ruby_space_errors=1 
 " vim-ruby }}}
+
+" vim-srt {{{
+nnoremap <Leader>si 02f<space>l"zy$4j0dt<space>"zP04f:10<c-a> 
+nnoremap <leader>sa 3yy3jo<esc>p<c-a>3k02f<space>l"zy$4j0dt<space>"zP4k02f<space>l"zy$4j0dt<space>"zP04f:8<c-a>kk 
+" vim-srt }}}
 
 " Kwbd{{{
  nnoremap <silent> \q :Kwbd<CR>
@@ -695,5 +640,51 @@ noremap <C-c> <ESC>:Ebd<CR>
 
 " 日本語環境
 :set encoding=utf-8
-:set fileencodings=ucs-bom,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932,utf-8
-:set fenc=utf-8
+:set fileencodings=ucs-bom,utf-8,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932
+:set fileencoding=utf-8
+:set fileformats=unix,dos,mac
+
+" カラースキーム調査用
+function! s:get_syn_id(transparent)
+  let synid = synID(line("."), col("."), 1)
+  if a:transparent
+    return synIDtrans(synid)
+  else
+    return synid
+  endif
+endfunction
+function! s:get_syn_attr(synid)
+  let name = synIDattr(a:synid, "name")
+  let ctermfg = synIDattr(a:synid, "fg", "cterm")
+  let ctermbg = synIDattr(a:synid, "bg", "cterm")
+  let guifg = synIDattr(a:synid, "fg", "gui")
+  let guibg = synIDattr(a:synid, "bg", "gui")
+  return {
+        \ "name": name,
+        \ "ctermfg": ctermfg,
+        \ "ctermbg": ctermbg,
+        \ "guifg": guifg,
+        \ "guibg": guibg}
+endfunction
+function! s:get_syn_info()
+  let baseSyn = s:get_syn_attr(s:get_syn_id(0))
+  echo "name: " . baseSyn.name .
+        \ " ctermfg: " . baseSyn.ctermfg .
+        \ " ctermbg: " . baseSyn.ctermbg .
+        \ " guifg: " . baseSyn.guifg .
+        \ " guibg: " . baseSyn.guibg
+  let linkedSyn = s:get_syn_attr(s:get_syn_id(1))
+  echo "link to"
+  echo "name: " . linkedSyn.name .
+        \ " ctermfg: " . linkedSyn.ctermfg .
+        \ " ctermbg: " . linkedSyn.ctermbg .
+        \ " guifg: " . linkedSyn.guifg .
+        \ " guibg: " . linkedSyn.guibg
+endfunction
+command! SyntaxInfo call s:get_syn_info()"}
+
+
+set whichwrap=h,l,[,],<,>,b,s
+
+
+
