@@ -2,27 +2,32 @@ command! -nargs=+ lazy autocmd VimperatorEnter .* <args>
 ""lazy set go==rb
 ""lazy set go+=D
 
-""set guioptions+=mTb
-""set wildoptions=auto
+set guioptions+=mTb
+set wildoptions=auto
 set complete=sl
 set hintchars=asdfghjkl;
-hi Hint z-index:5000; font-size:14px; color:white; background-color:red; border-color:ButtonShadow; border-width:0px; border-style:solid; padding:0px 2px 0px 2px; position:absolute; font-family: Menlo, Consolas, Monaco, monospace; text-transform: uppercase;
+"hi Hint z-index:5000; font-size:14px; color:white; background-color:red; border-color:ButtonShadow; border-width:0px; border-style:solid; padding:0px 2px 0px 2px; position:absolute; font-family: Menlo, Consolas, Monaco, monospace; text-transform: uppercase;
 
 
 " INSERTモードとTEXTEREAモードで<C-i> を押した時のエディタ
 " set editor=/usr/bin/vim
-" set editor=C:\Tools\xyzzy\xyzzy.exe
-" set editor=C:\Program Files\sakura\sakura.exe
 " set editor='/Applications/MacVim.app/Contents/MacOS/MacVim -f'
-" set editor='bash -lc "gvim -f \S*" gvim'
-" set editor='/Users/suzukisatoshi/Dropbox/Tools/mvim'
-set editor='/Applications/Byword.app/Contents/MacOS/Byword'
+""set editor='/Applications/Byword.app/Contents/MacOS/Byword'
 
 " ブラウザタイトルの変更
 set titlestring=Firefox
 
-" migemo_hint.js
-"set hintmatching=custom
+"============================
+" colorscheme
+"============================
+" デフォルトのヒント派手すぎ＞＜
+hi Hint font-family: Arial; font-size: 21px; font-weight: bold; text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black; color: #33cccc;
+hi HintElem color: gray; background-color: #a1e4e6;
+hi HintActive color: black; background-color: #ff8700;
+
+" デフォルトのエラー赤くてこわい＞＜
+hi ErrorMsg color:white; background-color: #ec6aa1;
+
 
 " その他
 " set history=1000
@@ -39,10 +44,14 @@ map q <C-q>
 :lazy fmaps -u='https?://www\.rememberthemilk\.com/home/' j k m i c t ? d F,f G,g S,s L,l Y,y H,h M,m &lt;Del> &lt;C-S-Left> &lt;C-S-Right>
 :lazy fmaps -u='http://code.google.com/p/vimperator-labs/issues/list' o j k
 :lazy fmaps -u='http://code.google.com/p/vimperator-labs/issues/detail' u
-:ignorekeys add mail\\.google\\.com -except :,t,d,<C-n>,<C-p>,b
-:ignorekeys add reader\\.livedoor\\.com -except :,t,d,<C-n>,<C-p>,b
+:ignorekeys add mail\.google\.com -except :,t,d,<C-n>,<C-p>,b
+:ignorekeys add trello\.com -except :,<C-n>,<C-p>,r
+:ignorekeys add cloud\.google\.com
+:ignorekeys add console\.cloud\.google\.com
+:ignorekeys add docs\.google\.com
 
-:lazy fmaps -u='^http://www.codecademy.com.*' -p=<Leader>  c
+:lazy fmaps -u='https://trello.com/' 
+
 
 "" ステータスバーのフォントサイズを大きくする
 style chrome://* <<EOM
@@ -79,64 +88,11 @@ hi Filter color: #06E; font-weight: bold; " 補完リストでマッチしたテキスト
 
 
 
-""" twittperator.js
-nmap ,tt :<C-u>twittperator<Space>
-nmap ,tf :<C-u>twittperator!<CR>
-nmap ,tu :<C-u>twittperator!@<CR>
-""nmap ,tp :<C-u>twuri<CR>:<UP><Space><Right><Right><Right>
-nmap ,tp :twuri<CR>:hoge
-js <<EOM
-commands.addUserCommand(
-    ["twuri"],
-    "Twittperator tweet with URI",
-    function(){
-        let uri = 'https://www.googleapis.com/urlshortener/v1/url';
-        let xhr = new XMLHttpRequest();
-        xhr.open("post", uri, false);
-        xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.send(JSON.stringify({ longUrl: buffer.URI }));
-        let result = JSON.parse(xhr.responseText).id;
-        commandline.open(":",["tw"," /",buffer.title,result].join(" "),modes._extended);
-    }
-);
-EOM
-let g:twittperator_use_chirp = 1
-let g:twittperator_screen_name = "satrex"
-let g:twittperator_history_limit = 5000
-let g:twittperator_use_ssl_connection_for_api_ep = 1
-let g:twittperator_lang = "ja"
-let g:twittperator_count = 50
-
-let g:twittperator_plugin_sstp = 0
-let g:twittperator_plugin_setuden = 0
-let g:twittperator_plugin_urusai_namakubi = 0
-let g:twittperator_plugin_echo_tweet = 0
-let g:twittperator_plugin_reply_popup_alert = 0
-let g:twittperator_plugin_twlist_win = 0
-let g:twittperator_plugin_pong = 1
-let g:twittperator_plugin_colorful_log_writer = 1
-let g:twittperator_plugin_add_url_completer = 1
-let g:twittperator_plugin_anti_goji = 1
-let g:twittperator_plugin_twsidebar = 1
-let g:twittperator_plugin_eject_alert = 1
-let g:twittperator_plugin_eject_alert_device = '/dev/sr1'
-let g:twittperator_plugin_ril = 1
-let g:twittperator_plugin_mstrans = 1
-let g:twittperator_plugin_copy = 1
-let g:twittperator_plugin_twsidebar_expand_url = 1
-
-let g:twittperator_use_ssl_connection_for_api_ep = 1
-
-
 "" hatenabookmark
 " https://github.com/hatena/hatena-bookmark-xul/wiki/Vimperator-%E3%81%A7%E3%81%AF%E3%81%A6%E3%81%AA%E3%83%96%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%AF%E6%8B%A1%E5%BC%B5%E3%82%92%E4%BD%BF%E3%81%86
-javascript if (typeof hBookmark != 'undefined') liberator.loadScript('chrome://hatenabookmark/content/vimperator/plugin/hatenabookmark.js', {__proto__: this});
+""javascript if (typeof hBookmark != 'undefined') liberator.loadScript('chrome://hatenabookmark/content/vimperator/plugin/hatenabookmark.js', {__proto__: this});
 ""nnoremap s :hbt<Space>
 ""nnoremap S :hbtc<Space>
-
-"" sはsearchのs
-set complete+=s
-nnoremap s :tabopen<Space>google<Space>
 
 echo ".vimperatorrc sourced"
 

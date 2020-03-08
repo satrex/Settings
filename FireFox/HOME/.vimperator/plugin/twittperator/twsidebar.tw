@@ -405,7 +405,7 @@ liberator.modules.TWAnekoSB = ANekoSB = (function () {
             text: '[' + t.type + '] ' + t.text + ' - http://twitter.com/' + t.name
           };
         }
-        plugins.twittperator.Twittperator.onMessage(dummy);
+        liberator.plugins.twittperator.Twittperator.onMessage(dummy);
       }
 
       if (my || !Config.vanish.test([t.name, t.text, t.sub].join(' '))) {
@@ -425,7 +425,10 @@ liberator.modules.TWAnekoSB = ANekoSB = (function () {
             t.type = 'filter';
             appendTweet(t, 'home', streamName);
             appendTweet(t, 'filter', streamName);
-            let (s = Config.sound.filter) (s && s.play());
+            (function () {
+              let s = Config.sound.filter;
+              return s && s.play();
+            })();
           }
         } else if (/^(keyword)$/.test(t.type)) {
           appendTweet(t, 'home', streamName);
@@ -520,10 +523,8 @@ liberator.modules.TWAnekoSB = ANekoSB = (function () {
               literal: 0,
               completer: function (context, args) {
                 let tabs = getSidebarWindow().document.getElementById('tw-anekos-sb-tabbox').querySelectorAll('tab');
-                context.completions = [
-                  [i + ': ' + tab.getAttribute('label'), tab.getAttribute('label')]
-                  for ([i, tab] in Iterator(Array.slice(tabs)))
-                ];
+                context.completions =
+                  Array.slice(tabs).map((tab, i) => [i + ': ' + tab.getAttribute('label'), tab.getAttribute('label')]);
               }
             }
           )
@@ -575,8 +576,8 @@ liberator.modules.TWAnekoSB = ANekoSB = (function () {
       function () {
         readyToStart = false;
         restore();
-        plugins.twittperator.ChirpUserStream.addListener(added.chirp = makeOnMsg(true, 'chirp'));
-        plugins.twittperator.TrackingStream.addListener(added.filter = makeOnMsg(true, 'filter'));
+        liberator.plugins.twittperator.ChirpUserStream.addListener(added.chirp = makeOnMsg(true, 'chirp'));
+        liberator.plugins.twittperator.TrackingStream.addListener(added.filter = makeOnMsg(true, 'filter'));
       },
       1000
     );
@@ -594,8 +595,8 @@ liberator.modules.TWAnekoSB = ANekoSB = (function () {
       return;
     }
 
-    plugins.twittperator.ChirpUserStream.removeListener(added.chirp);
-    plugins.twittperator.TrackingStream.removeListener(added.filter);
+    liberator.plugins.twittperator.ChirpUserStream.removeListener(added.chirp);
+    liberator.plugins.twittperator.TrackingStream.removeListener(added.filter);
   } // }}}
 
   function makeAudio (path, volume) { // {{{

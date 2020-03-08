@@ -24,7 +24,7 @@
  */
 
 // INFO {{{
-let INFO = xml`
+var INFO = xml`
   <plugin name="Twittperator" version="1.19.2"
           href="https://github.com/vimpr/vimperator-plugins/raw/master/twittperator.js"
           summary="Twitter Client using OAuth and Streaming API">
@@ -641,7 +641,7 @@ let INFO = xml`
             OAuth.setParameter(message, "oauth_nonce", OAuth.nonce(6));
         },
         addToURL: function addToURL(url, parameters) {
-            newURL = url;
+            var newURL = url;
             if (parameters != null) {
                 var toAdd = OAuth.formEncode(parameters);
                 if (toAdd.length > 0) {
@@ -1253,7 +1253,7 @@ let INFO = xml`
                   callback(d.responseText);
               }
             }else{
-              callback(d.statusText);
+              throw d.statusText || d.toString();
             }
           },
         };
@@ -1286,7 +1286,7 @@ let INFO = xml`
               }
             } else {
               // typeof d == object
-              callback(d);
+              throw d.statusText || d.toString();
             }
           }
         };
@@ -1315,7 +1315,7 @@ let INFO = xml`
                   callback(d.responseText);
               }
             }else{
-              callback(d.statusText);
+              throw d.statusText;
             }
           },
         };
@@ -1636,7 +1636,7 @@ let INFO = xml`
   }; // }}}
   let Twitter = { // {{{
     destroy: function(id) { // {{{
-      tw.jsonDelete("statuses/destroy/" + id, null, function(res) {
+      tw.jsonPost("statuses/destroy/" + id, null, function(res) {
         res = Utils.fixStatusObject(res);
         Twittperator.echo("delete: " + res.user.name + " " + res.text)
       });
@@ -1841,9 +1841,10 @@ let INFO = xml`
       tw.jsonGet(api, query, callback);
     }, // }}}
     loadPlugins: function() { // {{{
-      function isEnabled(file)
-        let (name = file.leafName.replace(/\..*/, "").replace(/-/g, "_"))
-          liberator.globalVariables["twittperator_plugin_" + name];
+      function isEnabled(file) {
+        let name = file.leafName.replace(/\..*/, "").replace(/-/g, "_");
+        return liberator.globalVariables["twittperator_plugin_" + name];
+      }
 
       function loadPluginFromDir(checkGV, candidates) {
         return function(dir) {
@@ -2043,7 +2044,7 @@ let INFO = xml`
           '</table>';
 
       window.Services.console.logStringMessage(html);
-      liberator.echo(new TemplateXML(html), true);
+      liberator.echo(new template.maybeXML(html), true);
     }, // }}}
     showTwitterMentions: function(arg) { // {{{
       tw.jsonGet("statuses/mentions_timeline", null, function(res) {
@@ -2132,9 +2133,10 @@ let INFO = xml`
   Store.set("consumerSecret", "gVwj45GaW6Sp7gdua6UFyiF910ffIety0sD1dv36Cz8");
   // }}}
   let Predicates = { // {{{
-    notMine: function (st)
-      let (n = setting.screenName)
-        (n ? (!st.user || st.user.screen_name !== n) : st),
+    notMine: function (st) {
+      let n = setting.screenName;
+      return n ? (!st.user || st.user.screen_name !== n) : st;
+    },
     selectMine: function (st)
       (!Predicates.notMine(st))
   }; // }}}
@@ -2146,9 +2148,10 @@ let INFO = xml`
       text.replace(/\r\n|[\r\n]/g, ' ');
 
     function setTimelineCompleter(context) { // {{{
-      function statusObjectFilter(item)
-        let (desc = item.description)
-          (this.match(desc.user.screen_name) || this.match(desc.text));
+      function statusObjectFilter(item) {
+        let desc = item.description;
+        return this.match(desc.user.screen_name) || this.match(desc.text);
+      }
 
       context.compare = void 0;
       context.createRow = function(item, highlightGroup) {
@@ -2227,14 +2230,8 @@ let INFO = xml`
       hashtag:
         function(filter) {
           return makeTimelineCompleter(function(context, args){
-            context.completions = [
-              [
-                ['#' + h.text for ([, h] in Iterator(s.entities.hashtags))].join(' '),
-                s
-              ]
-              for ([, s] in Iterator(history))
-              if (s.entities && s.entities.hashtags && s.entities.hashtags[0])
-            ]
+            context.completions = history.filter(s => s.entities && s.entities.hashtags && s.entities.hashtags[0])
+                .map(s => [s.entities.hashtags.map(h => '#' + h.text).join(' '), s])
           });
         }
     };
@@ -2248,10 +2245,10 @@ let INFO = xml`
       get expr() {
         return RegExp(
           "^" +
-          this.command.map(function(c)
-            let (r = util.escapeRegex(c))
-              (/^\W$/.test(c) ? r : r + "( |$)")
-          ).join("|")
+          this.command.map(function(c) {
+            let r = util.escapeRegex(c);
+            return /^\W$/.test(c) ? r : r + "( |$)";
+          }).join("|")
         );
       },
       match: function(s) s.match(this.expr),
@@ -2355,7 +2352,7 @@ let INFO = xml`
           return;
         let id = m[0];
         history.filter(function(st) st.id === id).map(dtdd).forEach(function(v) {
-          liberator.echo(new TemplateXML(v));
+          liberator.echo(new template.maybeXML(v));
         });
       },
       timelineCompleter: true,
@@ -2493,7 +2490,7 @@ let INFO = xml`
   // アクセストークン取得後 {{{
   function setup() {
     function findSubCommand(s) { // {{{
-      for (let [, cmd] in util.Array(SubCommands)) {
+      for (let [, cmd] in util.Array.iteritems(SubCommands)) {
         let m = cmd.match(s);
         if (m)
           return [cmd, m];
@@ -2592,61 +2589,73 @@ let INFO = xml`
         bang: true,
         literal: 0,
         hereDoc: true,
-        completer: let (getting, lastTime) function(context, args) {
-          let now = new Date().getTime();
-          let doGet =
-            setting.autoStatusUpdate &&
-            !getting &&
-            (!lastTime || ((lastTime + setting.statusValidDuration * 1000) < now));
+        completer: (function () {
+          let getting, lastTime;
+          return function(context, args) {
+            let now = new Date().getTime();
+            let doGet =
+              setting.autoStatusUpdate &&
+              !getting &&
+              (!lastTime || ((lastTime + setting.statusValidDuration * 1000) < now));
 
-          let completer = args.bang ? subCommandCompleter : commandCompelter;
-          let matches = args.bang || args.literalArg.match(/(RT\s+|)@|#|^D\s+/);
+            let completer = args.bang ? subCommandCompleter : commandCompelter;
+            let matches = args.bang || args.literalArg.match(/(RT\s+|)@|#|^D\s+/);
 
-          if (!matches)
-            return;
+            if (!matches)
+              return;
 
-          context.fork(
-            "TwittperatorCommand", 0, context,
-            function(context) {
-              context.incomplete = doGet;
-              context.hasitems = !doGet;
+            context.fork(
+              "TwittperatorCommand", 0, context,
+              function(context) {
+                context.incomplete = doGet;
+                context.hasitems = !doGet;
 
-              if (doGet) {
-                getting = true;
-                lastTime = now;
-                Twitter.getUserTimeline(null, function() {
-                  getting = false;
-                  completer(context, args);
-                  context.incomplete = false;
-                });
-                return;
+                if (doGet) {
+                  getting = true;
+                  lastTime = now;
+                  Twitter.getUserTimeline(null, function() {
+                    getting = false;
+                    completer(context, args);
+                    context.incomplete = false;
+                  });
+                  return;
+                }
+                completer(context, args);
               }
-              completer(context, args);
-            }
-          );
-        }
+            );
+          };
+        })()
       }, true); // }}}
   } // }}}
 
   // Initialization {{{
   let setting =
-    let (gv = liberator.globalVariables) ({
-      useChirp: !!gv.twittperator_use_chirp,
-      allReplies: !!gv.twittperator_all_replies,
-      autoStatusUpdate: !!parseInt(gv.twittperator_auto_status_update || 0),
-      statusValidDuration: parseInt(gv.twitperator_status_valid_duration || 90),
-      historyLimit: let (v = gv.twittperator_history_limit) (v === 0 ? 0 : (v || 1000)),
-      showTLURLScheme: let (v = gv.twittperator_show_tl_with_https_url) ("http" + (v === false ? "" : "s")),
-      proxyHost: gv.twittperator_proxy_host,
-      proxyPort: gv.twittperator_proxy_port,
-      screenName: gv.twittperator_screen_name,
-      apiURLBase: "http" + (!!gv.twittperator_use_ssl_connection_for_api_ep ? "s" : "") +
-                  "://api.twitter.com/" + (gv.twittperator_twitter_api_version || "1.1")  + "/",
-      trackWords: gv.twittperator_track_words,
-      count: (gv.twittperator_count || 20),
-      lang: (gv.twittperator_lang || ''),
-      getAPIURL: function (path) (/^https?\:\/\//.test(path) ? path : this.apiURLBase + path)
-    });
+    (function () {
+      let gv = liberator.globalVariables;
+      return {
+        useChirp: !!gv.twittperator_use_chirp,
+        allReplies: !!gv.twittperator_all_replies,
+        autoStatusUpdate: !!parseInt(gv.twittperator_auto_status_update || 0),
+        statusValidDuration: parseInt(gv.twitperator_status_valid_duration || 90),
+        historyLimit: (function () {
+          let v = gv.twittperator_history_limit;
+          return v === 0 ? 0 : (v || 1000)
+        })(),
+        showTLURLScheme: (function () {
+          let v = gv.twittperator_show_tl_with_https_url;
+          return "http" + (v === false ? "" : "s");
+        })(),
+        proxyHost: gv.twittperator_proxy_host,
+        proxyPort: gv.twittperator_proxy_port,
+        screenName: gv.twittperator_screen_name,
+        apiURLBase: "http" + (!!gv.twittperator_use_ssl_connection_for_api_ep ? "s" : "") +
+                    "://api.twitter.com/" + (gv.twittperator_twitter_api_version || "1.1")  + "/",
+        trackWords: gv.twittperator_track_words,
+        count: (gv.twittperator_count || 20),
+        lang: (gv.twittperator_lang || ''),
+        getAPIURL: function (path) (/^https?\:\/\//.test(path) ? path : this.apiURLBase + path)
+      };
+    })();
 
   let statusRefreshTimer;
 
@@ -2661,8 +2670,8 @@ let INFO = xml`
   let tw = new TwitterOauth(Store);
 
   // ストリーム
-  let ChirpUserStream = Stream({ name: 'chirp stream', url: "https://userstream.twitter.com/2/user.json" });
-  let TrackingStream = Stream({ name: 'tracking stream', url: "https://stream.twitter.com/1/statuses/filter.json" });
+  let ChirpUserStream = Stream({ name: 'chirp stream', url: "https://userstream.twitter.com/1.1/user.json" });
+  let TrackingStream = Stream({ name: 'tracking stream', url: "https://stream.twitter.com/1.1/statuses/filter.json" });
 
   let startStreams = function () {
     ChirpUserStream.resetRestartCount();

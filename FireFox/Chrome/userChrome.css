@@ -1,0 +1,37 @@
+
+
+/* 多段タブの設定 */
+#titlebar-buttonbox {
+display: block !important;
+vertical-align: top !important;
+}
+.tabbrowser-arrowscrollbox scrollbox {
+overflow: visible !important;
+}
+.tabbrowser-arrowscrollbox scrollbox > box {
+display: block !important;
+}
+
+ 
+
+/* タブの高さ・横幅設定 */
+.tabbrowser-tab:not([pinned]) {
+min-height: 30px !important;
+max-height: 30px !important;
+min-width: 170px !important;
+}
+.tabbrowser-tabs .tabbrowser-tab {
+vertical-align: top !important;
+-moz-box-sizing: border-box !important;
+min-height: 30px !important;
+max-height: 30px !important;
+}
+
+ 
+
+/* 新しいタブボタン設定 */
+.tabs-newtab-button {
+vertical-align: bottom !important;
+height: 30px !important;
+}
+
