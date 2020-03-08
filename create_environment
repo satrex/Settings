@@ -1,16 +1,26 @@
 #!/bin/sh
      
 echo setting root password
-sudo passwd root
-
-echo setting timezone
-sudo dpkg-reconfigure tzdata
+passwd root
 
 # Japanese-environment
 wget -q https://www.ubuntulinux.jp/ubuntu-ja-archive-keyring.gpg -O- | sudo apt-key add -
 wget -q https://www.ubuntulinux.jp/ubuntu-jp-ppa-keyring.gpg -O- | sudo apt-key add -
 sudo wget https://www.ubuntulinux.jp/sources.list.d/precise.list -O /etc/apt/sources.list.d/ubuntu-ja.list
 sudo apt-get update
+
+# set locale
+sudo su
+echo en_US.UTF-8 UTF-8 >> /etc/locale.gen
+aptitude -y install language-pack-ja-base language-pack-ja
+update-locale LANG=ja_JP.UTF-8 LANGUAGE="ja_JP:ja"
+LC_COUNT=`grep -c -e LC_ALL=ja_JP.UTF-8 /etc/default/locale` 
+#if test $LC_COUNT -eq 0 ; then
+  echo "LC_ALL=ja_JP.UTF-8" >> /etc/default/locale
+fi
+locale-gen
+dpkg-reconfigure locales
+exit
 
 # vim
 ln -s Settings/vim/.vimrc .vimrc
@@ -29,10 +39,3 @@ ln -s Settings/zsh/.zshenv .zshenv
 ln -s Settings/zsh/.zsh_history .zsh_history
 ln -s Settings/networK/satnet satnet
 ln -s Settings/networK/fukudanet fukudanet
-echo "PATH=/opt/bitnami/ruby/bin/:${PATH}" >> Settings/zsh/.zshrc
-
-# enable ssh
-sudo mv /etc/init/ssh.conf.back /etc/init/ssh.conf
-
-# enable bonjour
-sudo apt-get install avahi-daemon avahi-autoipd libnss-mdns

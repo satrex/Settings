@@ -9,6 +9,7 @@ export LANG=ja_JP.UTF-8
 # set prompt
 #
 
+export TERM=xterm-256color
 autoload colors
 colors
 #case ${UID} in
@@ -137,19 +138,80 @@ esac
 
 setopt nullglob
 setopt extended_history
-function history-all {history -E 1 }
+function history-all { history -E 1 }
 
 # RUBY
-export PATH="/opt/bitnami/ruby/bin:$PATH"
+export PATH="/opt/bitnami/ruby/bin:/usr/local/packer:$PATH"
 alias brake="bundle exec rake"
 export RUBYLIB=.:$RUBYLIB
 export MAILCHECK=0
 
 # RUBYENV 
-if [ -d ${HOME}/.rbenv ] ; then
-    export PATH="$HOME/.rbenv/bin:$PATH"
-    # eval "$(rbenv init -)"
-    eval "$(rbenv init - zsh)"
-    export CC=/usr/bin/gcc-4.2
-fi
+#if [ -d ${HOME}/.rbenv ] ; then
+#    export PATH="$HOME/.rbenv/bin:$PATH"
+    #eval "$(rbenv init -)"
+#    eval "$(rbenv init - zsh)"
+#    export CC=/usr/bin/gcc
+#fi
+#export RBENV_ROOT="${HOME}/.rbenv"
 
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+
+# pyenv
+#export PYENV_ROOT="${HOME}/.pyenv"
+#if [ -d "${PYENV_ROOT}" ]; then
+#    export PATH=${PYENV_ROOT}/bin:$PATH
+#    eval "$(pyenv init -)"
+#fi
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/suzukisatoshi/tool/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/suzukisatoshi/tool/google-cloud-sdk/completion.zsh.inc'
+
+# コマンド入力時に、英数に自動切替
+autoload -Uz add-zsh-hook
+
+function force-alphanumeric {
+  case "${OSTYPE}" in
+  darwin*)
+    # 「英数」キーを押す
+    # 若干重いので サブシェル + バックグラウンド で実行する
+    (osascript -e 'tell application "System Events" to key code {102}' &)
+  esac
+}
+
+#source ~/.nvm/nvm.sh
+add-zsh-hook precmd force-alphanumeric
+
+PATH="/Users/suzukisatoshi/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/suzukisatoshi/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/suzukisatoshi/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/suzukisatoshi/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/suzukisatoshi/perl5"; export PERL_MM_OPT;
+
+# pythonの設定
+#export WORKON_HOME=$HOME/.virtualenvs
+	
+#export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+#export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python/libexec/bin/python
+#source /usr/local/bin/virtualenvwrapper.sh
+
+# nodebrewの設定
+#export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+export PATH="/usr/local/opt/libxslt/bin:$PATH"
+export PATH="/usr/local/Cellar/node/12.11.1/bin:$PATH"
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /Users/suzukisatoshi/.nodebrew/node/v10.7.0/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/suzukisatoshi/.nodebrew/node/v10.7.0/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+#export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"

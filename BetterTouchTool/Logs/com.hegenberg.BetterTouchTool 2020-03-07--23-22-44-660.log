@@ -1,0 +1,309 @@
+1583623364.650700|lic|newest date 2018-04-30 05:33:59 +0000|
+1583623364.650730|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583624506.008730|SEC|SecureInputActive com.google.Chrome 446|
+1583624509.305871|SEC|SecureInputDisabled com.google.Chrome|
+1583624961.363705|WISNA|Focus doesn't match window pid|
+1583624962.527762|WISNA|Focus doesn't match window pid|
+1583627281.607045|TB|Force show Touch Bar|
+1583627918.362495|SLEEP|WILLSLEEP|
+1583627939.145819|SWI|PID MISMATCH FIX|
+1583627941.705778|SWI|PID MISMATCH FIX|
+1583630607.004112|SWI|PID MISMATCH FIX|
+1583630611.081272|LAUNCH|DIDLaunch START|
+1583630611.131350|SYS|Running on macOS: 10.14.6|
+1583630611.131547|SYS|BTT Version: 3.346|
+1583630611.131594|SYS|Device: MacBookPro13,2|
+1583630611.819125|usage|loading todays usage|
+1583630612.019392|short|init|
+1583630613.578072|KEY|keyboard Error Domain=NSMachErrorDomain Code=-536870203 "(iokit/common) exclusive access and device already open" UserInfo={reportingLine=201, reportingMethod=-[DDHidDevice openWithOptions:], reportingFile=/Users/andi/Xcode/BetterTouchTool/BetterTouchTool/DDHidDevice.m, origin=(*mDeviceInterface)->open(mDeviceInterface, options)}|
+1583630613.617619|STORE|The store already exists in udefs|
+1583630613.617855|xw|the new store already exists btt_data_store.version_3_346_build_1554|
+1583630614.000135|LIC|idate 2019-04-30 09:40:46 +0000|
+1583630614.012674|LIC|closing previous instance of BetterTouchTool relaunch|
+1583630614.027255|LIC|license appears to be valid|
+1583630614.029714|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1583630614.029844|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1583630614.029873|LIC|using date 1525066439|
+1583630614.029945|lic|newest date 2018-04-30 05:33:59 +0000|
+1583630614.029961|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583630614.035132|lic|newest date 2018-04-30 05:33:59 +0000|
+1583630614.035161|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583630614.035459|LIC|License is valid for this version|
+1583630614.062048|lic|newest date 2018-04-30 05:33:59 +0000|
+1583630614.062082|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583630614.091183|lic|newest date 2018-04-30 05:33:59 +0000|
+1583630614.091365|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583630614.189982|xw|is trusted|
+1583630614.229939|short|call sharedInstance4|
+1583630614.478528|TB|touchbar screen size {1085, 30}|
+1583630614.488278|M|mt_stop10|
+1583630616.566812|lic|newest date 2018-04-30 05:33:59 +0000|
+1583630616.566857|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583630616.572784|START|TB VISIBLE 1|
+1583630616.572821|START|TB FORCED HIDDEN 0|
+1583630616.586435|LAUNCH|DIDLaunch END frontmostApp: com.google.Chrome, touchpadMode 0, windowSnappingDisabled 0, singleFingerScrollingDisabled 0, mmScrollingUsed 0, tpScrollingUsed 0, tpPinchUsed 1, tpRotateUsed 1|
+1583630617.609024|KEY|keyboard Error Domain=NSMachErrorDomain Code=-536870203 "(iokit/common) exclusive access and device already open" UserInfo={reportingLine=201, reportingMethod=-[DDHidDevice openWithOptions:], reportingFile=/Users/andi/Xcode/BetterTouchTool/BetterTouchTool/DDHidDevice.m, origin=(*mDeviceInterface)->open(mDeviceInterface, options)}|
+1583630618.488118|KEY|keyboard Error Domain=NSMachErrorDomain Code=-536870203 "(iokit/common) exclusive access and device already open" UserInfo={reportingLine=201, reportingMethod=-[DDHidDevice openWithOptions:], reportingFile=/Users/andi/Xcode/BetterTouchTool/BetterTouchTool/DDHidDevice.m, origin=(*mDeviceInterface)->open(mDeviceInterface, options)}|
+1583630619.758592|KEY|keyboard Error Domain=NSMachErrorDomain Code=-536870203 "(iokit/common) exclusive access and device already open" UserInfo={reportingLine=201, reportingMethod=-[DDHidDevice openWithOptions:], reportingFile=/Users/andi/Xcode/BetterTouchTool/BetterTouchTool/DDHidDevice.m, origin=(*mDeviceInterface)->open(mDeviceInterface, options)}|
+1583630619.798516|script|init|
+1583630619.799104|NAMED|jstest|
+1583630619.815080|lic|newest date 2018-04-30 05:33:59 +0000|
+1583630619.815099|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583630619.815536|SLEEP|FORCESHOWAFTERSLEEP2|
+1583630619.999202|TB|Force show Touch Bar|
+1583630620.007693|M|register touchbar mbp trackpad|
+1583630620.007951|STDEV|68|
+1583630620.034883|short|eventtap success|
+1583630622.102440|M|mt_stop2|
+1583630622.102888|TB|PresentationMode functionKeys {
+    app = functionKeys;
+    appWithControlStrip = functionKeys;
+    fullControlStrip = app;
+    functionKeys = fullControlStrip;
+}|
+1583630622.620368|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(62518)|
+1583630623.189962|SLEEP|FORCESHOWAFTERSLEEP3A|
+1583630623.191537|M|unregister magic trackpad 2|
+1583630623.194201|M|register touchbar mbp trackpad|
+1583630623.194390|STDEV|68|
+1583630623.261966|TB|Force show Touch Bar|
+1583630623.414546|ASL|reenabled|
+1583631214.211114|lic|newest date 2018-04-30 05:33:59 +0000|
+1583631214.211148|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583631390.769573|SWI|PID MISMATCH FIX|
+1583631530.649482|SEC|SecureInputActive com.apple.SecurityAgent 51414|
+1583631533.907430|SEC|SecureInputDisabled com.apple.SecurityAgent|
+1583633604.415479|SLEEP|WILLSLEEP|
+1583633607.203586|SWI|PID MISMATCH FIX|
+1583633609.203390|SWI|PID MISMATCH FIX|
+1583633611.205629|SWI|PID MISMATCH FIX|
+1583633612.730833|SWI|PID MISMATCH FIX|
+1583633615.125785|SWI|PID MISMATCH FIX|
+1583633616.665817|SWI|PID MISMATCH FIX|
+1583633618.685599|SWI|PID MISMATCH FIX|
+1583633621.226026|SWI|PID MISMATCH FIX|
+1583633623.143475|SWI|PID MISMATCH FIX|
+1583633624.726007|SWI|PID MISMATCH FIX|
+1583637306.329435|SWI|PID MISMATCH FIX|
+1583637308.594545|SWI|PID MISMATCH FIX|
+1583646350.113430|LAUNCH|DIDLaunch START|
+1583646350.158297|SYS|Running on macOS: 10.14.6|
+1583646350.158388|SYS|BTT Version: 3.346|
+1583646350.158432|SYS|Device: MacBookPro13,2|
+1583646350.418953|usage|loading todays usage|
+1583646350.451292|short|init|
+1583646351.645260|STORE|The store already exists in udefs|
+1583646351.645443|xw|the new store already exists btt_data_store.version_3_346_build_1554|
+1583646351.793218|LIC|idate 2019-04-30 09:40:46 +0000|
+1583646351.811384|LIC|closing previous instance of BetterTouchTool relaunch|
+1583646351.828217|LIC|license appears to be valid|
+1583646351.830051|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1583646351.830124|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1583646351.830140|LIC|using date 1525066439|
+1583646351.830187|lic|newest date 2018-04-30 05:33:59 +0000|
+1583646351.830201|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583646351.835838|lic|newest date 2018-04-30 05:33:59 +0000|
+1583646351.835868|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583646351.836552|LIC|License is valid for this version|
+1583646351.859793|lic|newest date 2018-04-30 05:33:59 +0000|
+1583646351.859958|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583646351.949506|xw|is trusted|
+1583646352.041239|short|call sharedInstance4|
+1583646352.496048|TB|touchbar screen size {1085, 30}|
+1583646352.503369|M|mt_stop10|
+1583646355.224034|lic|newest date 2018-04-30 05:33:59 +0000|
+1583646355.224079|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583646355.231173|START|TB VISIBLE 1|
+1583646355.231220|START|TB FORCED HIDDEN 0|
+1583646355.254958|lic|newest date 2018-04-30 05:33:59 +0000|
+1583646355.255006|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583646355.266908|LAUNCH|DIDLaunch END frontmostApp: com.google.Chrome, touchpadMode 0, windowSnappingDisabled 0, singleFingerScrollingDisabled 0, mmScrollingUsed 0, tpScrollingUsed 0, tpPinchUsed 1, tpRotateUsed 1|
+1583646355.819058|KEY|keyboard Error Domain=NSMachErrorDomain Code=-536870203 "(iokit/common) exclusive access and device already open" UserInfo={reportingLine=201, reportingMethod=-[DDHidDevice openWithOptions:], reportingFile=/Users/andi/Xcode/BetterTouchTool/BetterTouchTool/DDHidDevice.m, origin=(*mDeviceInterface)->open(mDeviceInterface, options)}|
+1583646356.272591|KEY|keyboard Error Domain=NSMachErrorDomain Code=-536870203 "(iokit/common) exclusive access and device already open" UserInfo={reportingLine=201, reportingMethod=-[DDHidDevice openWithOptions:], reportingFile=/Users/andi/Xcode/BetterTouchTool/BetterTouchTool/DDHidDevice.m, origin=(*mDeviceInterface)->open(mDeviceInterface, options)}|
+1583646356.661757|KEY|keyboard Error Domain=NSMachErrorDomain Code=-536870203 "(iokit/common) exclusive access and device already open" UserInfo={reportingLine=201, reportingMethod=-[DDHidDevice openWithOptions:], reportingFile=/Users/andi/Xcode/BetterTouchTool/BetterTouchTool/DDHidDevice.m, origin=(*mDeviceInterface)->open(mDeviceInterface, options)}|
+1583646356.718367|script|init|
+1583646356.719746|NAMED|jstest|
+1583646356.737690|lic|newest date 2018-04-30 05:33:59 +0000|
+1583646356.737713|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583646356.738344|SLEEP|FORCESHOWAFTERSLEEP2|
+1583646356.755201|TB|Force show Touch Bar|
+1583646356.756534|M|register touchbar mbp trackpad|
+1583646356.756913|STDEV|68|
+1583646357.895328|M|mt_stop2|
+1583646357.895598|short|eventtap success|
+1583646357.896135|TB|PresentationMode functionKeys {
+    app = functionKeys;
+    appWithControlStrip = functionKeys;
+    fullControlStrip = app;
+    functionKeys = fullControlStrip;
+}|
+1583646359.194640|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(62518)|
+1583646359.406793|SLEEP|FORCESHOWAFTERSLEEP3A|
+1583646359.407941|M|unregister magic trackpad 2|
+1583646359.411030|M|register touchbar mbp trackpad|
+1583646359.411277|STDEV|68|
+1583646359.452118|TB|Force show Touch Bar|
+1583646953.056205|lic|newest date 2018-04-30 05:33:59 +0000|
+1583646953.056248|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583647134.447793|c00|5|
+1583647273.375245|lic|newest date 2018-04-30 05:33:59 +0000|
+1583647273.375268|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583653845.424807|WISNA|Focus doesn't match window pid|
+1583654372.261024|WISNA|Focus doesn't match window pid|
+1583654699.561102|WISNA|Focus doesn't match window pid|
+1583654699.685290|WISNA|Focus doesn't match window pid|
+1583655711.917098|WISNA|Focus doesn't match window pid|
+1583656382.164906|SEC|SecureInputActive com.apple.UserNotificationCenter 54780|
+1583656386.937052|SEC|SecureInputDisabled com.apple.UserNotificationCenter|
+1583656432.661499|WISNA|Focus doesn't match window pid|
+1583659334.091369|SLEEP|WILLSLEEP|
+1583659339.627418|SWI|PID MISMATCH FIX|
+1583659340.886562|SWI|PID MISMATCH FIX|
+1583659343.288963|SWI|PID MISMATCH FIX|
+1583659345.607726|SWI|PID MISMATCH FIX|
+1583659346.922527|SWI|PID MISMATCH FIX|
+1583659349.606968|SWI|PID MISMATCH FIX|
+1583659351.606375|SWI|PID MISMATCH FIX|
+1583659353.600498|SWI|PID MISMATCH FIX|
+1583659962.007672|SWI|PID MISMATCH FIX|
+1583659962.171956|xw|apple script contains error and crashes BTT|
+1583659965.304487|LAUNCH|DIDLaunch START|
+1583659965.629765|SYS|Running on macOS: 10.14.6|
+1583659965.629843|SYS|BTT Version: 3.346|
+1583659965.629897|SYS|Device: MacBookPro13,2|
+1583659966.200716|usage|loading todays usage|
+1583659966.240424|short|init|
+1583659967.778745|KEY|keyboard Error Domain=NSMachErrorDomain Code=-536870203 "(iokit/common) exclusive access and device already open" UserInfo={reportingLine=201, reportingMethod=-[DDHidDevice openWithOptions:], reportingFile=/Users/andi/Xcode/BetterTouchTool/BetterTouchTool/DDHidDevice.m, origin=(*mDeviceInterface)->open(mDeviceInterface, options)}|
+1583659967.787318|STORE|The store already exists in udefs|
+1583659967.787517|xw|the new store already exists btt_data_store.version_3_346_build_1554|
+1583659967.849677|LIC|idate 2019-04-30 09:40:46 +0000|
+1583659967.877012|LIC|closing previous instance of BetterTouchTool relaunch|
+1583659967.896264|LIC|license appears to be valid|
+1583659967.897992|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1583659967.898058|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1583659967.898068|LIC|using date 1525066439|
+1583659967.898100|lic|newest date 2018-04-30 05:33:59 +0000|
+1583659967.898108|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583659967.902128|lic|newest date 2018-04-30 05:33:59 +0000|
+1583659967.902151|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583659967.902429|LIC|License is valid for this version|
+1583659967.953239|lic|newest date 2018-04-30 05:33:59 +0000|
+1583659967.953269|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583659968.064833|xw|is trusted|
+1583659968.132995|short|call sharedInstance4|
+1583659968.186013|SEC|SecureInputActive com.apple.loginwindow 127|
+1583659968.523452|TB|touchbar screen size {1085, 30}|
+1583659968.531519|M|mt_stop10|
+1583659972.856222|lic|newest date 2018-04-30 05:33:59 +0000|
+1583659972.856273|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583659972.861551|START|TB VISIBLE 1|
+1583659972.861588|START|TB FORCED HIDDEN 0|
+1583659972.884906|lic|newest date 2018-04-30 05:33:59 +0000|
+1583659972.884934|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583659972.893094|LAUNCH|DIDLaunch END frontmostApp: com.apple.loginwindow, touchpadMode 0, windowSnappingDisabled 0, singleFingerScrollingDisabled 0, mmScrollingUsed 0, tpScrollingUsed 0, tpPinchUsed 1, tpRotateUsed 1|
+1583659973.101965|TB|Force show Touch Bar|
+1583659973.709041|SEC|SecureInputDisabled com.apple.loginwindow|
+1583659976.706497|KEY|keyboard Error Domain=NSMachErrorDomain Code=-536870203 "(iokit/common) exclusive access and device already open" UserInfo={reportingLine=201, reportingMethod=-[DDHidDevice openWithOptions:], reportingFile=/Users/andi/Xcode/BetterTouchTool/BetterTouchTool/DDHidDevice.m, origin=(*mDeviceInterface)->open(mDeviceInterface, options)}|
+1583659977.175544|KEY|keyboard Error Domain=NSMachErrorDomain Code=-536870203 "(iokit/common) exclusive access and device already open" UserInfo={reportingLine=201, reportingMethod=-[DDHidDevice openWithOptions:], reportingFile=/Users/andi/Xcode/BetterTouchTool/BetterTouchTool/DDHidDevice.m, origin=(*mDeviceInterface)->open(mDeviceInterface, options)}|
+1583659977.616899|KEY|keyboard Error Domain=NSMachErrorDomain Code=-536870203 "(iokit/common) exclusive access and device already open" UserInfo={reportingLine=201, reportingMethod=-[DDHidDevice openWithOptions:], reportingFile=/Users/andi/Xcode/BetterTouchTool/BetterTouchTool/DDHidDevice.m, origin=(*mDeviceInterface)->open(mDeviceInterface, options)}|
+1583659977.634999|lic|newest date 2018-04-30 05:33:59 +0000|
+1583659977.635030|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583659977.652089|script|init|
+1583659977.652606|NAMED|jstest|
+1583659977.666625|lic|newest date 2018-04-30 05:33:59 +0000|
+1583659977.666668|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583659977.672315|TB|Force show Touch Bar|
+1583659977.676365|M|register touchbar mbp trackpad|
+1583659977.676831|STDEV|68|
+1583659977.728983|short|eventtap success|
+1583659977.730533|M|mt_stop2|
+1583659977.731273|TB|PresentationMode functionKeys {
+    app = functionKeys;
+    appWithControlStrip = functionKeys;
+    fullControlStrip = app;
+    functionKeys = fullControlStrip;
+}|
+1583659978.045642|SLEEP|FORCESHOWAFTERSLEEP3A|
+1583659978.048213|M|unregister magic trackpad 2|
+1583659978.051088|M|register touchbar mbp trackpad|
+1583659978.051312|STDEV|68|
+1583659978.063676|TB|Force show Touch Bar|
+1583659978.405307|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(62518)|
+1583660568.943596|lic|newest date 2018-04-30 05:33:59 +0000|
+1583660568.943679|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1583660629.993390|xw|disable|
+1583660629.995171|xw|disable & dismiss touch bar|
+1583660630.011506|xw|adapting icon state global 1 perApp 0 clip 0|
+1583660630.126547|xw|enable|
+1583660630.169776|xw|adapting icon state global 0 perApp 0 clip 0|
+1583660630.282663|xw|disable|
+1583660630.283211|xw|disable & dismiss touch bar|
+1583660630.287354|xw|adapting icon state global 1 perApp 0 clip 0|
+1583660630.762524|xw|enable|
+1583660630.790137|xw|adapting icon state global 0 perApp 0 clip 0|
+1583660643.962806|xw|disable|
+1583660643.963399|xw|disable & dismiss touch bar|
+1583660643.967284|xw|adapting icon state global 1 perApp 0 clip 0|
+1583660644.296962|xw|enable|
+1583660644.329123|xw|adapting icon state global 0 perApp 0 clip 0|
+1583660649.933576|xw|disable|
+1583660649.934271|xw|disable & dismiss touch bar|
+1583660649.937732|xw|adapting icon state global 1 perApp 0 clip 0|
+1583660650.594158|xw|enable|
+1583660650.627063|xw|adapting icon state global 0 perApp 0 clip 0|
+1583660673.335337|xw|disable|
+1583660673.336291|xw|disable & dismiss touch bar|
+1583660673.341945|xw|adapting icon state global 1 perApp 0 clip 0|
+1583660673.720168|xw|enable|
+1583660673.774202|xw|adapting icon state global 0 perApp 0 clip 0|
+1583661855.892454|xw|disable|
+1583661855.894023|xw|disable & dismiss touch bar|
+1583661855.902718|xw|adapting icon state global 1 perApp 0 clip 0|
+1583661856.353615|xw|enable|
+1583661856.390367|xw|adapting icon state global 0 perApp 0 clip 0|
+1583663459.074617|xw|shell script contains error and crashes BTT|
+1583663459.117537|xw|interrupt reply|
+1583664020.192600|SWI|PID MISMATCH FIX|
+1583664296.491132|c00|5|
+1583665995.902662|xw|disable|
+1583665995.904809|xw|disable & dismiss touch bar|
+1583665995.920606|xw|adapting icon state global 1 perApp 0 clip 0|
+1583665998.121095|xw|enable|
+1583665998.173024|xw|adapting icon state global 0 perApp 0 clip 0|
+1583666242.258951|SWI|PID MISMATCH FIX|
+1583667010.674380|WISNA|Focus doesn't match window pid|
+1583669292.845302|WISNA|Focus doesn't match window pid|
+1583669295.336833|WISNA|Focus doesn't match window pid|

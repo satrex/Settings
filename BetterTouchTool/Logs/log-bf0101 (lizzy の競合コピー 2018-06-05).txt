@@ -1,0 +1,12 @@
+1528167730.681077|swi|check device class|
+1528167730.681132|swi|shortcuts used|
+1528167730.711748|short|register all hotkeys for current app|
+1528168685.802573|swi|check device class|
+1528168685.802596|swi|shortcuts used|
+1528168685.844253|short|register all hotkeys for current app|
+1528168688.952801|swi|check device class|
+1528168688.952827|swi|shortcuts used|
+1528168688.979921|short|register all hotkeys for current app|
+1528168688.982402|swi|check device class|
+1528168688.982417|swi|shortcuts used|
+1528168689.230083|short|register all hotkeys for current app|

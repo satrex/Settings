@@ -1,0 +1,1407 @@
+1523405544.826658|SLEEP|WILLSLEEP|
+1523405553.525834|ASL|shell script contains error and crashes BTT|
+1523405553.590346|ASL|interrupt reply|
+1523405891.980145|swi|check device class|
+1523405891.980180|swi|shortcuts used|
+1523405892.325117|short|register all hotkeys for current app|
+1523405892.671692|M|mt_stop2|
+1523405892.671895|M|checking|
+1523405892.673303|M|unregister internal trackpad|
+1523405892.673826|M|checking|
+1523405892.674447|M|register internal trackpad|
+1523405892.674946|STDEV|63|
+1523405892.798486|M|mt_stop2|
+1523405892.798697|M|checking|
+1523405892.799990|M|unregister internal trackpad|
+1523405892.800774|M|checking|
+1523405892.801755|M|register internal trackpad|
+1523405892.802084|STDEV|63|
+1523405894.856746|M|mt_stop2|
+1523405894.857059|M|checking|
+1523405894.858460|M|unregister internal trackpad|
+1523405894.859408|M|checking|
+1523405894.860870|M|register internal trackpad|
+1523405894.861289|STDEV|63|
+1523405898.139605|M|mt_stop2|
+1523405898.139910|M|checking|
+1523405898.141695|M|unregister internal trackpad|
+1523405898.142966|M|checking|
+1523405898.144239|M|register internal trackpad|
+1523405898.144531|STDEV|63|
+1523405903.606374|M|mt_stop2|
+1523405903.606617|M|checking|
+1523405903.607921|M|unregister internal trackpad|
+1523405903.608744|M|checking|
+1523405903.609564|M|register internal trackpad|
+1523405903.609957|STDEV|63|
+1523405938.622418|M|mt_stop2|
+1523405938.622625|M|checking|
+1523405938.624324|M|unregister internal trackpad|
+1523405938.625226|M|checking|
+1523405938.626266|M|register internal trackpad|
+1523405938.626613|STDEV|63|
+1523406150.533486|usage|loading todays usage|
+1523406150.755591|ASL|[Crashlytics] Version 3.9.3 (128)|
+1523406150.875828|short|init|
+1523406150.875876|short|no event tap functionality used|
+1523406151.357734|LIC|idate 2018-04-11 00:22:31 +0000|
+1523406151.362742|short|register all hotkeys|
+1523406151.372778|LIC|closing previous instance of BetterTouchTool relaunch|
+1523406151.408310|short|register disable hotkeys|
+1523406151.409382|short|register disable hotkeys|
+1523406151.410238|short|register all hotkeys|
+1523406151.413595|LAUNCH|DIDLaunch|
+1523406151.684922|ASL|new multitouch device recognized|
+1523406151.685127|M|checking|
+1523406151.687249|short|call sharedInstance4|
+1523406151.696674|M|mt_stop10|
+1523406151.696852|M|checking|
+1523406151.699182|M|register internal trackpad|
+1523406151.699434|STDEV|63|
+1523406151.699490|swi|check device class|
+1523406151.699498|swi|shortcuts used|
+1523406154.217907|short|eventtap success|
+1523406154.224308|short|register disable hotkeys|
+1523406154.225384|short|register all hotkeys for current app|
+1523406154.226293|short|register all hotkeys|
+1523406155.123648|short|register all hotkeys for current app|
+1523406155.125122|M|mt_stop2|
+1523406155.125311|M|checking|
+1523406155.125392|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1523406155.126532|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1523406155.126787|M|unregister internal trackpad|
+1523406155.127755|M|checking|
+1523406155.128203|ASL|disabling touch for internal trackpad (clamshell)|
+1523406155.128607|M|register internal trackpad|
+1523406155.128834|STDEV|63|
+1523406155.141629|short|register all hotkeys for current app|
+1523406155.144501|M|checking|
+1523406194.155342|M|mt_stop2|
+1523406194.155604|M|checking|
+1523406194.157422|M|unregister internal trackpad|
+1523406194.158260|M|checking|
+1523406194.159321|M|register internal trackpad|
+1523406194.159585|STDEV|63|
+1523406404.671945|M|mt_stop2|
+1523406404.672243|M|checking|
+1523406404.673968|M|unregister internal trackpad|
+1523406404.675180|M|checking|
+1523406404.676179|M|register internal trackpad|
+1523406404.676416|STDEV|63|
+1523406404.783857|M|mt_stop2|
+1523406404.784135|M|checking|
+1523406404.786004|M|unregister internal trackpad|
+1523406404.786872|M|checking|
+1523406404.787587|M|register internal trackpad|
+1523406404.787787|STDEV|63|
+1523406406.867242|M|mt_stop2|
+1523406406.867451|M|checking|
+1523406406.869253|M|unregister internal trackpad|
+1523406406.870023|M|checking|
+1523406406.870680|M|register internal trackpad|
+1523406406.870873|STDEV|63|
+1523406409.916732|M|mt_stop2|
+1523406409.916936|M|checking|
+1523406409.918868|M|unregister internal trackpad|
+1523406409.919843|M|checking|
+1523406409.920788|M|register internal trackpad|
+1523406409.921079|STDEV|63|
+1523406415.135640|M|mt_stop2|
+1523406415.135829|M|checking|
+1523406415.137751|M|unregister internal trackpad|
+1523406415.138607|M|checking|
+1523406415.139470|M|register internal trackpad|
+1523406415.139705|STDEV|63|
+1523406450.185995|M|mt_stop2|
+1523406450.186238|M|checking|
+1523406450.187801|M|unregister internal trackpad|
+1523406450.188741|M|checking|
+1523406450.189635|M|register internal trackpad|
+1523406450.189871|STDEV|63|
+1523406659.664736|M|mt_stop2|
+1523406659.664924|M|checking|
+1523406659.666574|M|unregister internal trackpad|
+1523406659.667412|M|checking|
+1523406659.668090|M|register internal trackpad|
+1523406659.668324|STDEV|63|
+1523406659.798195|M|mt_stop2|
+1523406659.798432|M|checking|
+1523406659.799796|M|unregister internal trackpad|
+1523406659.800571|M|checking|
+1523406659.801316|M|register internal trackpad|
+1523406659.801542|STDEV|63|
+1523406661.848386|M|mt_stop2|
+1523406661.848578|M|checking|
+1523406661.850036|M|unregister internal trackpad|
+1523406661.850544|M|checking|
+1523406661.851185|M|register internal trackpad|
+1523406661.851357|STDEV|63|
+1523406665.148435|M|mt_stop2|
+1523406665.148637|M|checking|
+1523406665.150240|M|unregister internal trackpad|
+1523406665.151220|M|checking|
+1523406665.152057|M|register internal trackpad|
+1523406665.152296|STDEV|63|
+1523406670.349719|M|mt_stop2|
+1523406670.349899|M|checking|
+1523406670.351201|M|unregister internal trackpad|
+1523406670.351941|M|checking|
+1523406670.352612|M|register internal trackpad|
+1523406670.352788|STDEV|63|
+1523406705.203976|M|mt_stop2|
+1523406705.204214|M|checking|
+1523406705.205922|M|unregister internal trackpad|
+1523406705.206809|M|checking|
+1523406705.207756|M|register internal trackpad|
+1523406705.208005|STDEV|63|
+1523406915.661673|M|mt_stop2|
+1523406915.661879|M|checking|
+1523406915.663682|M|unregister internal trackpad|
+1523406915.664492|M|checking|
+1523406915.665235|M|register internal trackpad|
+1523406915.665528|STDEV|63|
+1523406915.797203|M|mt_stop2|
+1523406915.797448|M|checking|
+1523406915.799151|M|unregister internal trackpad|
+1523406915.800006|M|checking|
+1523406915.800822|M|register internal trackpad|
+1523406915.801005|STDEV|63|
+1523406917.811473|M|mt_stop2|
+1523406917.811660|M|checking|
+1523406917.813296|M|unregister internal trackpad|
+1523406917.814096|M|checking|
+1523406917.815016|M|register internal trackpad|
+1523406917.815243|STDEV|63|
+1523406921.078602|M|mt_stop2|
+1523406921.078887|M|checking|
+1523406921.080550|M|unregister internal trackpad|
+1523406921.081401|M|checking|
+1523406921.082268|M|register internal trackpad|
+1523406921.082518|STDEV|63|
+1523406926.500323|M|mt_stop2|
+1523406926.500570|M|checking|
+1523406926.502414|M|unregister internal trackpad|
+1523406926.503295|M|checking|
+1523406926.504245|M|register internal trackpad|
+1523406926.504512|STDEV|63|
+1523406961.163114|M|mt_stop2|
+1523406961.163395|M|checking|
+1523406961.164858|M|unregister internal trackpad|
+1523406961.165794|M|checking|
+1523406961.166676|M|register internal trackpad|
+1523406961.166929|STDEV|63|
+1523407171.673641|M|mt_stop2|
+1523407171.673914|M|checking|
+1523407171.675703|M|unregister internal trackpad|
+1523407171.676303|M|checking|
+1523407171.676997|M|register internal trackpad|
+1523407171.677172|STDEV|63|
+1523407171.772324|M|mt_stop2|
+1523407171.772617|M|checking|
+1523407171.774437|M|unregister internal trackpad|
+1523407171.775467|M|checking|
+1523407171.776483|M|register internal trackpad|
+1523407171.776798|STDEV|63|
+1523407173.838516|M|mt_stop2|
+1523407173.838778|M|checking|
+1523407173.840287|M|unregister internal trackpad|
+1523407173.841107|M|checking|
+1523407173.841975|M|register internal trackpad|
+1523407173.842229|STDEV|63|
+1523407176.986211|M|mt_stop2|
+1523407176.986489|M|checking|
+1523407176.988247|M|unregister internal trackpad|
+1523407176.989500|M|checking|
+1523407176.990962|M|register internal trackpad|
+1523407176.991178|STDEV|63|
+1523407182.056041|M|mt_stop2|
+1523407182.056216|M|checking|
+1523407182.057846|M|unregister internal trackpad|
+1523407182.058318|M|checking|
+1523407182.058911|M|register internal trackpad|
+1523407182.059070|STDEV|63|
+1523407217.173323|M|mt_stop2|
+1523407217.173567|M|checking|
+1523407217.175356|M|unregister internal trackpad|
+1523407217.176223|M|checking|
+1523407217.177120|M|register internal trackpad|
+1523407217.177377|STDEV|63|
+1523407427.736830|usage|loading todays usage|
+1523407427.772689|ASL|[Crashlytics] Version 3.9.3 (128)|
+1523407427.786030|short|init|
+1523407427.786058|short|no event tap functionality used|
+1523407427.844043|LIC|idate 2018-04-11 00:43:47 +0000|
+1523407427.847941|short|register all hotkeys|
+1523407427.859877|LIC|closing previous instance of BetterTouchTool relaunch|
+1523407427.865841|short|register disable hotkeys|
+1523407427.866678|short|register disable hotkeys|
+1523407427.867628|short|register all hotkeys|
+1523407427.871460|LAUNCH|DIDLaunch|
+1523407427.948584|ASL|new multitouch device recognized|
+1523407427.948861|M|checking|
+1523407427.951002|short|call sharedInstance4|
+1523407427.960117|M|mt_stop10|
+1523407427.960315|M|checking|
+1523407427.961926|M|register internal trackpad|
+1523407427.962117|STDEV|63|
+1523407427.962187|swi|check device class|
+1523407427.962198|swi|shortcuts used|
+1523407429.196780|short|eventtap success|
+1523407429.199477|short|register disable hotkeys|
+1523407429.200744|short|register all hotkeys for current app|
+1523407429.201495|short|register all hotkeys|
+1523407429.863491|short|register all hotkeys for current app|
+1523407429.864901|M|mt_stop2|
+1523407429.865085|M|checking|
+1523407429.866364|M|unregister internal trackpad|
+1523407429.866966|M|checking|
+1523407429.867566|M|register internal trackpad|
+1523407429.867759|STDEV|63|
+1523407429.872519|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1523407429.873673|M|checking|
+1523407429.873991|ASL|disabling touch for internal trackpad (clamshell)|
+1523407429.875545|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1523407431.062251|short|register all hotkeys for current app|
+1523407473.200801|M|mt_stop2|
+1523407473.201045|M|checking|
+1523407473.202874|M|unregister internal trackpad|
+1523407473.203858|M|checking|
+1523407473.205029|M|register internal trackpad|
+1523407473.205254|STDEV|63|
+1523407682.613939|usage|loading todays usage|
+1523407682.650654|ASL|[Crashlytics] Version 3.9.3 (128)|
+1523407682.663715|short|init|
+1523407682.663751|short|no event tap functionality used|
+1523407682.715843|LIC|idate 2018-04-11 00:48:02 +0000|
+1523407682.719655|short|register all hotkeys|
+1523407682.731592|LIC|closing previous instance of BetterTouchTool relaunch|
+1523407682.741591|short|register disable hotkeys|
+1523407682.742932|short|register disable hotkeys|
+1523407682.744231|short|register all hotkeys|
+1523407682.748398|LAUNCH|DIDLaunch|
+1523407682.796129|ASL|new multitouch device recognized|
+1523407682.796399|M|checking|
+1523407682.799204|short|call sharedInstance4|
+1523407682.812365|M|mt_stop10|
+1523407682.812575|M|checking|
+1523407682.814593|M|register internal trackpad|
+1523407682.814823|STDEV|63|
+1523407682.814891|swi|check device class|
+1523407682.814903|swi|shortcuts used|
+1523407683.859900|short|eventtap success|
+1523407683.861848|short|register disable hotkeys|
+1523407683.862848|short|register all hotkeys for current app|
+1523407683.863617|short|register all hotkeys|
+1523407684.598017|short|register all hotkeys for current app|
+1523407684.599287|M|mt_stop2|
+1523407684.599460|M|checking|
+1523407684.601112|M|unregister internal trackpad|
+1523407684.601833|M|checking|
+1523407684.602748|M|register internal trackpad|
+1523407684.602953|STDEV|63|
+1523407684.607370|M|checking|
+1523407684.607819|ASL|disabling touch for internal trackpad (clamshell)|
+1523407684.661460|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1523407684.776625|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1523407685.923356|short|register all hotkeys for current app|
+1523407728.123449|M|mt_stop2|
+1523407728.123732|M|checking|
+1523407728.124990|M|unregister internal trackpad|
+1523407728.126231|M|checking|
+1523407728.127393|M|register internal trackpad|
+1523407728.127680|STDEV|63|
+1523407937.679454|M|mt_stop2|
+1523407937.679691|M|checking|
+1523407937.681455|M|unregister internal trackpad|
+1523407937.682312|M|checking|
+1523407937.683207|M|register internal trackpad|
+1523407937.683454|STDEV|63|
+1523407937.779708|M|mt_stop2|
+1523407937.779906|M|checking|
+1523407937.782072|M|unregister internal trackpad|
+1523407937.782890|M|checking|
+1523407937.783839|M|register internal trackpad|
+1523407937.784124|STDEV|63|
+1523407939.863046|M|mt_stop2|
+1523407939.863339|M|checking|
+1523407939.865033|M|unregister internal trackpad|
+1523407939.866235|M|checking|
+1523407939.867728|M|register internal trackpad|
+1523407939.868077|STDEV|63|
+1523407943.080109|M|mt_stop2|
+1523407943.080343|M|checking|
+1523407943.081574|M|unregister internal trackpad|
+1523407943.082393|M|checking|
+1523407943.083311|M|register internal trackpad|
+1523407943.083553|STDEV|63|
+1523407948.280843|M|mt_stop2|
+1523407948.281021|M|checking|
+1523407948.282404|M|unregister internal trackpad|
+1523407948.282990|M|checking|
+1523407948.283691|M|register internal trackpad|
+1523407948.283867|STDEV|63|
+1523407983.129754|M|mt_stop2|
+1523407983.129894|M|checking|
+1523407983.131311|M|unregister internal trackpad|
+1523407983.132173|M|checking|
+1523407983.132845|M|register internal trackpad|
+1523407983.133042|STDEV|63|
+1523408193.512735|usage|loading todays usage|
+1523408193.542866|ASL|[Crashlytics] Version 3.9.3 (128)|
+1523408193.554312|short|init|
+1523408193.554339|short|no event tap functionality used|
+1523408193.611565|LIC|idate 2018-04-11 00:56:33 +0000|
+1523408193.615264|short|register all hotkeys|
+1523408193.631091|LIC|closing previous instance of BetterTouchTool relaunch|
+1523408193.635717|short|register disable hotkeys|
+1523408193.637045|short|register disable hotkeys|
+1523408193.638426|short|register all hotkeys|
+1523408193.642755|LAUNCH|DIDLaunch|
+1523408193.679910|ASL|new multitouch device recognized|
+1523408193.680086|M|checking|
+1523408193.682667|short|call sharedInstance4|
+1523408193.692491|M|mt_stop10|
+1523408193.692624|M|checking|
+1523408193.694773|M|register internal trackpad|
+1523408193.695116|STDEV|63|
+1523408193.695167|swi|check device class|
+1523408193.695175|swi|shortcuts used|
+1523408194.731368|short|eventtap success|
+1523408194.737975|short|register disable hotkeys|
+1523408194.738970|short|register all hotkeys for current app|
+1523408194.739776|short|register all hotkeys|
+1523408195.421231|short|register all hotkeys for current app|
+1523408195.423948|M|mt_stop2|
+1523408195.424216|M|checking|
+1523408195.425144|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1523408195.425831|M|unregister internal trackpad|
+1523408195.426085|M|checking|
+1523408195.426305|ASL|disabling touch for internal trackpad (clamshell)|
+1523408195.426518|M|checking|
+1523408195.427065|M|register internal trackpad|
+1523408195.427257|STDEV|63|
+1523408195.745341|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1523408196.833855|short|register all hotkeys for current app|
+1523408239.220781|M|mt_stop2|
+1523408239.221027|M|checking|
+1523408239.222448|M|unregister internal trackpad|
+1523408239.223333|M|checking|
+1523408239.224213|M|register internal trackpad|
+1523408239.224447|STDEV|63|
+1523408449.676710|M|mt_stop2|
+1523408449.676910|M|checking|
+1523408449.678534|M|unregister internal trackpad|
+1523408449.679430|M|checking|
+1523408449.680189|M|register internal trackpad|
+1523408449.680430|STDEV|63|
+1523408449.728477|M|mt_stop2|
+1523408449.728692|M|checking|
+1523408449.730534|M|unregister internal trackpad|
+1523408449.731372|M|checking|
+1523408449.732134|M|register internal trackpad|
+1523408449.732346|STDEV|63|
+1523408451.868737|M|mt_stop2|
+1523408451.869034|M|checking|
+1523408451.870823|M|unregister internal trackpad|
+1523408451.871686|M|checking|
+1523408451.872560|M|register internal trackpad|
+1523408451.872828|STDEV|63|
+1523408455.143491|M|mt_stop2|
+1523408455.143792|M|checking|
+1523408455.145376|M|unregister internal trackpad|
+1523408455.146285|M|checking|
+1523408455.147203|M|register internal trackpad|
+1523408455.147443|STDEV|63|
+1523408460.394493|M|mt_stop2|
+1523408460.394683|M|checking|
+1523408460.395906|M|unregister internal trackpad|
+1523408460.396726|M|checking|
+1523408460.397326|M|register internal trackpad|
+1523408460.397509|STDEV|63|
+1523408495.127172|M|mt_stop2|
+1523408495.127366|M|checking|
+1523408495.129280|M|unregister internal trackpad|
+1523408495.130032|M|checking|
+1523408495.130787|M|register internal trackpad|
+1523408495.130968|STDEV|63|
+1523408704.686187|M|mt_stop2|
+1523408704.686438|M|checking|
+1523408704.687845|M|unregister internal trackpad|
+1523408704.689262|M|checking|
+1523408704.690805|M|register internal trackpad|
+1523408704.691074|STDEV|63|
+1523408704.819923|M|mt_stop2|
+1523408704.820105|M|checking|
+1523408704.821805|M|unregister internal trackpad|
+1523408704.822649|M|checking|
+1523408704.823533|M|register internal trackpad|
+1523408704.823835|STDEV|63|
+1523408706.886405|M|mt_stop2|
+1523408706.886669|M|checking|
+1523408706.887950|M|unregister internal trackpad|
+1523408706.888764|M|checking|
+1523408706.889720|M|register internal trackpad|
+1523408706.889970|STDEV|63|
+1523408710.069721|M|mt_stop2|
+1523408710.070011|M|checking|
+1523408710.071263|M|unregister internal trackpad|
+1523408710.072422|M|checking|
+1523408710.073439|M|register internal trackpad|
+1523408710.073698|STDEV|63|
+1523408715.472024|M|mt_stop2|
+1523408715.472278|M|checking|
+1523408715.473840|M|unregister internal trackpad|
+1523408715.474716|M|checking|
+1523408715.475682|M|register internal trackpad|
+1523408715.475921|STDEV|63|
+1523408750.152671|M|mt_stop2|
+1523408750.152793|M|checking|
+1523408750.154494|M|unregister internal trackpad|
+1523408750.155278|M|checking|
+1523408750.155897|M|register internal trackpad|
+1523408750.156089|STDEV|63|
+1523408959.666578|M|mt_stop2|
+1523408959.666821|M|checking|
+1523408959.668830|M|unregister internal trackpad|
+1523408959.669769|M|checking|
+1523408959.670706|M|register internal trackpad|
+1523408959.671008|STDEV|63|
+1523408959.825463|M|mt_stop2|
+1523408959.825756|M|checking|
+1523408959.827538|M|unregister internal trackpad|
+1523408959.828419|M|checking|
+1523408959.829296|M|register internal trackpad|
+1523408959.829544|STDEV|63|
+1523408961.865644|M|mt_stop2|
+1523408961.865900|M|checking|
+1523408961.867683|M|unregister internal trackpad|
+1523408961.868565|M|checking|
+1523408961.869458|M|register internal trackpad|
+1523408961.869710|STDEV|63|
+1523408965.083218|M|mt_stop2|
+1523408965.083512|M|checking|
+1523408965.084709|M|unregister internal trackpad|
+1523408965.085634|M|checking|
+1523408965.086515|M|register internal trackpad|
+1523408965.086842|STDEV|63|
+1523408970.184844|M|mt_stop2|
+1523408970.185120|M|checking|
+1523408970.186390|M|unregister internal trackpad|
+1523408970.187359|M|checking|
+1523408970.188273|M|register internal trackpad|
+1523408970.188476|STDEV|63|
+1523409005.202434|M|mt_stop2|
+1523409005.202678|M|checking|
+1523409005.204432|M|unregister internal trackpad|
+1523409005.205233|M|checking|
+1523409005.206126|M|register internal trackpad|
+1523409005.206368|STDEV|63|
+1523409214.592441|usage|loading todays usage|
+1523409214.633945|ASL|[Crashlytics] Version 3.9.3 (128)|
+1523409214.646639|short|init|
+1523409214.646666|short|no event tap functionality used|
+1523409214.734370|LIC|idate 2018-04-11 01:13:34 +0000|
+1523409214.738298|short|register all hotkeys|
+1523409214.750273|LIC|closing previous instance of BetterTouchTool relaunch|
+1523409214.756336|short|register disable hotkeys|
+1523409214.757589|short|register disable hotkeys|
+1523409214.758922|short|register all hotkeys|
+1523409214.762889|LAUNCH|DIDLaunch|
+1523409214.839313|ASL|new multitouch device recognized|
+1523409214.839589|M|checking|
+1523409214.842138|short|call sharedInstance4|
+1523409214.854075|M|mt_stop10|
+1523409214.854256|M|checking|
+1523409214.856337|M|register internal trackpad|
+1523409214.856561|STDEV|63|
+1523409214.856613|swi|check device class|
+1523409214.856623|swi|shortcuts used|
+1523409216.124614|short|eventtap success|
+1523409216.127531|short|register disable hotkeys|
+1523409216.128887|short|register all hotkeys for current app|
+1523409216.129617|short|register all hotkeys|
+1523409216.922123|short|register all hotkeys for current app|
+1523409216.923543|M|mt_stop2|
+1523409216.923669|M|checking|
+1523409216.924812|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1523409216.925714|M|unregister internal trackpad|
+1523409216.926542|ASL|disabling touch for internal trackpad (clamshell)|
+1523409216.926772|M|checking|
+1523409216.927427|M|register internal trackpad|
+1523409216.927657|STDEV|63|
+1523409216.930127|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1523409216.932451|M|checking|
+1523409217.917142|short|register all hotkeys for current app|
+1523409260.137627|M|mt_stop2|
+1523409260.137811|M|checking|
+1523409260.139270|M|unregister internal trackpad|
+1523409260.139779|M|checking|
+1523409260.140400|M|register internal trackpad|
+1523409260.140579|STDEV|63|
+1523409469.350524|usage|loading todays usage|
+1523409469.388514|ASL|[Crashlytics] Version 3.9.3 (128)|
+1523409469.426165|short|init|
+1523409469.426307|short|no event tap functionality used|
+1523409469.484687|LIC|idate 2018-04-11 01:17:49 +0000|
+1523409469.488829|short|register all hotkeys|
+1523409469.502339|LIC|closing previous instance of BetterTouchTool relaunch|
+1523409469.508854|short|register disable hotkeys|
+1523409469.510278|short|register disable hotkeys|
+1523409469.511635|short|register all hotkeys|
+1523409469.515621|LAUNCH|DIDLaunch|
+1523409469.570803|ASL|new multitouch device recognized|
+1523409469.571100|M|checking|
+1523409469.573747|short|call sharedInstance4|
+1523409469.587248|M|mt_stop10|
+1523409469.587459|M|checking|
+1523409469.589525|M|register internal trackpad|
+1523409469.589773|STDEV|63|
+1523409469.589834|swi|check device class|
+1523409469.589846|swi|shortcuts used|
+1523409470.556435|short|eventtap success|
+1523409470.564109|short|register disable hotkeys|
+1523409470.564450|ASL|disabling touch for internal trackpad (clamshell)|
+1523409470.565730|short|register all hotkeys for current app|
+1523409470.566922|short|register all hotkeys|
+1523409471.267121|short|register all hotkeys for current app|
+1523409471.270224|M|mt_stop2|
+1523409471.270648|M|checking|
+1523409471.272087|M|unregister internal trackpad|
+1523409471.272669|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1523409471.272734|M|checking|
+1523409471.272797|M|checking|
+1523409471.273401|M|register internal trackpad|
+1523409471.273585|STDEV|63|
+1523409471.590413|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1523409472.732918|short|register all hotkeys for current app|
+1523409515.174935|M|mt_stop2|
+1523409515.175134|M|checking|
+1523409515.176679|M|unregister internal trackpad|
+1523409515.177574|M|checking|
+1523409515.178235|M|register internal trackpad|
+1523409515.178430|STDEV|63|
+1523409725.696397|M|mt_stop2|
+1523409725.696692|M|checking|
+1523409725.698486|M|unregister internal trackpad|
+1523409725.699382|M|checking|
+1523409725.700338|M|register internal trackpad|
+1523409725.700587|STDEV|63|
+1523409725.829593|M|mt_stop2|
+1523409725.829980|M|checking|
+1523409725.831189|M|unregister internal trackpad|
+1523409725.831942|M|checking|
+1523409725.832834|M|register internal trackpad|
+1523409725.833106|STDEV|63|
+1523409727.863501|M|mt_stop2|
+1523409727.863762|M|checking|
+1523409727.865507|M|unregister internal trackpad|
+1523409727.866362|M|checking|
+1523409727.867232|M|register internal trackpad|
+1523409727.867480|STDEV|63|
+1523409731.113721|M|mt_stop2|
+1523409731.113917|M|checking|
+1523409731.115368|M|unregister internal trackpad|
+1523409731.116154|M|checking|
+1523409731.116743|M|register internal trackpad|
+1523409731.116904|STDEV|63|
+1523409736.130836|M|mt_stop2|
+1523409736.131120|M|checking|
+1523409736.132759|M|unregister internal trackpad|
+1523409736.133674|M|checking|
+1523409736.134624|M|register internal trackpad|
+1523409736.134936|STDEV|63|
+1523409771.197802|M|mt_stop2|
+1523409771.198014|M|checking|
+1523409771.199946|M|unregister internal trackpad|
+1523409771.200827|M|checking|
+1523409771.201798|M|register internal trackpad|
+1523409771.202081|STDEV|63|
+1523409980.702163|M|mt_stop2|
+1523409980.702440|M|checking|
+1523409980.704125|M|unregister internal trackpad|
+1523409980.704943|M|checking|
+1523409980.705903|M|register internal trackpad|
+1523409980.706195|STDEV|63|
+1523409980.831857|M|mt_stop2|
+1523409980.832075|M|checking|
+1523409980.833441|M|unregister internal trackpad|
+1523409980.834274|M|checking|
+1523409980.835125|M|register internal trackpad|
+1523409980.835342|STDEV|63|
+1523409982.786266|M|mt_stop2|
+1523409982.786540|M|checking|
+1523409982.788355|M|unregister internal trackpad|
+1523409982.789188|M|checking|
+1523409982.790057|M|register internal trackpad|
+1523409982.790299|STDEV|63|
+1523409985.919811|M|mt_stop2|
+1523409985.920018|M|checking|
+1523409985.921710|M|unregister internal trackpad|
+1523409985.922579|M|checking|
+1523409985.923461|M|register internal trackpad|
+1523409985.923700|STDEV|63|
+1523409991.337187|M|mt_stop2|
+1523409991.337359|M|checking|
+1523409991.338541|M|unregister internal trackpad|
+1523409991.339109|M|checking|
+1523409991.339723|M|register internal trackpad|
+1523409991.339885|STDEV|63|
+1523410026.220507|M|mt_stop2|
+1523410026.220810|M|checking|
+1523410026.222075|M|unregister internal trackpad|
+1523410026.222841|M|checking|
+1523410026.223709|M|register internal trackpad|
+1523410026.223950|STDEV|63|
+1523410236.703025|M|mt_stop2|
+1523410236.703260|M|checking|
+1523410236.704591|M|unregister internal trackpad|
+1523410236.705140|M|checking|
+1523410236.705866|M|register internal trackpad|
+1523410236.706050|STDEV|63|
+1523410236.845384|M|mt_stop2|
+1523410236.845620|M|checking|
+1523410236.847111|M|unregister internal trackpad|
+1523410236.848007|M|checking|
+1523410236.848712|M|register internal trackpad|
+1523410236.848882|STDEV|63|
+1523410238.900599|M|mt_stop2|
+1523410238.900779|M|checking|
+1523410238.902285|M|unregister internal trackpad|
+1523410238.902860|M|checking|
+1523410238.903700|M|register internal trackpad|
+1523410238.903899|STDEV|63|
+1523410242.151107|M|mt_stop2|
+1523410242.151294|M|checking|
+1523410242.152671|M|unregister internal trackpad|
+1523410242.153429|M|checking|
+1523410242.154205|M|register internal trackpad|
+1523410242.154381|STDEV|63|
+1523410247.636595|M|mt_stop2|
+1523410247.636849|M|checking|
+1523410247.638457|M|unregister internal trackpad|
+1523410247.639457|M|checking|
+1523410247.640525|M|register internal trackpad|
+1523410247.640795|STDEV|63|
+1523410282.169787|M|mt_stop2|
+1523410282.169924|M|checking|
+1523410282.172535|M|unregister internal trackpad|
+1523410282.173108|M|checking|
+1523410282.173749|M|register internal trackpad|
+1523410282.173929|STDEV|63|
+1523410491.377739|usage|loading todays usage|
+1523410491.417917|ASL|[Crashlytics] Version 3.9.3 (128)|
+1523410491.439257|short|init|
+1523410491.439290|short|no event tap functionality used|
+1523410491.514681|LIC|idate 2018-04-11 01:34:51 +0000|
+1523410491.522155|short|register all hotkeys|
+1523410491.535533|LIC|closing previous instance of BetterTouchTool relaunch|
+1523410491.542549|short|register disable hotkeys|
+1523410491.544228|short|register disable hotkeys|
+1523410491.545655|short|register all hotkeys|
+1523410491.550525|LAUNCH|DIDLaunch|
+1523410491.594177|ASL|new multitouch device recognized|
+1523410491.594487|M|checking|
+1523410491.597007|short|call sharedInstance4|
+1523410491.607558|M|mt_stop10|
+1523410491.607762|M|checking|
+1523410491.609490|M|register internal trackpad|
+1523410491.609748|STDEV|63|
+1523410491.609829|swi|check device class|
+1523410491.609839|swi|shortcuts used|
+1523410492.761528|short|eventtap success|
+1523410492.764555|short|register disable hotkeys|
+1523410492.765584|short|register all hotkeys for current app|
+1523410492.766754|short|register all hotkeys|
+1523410493.490336|short|register all hotkeys for current app|
+1523410493.492080|M|mt_stop2|
+1523410493.492268|M|checking|
+1523410493.493201|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1523410493.493490|M|unregister internal trackpad|
+1523410493.494869|M|checking|
+1523410493.495280|ASL|disabling touch for internal trackpad (clamshell)|
+1523410493.495719|M|register internal trackpad|
+1523410493.495923|STDEV|63|
+1523410493.499997|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1523410493.500737|M|checking|
+1523410494.763524|short|register all hotkeys for current app|
+1523410537.218981|M|mt_stop2|
+1523410537.219224|M|checking|
+1523410537.220594|M|unregister internal trackpad|
+1523410537.221495|M|checking|
+1523410537.222467|M|register internal trackpad|
+1523410537.222700|STDEV|63|
+1523410746.648887|M|mt_stop2|
+1523410746.649162|M|checking|
+1523410746.650810|M|unregister internal trackpad|
+1523410746.651784|M|checking|
+1523410746.652678|M|register internal trackpad|
+1523410746.652920|STDEV|63|
+1523410746.815346|M|mt_stop2|
+1523410746.815646|M|checking|
+1523410746.817374|M|unregister internal trackpad|
+1523410746.818292|M|checking|
+1523410746.819236|M|register internal trackpad|
+1523410746.819499|STDEV|63|
+1523410748.815530|M|mt_stop2|
+1523410748.815845|M|checking|
+1523410748.817802|M|unregister internal trackpad|
+1523410748.818623|M|checking|
+1523410748.819568|M|register internal trackpad|
+1523410748.819851|STDEV|63|
+1523410752.065126|M|mt_stop2|
+1523410752.065347|M|checking|
+1523410752.066934|M|unregister internal trackpad|
+1523410752.067523|M|checking|
+1523410752.068259|M|register internal trackpad|
+1523410752.068471|STDEV|63|
+1523410757.316455|M|mt_stop2|
+1523410757.316723|M|checking|
+1523410757.318371|M|unregister internal trackpad|
+1523410757.319165|M|checking|
+1523410757.320255|M|register internal trackpad|
+1523410757.320531|STDEV|63|
+1523410792.165520|M|mt_stop2|
+1523410792.165716|M|checking|
+1523410792.167327|M|unregister internal trackpad|
+1523410792.167884|M|checking|
+1523410792.168532|M|register internal trackpad|
+1523410792.168696|STDEV|63|
+1523411002.646252|usage|loading todays usage|
+1523411002.692649|ASL|[Crashlytics] Version 3.9.3 (128)|
+1523411002.704605|short|init|
+1523411002.704636|short|no event tap functionality used|
+1523411002.766744|LIC|idate 2018-04-11 01:43:22 +0000|
+1523411002.771497|short|register all hotkeys|
+1523411002.784568|LIC|closing previous instance of BetterTouchTool relaunch|
+1523411002.791095|short|register disable hotkeys|
+1523411002.792419|short|register disable hotkeys|
+1523411002.793902|short|register all hotkeys|
+1523411002.798427|LAUNCH|DIDLaunch|
+1523411002.852116|ASL|new multitouch device recognized|
+1523411002.852392|M|checking|
+1523411002.854905|short|call sharedInstance4|
+1523411002.867799|M|mt_stop10|
+1523411002.867977|M|checking|
+1523411002.870128|M|register internal trackpad|
+1523411002.870359|STDEV|63|
+1523411002.870427|swi|check device class|
+1523411002.870438|swi|shortcuts used|
+1523411004.078156|short|eventtap success|
+1523411004.081238|short|register disable hotkeys|
+1523411004.082840|short|register all hotkeys for current app|
+1523411004.084053|short|register all hotkeys|
+1523411004.895299|short|register all hotkeys for current app|
+1523411004.896658|M|mt_stop2|
+1523411004.896964|M|checking|
+1523411004.897910|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1523411004.898181|M|unregister internal trackpad|
+1523411004.899465|M|checking|
+1523411004.899823|ASL|disabling touch for internal trackpad (clamshell)|
+1523411004.900451|M|register internal trackpad|
+1523411004.900668|STDEV|63|
+1523411004.902885|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1523411004.905221|M|checking|
+1523411005.954696|short|register all hotkeys for current app|
+1523411048.145748|M|mt_stop2|
+1523411048.145990|M|checking|
+1523411048.147626|M|unregister internal trackpad|
+1523411048.148490|M|checking|
+1523411048.149374|M|register internal trackpad|
+1523411048.149604|STDEV|63|
+1523411258.633456|usage|loading todays usage|
+1523411258.669557|ASL|[Crashlytics] Version 3.9.3 (128)|
+1523411258.681426|short|init|
+1523411258.681460|short|no event tap functionality used|
+1523411258.738595|LIC|idate 2018-04-11 01:47:38 +0000|
+1523411258.742382|short|register all hotkeys|
+1523411258.754101|LIC|closing previous instance of BetterTouchTool relaunch|
+1523411258.760135|short|register disable hotkeys|
+1523411258.761396|short|register disable hotkeys|
+1523411258.762675|short|register all hotkeys|
+1523411258.766493|LAUNCH|DIDLaunch|
+1523411258.808239|ASL|new multitouch device recognized|
+1523411258.808577|M|checking|
+1523411258.810858|short|call sharedInstance4|
+1523411258.820960|M|mt_stop10|
+1523411258.821123|M|checking|
+1523411258.822810|M|register internal trackpad|
+1523411258.823047|STDEV|63|
+1523411258.823114|swi|check device class|
+1523411258.823126|swi|shortcuts used|
+1523411259.844077|short|eventtap success|
+1523411259.851722|short|register disable hotkeys|
+1523411259.853216|short|register all hotkeys for current app|
+1523411259.854543|short|register all hotkeys|
+1523411260.674416|short|register all hotkeys for current app|
+1523411260.675677|M|mt_stop2|
+1523411260.675859|M|checking|
+1523411260.676651|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1523411260.677533|M|checking|
+1523411260.677719|M|unregister internal trackpad|
+1523411260.677724|ASL|disabling touch for internal trackpad (clamshell)|
+1523411260.678309|M|checking|
+1523411260.678946|M|register internal trackpad|
+1523411260.679129|STDEV|63|
+1523411260.841988|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1523411261.953752|short|register all hotkeys for current app|
+1523411304.146637|M|mt_stop2|
+1523411304.146865|M|checking|
+1523411304.148492|M|unregister internal trackpad|
+1523411304.149385|M|checking|
+1523411304.150290|M|register internal trackpad|
+1523411304.150499|STDEV|63|
+1523411513.661197|M|mt_stop2|
+1523411513.661479|M|checking|
+1523411513.662832|M|unregister internal trackpad|
+1523411513.663584|M|checking|
+1523411513.664502|M|register internal trackpad|
+1523411513.664764|STDEV|63|
+1523411513.827127|M|mt_stop2|
+1523411513.827335|M|checking|
+1523411513.829151|M|unregister internal trackpad|
+1523411513.830132|M|checking|
+1523411513.830800|M|register internal trackpad|
+1523411513.830988|STDEV|63|
+1523411515.828422|M|mt_stop2|
+1523411515.828659|M|checking|
+1523411515.830382|M|unregister internal trackpad|
+1523411515.831237|M|checking|
+1523411515.832100|M|register internal trackpad|
+1523411515.832348|STDEV|63|
+1523411518.960757|M|mt_stop2|
+1523411518.960948|M|checking|
+1523411518.962209|M|unregister internal trackpad|
+1523411518.962974|M|checking|
+1523411518.963795|M|register internal trackpad|
+1523411518.963998|STDEV|63|
+1523411524.452922|M|mt_stop2|
+1523411524.453081|M|checking|
+1523411524.454315|M|unregister internal trackpad|
+1523411524.455063|M|checking|
+1523411524.455775|M|register internal trackpad|
+1523411524.455943|STDEV|63|
+1523411559.228568|M|mt_stop2|
+1523411559.228817|M|checking|
+1523411559.230756|M|unregister internal trackpad|
+1523411559.231672|M|checking|
+1523411559.232653|M|register internal trackpad|
+1523411559.232942|STDEV|63|
+1523411769.688708|M|mt_stop2|
+1523411769.689008|M|checking|
+1523411769.690717|M|unregister internal trackpad|
+1523411769.691552|M|checking|
+1523411769.692527|M|register internal trackpad|
+1523411769.692775|STDEV|63|
+1523411769.822210|M|mt_stop2|
+1523411769.822504|M|checking|
+1523411769.823784|M|unregister internal trackpad|
+1523411769.824628|M|checking|
+1523411769.825486|M|register internal trackpad|
+1523411769.825731|STDEV|63|
+1523411771.888558|M|mt_stop2|
+1523411771.888831|M|checking|
+1523411771.890609|M|unregister internal trackpad|
+1523411771.891537|M|checking|
+1523411771.892486|M|register internal trackpad|
+1523411771.892747|STDEV|63|
+1523411775.189296|M|mt_stop2|
+1523411775.189534|M|checking|
+1523411775.191142|M|unregister internal trackpad|
+1523411775.191979|M|checking|
+1523411775.192884|M|register internal trackpad|
+1523411775.193113|STDEV|63|
+1523411780.490348|M|mt_stop2|
+1523411780.490613|M|checking|
+1523411780.492447|M|unregister internal trackpad|
+1523411780.493452|M|checking|
+1523411780.494351|M|register internal trackpad|
+1523411780.494646|STDEV|63|
+1523411815.189002|M|mt_stop2|
+1523411815.189189|M|checking|
+1523411815.190382|M|unregister internal trackpad|
+1523411815.191141|M|checking|
+1523411815.192133|M|register internal trackpad|
+1523411815.192362|STDEV|63|
+1523412024.709788|M|mt_stop2|
+1523412024.710027|M|checking|
+1523412024.711329|M|unregister internal trackpad|
+1523412024.712355|M|checking|
+1523412024.713246|M|register internal trackpad|
+1523412024.713449|STDEV|63|
+1523412024.843310|M|mt_stop2|
+1523412024.843582|M|checking|
+1523412024.845091|M|unregister internal trackpad|
+1523412024.846161|M|checking|
+1523412024.847073|M|register internal trackpad|
+1523412024.847355|STDEV|63|
+1523412026.843549|M|mt_stop2|
+1523412026.843729|M|checking|
+1523412026.845051|M|unregister internal trackpad|
+1523412026.845637|M|checking|
+1523412026.846455|M|register internal trackpad|
+1523412026.846645|STDEV|63|
+1523412030.076490|M|mt_stop2|
+1523412030.076703|M|checking|
+1523412030.078236|M|unregister internal trackpad|
+1523412030.078827|M|checking|
+1523412030.079515|M|register internal trackpad|
+1523412030.079699|STDEV|63|
+1523412035.344535|M|mt_stop2|
+1523412035.344781|M|checking|
+1523412035.346591|M|unregister internal trackpad|
+1523412035.347513|M|checking|
+1523412035.348451|M|register internal trackpad|
+1523412035.348714|STDEV|63|
+1523412070.229260|M|mt_stop2|
+1523412070.229534|M|checking|
+1523412070.230943|M|unregister internal trackpad|
+1523412070.231763|M|checking|
+1523412070.232694|M|register internal trackpad|
+1523412070.232939|STDEV|63|
+1523412280.572358|usage|loading todays usage|
+1523412280.611679|ASL|[Crashlytics] Version 3.9.3 (128)|
+1523412280.623344|short|init|
+1523412280.623371|short|no event tap functionality used|
+1523412280.682418|LIC|idate 2018-04-11 02:04:40 +0000|
+1523412280.686351|short|register all hotkeys|
+1523412280.698171|LIC|closing previous instance of BetterTouchTool relaunch|
+1523412280.704264|short|register disable hotkeys|
+1523412280.705634|short|register disable hotkeys|
+1523412280.706907|short|register all hotkeys|
+1523412280.711030|LAUNCH|DIDLaunch|
+1523412280.752764|ASL|new multitouch device recognized|
+1523412280.752945|M|checking|
+1523412280.755287|short|call sharedInstance4|
+1523412280.764656|M|mt_stop10|
+1523412280.764803|M|checking|
+1523412280.766151|M|register internal trackpad|
+1523412280.766410|STDEV|63|
+1523412280.766462|swi|check device class|
+1523412280.766472|swi|shortcuts used|
+1523412282.006306|short|eventtap success|
+1523412282.008211|short|register disable hotkeys|
+1523412282.009151|short|register all hotkeys for current app|
+1523412282.009887|short|register all hotkeys|
+1523412282.652383|short|register all hotkeys for current app|
+1523412282.653755|M|mt_stop2|
+1523412282.654058|M|checking|
+1523412282.655424|M|unregister internal trackpad|
+1523412282.656003|M|checking|
+1523412282.656695|M|register internal trackpad|
+1523412282.656903|STDEV|63|
+1523412282.661371|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1523412282.662328|M|checking|
+1523412282.662786|ASL|disabling touch for internal trackpad (clamshell)|
+1523412282.691559|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1523412283.836498|short|register all hotkeys for current app|
+1523412326.242057|M|mt_stop2|
+1523412326.242344|M|checking|
+1523412326.244065|M|unregister internal trackpad|
+1523412326.244978|M|checking|
+1523412326.245926|M|register internal trackpad|
+1523412326.246170|STDEV|63|
+1523412535.691793|M|mt_stop2|
+1523412535.692078|M|checking|
+1523412535.693788|M|unregister internal trackpad|
+1523412535.694713|M|checking|
+1523412535.695595|M|register internal trackpad|
+1523412535.695839|STDEV|63|
+1523412535.765683|M|mt_stop2|
+1523412535.765938|M|checking|
+1523412535.767648|M|unregister internal trackpad|
+1523412535.768561|M|checking|
+1523412535.769561|M|register internal trackpad|
+1523412535.769803|STDEV|63|
+1523412537.857949|M|mt_stop2|
+1523412537.858173|M|checking|
+1523412537.859978|M|unregister internal trackpad|
+1523412537.860844|M|checking|
+1523412537.861744|M|register internal trackpad|
+1523412537.861986|STDEV|63|
+1523412541.142393|M|mt_stop2|
+1523412541.142693|M|checking|
+1523412541.143922|M|unregister internal trackpad|
+1523412541.144782|M|checking|
+1523412541.145644|M|register internal trackpad|
+1523412541.145894|STDEV|63|
+1523412546.344054|M|mt_stop2|
+1523412546.344305|M|checking|
+1523412546.345996|M|unregister internal trackpad|
+1523412546.346780|M|checking|
+1523412546.347687|M|register internal trackpad|
+1523412546.347913|STDEV|63|
+1523412581.241943|M|mt_stop2|
+1523412581.242115|M|checking|
+1523412581.243599|M|unregister internal trackpad|
+1523412581.244459|M|checking|
+1523412581.245389|M|register internal trackpad|
+1523412581.245584|STDEV|63|
+1523412966.690142|swi|check device class|
+1523412966.690176|swi|shortcuts used|
+1523412966.719380|short|register all hotkeys for current app|
+1523412967.500788|swi|check device class|
+1523412967.500808|swi|shortcuts used|
+1523412967.524990|short|register all hotkeys for current app|
+1523412967.527440|swi|check device class|
+1523412967.527458|swi|shortcuts used|
+1523412967.543909|short|register all hotkeys for current app|
+1523413567.055525|swi|check device class|
+1523413567.055546|swi|shortcuts used|
+1523413567.075103|short|register all hotkeys for current app|
+1523414104.137728|SEC|SecureInputActive com.apple.loginwindow|
+1523414104.140191|short|register disable hotkeys|
+1523414104.141191|short|register all hotkeys for current app|
+1523414106.386342|swi|check device class|
+1523414106.386369|swi|shortcuts used|
+1523414106.441631|SEC|SecureInputDisabled com.apple.loginwindow|
+1523414106.443745|short|register all hotkeys|
+1523414142.390928|swi|check device class|
+1523414142.390959|swi|shortcuts used|
+1523414142.415020|short|register all hotkeys for current app|
+1523414162.938225|swi|check device class|
+1523414162.938245|swi|shortcuts used|
+1523414162.959297|short|register all hotkeys for current app|
+1523414185.761687|swi|check device class|
+1523414185.761721|swi|shortcuts used|
+1523414185.788923|short|register all hotkeys for current app|
+1523414209.676780|swi|check device class|
+1523414209.676852|swi|shortcuts used|
+1523414209.697757|short|register all hotkeys for current app|
+1523414509.317611|swi|check device class|
+1523414509.317634|swi|shortcuts used|
+1523414509.341947|short|register all hotkeys for current app|
+1523414510.150591|swi|check device class|
+1523414510.150613|swi|shortcuts used|
+1523414510.176320|short|register all hotkeys for current app|
+1523415064.743320|swi|check device class|
+1523415064.743357|swi|shortcuts used|
+1523415064.772316|short|register all hotkeys for current app|
+1523415069.857952|swi|check device class|
+1523415069.857974|swi|shortcuts used|
+1523415069.888561|short|register all hotkeys for current app|
+1523415076.988088|swi|check device class|
+1523415076.988106|swi|shortcuts used|
+1523415077.007091|short|register all hotkeys for current app|
+1523415078.212549|swi|check device class|
+1523415078.212572|swi|shortcuts used|
+1523415078.240059|short|register all hotkeys for current app|
+1523415105.690531|swi|check device class|
+1523415105.690551|swi|shortcuts used|
+1523415105.711785|short|register all hotkeys for current app|
+1523415109.841574|swi|check device class|
+1523415109.841596|swi|shortcuts used|
+1523415109.862215|short|register all hotkeys for current app|
+1523415116.301568|swi|check device class|
+1523415116.301588|swi|shortcuts used|
+1523415116.321103|short|register all hotkeys for current app|
+1523415294.404104|swi|check device class|
+1523415294.404126|swi|shortcuts used|
+1523415294.432029|short|register all hotkeys for current app|
+1523415295.946154|swi|check device class|
+1523415295.946228|swi|shortcuts used|
+1523415295.970322|short|register all hotkeys for current app|
+1523415375.750373|swi|check device class|
+1523415375.750392|swi|shortcuts used|
+1523415375.770636|short|register all hotkeys for current app|
+1523415378.385352|swi|check device class|
+1523415378.385374|swi|shortcuts used|
+1523415378.403855|short|register all hotkeys for current app|
+1523415391.633173|swi|check device class|
+1523415391.633221|swi|shortcuts used|
+1523415391.654028|short|register all hotkeys for current app|
+1523415393.581024|swi|check device class|
+1523415393.581043|swi|shortcuts used|
+1523415393.598810|short|register all hotkeys for current app|
+1523415516.828812|swi|check device class|
+1523415516.828832|swi|shortcuts used|
+1523415516.856842|short|register all hotkeys for current app|
+1523415518.158283|swi|check device class|
+1523415518.158308|swi|shortcuts used|
+1523415518.179871|short|register all hotkeys for current app|
+1523415533.938101|swi|check device class|
+1523415533.938151|swi|shortcuts used|
+1523415533.960785|short|register all hotkeys for current app|
+1523415543.524596|swi|check device class|
+1523415543.524618|swi|shortcuts used|
+1523415543.544558|short|register all hotkeys for current app|
+1523415786.536590|swi|check device class|
+1523415786.536635|swi|shortcuts used|
+1523415786.560843|short|register all hotkeys for current app|
+1523415835.377429|swi|check device class|
+1523415835.377452|swi|shortcuts used|
+1523415835.413838|short|register all hotkeys for current app|
+1523415835.908413|swi|check device class|
+1523415835.908435|swi|shortcuts used|
+1523415835.931175|short|register all hotkeys for current app|
+1523415851.414274|swi|check device class|
+1523415851.414378|swi|shortcuts used|
+1523415851.434803|short|register all hotkeys for current app|
+1523415881.889360|swi|check device class|
+1523415881.889380|swi|shortcuts used|
+1523415881.912611|short|register all hotkeys for current app|
+1523415888.903607|swi|check device class|
+1523415888.903627|swi|shortcuts used|
+1523415888.921946|short|register all hotkeys for current app|
+1523415896.037491|swi|check device class|
+1523415896.037511|swi|shortcuts used|
+1523415896.057896|short|register all hotkeys for current app|
+1523415909.255097|swi|check device class|
+1523415909.255115|swi|shortcuts used|
+1523415909.273498|short|register all hotkeys for current app|
+1523415962.596884|swi|check device class|
+1523415962.596904|swi|shortcuts used|
+1523415962.618815|short|register all hotkeys for current app|
+1523415966.508776|swi|check device class|
+1523415966.508797|swi|shortcuts used|
+1523415966.527724|short|register all hotkeys for current app|
+1523415984.165230|swi|check device class|
+1523415984.165249|swi|shortcuts used|
+1523415984.185332|short|register all hotkeys for current app|
+1523415988.126692|swi|check device class|
+1523415988.126711|swi|shortcuts used|
+1523415988.146040|short|register all hotkeys for current app|
+1523416020.315475|swi|check device class|
+1523416020.315495|swi|shortcuts used|
+1523416020.339304|short|register all hotkeys for current app|
+1523416022.314792|swi|check device class|
+1523416022.314810|swi|shortcuts used|
+1523416022.331288|short|register all hotkeys for current app|
+1523416049.120760|swi|check device class|
+1523416049.120779|swi|shortcuts used|
+1523416049.142873|short|register all hotkeys for current app|
+1523416050.654528|swi|check device class|
+1523416050.654547|swi|shortcuts used|
+1523416050.670997|short|register all hotkeys for current app|
+1523416120.626106|swi|check device class|
+1523416120.626129|swi|shortcuts used|
+1523416120.646951|short|register all hotkeys for current app|
+1523416122.850989|swi|check device class|
+1523416122.851010|swi|shortcuts used|
+1523416122.868528|short|register all hotkeys for current app|
+1523416189.790057|swi|check device class|
+1523416189.790084|swi|shortcuts used|
+1523416189.811090|short|register all hotkeys for current app|
+1523416192.103330|swi|check device class|
+1523416192.103354|swi|shortcuts used|
+1523416192.121031|short|register all hotkeys for current app|
+1523416219.671276|swi|check device class|
+1523416219.671294|swi|shortcuts used|
+1523416219.692021|short|register all hotkeys for current app|
+1523416221.415729|swi|check device class|
+1523416221.415748|swi|shortcuts used|
+1523416221.432790|short|register all hotkeys for current app|
+1523416256.158172|swi|check device class|
+1523416256.158192|swi|shortcuts used|
+1523416256.181862|short|register all hotkeys for current app|
+1523416322.435512|swi|check device class|
+1523416322.435532|swi|shortcuts used|
+1523416322.459728|short|register all hotkeys for current app|
+1523416324.191560|short|register all hotkeys for current app|
+1523416328.022354|swi|check device class|
+1523416328.022375|swi|shortcuts used|
+1523416328.041175|short|register all hotkeys for current app|
+1523416338.407415|swi|check device class|
+1523416338.407434|swi|shortcuts used|
+1523416338.447672|short|register all hotkeys for current app|
+1523416338.811039|short|register all hotkeys for current app|
+1523416448.670524|swi|check device class|
+1523416448.670544|swi|shortcuts used|
+1523416448.698874|short|register all hotkeys for current app|
+1523416458.263879|swi|check device class|
+1523416458.263902|swi|shortcuts used|
+1523416458.285974|short|register all hotkeys for current app|
+1523416547.196671|swi|check device class|
+1523416547.196695|swi|shortcuts used|
+1523416547.233828|short|register all hotkeys for current app|
+1523416548.288422|swi|check device class|
+1523416548.288442|swi|shortcuts used|
+1523416548.306536|short|register all hotkeys for current app|
+1523416553.032506|swi|check device class|
+1523416553.032556|swi|shortcuts used|
+1523416553.055493|short|register all hotkeys for current app|
+1523416730.551529|swi|check device class|
+1523416730.551548|swi|shortcuts used|
+1523416730.574834|short|register all hotkeys for current app|
+1523416738.460719|swi|check device class|
+1523416738.460738|swi|shortcuts used|
+1523416738.479094|short|register all hotkeys for current app|
+1523416778.159651|swi|check device class|
+1523416778.159670|swi|shortcuts used|
+1523416778.184306|short|register all hotkeys for current app|
+1523416811.327425|swi|check device class|
+1523416811.327441|swi|shortcuts used|
+1523416811.348710|short|register all hotkeys for current app|
+1523416820.995180|swi|check device class|
+1523416820.995298|swi|shortcuts used|
+1523416821.027520|short|register all hotkeys for current app|
+1523416822.068613|swi|check device class|
+1523416822.068635|swi|shortcuts used|
+1523416822.086064|short|register all hotkeys for current app|
+1523416836.974558|swi|check device class|
+1523416836.974579|swi|shortcuts used|
+1523416836.996480|short|register all hotkeys for current app|
+1523416838.596977|swi|check device class|
+1523416838.596999|swi|shortcuts used|
+1523416838.617321|short|register all hotkeys for current app|
+1523416839.599555|swi|check device class|
+1523416839.599584|swi|shortcuts used|
+1523416839.621833|short|register all hotkeys for current app|
+1523416869.126573|swi|check device class|
+1523416869.126594|swi|shortcuts used|
+1523416869.148762|short|register all hotkeys for current app|
+1523417032.853885|ASL|disable|
+1523417032.854827|ASL|adapting icon state global 1 perApp 0 clip 0|
+1523417033.430205|ASL|enable|
+1523417033.430762|M|checking|
+1523417033.436205|ASL|adapting icon state global 0 perApp 0 clip 0|
+1523417033.451443|short|register all hotkeys for current app|
+1523417037.119771|ASL|disable|
+1523417037.120857|ASL|adapting icon state global 1 perApp 0 clip 0|
+1523417037.548059|ASL|enable|
+1523417037.548644|M|checking|
+1523417037.554454|ASL|adapting icon state global 0 perApp 0 clip 0|
+1523417037.568178|short|register all hotkeys for current app|
+1523417037.895924|ASL|disable|
+1523417037.897078|ASL|adapting icon state global 1 perApp 0 clip 0|
+1523417038.172155|ASL|enable|
+1523417038.172769|M|checking|
+1523417038.178362|ASL|adapting icon state global 0 perApp 0 clip 0|
+1523417038.192717|short|register all hotkeys for current app|
+1523417038.571008|ASL|disable|
+1523417038.572162|ASL|adapting icon state global 1 perApp 0 clip 0|
+1523417038.963168|ASL|enable|
+1523417038.963844|M|checking|
+1523417038.969633|ASL|adapting icon state global 0 perApp 0 clip 0|
+1523417038.983702|short|register all hotkeys for current app|
+1523417039.227927|ASL|disable|
+1523417039.229180|ASL|adapting icon state global 1 perApp 0 clip 0|
+1523417039.579993|ASL|enable|
+1523417039.580619|M|checking|
+1523417039.586353|ASL|adapting icon state global 0 perApp 0 clip 0|
+1523417039.600483|short|register all hotkeys for current app|
+1523417039.828806|ASL|disable|
+1523417039.829960|ASL|adapting icon state global 1 perApp 0 clip 0|
+1523417040.357066|ASL|enable|
+1523417040.357708|M|checking|
+1523417040.363594|ASL|adapting icon state global 0 perApp 0 clip 0|
+1523417040.378311|short|register all hotkeys for current app|
+1523417040.620913|ASL|disable|
+1523417040.622109|ASL|adapting icon state global 1 perApp 0 clip 0|
+1523417040.957209|ASL|enable|
+1523417040.957917|M|checking|
+1523417040.964084|ASL|adapting icon state global 0 perApp 0 clip 0|
+1523417040.977693|short|register all hotkeys for current app|
+1523417041.200724|ASL|disable|
+1523417041.201854|ASL|adapting icon state global 1 perApp 0 clip 0|
+1523417041.508703|ASL|enable|
+1523417041.509431|M|checking|
+1523417041.515150|ASL|adapting icon state global 0 perApp 0 clip 0|
+1523417041.529972|short|register all hotkeys for current app|
+1523417041.765689|ASL|disable|
+1523417041.766812|ASL|adapting icon state global 1 perApp 0 clip 0|
+1523417042.099112|ASL|enable|
+1523417042.099609|M|checking|
+1523417042.104829|ASL|adapting icon state global 0 perApp 0 clip 0|
+1523417042.118968|short|register all hotkeys for current app|
+1523417042.327755|ASL|disable|
+1523417042.328972|ASL|adapting icon state global 1 perApp 0 clip 0|
+1523417043.184093|ASL|enable|
+1523417043.184777|M|checking|
+1523417043.191975|ASL|adapting icon state global 0 perApp 0 clip 0|
+1523417043.206129|short|register all hotkeys for current app|
+1523417043.787785|ASL|disable|
+1523417043.788539|ASL|adapting icon state global 1 perApp 0 clip 0|
+1523417044.131941|ASL|enable|
+1523417044.132542|M|checking|
+1523417044.139180|ASL|adapting icon state global 0 perApp 0 clip 0|
+1523417044.153245|short|register all hotkeys for current app|
+1523417044.418761|ASL|disable|
+1523417044.419944|ASL|adapting icon state global 1 perApp 0 clip 0|
+1523417044.938615|ASL|enable|
+1523417044.939209|M|checking|
+1523417044.945094|ASL|adapting icon state global 0 perApp 0 clip 0|
+1523417044.958887|short|register all hotkeys for current app|
+1523417049.368382|swi|check device class|
+1523417049.368404|swi|shortcuts used|
+1523417049.393889|short|register all hotkeys for current app|
+1523417056.011559|swi|check device class|
+1523417056.011584|swi|shortcuts used|
+1523417056.034902|short|register all hotkeys for current app|
+1523417057.599895|swi|check device class|
+1523417057.599915|swi|shortcuts used|
+1523417057.617603|short|register all hotkeys for current app|
+1523417069.319955|swi|check device class|
+1523417069.319995|swi|shortcuts used|
+1523417069.342253|short|register all hotkeys for current app|
+1523417172.714473|swi|check device class|
+1523417172.714540|swi|shortcuts used|
+1523417172.737717|short|register all hotkeys for current app|
+1523417175.993531|swi|check device class|
+1523417175.993553|swi|shortcuts used|
+1523417176.011441|short|register all hotkeys for current app|
+1523417183.262058|swi|check device class|
+1523417183.262079|swi|shortcuts used|
+1523417183.283138|short|register all hotkeys for current app|
+1523417213.653677|swi|check device class|
+1523417213.653697|swi|shortcuts used|
+1523417213.682068|short|register all hotkeys for current app|
+1523417261.928850|swi|check device class|
+1523417261.928872|swi|shortcuts used|
+1523417261.947638|short|register all hotkeys for current app|
+1523417266.876783|swi|check device class|
+1523417266.876808|swi|shortcuts used|
+1523417266.900064|short|register all hotkeys for current app|
+1523417276.262430|swi|check device class|
+1523417276.262450|swi|shortcuts used|
+1523417276.283963|short|register all hotkeys for current app|
+1523417281.979907|swi|check device class|
+1523417281.979930|swi|shortcuts used|
+1523417282.000858|short|register all hotkeys for current app|
+1523417283.823612|swi|check device class|
+1523417283.823634|swi|shortcuts used|
+1523417283.848007|short|register all hotkeys for current app|
+1523417285.731355|swi|check device class|
+1523417285.731376|swi|shortcuts used|
+1523417285.755028|short|register all hotkeys for current app|
+1523417292.521253|swi|check device class|
+1523417292.521275|swi|shortcuts used|
+1523417292.541999|short|register all hotkeys for current app|
+1523417300.192877|swi|check device class|
+1523417300.192894|swi|shortcuts used|
+1523417300.207669|short|register all hotkeys for current app|
+1523417385.441846|swi|check device class|
+1523417385.441882|swi|shortcuts used|
+1523417385.464693|short|register all hotkeys for current app|
+1523417392.411908|swi|check device class|
+1523417392.411929|swi|shortcuts used|
+1523417392.429433|short|register all hotkeys for current app|
+1523417404.700207|swi|check device class|
+1523417404.700246|swi|shortcuts used|
+1523417404.720506|short|register all hotkeys for current app|
+1523417449.560683|swi|check device class|
+1523417449.560703|swi|shortcuts used|
+1523417449.577508|short|register all hotkeys for current app|
+1523417450.873456|swi|check device class|
+1523417450.873483|swi|shortcuts used|
+1523417450.896454|short|register all hotkeys for current app|
+1523417459.019133|swi|check device class|
+1523417459.019154|swi|shortcuts used|
+1523417459.036638|short|register all hotkeys for current app|
+1523417460.272226|swi|check device class|
+1523417460.272271|swi|shortcuts used|
+1523417460.294718|short|register all hotkeys for current app|
+1523417859.355020|swi|check device class|
+1523417859.355042|swi|shortcuts used|
+1523417859.371157|short|register all hotkeys for current app|
+1523417860.424654|swi|check device class|
+1523417860.424674|swi|shortcuts used|
+1523417860.449274|short|register all hotkeys for current app|
+1523417862.196433|swi|check device class|
+1523417862.196467|swi|shortcuts used|
+1523417862.218467|short|register all hotkeys for current app|
+1523417862.524399|swi|check device class|
+1523417862.524419|swi|shortcuts used|
+1523417862.545511|short|register all hotkeys for current app|
+1523419655.142962|swi|check device class|
+1523419655.142990|swi|shortcuts used|
+1523419655.167411|short|register all hotkeys for current app|

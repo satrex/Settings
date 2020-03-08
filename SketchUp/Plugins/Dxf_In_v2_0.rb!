@@ -1,0 +1,923 @@
+=begin
+#-----------------------------------------------------------------------------
+ Dxf_In_v2.0 Beta
+(c) honoluludesktop 2010, 2011
+
+Freely use, and abuse at your own risk. Fitness of use is 
+not warranty implied.
+
+Place this file into the "Google SketchUp 8\Plugins" Folder. To use, 
+select File, Input Dxf, and point to a Dxf file.  For help, select a file 
+to open, and at the options menu, select "Help Options: Get Help"
+
+Dxf_In will attempt to process erroneously, manually edited files as 
+long as the group code is in the correct sequence, including files
+that Sketchup's import rejects.
+
+09/24/2010 - v 0.38 Alpha, first release 
+09/26/2010 - v 0.40 Alpha, fixed arcs, and added error messages.
+09/27/2010 - v 0.42 Alpha, fixed arcs, and speed improved.
+09/29/2010 - v 0.45 Alpha, blocks, error messages.
+09/30/2010 - v 0.50 Beta, added lwpolylines, fixed blocks.
+10/03/2010 - v 1.0   Polyline mesh, error messages, minor fixes.
+10/10/2010 - v 1.2   Select import scale, and origin.
+10/12/2010 - v 1.5   Add face layer, materials, and option menu
+10/14/2010 - v 1.6   Corrected metric conversion table
+10/15/2010 - v 1.9	  Pointer by component bound corner, colors by
+                              Sketchup color names, or Acad color number.
+10/19/2010 - v 1.10 Scaled transformed entities on the pointer.
+10/21/2010 - v 1.14 Interface improvements and save user options.
+10/27/2010 - v 1.15 Face circle when user option to face polylines.
+12/24/2010 - v 1.18 Add line with thickness to translated entities.
+01/10/2011 - v 1.20 Convert lower case entity name to upper case.
+01/12/2011 - v 1.22 Triangulate 3DFACE when not coplaner.
+02/18/2011 - v 1.24 Add thickness to circle, arc, polyline.
+03/24/2011 - v 1.28 Add layers to entities
+04/11/2011 - v 2.0   Update
+#-----------------------------------------------------------------------------
+=end
+
+require 'sketchup.rb'
+
+def atelier_main_proc
+
+	#result = Sketchup.send_action "showRubyPanel:"
+	
+	#basic setup
+	model=Sketchup.active_model
+	entities=model.active_entities
+	definitions=model.definitions
+
+	hdt_load_acad_colors												#put acad colors into memory
+
+	materials=model.materials										#put current model colors into memory
+	@color1=[]
+	materials.each do |e|
+		@color1.push e
+	end
+
+	#Options menu
+	@model_origin=true
+	@t=Geom::Transformation.scaling 1
+	options_flag=0
+	a_values=[]
+	s_value=""
+	s_value=Sketchup.read_default "honoluludesktop", "dxf_values", "None:Inches:Model's:to Faces:by Acad's"
+	a_values=s_value.split(":")
+	
+	units_list=["Meters","Centimeters","Millimeters","Inches","Feet"].join("|")
+	model_selection=["Model's","by Pointer"].join("|")
+	convert_selection=["to Faces","to Edges"].join("|")
+	import_texture=["by Names","by Acad's","by Model's","None"].join("|")
+	update_this=["None","Get Update","Get Help","Save Options"].join("|")
+	prompts=["Help options: ","Import unit: ","Select origin: ","Polylines: ","Materials: "]
+	enums=[update_this,units_list, model_selection,convert_selection,import_texture]
+#	results=inputbox prompts, a_values, enums, my_file_name+" Options"
+	results=inputbox prompts, a_values, enums,"Dxf_In Options"
+	return if not results
+	case results[0]
+	when "Get Update"
+		url="http://forums.sketchucation.com/viewtopic.php?f=323&t=31186&start=0#p274199"
+		UI.openURL("#{url}#")
+		return
+	when "None"
+		#do nothing
+	when "Get Help"
+		UI.messagebox hdt_help, MB_OK |80
+		return
+	when "Save Options"
+		options_flag=1
+	end
+	case results[1]
+	when "Meters"
+		scale_conv=39.3700787 
+		scale_sel="Meters"
+	when "Centimeters"
+		scale_conv=0.393700787 
+		scale_sel="Centimeters"
+	when "Millimeters"
+		scale_conv=0.0393700787 
+		scale_sel="Millimeters"
+	when "Feet"
+		scale_conv=12
+		scale_sel="Feet"
+	when "Inches"
+		scale_conv=1
+		scale_sel="Inches"
+	end
+	@t = Geom::Transformation.scaling scale_conv 	#use to scale @master_group later		
+	case results[2]
+	when "Model's"
+		@model_origin=true
+		origin_sel="Model's"
+	when "by Pointer"
+		@model_origin=false
+		origin_sel="by Pointer"
+	end
+	case results[3]
+	when "to Faces"
+		@dface_option=1
+		dface_sel="to Faces"
+	when "to Edges"
+		@dface_option=0
+		dface_sel="to Edges"
+	end
+	case results[4]
+	when "by Names"
+		@material_option=1
+		material_sel="by Names"
+	when "by Acad's"
+		@material_option=2
+		material_sel="by Acad's"
+	when "by Model's"
+		@material_option=3
+		material_sel="by Model's"
+	when "None"
+		@material_option=0
+		material_sel="None"
+	end
+	if options_flag==1
+		a_values=["None",scale_sel,origin_sel,dface_sel,material_sel]
+		s_value=a_values.join(":")
+		result=Sketchup.write_default "honoluludesktop","dxf_values", s_value
+	end
+
+	#Select file, begin in start up folder
+	ext_name = ""
+	while(ext_name!="DXF")and(ext_name!="OLD")#.OLD is for pp 4d models
+		chosen_file=UI.openpanel("Select DXF File","", "*.Dxf")
+		name_parts=chosen_file.split(".")
+		#ext_name = name_parts[1].upcase
+		ext_name=name_parts[name_parts.length-1].upcase
+		my_file_name=File.basename(chosen_file)
+	end
+	
+	@count=0
+	@next_off= -1
+	@entities_flag=0
+	@block_flag=0
+	@block_ttl=0
+	@polyline_flag=0
+	@lwpolyline_flag=0
+	@polyline_ttl=0
+	@line_flag=0
+	@line_ttl=0
+	@circle_flag=0
+	@circle_ttl=0
+	@arc_flag=0
+	@arc_ttl=0
+	@extrusion_normal=0
+	@dface_flag=0
+	@dface_ttl=0
+	@vertex_flag=0
+	@last_vertex_pt=[]
+	@last_line=""
+	@vertex_coord=[]
+	@vertex_pt=[]
+	@entity=[]
+	@group_all=[]
+	@set_polyface=0
+###polyface mesh variables
+	#@poly_face_mesh_flag=0
+	#@pf_mesh=Geom::PolygonMesh.new
+###
+	@insert_names=[]
+	insert_flag=0
+	@insert_block_flag=0
+
+	@block_layer									#stuff for block reference coordinates
+	@block_name
+	@block_x=0.0
+	@block_y=0.0
+	@block_z=0.0
+
+	vector=Geom::Vector3d.new 0,0,1  	#stuff for arcs and circles
+	@vector2=Geom::Vector3d.new 1,0,0  
+	@vector3=vector.normalize!
+
+	@cancel_unsupported_error_flag=1
+	@cancel_face_error_flag=1
+	@cancel_polyline_error_flag=1
+	@cancel_nested_blk_error=1
+	@cancel_spline_error_flag=1
+
+	@entity_layer=nil
+	@entity_material=nil
+	@set_material=0
+	
+	@lwpl_flag=0
+	@bkl_flag=0
+	@insert_block_coord=[]
+	
+	count=0
+	this_line=""
+	last_line=""
+	odd_number=1
+	insert_ttl=0
+
+	count_100=0
+	count_bar=""
+	ttl_count=1
+	ramFile=[]
+
+	#get all su colors
+	@su_colors=[]
+	@su_colors=Sketchup::Color.names
+
+	#get all block names, save them along with their location
+	aFile=File.open(chosen_file, "r")
+	aFile.each_line do |line|						
+		count=count +1
+		if count==odd_number					#strip dxf tags thanks to TIG
+			odd_number=odd_number + 2
+			line=line.strip
+		end
+
+		last_line=this_line							#save last line data
+		this_line=line
+
+		count_100=count_100 +1				#progress bar at bottom of page
+		if count_100==100
+			count_bar=count_bar + "|"
+			if count_bar.length==150
+				ttl_count=ttl_count+1
+				count_bar=""
+			end
+			count_100=0
+			Sketchup.set_status_text("Stage 1 [  #{ttl_count}  ]: #{count_bar}", SB_PROMPT)
+		end
+
+		if line=="BLOCK\n" 								#check line starts here
+			@bkl_flag=1
+		elsif line=="ENDBLK\n"
+			@bkl_flag=0
+		elsif line=="INSERT\n" and last_line == "0" and @bkl_flag == 1
+			if @cancel_nested_blk_error==1			#OK to show nested block message
+				result=UI.messagebox "Nested blocks not supported", MB_OKCANCEL
+				if result==2
+					@cancel_nested_blk_error=0		#do not show nested block message
+				end
+			end
+		#the following is insert after blocks section
+		elsif line=="INSERT\n" and last_line=="0" and @bkl_flag==0 and insert_flag==0
+			insert_flag = 1
+		elsif(last_line=="8" or last_line=="2" or last_line=="10" or last_line=="20" or last_line=="30") and insert_flag==1
+			if last_line=="30"
+				insert_flag=0
+			end				
+			insert_ttl=insert_ttl + 1
+#			@insert_names.push line
+			@insert_names<<line
+		end
+#		ramFile.push(line)									#save dxf file as ram file
+		ramFile<<(line)										#save dxf file as ram file
+	end
+	aFile.close
+
+	count=0
+	last_line=""
+	this_line=""
+
+	@odd_number=1
+	@polyface_flag=0
+	@polyface_cnt_flag=0
+	@lwpline_verticies=0
+	@unsupported_entities=0
+	@bad_faces=0
+	count_100=0
+	count_bar=""
+	cnt_count=1
+	@line3d=0
+	@height=0
+	@master_group=entities.add_group	#add a group, "@master_group" to entities
+	@block_group=@master_group.entities.add_group
+
+	#from here to get dxf data and convert to SU entities
+	ramFile.each do |line| @line = line						#search for entities @line by @line
+		@count=@count + 1					#set count of lines
+		@last_line=this_line						#initilize @last_line
+		this_line=@line								#save current @line
+		count_100=count_100 +1				#progress bar at bottom of page
+		if count_100==100
+			count_bar=count_bar + "|"
+			if count_bar.length==150
+				cnt_count=cnt_count+1
+				count_bar=""
+			end
+			count_100=0
+			Sketchup.set_status_text("Stage 2 [ #{cnt_count}/#{ttl_count} ]: #{count_bar}", SB_PROMPT)
+		end
+		if @line=="BLOCK\n" 											#Begin test for tags
+			@block_flag=1													#set flag, and add group, @block_group
+			@block_group=@master_group.entities.add_group
+		elsif @line=="ENDBLK\n" 									#and @block_flag == 1
+			@block_flag=0													#clear flag and 			
+#			@block_group.name=@block_name					#name group
+			if @block_layer!="0" and @block_layer!=nil	#name layer
+				new_layer=Sketchup.active_model.layers.add(@block_layer.to_s)
+				@block_group.layer=new_layer
+			end
+			@block_group=@block_group.to_component#####change block to component
+			@block_group.name=@block_name				#####name component
+#####
+#			entities.erase_entities @block_group
+#####
+		elsif @line=="ENTITIES\n"								#now look for entities section
+			@entities_flag=1
+		elsif @line=="ENDSEC\n" and @entities_flag==1
+			@entities_flag=0												#end of entities, clear flag
+		elsif @last_line=="70" and @line.to_f==64 		#####Not sure why this is best here
+			@polyface_flag=1											#####to here. Test for poly-entity 
+		elsif @block_flag==1 and @entities_flag==0
+			hdt_block_in													#go hdt_block_in to get group offset info
+		elsif @block_flag==0 and @entities_flag==1
+			hdt_entities_in													#go hdt_entities_in to process entities
+		end
+	end																			#finish reading dxf ram file of entities
+
+	#come here after import entities have been built into SU ones.
+	#if @polyline_ttl+@line_ttl+@dface_ttl+@arc_ttl+@circle_ttl == 0
+	if @dface_ttl+@polyline_ttl+@line_ttl+@dface_ttl+@arc_ttl+@circle_ttl==0
+		UI.messagebox "<Error> or Empty File"		#if no entities created, end attempt
+		return
+	end	
+
+	if @model_origin==false									#if by pointer, ignore select = false
+		my_instance=@master_group.to_component#this makes component
+		my_definition=my_instance.definition
+		my_definition.entities.transform_entities(@t,my_definition.entities.to_a)#thanks to Chris and tt
+		bb=my_instance.bounds								#save the bounds info for later
+	 	my_definition.name=my_file_name				#add name to definition, and relocate insertion pt as below
+		my_definition.insertion_point=bb.corner(0)	#thanks to tt
+		select=UI.messagebox("Blocks | Groups         :  "+ @block_ttl.to_s+"\n\nUnsupported Entities:  "+@unsupported_entities.to_s+"\nBad Faces                 :  "+@bad_faces.to_s+"\n\nConnected Edges     :  "+@polyline_ttl.to_s+"\nFaces                        :  "+@dface_ttl = @dface_ttl.to_s+"\nLines                         :  "+@line_ttl.to_s+"\nArcs                          :  "+@arc_ttl.to_s+"\nCircles                       :  "+@circle_ttl.to_s+ "\n\nLocate Dxf Entities", MB_OK  |80)
+		my_instance.erase!							
+		model.place_component my_definition			#make true for repeat insert and as below, imput at end of pointer
+	else
+		@master_group.transform! @t						#scale as necessary
+		select=UI.messagebox("Blocks | Groups         :  "+ @block_ttl.to_s+"\n\nUnsupported Entities:  "+@unsupported_entities.to_s+"\nBad Faces                 :  "+@bad_faces.to_s+"\n\nConnected Edges     :  "+@polyline_ttl.to_s+"\nFaces                        :  "+@dface_ttl = @dface_ttl.to_s+"\nLines                         :  "+@line_ttl.to_s+"\nArcs                          :  "+@arc_ttl.to_s+"\nCircles                       :  "+@circle_ttl.to_s+ "\n\nGroup Dxf Entities", MB_YESNO  |80)
+		if select==7 													#NO insert entities, not group
+			@master_group.explode
+		else 																#insert group on model origin
+			if @master_group.name==""					#must be no name, so add file name as below
+				@master_group.name=my_file_name
+			end
+		end
+	end
+end
+
+def hdt_block_in													#come here to get inserted block offsets.
+	if @last_line == "2"
+		insert_names_line = -1
+		@block_name = ""
+		@block_x = 0.0
+		@block_y = 0.0
+		@block_z = 0.0
+		@insert_names.each do |insert_vari|				#search saved INSERT data
+			insert_names_line = insert_names_line + 1
+			if insert_vari == @line
+				@block_ttl = @block_ttl + 1
+				@block_layer = @insert_names[insert_names_line-1].strip
+				@block_name = @insert_names[insert_names_line].strip
+				@block_x = @insert_names[insert_names_line+1].to_f
+				@block_y = @insert_names[insert_names_line+2].to_f
+				@block_z = @insert_names[insert_names_line+3].to_f
+				if  @polyface_flag == 1 and @block_name != "AME_NIL"	#AME_NIL is a kick the tire fix
+					@polyface_flag = 0
+					if @cancel_unsupported_error_flag == 1
+						@unsupported_entities = @unsupported_entities +1
+						result = UI.messagebox("Block "+@block_name+" contains a unsupported mesh     ", MB_OKCANCEL)
+						if result == 2
+							@cancel_unsupported_error_flag = 0
+						end
+					end
+				end
+				@polyface_flag = 0					#here in case AME_NIL, don't know if matter
+			end
+		end
+	end
+	if @block_name != ""
+		hdt_entities_in
+	end
+end
+
+def hdt_circle_in
+	hdt_get_layer_material								#add layer to circle  3/24/11
+	if @last_line=="39" 									#thickness #2/18/11
+		@height=@line.to_f
+		@line3d=1
+	elsif @last_line == "10" or @last_line == "20" or @last_line == "30" or @last_line == "40"
+		@entity.push @line.to_f
+		if @last_line == "40"
+			@circle_ttl = @circle_ttl + 1
+			@circle_flag = 0
+			if @block_flag == 1							#add entity to @block_group.@master_group
+				edges = @block_group.entities.add_circle([@entity[0]+@block_x, @entity[1]+@block_y, @entity[2]+@block_z], @vector3, @entity[3])
+				hdt_put_ent_layer(edges)				#layer edges to circle 3/24/11
+				if @dface_option == 1
+					group = @block_group.entities.add_face(edges.to_a)
+					hdt_put_layer_material(group)	#layer face to circle 3/24/11
+				end
+				hdt_do_block_thickness(edges)	#2/18/11
+			else													#add entity to @master_group
+				edges = @master_group.entities.add_circle([@entity[0]+@block_x, @entity[1]+@block_y, @entity[2]+@block_z], @vector3, @entity[3])
+				hdt_put_ent_layer(edges)				#layer edges to circle 3/24/11
+				if @dface_option == 1
+					group = @master_group.entities.add_face(edges.to_a)
+					hdt_put_layer_material(group)	#layer face to circle 3/24/11
+				end
+				hdt_do_master_thickness(edges)	#2/18/11
+			end
+			@entity.clear
+		end
+	end
+end
+
+def hdt_arc_in
+	hdt_get_layer_material					# add layer to arc 3/24/11
+	if @last_line == "230"					#look for extension normal tag
+		if @line == "-1.0\n"					#imperically determined, maybe another kick the tire 
+			@extrusion_normal = 1
+		else 
+			@extrusion_normal = 0
+		end
+	elsif @last_line=="39" 					#thickness 2/18/11
+		@height=@line.to_f
+		@line3d=1
+	elsif(@last_line == "10" or @last_line == "20" or @last_line == "30" or @last_line == "40" or @last_line == "50" or @last_line == "51")
+		@entity.push @line.to_f
+		if @last_line == "51"
+			@arc_ttl = @arc_ttl + 1
+			@arc_flag = 0
+			if @block_flag == 1					#add entity to @block_group.@master_group
+				if(@entity[5] == 0.0 or @entity[5] < @entity[4])
+					@entity[5] = @entity[5]+360.0
+				end
+				if @extrusion_normal != 1		#for extension normal 1arc_edges = @master_group.entities.add_arc([@entity[0]+@block_x, @entity[1]+@block_y, @entity[2]+@block_z],@vector2,@vector3,@entity[3],(@entity[4]*Math::PI)/180,((@entity[5])*Math::PI)/180)
+					arc_edges = @block_group.entities.add_arc([@entity[0]+@block_x, @entity[1]+@block_y, @entity[2]+@block_z],@vector2,@vector3,@entity[3],(@entity[4]*Math::PI)/180,((@entity[5])*Math::PI)/180)
+					hdt_do_block_thickness(arc_edges) #2/18/11
+				else										#for extension normal -1 4d2Dxf standard
+					arc_edges = @block_group.entities.add_arc([(1.5*-@entity[0])+@block_x, -@entity[1]+@block_y,-@entity[2]+@block_z],@vector2,@vector3,@entity[3],((90+@entity[4])*Math::PI)/180,((90+@entity[5])*Math::PI)/180)
+				end
+			else											#add entity to @master_group
+				if @entity[5] == 0.0 or @entity[5] < @entity[4]
+					@entity[5] = @entity[5]+360.0
+				end
+				if @extrusion_normal != 1		#for extension normal 1
+					arc_edges = @master_group.entities.add_arc([@entity[0]+@block_x, @entity[1]+@block_y, @entity[2]+@block_z],@vector2,@vector3,@entity[3],(@entity[4]*Math::PI)/180,((@entity[5])*Math::PI)/180)
+					hdt_do_master_thickness(arc_edges) #2/18/11
+				else										#for extension normal -1 4d2Dxf standard
+					arc_edges = @master_group.entities.add_arc([(1.5*-@entity[0])+@block_x, -@entity[1]+@block_y,-@entity[2]+@block_z],@vector2,@vector3,@entity[3],((90+@entity[4])*Math::PI)/180,((90+@entity[5])*Math::PI)/180)
+				end
+			end
+			hdt_put_ent_layer(arc_edges)	#add layer to arc 3/24/11
+			@entity.clear
+		end
+	end
+end
+
+def hdt_dface_in
+	hdt_get_layer_material
+	if @last_line == "10" or @last_line == "20" or @last_line == "30" or @last_line == "11" or @last_line == "21" or @last_line == "31" or @last_line == "12" or @last_line == "22" or @last_line == "32" or @last_line == "13" or @last_line == "23" or @last_line == "33"
+		@entity.push @line.to_f
+		if @last_line == "33"
+			@dface_ttl = @dface_ttl + 1
+			@dface_flag = 0
+			if @block_flag == 1						#add entity to @block_group.@master_group
+				begin
+					ent_group = @block_group.entities.add_face([@entity[0]+@block_x,@entity[1]+@block_y,@entity[2]+@block_z],[@entity[3]+@block_x,@entity[4]+@block_y,@entity[5]+@block_z],[@entity[6]+@block_x,@entity[7]+@block_y, @entity[8]+@block_z],[@entity[9]+@block_x,@entity[10]+@block_y,@entity[11]+@block_z])
+					hdt_put_layer_material(ent_group)
+				rescue
+					begin									#here to create triangular faces if 3DFACE (above) is not coplaner, v1.21
+						ent_group = @block_group.entities.add_face([@entity[0]+@block_x,@entity[1]+@block_y,@entity[2]+@block_z],[@entity[3]+@block_x,@entity[4]+@block_y,@entity[5]+@block_z],[@entity[6]+@block_x,@entity[7]+@block_y, @entity[8]+@block_z])
+						hdt_put_layer_material(ent_group)	
+						ent_group = @block_group.entities.add_face([@entity[0]+@block_x,@entity[1]+@block_y,@entity[2]+@block_z],[@entity[6]+@block_x,@entity[7]+@block_y, @entity[8]+@block_z],[@entity[9]+@block_x,@entity[10]+@block_y,@entity[11]+@block_z])
+						hdt_put_layer_material(ent_group)	
+					rescue
+						type = "Block name "+@block_name+" bad 3dFace  "
+						hdt_database_error(type)
+					end
+				end
+			else												#add entity to @master_group
+				begin
+					ent_group = @master_group.entities.add_face([@entity[0]+@block_x,@entity[1]+@block_y,@entity[2]+@block_z],[@entity[3]+@block_x,@entity[4]+@block_y,@entity[5]+@block_z],[@entity[6]+@block_x,@entity[7]+@block_y, @entity[8]+@block_z],[@entity[9]+@block_x,@entity[10]+@block_y,@entity[11]+@block_z])
+					hdt_put_layer_material(ent_group)	
+				rescue
+					begin									#here to create triangular faces if 3DFACE (above) is not coplaner, v1.21
+						ent_group = @master_group.entities.add_face([@entity[0]+@block_x,@entity[1]+@block_y,@entity[2]+@block_z],[@entity[3]+@block_x,@entity[4]+@block_y,@entity[5]+@block_z],[@entity[6]+@block_x,@entity[7]+@block_y, @entity[8]+@block_z])
+						hdt_put_layer_material(ent_group)	
+						ent_group = @master_group.entities.add_face([@entity[0]+@block_x,@entity[1]+@block_y,@entity[2]+@block_z],[@entity[6]+@block_x,@entity[7]+@block_y, @entity[8]+@block_z],[@entity[9]+@block_x,@entity[10]+@block_y,@entity[11]+@block_z])
+						hdt_put_layer_material(ent_group)	
+					rescue
+						type = " Bad 3dFace  "
+						hdt_database_error(type)
+					end
+				end
+			end
+			@entity.clear
+		end
+	end
+end
+
+def hdt_polyline_in
+	hdt_get_layer_material					# 3/21/11
+	if @last_line=="39" 						#thickness 2/18/11
+		@height=@line.to_f
+		@line3d=1
+	elsif @line == "VERTEX\n" and @last_line == "0"
+			@vertex_flag = 1
+	elsif(@last_line == "10" or @last_line == "20" or @last_line == "30") and @vertex_flag == 1
+		@vertex_pt.push @line.to_f
+		if @last_line == "30" and @last_vertex_pt != [@vertex_pt[0],@vertex_pt[1],@vertex_pt[2]] and @vertex_flag == 1
+			if [@vertex_pt[0],@vertex_pt[1],@vertex_pt[2]] == [0.0,0.0,0.0] and @polyface_flag == 1
+				if @set_polyface == 0
+					result = UI.messagebox "Unsupported PolyFace Mesh",MB_OKCANCEL
+					if result == 2
+						@set_polyface = 1
+					end
+				end
+			else										#must be regular polyline
+				@last_vertex_pt = [@vertex_pt[0],@vertex_pt[1],@vertex_pt[2]]
+				@vertex_coord.push([@vertex_pt[0] + @block_x, @vertex_pt[1] + @block_y, @vertex_pt[2] + @block_z])
+			end
+			@vertex_pt.clear
+			@vertex_flag = 0
+		end	
+	elsif @line == "SEQEND\n"			#end of polyline, go on to insert
+		@polyline_flag = 0
+		@last_vertex_pt.clear
+		if	@dface_option == 0 and not @vertex_coord.empty? 	#here if no faces selected
+			@polyline_ttl = @polyline_ttl + 1
+			if @block_flag == 1				#add entity to @block_group.@master_group
+				edges = @block_group.entities.add_edges(@vertex_coord)
+			else										#add entity to @master_group
+				edges = @master_group.entities.add_edges(@vertex_coord)
+			end
+			hdt_do_master_thickness(edges)	#2/18/11
+			hdt_put_ent_layer(edges)				# 3/21/11
+			#hdt_put_layer_material(edges)		# 3/21/11
+		elsif @dface_option == 1 and not @vertex_coord.empty?	#here if faces selected
+			@dface_ttl = @dface_ttl + 1
+			if @block_flag == 1	
+				begin								#add entity to @block_group.@master_group
+					this_face = @block_group.entities.add_face(@vertex_coord)
+					hdt_put_layer_material(this_face)
+				rescue
+					type = "Block name "+@block_name+" bad polyline  "
+					hdt_database_error(type)
+				end
+			else										#add entity to @master_group
+				begin
+					group = @master_group.entities.add_face(@vertex_coord)
+					hdt_put_layer_material(group)
+				rescue
+					@dface_ttl = @dface_ttl - 1
+					if @cancel_polyline_error_flag == 1
+						selection = UI.messagebox "<Error> bad polyline", MB_OKCANCEL
+						if selection == 2
+							@cancel_polyline_error_flag = 0
+						end
+					end
+				end
+			end
+		end
+		@vertex_coord.clear
+	end
+end
+
+def hdt_do_block_thickness(edges)	#2/18/11
+	if @line3d==1
+		edges.each do |ee|
+			@block_group.entities.add_face(ee.start,ee.end,[ee.end.position.x,ee.end.position.y,ee.end.position.z+@height],[ee.start.position.x,ee.start.position.y,ee.start.position.z+@height])
+		end
+		@height=0
+		@line3d=0
+	end
+end
+
+def hdt_do_master_thickness(edges)	#2/18/11
+	if @line3d==1
+		edges.each do |ee|
+			@master_group.entities.add_face(ee.start,ee.end,[ee.end.position.x,ee.end.position.y,ee.end.position.z+@height],[ee.start.position.x,ee.start.position.y,ee.start.position.z+@height])
+		end
+		@height=0
+		@line3d=0
+	end
+end
+
+def hdt_lwpolyline_in
+	hdt_get_layer_material
+	if @last_line == "90"
+		@lwpline_verticies = @line.to_f
+	elsif @last_line == "70" and @line.strip=="1"# 3/24/11loses lwpolyline when @line.strip = "1"
+		@lwpl_flag=1
+	elsif @last_line == "38"			#elevation patch 12/22/10
+		@block_z=@line.to_f			#2/17/11 change to following line
+		#@block_z=@block_z+@line.to_f
+	elsif @last_line == "10" or @last_line == "20"
+		@vertex_pt.push @line.to_f
+		if @last_line == "20" 
+			@lwpline_verticies = @lwpline_verticies - 1
+			@vertex_coord.push([@vertex_pt[0] + @block_x, @vertex_pt[1] + @block_y, 0.0 + @block_z])
+			@vertex_pt.clear
+		end
+	elsif @lwpline_verticies == 0 # 3/24/11 or @line == "0"	#end of lwpolyline
+		if not @vertex_coord.empty?
+			if @lwpl_flag==1			# 3/24/11 if / end added
+				@vertex_coord.push @vertex_coord[0]
+				@lwpl_flag=0
+			end
+			@polyline_ttl = @polyline_ttl + 1
+			@lwpolyline_flag = 0
+			@lwpline_verticies = 0
+			if @block_flag == 1				#add entity to @block_group.@master_group
+				group = @block_group.entities.add_edges(@vertex_coord)
+			else										#add entity to @master_group
+				group = @master_group.entities.add_edges(@vertex_coord)
+			end
+		end
+		hdt_put_ent_layer(group)			# add layer to lwpolyline 3/24/11
+		@vertex_coord.clear
+	end
+end
+
+def hdt_line_in
+	hdt_get_layer_material						#add layer to line 3/24/11
+	if @last_line=="39" 
+		@height=@line.to_f
+		@line3d=1
+	elsif @last_line == "10" or @last_line == "20" or @last_line == "30" or @last_line == "11" or @last_line == "21" or @last_line == "31"
+		@entity.push @line.to_f				#add coordinate data to array
+		if @last_line == "31"					#last data
+			if @line3d==1
+				@dface_ttl = @dface_ttl + 1
+			else
+				@line_ttl = @line_ttl + 1		#inc line count
+			end
+			@line_flag = 0							#line flag off
+			if @block_flag == 1					#line in a block, add entity to @block_group.@master_group
+				if @line3d==1
+					ent_group = @block_group.entities.add_face([@entity[0]+@block_x,@entity[1]+@block_y,@entity[2]+@block_z],[@entity[3]+@block_x,@entity[4]+@block_y,@entity[5]+@block_z],[@entity[3]+@block_x,@entity[4]+@block_y, @entity[5]+@block_z+@height],[@entity[0]+@block_x,@entity[1]+@block_y,@entity[2]+@block_z+@height])
+					hdt_put_layer_material(ent_group)	
+					@line3d=0
+					@height=0
+				else
+					group = @block_group.entities.add_line([@entity[0]+@block_x, @entity[1]+@block_y, @entity[2]+@block_z], [@entity[3]+@block_x,@entity[4]+@block_y, @entity[5]+@block_z])
+					hdt_put_layer_material(group)	#add layer to line 3/24/11
+				end
+			else													#line not in block, add entity to @master_group
+				if @line3d==1
+					ent_group = @master_group.entities.add_face([@entity[0]+@block_x,@entity[1]+@block_y,@entity[2]+@block_z],[@entity[3]+@block_x,@entity[4]+@block_y,@entity[5]+@block_z],[@entity[3]+@block_x,@entity[4]+@block_y, @entity[5]+@block_z+@height],[@entity[0]+@block_x,@entity[1]+@block_y,@entity[2]+@block_z+@height])
+					hdt_put_layer_material(ent_group)	
+					@line3d=0
+					@height=0
+				else
+					group = @master_group.entities.add_line([@entity[0]+@block_x, @entity[1]+@block_y, @entity[2]+@block_z], [@entity[3]+@block_x,@entity[4]+@block_y, @entity[5]+@block_z])
+					hdt_put_layer_material(group)	#add layer to line 3/24/11
+				end
+			end
+			@entity.clear
+		end
+	end
+end
+
+def hdt_insert_block
+	if @last_line=="2"						#block name tag
+		@insert_block_name=@line		#save block  name, then save location
+	elsif @last_line=="10" or @last_line=="20" or @last_line=="30" 
+		@insert_block_coord<<@line.to_f
+		if @last_line=="30" 
+			@insert_block_flag=0
+			model=Sketchup.active_model
+			entities=model.entities
+			definitions=model.definitions
+			definitions.each do |e|
+#####
+#group=@master_group.entities.add_instance(e.name, Geom::Transformation.new(Geom::Point3d.new(@insert_block_coord[0],@insert_block_coord[1],@insert_block_coord[2])))
+#				e.instances.each do |i|
+#					if i.name==@insert_block_name.strip
+#						#puts @insert_block_name			#block name
+#						#puts i.name								#block name
+#						#puts i.definition.name				#group#n
+#						if i.definition.is_a? Sketchup::ComponentDefinition
+#							group=@master_group.entities.add_instance(i.definition, Geom::Transformation.new(Geom::Point3d.new(@insert_block_coord[0],@insert_block_coord[1],@insert_block_coord[2])))
+#						#elsif i.definition.is_a? Sketchup::Group
+#							#group=@master_group.entities.add_group(i.definition, Geom::Transformation.new(Geom::Point3d.new(@insert_block_coord[0],@insert_block_coord[1],@insert_block_coord[2])))
+#						end
+#					end
+#				end
+#####
+			end
+		end
+	end
+end
+
+def hdt_entities_in									#come here to ID entity then go to its procedure for processing
+	if @line.upcase == "LINE\n" and @last_line == "0"	
+		@line_flag = 1								#@last_line == "0" above used to test if entity name not user data
+	elsif @line_flag == 1
+		hdt_line_in
+	elsif @line.upcase == "LWPOLYLINE\n" and @last_line == "0"
+		@lwpolyline_flag = 1
+	elsif @lwpolyline_flag == 1
+		hdt_lwpolyline_in
+	elsif @line.upcase == "POLYLINE\n" and @last_line == "0"
+		@polyline_flag = 1
+	elsif @polyline_flag == 1
+		hdt_polyline_in
+	elsif @line.upcase == "3DFACE\n" and @last_line == "0"
+		@dface_flag = 1
+	elsif @dface_flag == 1
+		hdt_dface_in
+	elsif @line.upcase == "CIRCLE\n" and @last_line == "0"
+		@circle_flag = 1
+	elsif @circle_flag == 1
+		hdt_circle_in
+	elsif @line.upcase == "ARC\n" and @last_line == "0"
+		@arc_flag = 1
+	elsif @arc_flag == 1
+		hdt_arc_in
+	elsif @line.upcase == "INSERT\n" and @last_line == "0" and @entities_flag==1 and @block_flag==0
+		@insert_block_flag=1
+	elsif @insert_block_flag==1
+#####hdt_insert_block
+	elsif @line.upcase =="SPLINE\n" and @last_line == "0"
+		@block_ttl=@block_ttl+1
+		if @cancel_spline_error_flag==1
+			UI.messagebox "Database contains Unsupported Entitys: SPLINE",MB_OK
+			@cancel_spline_error_flag=0
+		end
+	end
+end
+
+def hdt_put_ent_layer(entity_array)		#put entity array (edges), on layer
+	begin
+		entity_array.each do |e|
+			e.layer = @entity_layer
+		end
+	rescue
+
+	end
+end
+
+def hdt_get_layer_material
+	if @last_line == "8"
+		@entity_layer = @line.strip
+		model = Sketchup.active_model  
+		layers = model.layers 
+		layer_flag = false
+		layers.each do |layer|
+			if @entity_layer == layer
+				layer_flag = true
+			end
+		end
+		if layer_flag == false
+			layers.add(@entity_layer.to_s)
+		end
+	elsif @last_line == "62"				#code for color
+		@entity_material = @line.strip	#save material string
+		if @material_option == 2			#if acad numbers
+			@set_material = 1					#set flag
+		end
+	end
+end
+
+def hdt_put_layer_material(ent_group)
+	begin												#trap error from bad dxf
+#####
+		ent_group.layer=@entity_layer		#add face layer
+		ent_group.edges.each{|e|e.layer=@entity_layer} #thanks to Tig
+#####
+	rescue
+		return											#bad line entity
+	end
+	if @material_option == 0 					#do nothing
+		#do nothing
+	elsif @material_option == 1 				#select color by name
+		@su_colors.each do |ea_color|
+			if ea_color == @entity_material
+				color = Sketchup::Color.new @entity_material
+				ent_group.material = color
+			end
+		end
+	elsif @material_option == 2 and @entity_material.to_i < 256  and @set_material == 1 #by acad number
+		@acad_colors.each do |eacolor|
+			if eacolor[0] == @entity_material.to_i	#loop through acad color table to match string
+				color = Sketchup::Color.new [eacolor[1],eacolor[2],eacolor[3]] #extract rgb values to set color
+				ent_group.material = color 					#add color to face material
+			end
+		end
+		@set_material = 0										#turn off flag
+	elsif @material_option == 3 							#current model colors
+		@color1.each do |mcolor|
+			if mcolor.display_name == @entity_material
+				color = Sketchup::Color.new (mcolor.color)
+				ent_group.material = color
+			end
+		end
+	end
+end
+
+def hdt_database_error(type)
+	@dface_ttl = @dface_ttl - 1
+	@bad_faces = @bad_faces + 1
+	if @cancel_face_error_flag == 1
+		selection = UI.messagebox "<Error>"+type, MB_OKCANCEL
+		if selection == 2
+			@cancel_face_error_flag = 0
+		end
+	end
+end
+
+def hdt_load_acad_colors
+	@acad_colors = [[0,0,0,0],[1,255,0,0],[2,255,255,0],[3,0,255,0],[4,0,255,255],[5,0,0,255],[6,255,0,255],[7,255,255,255],
+	[8,65,65,65],[9,128,128,128],[10,255,0,0],[11,255,170,170],[12,189,0,0],[13,189,126,126],[14,129,0,0],[15,129,86,86],
+	[16,104,0,0],[17,104,69,69],[18,79,0,0],[19,79,53,53],[20,255,63,0],[21,255,199,170],[22,189,46,0],[23,189,131,126],
+	[24,129,31,0],[25,129,96,86],[25,104,25,0],[27,104,78,69],[28,79,19,0],[29,79,59,53],[30,255,127,0],[31,255,212,170],
+	[32,189,94,0],[33,189,157,126],[32,189,94,0],[33,189,157,126],[34,129,64,0],[35,129,107,86],[36,104,52,0],[37,104,86,69],
+	[38,79,39,0],[38,79,39,0],[39,79,66,53],[40,255,191,0],[41,255,234,170],[42,189,141,0],[43,189,173,126],[44,129,96,0],
+	[45,129,118,86],[46,104,78,0],[47,104,95,69],[48,79,59,0],[49,79,73,53],[50,255,255,0],[51,255,255,170],[52,189,189,0],
+	[53,189,189,126],[54,129,129,86],[55,129,129,86],[56,104,104,0],[57,104,104,69],[58,79,79,0],[59,79,79,53],[60,191,255,0],
+	[61,234,255,170],[62,141,189,0],[63,173,189,126],[64,96,129,0],[65,118,129,86],[66,78,104,0],[67,95,104,69],[68,59,79,0],
+	[69,73,79,53],[70,127,255,0],[71,212,255,170],[72,94,189,0],[73,157,189,126],[74,64,129,0],[75,107,129,86],[76,52,104,0],
+	[77,86,104,69],[78,39,79,0],[79,66,79,53],[80,63,255,0],[81,191,255,170],[82,46,189,0],[83,141,189,126],[84,31,129,0],
+	[85,96,129,86],[86,25,104,0],[87,78,104,69],[88,19,79,0],[89,59,79,53],[90,0,255,0],[91,170,255,170],[92,0,189,0],
+	[93,126,189,126],[94,0,129,0],[95,86,129,86],[96,0,104,0],[97,69,104,69],[98,0,79,0],[99,53,79,53],[100,0,255,63],
+	[101,170,255,191],[102,0,189,46],[103,126,189,141],[104,0,129,31],[105,86,129,96],[106,0,104,25],[107,69,104,78],
+	[108,0,79,19],[109,53,79,59],[110,0,255,127],[111,170,255,212],[112,0,189,94],[113,126,189,157],[114,0,129,64],
+	[115,86,129,107],[116,0,104,52],[117,69,104,86],[118,0,79,39],[119,53,79,66],[120,0,255,191],[121,170,255,234],
+	[122,0,189,141],[123,126,189,173],[124,0,129,96],[125,86,129,118],[126,0,104,78],[127,69,104,95],[128,0,79,59],
+	[129,53,79,73],[130,0,255,255],[131,170,255,255],[132,0,189,189],[133,126,189,189],[134,0,129,129],[135,86,129,129],
+	[136,0,104,104],[137,69,104,104],[138,0,79,79],[139,53,79,79],[140,0,191,255],[141,170,234,255],[142,0,141,189],
+	[143,126,173,189],[144,0,96,129],[145,86,118,129],[146,0,78,104],[147,69,95,104],[148,0,59,79],[149,53,73,79],
+	[150,0,127,255],[151,170,212,255],[152,170,212,255],[153,126,157,189],[154,0,64,129],[155,86,107,129],[156,0,52,104],
+	[157,69,86,104],[158,0,39,79],[159,53,66,79],[160,0,63,255],[161,170,191,255],[162,0,46,189],[163,126,141,189],
+	[164,0,31,129],[165,86,96,129],[166,0,25,104],[167,69,78,104],[168,0,19,79],[169,53,59,79],[170,0,0,255],[171,170,170,255],
+	[172,0,0,189],[173,126,126,189],[174,0,0,129],[175,86,86,129],[176,0,0,104],[177,69,69,104],[178,0,0,79],[179,53,53,79],
+	[180,63,0,255],[181,191,170,255],[182,46,0,189],[183,141,126,189],[184,31,0,129],[185,96,86,129],[186,25,0,104],
+	[187,78,69,104],[188,19,0,79],[189,59,53,79],[190,127,0,255],[191,212,170,255],[192,94,0,189],[193,157,126,189],
+	[194,64,0,129],[195,107,86,129],[196,52,0,104],[197,86,69,104],[198,39,0,79],[199,66,53,79],[200,191,0,255],
+	[201,234,170,255],[202,141,0,189],[203,173,126,189],[204,96,0,129],[205,118,86,129],[206,78,0,104],[207,95,69,104],
+	[208,59,0,79],[209,73,53,79],[210,255,0,255],[211,255,170,255],[212,189,0,189],[213,189,126,189],[214,129,0,129],
+	[215,129,86,129],[216,104,0,104],[217,104,69,104],[218,79,0,79],[219,79,53,79],[220,255,0,191],[221,255,170,234],
+	[222,189,0,141],[223,189,126,173],[224,129,0,96],[225,129,86,118],[226,104,0,78],[227,104,69,95],[228,79,0,59],
+	[229,79,53,73],[230,255,0,127],[231,255,170,212],[232,189,0,94],[233,189,126,157],[234,129,0,64],[235,129,86,107],
+	[236,104,0,52],[237,104,69,86],[238,79,0,39],[239,79,53,66],[240,255,0,63],[241,255,170,191],[242,189,0,46],
+	[243,189,126,141],[244,129,0,31],[245,129,86,96],[246,104,0,25],[247,104,69,78],[248,79,0,19],[249,79,53,59],
+	[250,51,51,51],[251,80,80,80],[252,105,105,105],[253,130,130,130],[254,190,190,190],[255,255,255,255]]
+end
+
+def hdt_help 
+	"
+	HELP OPTIONS: include saving the current user option selections.
+
+	SUPPORTED DXF ENTITIES ARE:
+	 
+	 1.  Polyline's as connected edges.
+	 2.  Polyline's (closed) as user selected faces.
+	 3.  LWPolylines as connected edges.
+	 5.  Lines as edges, or face by thickness.
+	 6.  Circles as a circle of connected edges, or face.
+	 7.  Arcs as an arc of connected edges.
+	 8.  3dFaces as faces.
+	 9.  Blocks as groups or components.
+	10. Polyline mesh as edges.
+	11. Polyline mesh as user selected faces.
+
+	LAYERS AND MATERIALS: The default import option for faces is
+	with layer names, and materials. The material options support Acad's
+	numbers, SketchUp's basic material names, or the current model's 
+	materials. The default material is by Acad's number.
+	
+	FACES: Closed polylines and circles are imported as faces by default.
+	They may be imported as edges when that option is selected. Holes 
+	within a face are faced by default, and the user must inspect the model,
+	and manually remove them. 3DFaces import as faces by default.
+	
+	BLOCKS import as groups, or components. Layers are maintained, and
+	the group's, or component's name is the dxf file name. Dxf block names
+	are the original Cad's block name. Nested blocks are not supported.
+	
+	IMPORT ORIGIN is by the model's origin, or by the user's selection. 
+	Model origin places the imported model's origin on the Sketchup origin.
+	This is usefull when the Cad, and Sketchup models are identical.
+	
+	UNSUPPORTED GEOMETRIC ENTITIES include polyface mesh, 
+	nested blocks, splines, and lwpolyline's bulge, and width. If you require 
+	any unsupported entities, explode them into their basic parts before 
+	creating the dxf. Converting Dxf v13+ to Dxf v12 changes splines into 
+	polylines, a entity supported by Dxf_In.
+	
+	ERROR CORRECTIONS: Rectangular 3DFACES which are non-planer 
+	will be changed into triangular 3DFACES. 
+	
+	ERROR MESSAGES provides the option to Cancel the message. When
+	selected, and if possible, the application will skip the problem, and not
+	display additional error messages.
+	"
+end
+
+unless file_loaded? File::basename(__FILE__)
+	add_separator_to_menu("File")	
+    UI.menu("File").add_item("Import DXF") { atelier_main_proc }
+    file_loaded File::basename(__FILE__)
+end

@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Sketchy Menu</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="content-script-type" content="text/javascript" />
+	<!--<meta http-equiv="MSThemeCompatible" content="Yes" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />-->
+	<link href="../css/default.css" rel="stylesheet" type="text/css" />
+	<link href="../css/sketchy.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../js/slider.js"></script>
+	<script type="text/javascript" src="../js/old_slider.js"></script>
+</head>
+
+<body onkeypress="doKey()">
+	<form action="ControlPanel.html" method="get" name="demoForm" id="demoForm">
+		<div>
+			<table class="propertyGrid" id='controlSlidersTable'>
+				<tr>
+					<td></td>
+				</tr>
+			</table>
+
+			<table id='testTable'>
+				<tr>
+					<td colspan="7">
+						<script type="text/javascript">
+						</script>
+					</td>
+				</tr>
+			</table>
+		<table width='100%'>
+		<tr width='100%'><td width='100%'><textarea class='formulaInput' name='logtable' type='text' WRAP=ON cols=30 ROWS=10 style='width:100%;'
+		style="position:absolute; visibility: hidden;" class='logOutput' id='log' name='log'></textarea></td></tr></table>
+		<img src="v3.1.jpg" id="version" onerror="" style="position:absolute; visibility: hidden; float:right; right:0px;bottom:0px;z-index:2;">
+		</div><script type="text/javascript">
+
+				document.onkeydown = function(e) {
+					return false
+				}
+
+				document.onkeyup = function(e) {
+					return false
+				}
+
+				function doKey()
+				{
+					return(false)
+				}
+
+					//javascript function that will load and execute file frag.js.
+					function loadScriptFrag()
+					{
+						var fileref=document.createElement('script')
+						fileref.setAttribute("type","text/javascript")
+						fileref.setAttribute("src", "./frag.js")
+						if (typeof fileref!="undefined")
+						document.getElementsByTagName("head")[0].appendChild(fileref)
+					}
+
+					function setSliderValue(name,value)
+					{
+						window.location='skp:setSliderValue@'+name +"="+ value;
+					}
+
+
+
+
+
+					function createSlider(name,value)
+					{
+
+						var A_TPL3h = {
+							'b_vertical' : false,
+							'b_watch': true,
+							'n_controlWidth': 300,
+							'n_controlHeight': 16,
+							'n_sliderWidth': 19,
+							'n_sliderHeight': 16,
+							'n_pathLeft' : 1,
+							'n_pathTop' : 0,
+							'n_pathLength' : 278,
+							's_imgControl': 'img/sldr2h_bg.gif',
+							's_imgSlider': 'img/sldr2h_sl.gif',
+							'n_zIndex': 1
+						}
+						var A_INIT3h = {
+							's_form' : 0,
+							's_name': name,
+							'n_minValue' : 0,
+							'n_maxValue' : 1,
+							'n_value' : 0.1,
+							'n_step' :0.001
+						}
+						new slider(A_INIT3h, A_TPL3h);
+					}
+					//createSlider("str","0.0")
+		</script>
+	</form>
+</body>
+</html>

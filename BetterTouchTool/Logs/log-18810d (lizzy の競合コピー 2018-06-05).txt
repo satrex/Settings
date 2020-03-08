@@ -1,0 +1,340 @@
+1528190682.083736|swi|check device class|
+1528190682.083780|swi|shortcuts used|
+1528190682.131067|short|register all hotkeys for current app|
+1528190688.344348|M|mt_stop2|
+1528190688.344534|M|checking|
+1528190688.345777|M|unregister internal trackpad|
+1528190688.346397|M|checking|
+1528190688.347167|M|register internal trackpad|
+1528190688.347411|STDEV|63|
+1528190706.481147|swi|check device class|
+1528190706.481173|swi|shortcuts used|
+1528190706.582015|short|register all hotkeys for current app|
+1528190712.479902|M|mt_stop2|
+1528190712.480067|M|checking|
+1528190712.481675|M|unregister internal trackpad|
+1528190712.482497|M|checking|
+1528190712.483265|M|register internal trackpad|
+1528190712.483473|STDEV|63|
+1528190712.585762|M|mt_stop2|
+1528190712.586024|M|checking|
+1528190712.587583|M|unregister internal trackpad|
+1528190712.588389|M|checking|
+1528190712.589238|M|register internal trackpad|
+1528190712.589477|STDEV|63|
+1528190712.768207|M|mt_stop2|
+1528190712.768398|M|checking|
+1528190712.769684|M|unregister internal trackpad|
+1528190712.770490|M|checking|
+1528190712.771397|M|register internal trackpad|
+1528190712.771602|STDEV|63|
+1528190714.582064|M|mt_stop2|
+1528190714.582316|M|checking|
+1528190714.583721|M|unregister internal trackpad|
+1528190714.584457|M|checking|
+1528190714.585041|M|register internal trackpad|
+1528190714.585241|STDEV|63|
+1528190714.963277|M|mt_stop2|
+1528190714.963570|M|checking|
+1528190714.964853|M|unregister internal trackpad|
+1528190714.965684|M|checking|
+1528190714.966529|M|register internal trackpad|
+1528190714.966848|STDEV|63|
+1528190717.883039|M|mt_stop2|
+1528190717.883224|M|checking|
+1528190717.884395|M|unregister internal trackpad|
+1528190717.884878|M|checking|
+1528190717.885449|M|register internal trackpad|
+1528190717.885609|STDEV|63|
+1528190718.258387|M|mt_stop2|
+1528190718.258570|M|checking|
+1528190718.259766|M|unregister internal trackpad|
+1528190718.260262|M|checking|
+1528190718.260795|M|register internal trackpad|
+1528190718.260972|STDEV|63|
+1528190723.363345|M|mt_stop2|
+1528190723.363628|M|checking|
+1528190723.364903|M|unregister internal trackpad|
+1528190723.365125|M|mt_stop2|
+1528190723.365425|M|checking|
+1528190723.366079|M|checking|
+1528190723.367301|M|register internal trackpad|
+1528190723.367599|STDEV|63|
+1528190723.374418|M|unregister internal trackpad|
+1528190723.375217|M|checking|
+1528190723.376395|M|register internal trackpad|
+1528190723.376634|STDEV|63|
+1528190727.146016|swi|check device class|
+1528190727.146038|swi|shortcuts used|
+1528190727.167300|short|register all hotkeys for current app|
+1528190765.534139|M|checking|
+1528190793.523094|M|mt_stop2|
+1528190793.523355|M|checking|
+1528190793.524892|M|unregister internal trackpad|
+1528190793.525701|M|checking|
+1528190793.526546|M|register internal trackpad|
+1528190793.526778|STDEV|63|
+1528190809.000545|M|mt_stop2|
+1528190809.000785|M|checking|
+1528190809.002418|M|unregister internal trackpad|
+1528190809.003242|M|checking|
+1528190809.004078|M|register internal trackpad|
+1528190809.004369|STDEV|63|
+1528190811.196557|M|mt_stop2|
+1528190811.196810|M|checking|
+1528190811.198428|M|unregister internal trackpad|
+1528190811.199268|M|checking|
+1528190811.200227|M|register internal trackpad|
+1528190811.200527|STDEV|63|
+1528190814.360654|M|mt_stop2|
+1528190814.361031|M|checking|
+1528190814.362702|M|unregister internal trackpad|
+1528190814.363820|M|checking|
+1528190814.365001|M|register internal trackpad|
+1528190814.365244|STDEV|63|
+1528190819.795087|M|mt_stop2|
+1528190819.795372|M|checking|
+1528190819.797179|M|unregister internal trackpad|
+1528190819.798442|M|checking|
+1528190819.799464|M|register internal trackpad|
+1528190819.799836|STDEV|63|
+1528191709.837358|M|mt_stop2|
+1528191709.837588|M|checking|
+1528191709.839058|M|unregister internal trackpad|
+1528191709.839922|M|checking|
+1528191709.840886|M|register internal trackpad|
+1528191709.842837|STDEV|63|
+1528191723.375631|M|mt_stop2|
+1528191723.375837|M|checking|
+1528191723.377121|M|unregister internal trackpad|
+1528191723.378283|M|checking|
+1528191723.379210|M|register internal trackpad|
+1528191723.379413|STDEV|63|
+1528191723.534966|M|mt_stop2|
+1528191723.535201|M|checking|
+1528191723.536717|M|unregister internal trackpad|
+1528191723.537705|M|checking|
+1528191723.538583|M|register internal trackpad|
+1528191723.538768|STDEV|63|
+1528191723.667393|M|mt_stop2|
+1528191723.667584|M|checking|
+1528191723.668936|M|unregister internal trackpad|
+1528191723.669567|M|checking|
+1528191723.670589|M|register internal trackpad|
+1528191723.670805|STDEV|63|
+1528191725.574695|M|mt_stop2|
+1528191725.574903|M|checking|
+1528191725.576261|M|unregister internal trackpad|
+1528191725.576797|M|checking|
+1528191725.577920|M|register internal trackpad|
+1528191725.578203|STDEV|63|
+1528191725.856694|M|mt_stop2|
+1528191725.857059|M|checking|
+1528191725.858759|M|unregister internal trackpad|
+1528191725.860275|M|checking|
+1528191725.861624|M|register internal trackpad|
+1528191725.861943|STDEV|63|
+1528191728.849206|M|mt_stop2|
+1528191728.850736|M|checking|
+1528191728.850906|M|unregister internal trackpad|
+1528191728.851628|M|checking|
+1528191728.853026|M|register internal trackpad|
+1528191728.853365|STDEV|63|
+1528191729.055995|M|mt_stop2|
+1528191729.056276|M|checking|
+1528191729.057752|M|unregister internal trackpad|
+1528191729.058788|M|checking|
+1528191729.060178|M|register internal trackpad|
+1528191729.060439|STDEV|63|
+1528191734.338031|M|mt_stop2|
+1528191734.338203|M|checking|
+1528191734.338952|M|mt_stop2|
+1528191734.339128|M|checking|
+1528191734.339371|M|unregister internal trackpad|
+1528191734.340164|M|checking|
+1528191734.340999|M|register internal trackpad|
+1528191734.341228|STDEV|63|
+1528191734.342710|M|unregister internal trackpad|
+1528191734.343418|M|checking|
+1528191734.344199|M|register internal trackpad|
+1528191734.344401|STDEV|63|
+1528191755.049251|M|mt_stop2|
+1528191755.049432|M|checking|
+1528191755.050706|M|unregister internal trackpad|
+1528191755.051494|M|checking|
+1528191755.052236|M|register internal trackpad|
+1528191755.052423|STDEV|63|
+1528191770.556313|M|mt_stop2|
+1528191770.556603|M|checking|
+1528191770.558192|M|unregister internal trackpad|
+1528191770.559028|M|checking|
+1528191770.559937|M|register internal trackpad|
+1528191770.560181|STDEV|63|
+1528191772.734875|M|mt_stop2|
+1528191772.735132|M|checking|
+1528191772.736685|M|unregister internal trackpad|
+1528191772.737502|M|checking|
+1528191772.738347|M|register internal trackpad|
+1528191772.738603|STDEV|63|
+1528191776.003553|M|mt_stop2|
+1528191776.003832|M|checking|
+1528191776.005396|M|unregister internal trackpad|
+1528191776.006495|M|checking|
+1528191776.007923|M|register internal trackpad|
+1528191776.008184|STDEV|63|
+1528191781.052858|M|mt_stop2|
+1528191781.053211|M|checking|
+1528191781.054771|M|unregister internal trackpad|
+1528191781.055570|M|checking|
+1528191781.056455|M|register internal trackpad|
+1528191781.056713|STDEV|63|
+1528192336.726208|M|mt_stop2|
+1528192336.726530|M|checking|
+1528192336.728097|M|unregister internal trackpad|
+1528192336.729697|M|checking|
+1528192336.731317|M|register internal trackpad|
+1528192336.731753|STDEV|63|
+1528192337.905543|M|mt_stop2|
+1528192337.905824|M|checking|
+1528192337.907670|M|unregister internal trackpad|
+1528192337.908494|M|checking|
+1528192337.909834|M|register internal trackpad|
+1528192337.910230|STDEV|63|
+1528192340.046159|M|mt_stop2|
+1528192340.046344|M|checking|
+1528192340.048056|M|unregister internal trackpad|
+1528192340.048965|M|checking|
+1528192340.049755|M|register internal trackpad|
+1528192340.049956|STDEV|63|
+1528192343.299461|M|mt_stop2|
+1528192343.299652|M|checking|
+1528192343.301489|M|unregister internal trackpad|
+1528192343.302450|M|checking|
+1528192343.303110|M|register internal trackpad|
+1528192343.303357|STDEV|63|
+1528192345.570389|M|mt_stop2|
+1528192345.570689|M|checking|
+1528192345.572121|M|unregister internal trackpad|
+1528192345.572930|M|checking|
+1528192345.573776|M|register internal trackpad|
+1528192345.574027|STDEV|63|
+1528192348.775931|M|mt_stop2|
+1528192348.776192|M|checking|
+1528192348.777983|M|unregister internal trackpad|
+1528192348.778794|M|checking|
+1528192348.779880|M|register internal trackpad|
+1528192348.780140|STDEV|63|
+1528192353.069959|M|mt_stop2|
+1528192353.070264|M|checking|
+1528192353.072084|M|unregister internal trackpad|
+1528192353.072901|M|checking|
+1528192353.073794|M|register internal trackpad|
+1528192353.074038|STDEV|63|
+1528192355.236502|M|mt_stop2|
+1528192355.236755|M|checking|
+1528192355.238552|M|unregister internal trackpad|
+1528192355.239375|M|checking|
+1528192355.240265|M|register internal trackpad|
+1528192355.240509|STDEV|63|
+1528192358.265998|M|mt_stop2|
+1528192358.266284|M|checking|
+1528192358.267593|M|unregister internal trackpad|
+1528192358.268752|M|checking|
+1528192358.270458|M|register internal trackpad|
+1528192358.270764|STDEV|63|
+1528192363.422142|M|mt_stop2|
+1528192363.422331|M|checking|
+1528192363.424087|M|unregister internal trackpad|
+1528192363.424810|M|checking|
+1528192363.425898|M|register internal trackpad|
+1528192363.426141|STDEV|63|
+1528192726.774813|M|mt_stop2|
+1528192726.775026|M|checking|
+1528192726.776390|M|unregister internal trackpad|
+1528192726.776933|M|checking|
+1528192726.777542|M|register internal trackpad|
+1528192726.777736|STDEV|63|
+1528192752.299619|M|mt_stop2|
+1528192752.299858|M|checking|
+1528192752.301151|M|unregister internal trackpad|
+1528192752.301724|M|checking|
+1528192752.302377|M|register internal trackpad|
+1528192752.302548|STDEV|63|
+1528192752.584126|M|mt_stop2|
+1528192752.584343|M|checking|
+1528192752.585834|M|unregister internal trackpad|
+1528192752.586556|M|checking|
+1528192752.587412|M|register internal trackpad|
+1528192752.587649|STDEV|63|
+1528192754.372306|M|mt_stop2|
+1528192754.373857|M|checking|
+1528192754.374081|M|unregister internal trackpad|
+1528192754.374858|M|checking|
+1528192754.375765|M|register internal trackpad|
+1528192754.376019|STDEV|63|
+1528192757.668199|M|mt_stop2|
+1528192757.668467|M|checking|
+1528192757.669982|M|unregister internal trackpad|
+1528192757.670768|M|checking|
+1528192757.671604|M|register internal trackpad|
+1528192757.671849|STDEV|63|
+1528192763.157107|M|mt_stop2|
+1528192763.158848|M|checking|
+1528192763.158840|M|unregister internal trackpad|
+1528192763.160160|M|checking|
+1528192763.160979|M|register internal trackpad|
+1528192763.161228|STDEV|63|
+1528193411.227263|M|mt_stop2|
+1528193411.227506|M|checking|
+1528193411.229153|M|unregister internal trackpad|
+1528193411.230000|M|checking|
+1528193411.230985|M|register internal trackpad|
+1528193411.231254|STDEV|63|
+1528193420.383554|M|mt_stop2|
+1528193420.383802|M|checking|
+1528193420.385371|M|unregister internal trackpad|
+1528193420.386213|M|checking|
+1528193420.387100|M|register internal trackpad|
+1528193420.387341|STDEV|63|
+1528193424.382509|M|mt_stop2|
+1528193424.382687|M|checking|
+1528193424.383956|M|unregister internal trackpad|
+1528193424.385006|M|checking|
+1528193424.386289|M|register internal trackpad|
+1528193424.386486|STDEV|63|
+1528193426.560510|M|mt_stop2|
+1528193426.560798|M|checking|
+1528193426.562425|M|unregister internal trackpad|
+1528193426.563258|M|checking|
+1528193426.564173|M|register internal trackpad|
+1528193426.564419|STDEV|63|
+1528193429.828788|M|mt_stop2|
+1528193429.829047|M|checking|
+1528193429.830541|M|unregister internal trackpad|
+1528193429.831450|M|checking|
+1528193429.832307|M|register internal trackpad|
+1528193429.832591|STDEV|63|
+1528193435.282599|M|mt_stop2|
+1528193435.282872|M|checking|
+1528193435.284420|M|unregister internal trackpad|
+1528193435.285218|M|checking|
+1528193435.286073|M|register internal trackpad|
+1528193435.286317|STDEV|63|
+1528193465.174060|M|mt_stop2|
+1528193465.174315|M|checking|
+1528193465.175926|M|unregister internal trackpad|
+1528193465.177151|M|checking|
+1528193465.178555|M|register internal trackpad|
+1528193465.178821|STDEV|63|
+1528194662.733404|swi|check device class|
+1528194662.733432|swi|shortcuts used|
+1528194662.812513|short|register all hotkeys for current app|
+1528194666.714906|swi|check device class|
+1528194666.714930|swi|shortcuts used|
+1528194666.779051|short|register all hotkeys for current app|
+1528194666.782833|swi|check device class|
+1528194666.782856|swi|shortcuts used|
+1528194666.810253|short|register all hotkeys for current app|
+1528195278.382195|swi|check device class|
+1528195278.382220|swi|shortcuts used|
+1528195278.395041|short|register all hotkeys for current app|

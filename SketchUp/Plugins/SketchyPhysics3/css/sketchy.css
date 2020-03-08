@@ -1,0 +1,56 @@
+#dhtmlgoodies_xpPane {
+	background-color: #d6dff7;
+}
+
+textarea.formulaInput {
+	font-size: 8pt;
+	color: yellow;
+	border-width: 2px;
+	background-color: black;
+}
+
+body {
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 11px;
+	background-color: #4190e0;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+.propertyGrid {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 0px;
+	border-style: outset outset outset outset;
+	border-color: gray gray gray gray;
+	border-collapse: collapse;
+	background-color: white;
+	font-size: 11px;
+}
+
+INPUT{
+	font-size: 8pt;
+	border-width: 2px;
+	color: #ffffff;
+}
+
+select{
+	font-size: 8pt;
+	border-width: 2px;
+	color: #ffffff;
+}
+
+table.propertyGrid tr {
+	background-color: #d6dff7;
+	width: 99%;
+}
+
+table.propertyGrid td {
+	border-width: 1px 1px 1px 1px;
+	padding: 1px 1px 1px 1px;
+	border-style: inset inset inset inset;
+	border-color: gray gray gray gray;
+	background-color: white;
+	width: 99%;
+}

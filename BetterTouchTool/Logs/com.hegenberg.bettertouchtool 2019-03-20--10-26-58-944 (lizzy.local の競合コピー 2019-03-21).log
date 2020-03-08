@@ -1,0 +1,372 @@
+1553077618.923086|usage|loading todays usage|
+1553077619.038159|ASL|[Crashlytics] Version 3.10.8 (131)|
+1553077619.057816|short|init|
+1553077619.134334|LIC|idate 2018-09-25 00:44:27 +0000|
+1553077619.156700|short|register disable hotkeys|
+1553077619.158635|short|register disable hotkeys|
+1553077619.216740|LIC|license appears to be valid|
+1553077619.228649|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1553077619.228731|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1553077619.228748|LIC|using date 1525066439|
+1553077619.228773|lic|newest date 2018-04-30 05:33:59 +0000|
+1553077619.228785|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553077619.246517|lic|newest date 2018-04-30 05:33:59 +0000|
+1553077619.246565|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553077619.249454|LIC|License is valid for this version|
+1553077619.250476|LAUNCH|DIDLaunch|
+1553077619.398388|lic|newest date 2018-04-30 05:33:59 +0000|
+1553077619.398417|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553077619.508335|xw|is trusted|
+1553077619.510495|short|call sharedInstance4|
+1553077619.563995|M|mt_stop10|
+1553077619.568342|M|register touchbar mbp trackpad|
+1553077619.568473|M|register internal trackpad|
+1553077619.568893|STDEV|68|
+1553077622.352609|lic|newest date 2018-04-30 05:33:59 +0000|
+1553077622.352650|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553077622.356700|webserver|init|
+1553077622.357136|START|TB VISIBLE 0|
+1553077622.357164|START|TB FORCED HIDDEN 1|
+1553077622.389591|short|eventtap success|
+1553077622.560481|short|register disable hotkeys|
+1553077623.968532|M|mt_stop2|
+1553077623.968810|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1553077624.126179|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(56452)|
+1553077624.143363|lic|newest date 2018-04-30 05:33:59 +0000|
+1553077624.144131|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553077624.302822|M|unregister magic trackpad 2|
+1553077624.305702|M|register touchbar mbp trackpad|
+1553077624.305736|M|register internal trackpad|
+1553077624.305912|STDEV|68|
+1553077624.314986|SLEEP|FORCESHOWAFTERSLEEP3|
+1553077625.349157|WISNA|Focus doesn't match window pid|
+1553077625.353473|xw|mouseclick lost, sending left mouse up event|
+1553077691.516572|SEC|SecureInputActive com.apple.systempreferences 819|
+1553077691.518020|short|register disable hotkeys|
+1553077698.520023|SEC|SecureInputDisabled com.apple.systempreferences|
+1553077698.522694|short|register disable hotkeys|
+1553078132.262036|WISNA|Focus doesn't match window pid|
+1553078141.525938|SWI|PID MISMATCH FIX|
+1553078151.847055|WISNA|Focus doesn't match window pid|
+1553078159.301160|WISNA|Focus doesn't match window pid|
+1553078555.951344|SWI|PID MISMATCH FIX|
+1553078703.465372|SEC|SecureInputActive com.google.Chrome 1055|
+1553078703.472062|short|register disable hotkeys|
+1553078706.516682|SEC|SecureInputDisabled com.google.Chrome|
+1553078706.519855|short|register disable hotkeys|
+1553081019.013167|LOGIN|RESTART AFTER LOGIN|
+1553081019.025896|xw|should relaunch|
+1553081019.036403|xw|BTTRelaunch found|
+1553081019.036441|xw|BTTRelaunch call seems successfull|
+1553081019.055820|TERMINATE|SHOULDTERMINATE|
+1553081019.673105|usage|loading todays usage|
+1553081019.695085|ASL|[Crashlytics] Version 3.10.8 (131)|
+1553081019.707754|short|init|
+1553081019.789737|LIC|idate 2019-03-20 11:23:39 +0000|
+1553081019.805196|LIC|closing previous instance of BetterTouchTool relaunch|
+1553081019.809175|short|register disable hotkeys|
+1553081019.810335|short|register disable hotkeys|
+1553081019.815322|LIC|license appears to be valid|
+1553081019.816707|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1553081019.816792|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1553081019.816809|LIC|using date 1525066439|
+1553081019.816834|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081019.816847|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081019.820402|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081019.820429|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081019.820877|LIC|License is valid for this version|
+1553081019.821198|LAUNCH|DIDLaunch|
+1553081019.830045|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081019.830077|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081019.871478|xw|is trusted|
+1553081019.872933|short|call sharedInstance4|
+1553081019.892876|M|mt_stop10|
+1553081019.895160|M|register touchbar mbp trackpad|
+1553081019.895193|M|register internal trackpad|
+1553081019.895411|STDEV|68|
+1553081020.998116|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081020.998156|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081021.001166|webserver|init|
+1553081021.001383|START|TB VISIBLE 0|
+1553081021.001405|START|TB FORCED HIDDEN 1|
+1553081021.026772|short|eventtap success|
+1553081021.081201|short|register disable hotkeys|
+1553081021.781869|M|mt_stop2|
+1553081021.783526|M|unregister magic trackpad 2|
+1553081021.785729|M|register touchbar mbp trackpad|
+1553081021.785765|M|register internal trackpad|
+1553081021.785971|STDEV|68|
+1553081021.825995|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(56452)|
+1553081021.833512|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081021.833552|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081021.889583|SLEEP|FORCESHOWAFTERSLEEP3|
+1553081021.889683|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1553081028.948848|SEC|SecureInputActive com.apple.loginwindow 127|
+1553081028.950236|short|register disable hotkeys|
+1553081031.418883|WISNA|Focus doesn't match window pid|
+1553081049.331857|SEC|SecureInputDisabled com.apple.loginwindow|
+1553081049.341114|short|register disable hotkeys|
+1553081049.490452|LOGIN|RESTART AFTER LOGIN|
+1553081049.496670|xw|should relaunch|
+1553081049.501561|xw|BTTRelaunch found|
+1553081049.501607|xw|BTTRelaunch call seems successfull|
+1553081049.517175|TERMINATE|SHOULDTERMINATE|
+1553081050.024979|usage|loading todays usage|
+1553081050.044120|ASL|[Crashlytics] Version 3.10.8 (131)|
+1553081050.053151|short|init|
+1553081050.116877|LIC|idate 2019-03-20 11:23:39 +0000|
+1553081050.128299|LIC|closing previous instance of BetterTouchTool relaunch|
+1553081050.131585|short|register disable hotkeys|
+1553081050.133023|short|register disable hotkeys|
+1553081050.137935|LIC|license appears to be valid|
+1553081050.139369|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1553081050.139434|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1553081050.139449|LIC|using date 1525066439|
+1553081050.139472|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081050.139484|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081050.143190|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081050.143222|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081050.143451|LIC|License is valid for this version|
+1553081050.143780|LAUNCH|DIDLaunch|
+1553081050.153445|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081050.153476|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081050.184765|xw|is trusted|
+1553081050.186627|short|call sharedInstance4|
+1553081050.209278|M|mt_stop10|
+1553081050.211224|M|register touchbar mbp trackpad|
+1553081050.211252|M|register internal trackpad|
+1553081050.211432|STDEV|68|
+1553081051.222488|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081051.222529|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081051.226955|webserver|init|
+1553081051.227178|START|TB VISIBLE 0|
+1553081051.227208|START|TB FORCED HIDDEN 1|
+1553081051.266450|short|eventtap success|
+1553081051.339218|short|register disable hotkeys|
+1553081051.994721|M|mt_stop2|
+1553081051.996164|M|unregister magic trackpad 2|
+1553081051.998484|M|register touchbar mbp trackpad|
+1553081051.998521|M|register internal trackpad|
+1553081051.998718|STDEV|68|
+1553081052.036946|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(56452)|
+1553081052.046366|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081052.046402|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081052.103172|SLEEP|FORCESHOWAFTERSLEEP3|
+1553081052.116682|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1553081097.495141|TERMINATE|SHOULDTERMINATE|
+1553081345.124920|usage|loading todays usage|
+1553081345.344371|ASL|[Crashlytics] Version 3.10.8 (131)|
+1553081345.359198|short|init|
+1553081345.431882|LIC|idate 2019-03-20 11:23:39 +0000|
+1553081345.478274|short|register disable hotkeys|
+1553081345.479452|short|register disable hotkeys|
+1553081345.515685|LIC|license appears to be valid|
+1553081345.517726|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1553081345.517792|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1553081345.517809|LIC|using date 1525066439|
+1553081345.517833|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081345.517846|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081345.523255|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081345.523284|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081345.524308|LIC|License is valid for this version|
+1553081345.524783|LAUNCH|DIDLaunch|
+1553081345.538051|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081345.538080|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081345.710288|xw|is trusted|
+1553081345.712806|short|call sharedInstance4|
+1553081345.835879|M|mt_stop10|
+1553081345.838618|M|register touchbar mbp trackpad|
+1553081345.838649|M|register internal trackpad|
+1553081345.838853|STDEV|68|
+1553081348.728790|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081348.728835|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081348.732350|webserver|init|
+1553081348.732800|START|TB VISIBLE 0|
+1553081348.732831|START|TB FORCED HIDDEN 1|
+1553081348.773693|short|eventtap success|
+1553081349.095891|short|register disable hotkeys|
+1553081350.914982|M|mt_stop2|
+1553081350.915249|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1553081350.916988|M|unregister magic trackpad 2|
+1553081350.918973|M|register touchbar mbp trackpad|
+1553081350.919003|M|register internal trackpad|
+1553081350.919181|STDEV|68|
+1553081351.037151|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(56452)|
+1553081351.048827|lic|newest date 2018-04-30 05:33:59 +0000|
+1553081351.048857|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553081351.257632|SLEEP|FORCESHOWAFTERSLEEP3|
+1553081351.300778|SWI|PID MISMATCH FIX|
+1553081372.762051|SEC|SecureInputActive com.apple.systempreferences 954|
+1553081372.763469|short|register disable hotkeys|
+1553081379.773195|SEC|SecureInputDisabled com.apple.systempreferences|
+1553081379.775832|short|register disable hotkeys|
+1553084771.320527|SLEEP|WILLSLEEP|
+1553084772.903404|M|mt_stop2|
+1553084772.905645|M|unregister magic trackpad 2|
+1553084772.908292|M|register touchbar mbp trackpad|
+1553084772.908331|M|register internal trackpad|
+1553084772.908545|STDEV|68|
+1553110762.882742|usage|loading todays usage|
+1553110764.909439|usage|loading todays usage|
+1553110764.947370|ASL|[Crashlytics] Version 3.10.8 (131)|
+1553110765.032787|short|init|
+1553110765.265737|LIC|idate 2019-03-20 11:23:39 +0000|
+1553110765.314956|LIC|closing previous instance of BetterTouchTool relaunch|
+1553110765.326055|short|register disable hotkeys|
+1553110765.327295|short|register disable hotkeys|
+1553110765.333066|LIC|license appears to be valid|
+1553110765.334565|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1553110765.334633|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1553110765.334649|LIC|using date 1525066439|
+1553110765.334672|lic|newest date 2018-04-30 05:33:59 +0000|
+1553110765.334685|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553110765.338606|lic|newest date 2018-04-30 05:33:59 +0000|
+1553110765.338640|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553110765.339442|LIC|License is valid for this version|
+1553110765.339828|LAUNCH|DIDLaunch|
+1553110765.362967|lic|newest date 2018-04-30 05:33:59 +0000|
+1553110765.362999|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553110765.445932|xw|is trusted|
+1553110765.448162|short|call sharedInstance4|
+1553113244.020344|ASL|[Fabric] failed to download settings Error Domain=FABNetworkError Code=-6 "(null)" UserInfo={retryLimit=1, NSErrorFailingURLStringKey=https://settings.crashlytics.com/spi/v2/platforms/mac/apps/com.hegenberg.BetterTouchTool/settings?build_version=1027&display_version=2.717&instance=a2d1945fa4d135f528197901095bd1827fc0463f&source=1}|
+1553113244.089380|M|mt_stop10|
+1553113244.091906|M|register touchbar mbp trackpad|
+1553113244.091943|M|register internal trackpad|
+1553113244.092175|STDEV|68|
+1553113245.723908|lic|newest date 2018-04-30 05:33:59 +0000|
+1553113245.723953|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553113245.727682|webserver|init|
+1553113245.728508|START|TB VISIBLE 0|
+1553113245.728542|START|TB FORCED HIDDEN 1|
+1553113245.765850|short|eventtap success|
+1553113245.930333|short|register disable hotkeys|
+1553113247.390319|M|mt_stop2|
+1553113247.390602|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1553113247.391770|M|unregister magic trackpad 2|
+1553113247.393717|M|register touchbar mbp trackpad|
+1553113247.393749|M|register internal trackpad|
+1553113247.393943|STDEV|68|
+1553113247.427478|xw|disabling touch for internal trackpad (clamshell)|
+1553113247.437510|lic|newest date 2018-04-30 05:33:59 +0000|
+1553113247.437613|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553113247.499332|SLEEP|FORCESHOWAFTERSLEEP3|
+1553113247.523115|lic|newest date 2018-04-30 05:33:59 +0000|
+1553113247.523147|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553122707.344965|xw|enabling touch for internal trackpad (after clamshell)|
+1553122709.588208|usage|loading todays usage|
+1553122709.651421|ASL|[Crashlytics] Version 3.10.8 (131)|
+1553122709.849536|short|init|
+1553122709.922772|LIC|idate 2019-03-20 11:23:39 +0000|
+1553122709.933202|LIC|closing previous instance of BetterTouchTool relaunch|
+1553122709.936909|short|register disable hotkeys|
+1553122709.938146|short|register disable hotkeys|
+1553122709.944076|LIC|license appears to be valid|
+1553122709.945570|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1553122709.945634|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1553122709.945651|LIC|using date 1525066439|
+1553122709.945675|lic|newest date 2018-04-30 05:33:59 +0000|
+1553122709.945688|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553122709.949692|lic|newest date 2018-04-30 05:33:59 +0000|
+1553122709.949721|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553122709.949947|LIC|License is valid for this version|
+1553122709.950268|LAUNCH|DIDLaunch|
+1553122709.959925|lic|newest date 2018-04-30 05:33:59 +0000|
+1553122709.959953|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553122710.009614|xw|is trusted|
+1553122710.011913|short|call sharedInstance4|
+1553122710.037057|M|mt_stop10|
+1553122710.040040|M|register touchbar mbp trackpad|
+1553122710.040105|M|register internal trackpad|
+1553122710.040401|STDEV|68|
+1553122711.694203|lic|newest date 2018-04-30 05:33:59 +0000|
+1553122711.694330|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553122711.697254|webserver|init|
+1553122711.697598|START|TB VISIBLE 0|
+1553122711.697620|START|TB FORCED HIDDEN 1|
+1553122711.733611|short|eventtap success|
+1553122711.914518|ASL|[Fabric] failed to download settings Error Domain=FABNetworkError Code=-6 "(null)" UserInfo={retryLimit=1, NSErrorFailingURLStringKey=https://settings.crashlytics.com/spi/v2/platforms/mac/apps/com.hegenberg.BetterTouchTool/settings?build_version=1027&display_version=2.717&instance=a2d1945fa4d135f528197901095bd1827fc0463f&source=1}|
+1553122711.916453|short|register disable hotkeys|
+1553122712.086777|SEC|SecureInputActive com.apple.loginwindow 606|
+1553122712.088118|short|register disable hotkeys|
+1553122713.125493|M|mt_stop2|
+1553122713.127014|M|unregister magic trackpad 2|
+1553122713.128993|M|register touchbar mbp trackpad|
+1553122713.129024|M|register internal trackpad|
+1553122713.129191|STDEV|68|
+1553122713.197719|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(56452)|
+1553122713.208911|lic|newest date 2018-04-30 05:33:59 +0000|
+1553122713.208942|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553122713.209366|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1553122713.277973|SLEEP|FORCESHOWAFTERSLEEP3|
+1553122713.311594|short|register disable hotkeys|
+1553122725.924854|lic|newest date 2018-04-30 05:33:59 +0000|
+1553122725.924883|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1553122746.494762|SLEEP|WILLSLEEP|
+1553122747.391034|lic|newest date 2018-04-30 05:33:59 +0000|
+1553122747.391063|lic|lict 16973469-chre33d9df9a9eb-5561352b58|

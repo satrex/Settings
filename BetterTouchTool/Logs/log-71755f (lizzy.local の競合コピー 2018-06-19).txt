@@ -1,0 +1,673 @@
+1529396282.614897|ASL|new|
+1529396283.400557|usage|loading todays usage|
+1529396283.948344|ASL|[Crashlytics] Version 3.9.3 (128)|
+1529396285.636043|short|init|
+1529396285.991299|LIC|idate 2018-04-19 10:50:23 +0000|
+1529396285.995495|short|register all hotkeys|
+1529396286.010644|short|register disable hotkeys|
+1529396286.011720|short|register disable hotkeys|
+1529396286.012770|short|register all hotkeys|
+1529396286.063493|LIC|license appears to be valid|
+1529396286.068151|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1529396286.068167|LIC|short timestamp|
+1529396286.068262|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1529396286.068268|LIC|using date 1525066439|
+1529396286.068291|lic|newest date 2018-04-30 05:33:59 +0000|
+1529396286.068296|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1529396286.148233|LIC|license appears to be valid|
+1529396286.149928|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1529396286.149947|LIC|short timestamp|
+1529396286.150048|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1529396286.150056|LIC|using date 1525066439|
+1529396286.150096|lic|newest date 2018-04-30 05:33:59 +0000|
+1529396286.150102|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1529396286.150706|LIC|License is valid for this version|
+1529396286.150995|LAUNCH|DIDLaunch|
+1529396286.389416|LIC|license appears to be valid|
+1529396286.390774|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1529396286.390791|LIC|short timestamp|
+1529396286.390826|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1529396286.390830|LIC|using date 1525066439|
+1529396286.390844|lic|newest date 2018-04-30 05:33:59 +0000|
+1529396286.390848|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1529396284.328389|ASL|new multitouch device recognized|
+1529396284.328609|M|checking|
+1529396284.358788|short|call sharedInstance4|
+1529396284.361017|SEC|SecureInputActive com.apple.loginwindow 125|
+1529396284.364792|ASL|currently visible 0 1|
+1529396284.378020|M|mt_stop10|
+1529396284.378166|M|checking|
+1529396284.385357|M|register touchbar mbp trackpad|
+1529396284.385377|M|register internal trackpad|
+1529396284.385791|STDEV|68|
+1529396284.390207|swi|check device class|
+1529396284.390233|swi|shortcuts used|
+1529396286.073986|LIC|license appears to be valid|
+1529396286.075532|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1529396286.075551|LIC|short timestamp|
+1529396286.075586|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1529396286.075591|LIC|using date 1525066439|
+1529396286.075606|lic|newest date 2018-04-30 05:33:59 +0000|
+1529396286.075610|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1529396286.078293|webserver|init|
+1529396286.144847|M|checking|
+1529396286.168715|LIC|license appears to be valid|
+1529396286.170507|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1529396286.170522|LIC|short timestamp|
+1529396286.170554|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1529396286.170559|LIC|using date 1525066439|
+1529396286.170572|lic|newest date 2018-04-30 05:33:59 +0000|
+1529396286.170576|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1529396286.170803|short|eventtap success|
+1529396286.180903|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1529396286.394362|short|register disable hotkeys|
+1529396286.395777|short|register all hotkeys for current app|
+1529396286.396955|short|register all hotkeys|
+1529396287.173775|short|register all hotkeys for current app|
+1529396287.181945|M|mt_stop2|
+1529396287.182094|M|checking|
+1529396287.183799|M|unregister magic trackpad 2|
+1529396287.184065|M|checking|
+1529396287.185807|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(51824)|
+1529396287.186225|M|register touchbar mbp trackpad|
+1529396287.186240|M|register internal trackpad|
+1529396287.186440|STDEV|68|
+1529396287.196604|LIC|license appears to be valid|
+1529396287.198622|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1529396287.198639|LIC|short timestamp|
+1529396287.198673|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1529396287.198678|LIC|using date 1525066439|
+1529396287.198691|lic|newest date 2018-04-30 05:33:59 +0000|
+1529396287.198695|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1529396287.222565|M|checking|
+1529396287.231688|M|checking|
+1529396287.519381|short|register all hotkeys for current app|
+1529396290.117596|SEC|SecureInputDisabled com.apple.loginwindow|
+1529396290.120957|short|register all hotkeys|
+1529396290.125610|short|register all hotkeys for current app|
+1529396290.358059|swi|check device class|
+1529396290.358081|swi|shortcuts used|
+1529396290.380688|short|register all hotkeys for current app|
+1529396306.575977|swi|check device class|
+1529396306.576015|swi|shortcuts used|
+1529396306.602222|short|register all hotkeys for current app|
+1529396316.037626|swi|check device class|
+1529396316.037649|swi|shortcuts used|
+1529396316.056135|short|register all hotkeys for current app|
+1529396318.364960|swi|check device class|
+1529396318.364982|swi|shortcuts used|
+1529396318.383123|short|register all hotkeys for current app|
+1529396338.325445|ASL|disable|
+1529396338.326319|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529396338.456831|ASL|enable|
+1529396338.457402|M|checking|
+1529396338.463935|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529396338.492403|short|register all hotkeys for current app|
+1529396365.738014|swi|check device class|
+1529396365.738041|swi|shortcuts used|
+1529396365.759031|short|register all hotkeys for current app|
+1529396371.048632|swi|check device class|
+1529396371.048657|swi|shortcuts used|
+1529396371.070101|short|register all hotkeys for current app|
+1529396371.935137|swi|check device class|
+1529396371.935166|swi|shortcuts used|
+1529396371.958404|short|register all hotkeys for current app|
+1529396373.351552|swi|check device class|
+1529396373.351574|swi|shortcuts used|
+1529396373.373252|short|register all hotkeys for current app|
+1529396375.491759|swi|check device class|
+1529396375.491784|swi|shortcuts used|
+1529396375.519946|short|register all hotkeys for current app|
+1529396376.313978|swi|check device class|
+1529396376.314004|swi|shortcuts used|
+1529396376.335625|short|register all hotkeys for current app|
+1529396379.217362|swi|check device class|
+1529396379.217389|swi|shortcuts used|
+1529396379.243541|short|register all hotkeys for current app|
+1529396383.825819|swi|check device class|
+1529396383.825844|swi|shortcuts used|
+1529396383.850129|short|register all hotkeys for current app|
+1529396384.788853|swi|check device class|
+1529396384.788875|swi|shortcuts used|
+1529396384.809205|short|register all hotkeys|
+1529396384.810724|short|register all hotkeys for current app|
+1529396385.071437|TERMINATE|SHOULDTERMINATE|
+1529396446.511028|ASL|new|
+1529396447.265511|usage|loading todays usage|
+1529396447.307056|ASL|[Crashlytics] Version 3.9.3 (128)|
+1529396447.321739|short|init|
+1529396447.514670|LIC|idate 2018-04-19 10:50:23 +0000|
+1529396447.518323|short|register all hotkeys|
+1529396447.533010|short|register disable hotkeys|
+1529396447.534091|short|register disable hotkeys|
+1529396447.535199|short|register all hotkeys|
+1529396447.542415|LIC|license appears to be valid|
+1529396447.544022|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1529396447.544038|LIC|short timestamp|
+1529396447.544089|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1529396447.544093|LIC|using date 1525066439|
+1529396447.544114|lic|newest date 2018-04-30 05:33:59 +0000|
+1529396447.544119|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1529396447.546598|LIC|license appears to be valid|
+1529396447.548030|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1529396447.548047|LIC|short timestamp|
+1529396447.548139|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1529396447.548146|LIC|using date 1525066439|
+1529396447.548162|lic|newest date 2018-04-30 05:33:59 +0000|
+1529396447.548166|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1529396447.548631|LIC|License is valid for this version|
+1529396447.549156|LAUNCH|DIDLaunch|
+1529396447.558263|LIC|license appears to be valid|
+1529396447.559948|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1529396447.559965|LIC|short timestamp|
+1529396447.559998|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1529396447.560003|LIC|using date 1525066439|
+1529396447.560018|lic|newest date 2018-04-30 05:33:59 +0000|
+1529396447.560022|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1529396447.597759|ASL|new multitouch device recognized|
+1529396447.598876|M|checking|
+1529396447.602442|short|call sharedInstance4|
+1529396447.608859|ASL|currently visible 0 1|
+1529396447.619998|M|mt_stop10|
+1529396447.620142|M|checking|
+1529396447.623085|M|register touchbar mbp trackpad|
+1529396447.623118|M|register internal trackpad|
+1529396447.623314|STDEV|68|
+1529396447.627364|swi|check device class|
+1529396447.627385|swi|shortcuts used|
+1529396449.388650|LIC|license appears to be valid|
+1529396449.390185|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1529396449.390199|LIC|short timestamp|
+1529396449.390229|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1529396449.390233|LIC|using date 1525066439|
+1529396449.390245|lic|newest date 2018-04-30 05:33:59 +0000|
+1529396449.390248|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1529396449.394165|webserver|init|
+1529396451.170780|swi|check device class|
+1529396451.170803|swi|shortcuts used|
+1529396451.231557|short|register all hotkeys for current app|
+1529396451.251992|short|eventtap success|
+1529396451.281650|short|register disable hotkeys|
+1529396451.284490|short|register all hotkeys for current app|
+1529396451.285763|short|register all hotkeys|
+1529396451.510575|short|register all hotkeys for current app|
+1529396451.513009|M|mt_stop2|
+1529396451.513318|M|checking|
+1529396451.513485|M|checking|
+1529396451.514570|M|unregister magic trackpad 2|
+1529396451.514804|M|checking|
+1529396451.516447|M|register touchbar mbp trackpad|
+1529396451.516473|M|register internal trackpad|
+1529396451.516619|STDEV|68|
+1529396451.532894|LIC|license appears to be valid|
+1529396451.534505|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1529396451.534523|LIC|short timestamp|
+1529396451.534554|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1529396451.534559|LIC|using date 1525066439|
+1529396451.534572|lic|newest date 2018-04-30 05:33:59 +0000|
+1529396451.534576|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1529396451.534939|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1529396451.538731|M|checking|
+1529396451.757367|short|register all hotkeys for current app|
+1529396451.767653|LIC|license appears to be valid|
+1529396451.769187|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1529396451.769205|LIC|short timestamp|
+1529396451.769239|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1529396451.769244|LIC|using date 1525066439|
+1529396451.769258|lic|newest date 2018-04-30 05:33:59 +0000|
+1529396451.769275|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1529396451.908183|M|checking|
+1529396451.916609|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(51824)|
+1529396461.659384|swi|check device class|
+1529396461.659405|swi|shortcuts used|
+1529396461.681497|short|register all hotkeys for current app|
+1529396461.697680|swi|check device class|
+1529396461.697700|swi|shortcuts used|
+1529396461.718422|short|register all hotkeys for current app|
+1529396462.014700|short|register all hotkeys for current app|
+1529396473.921355|short|register all hotkeys for current app|
+1529396480.390443|swi|check device class|
+1529396480.390465|swi|shortcuts used|
+1529396480.412225|short|register all hotkeys for current app|
+1529396481.756567|swi|check device class|
+1529396481.756588|swi|shortcuts used|
+1529396481.776202|short|register all hotkeys for current app|
+1529396482.677539|swi|check device class|
+1529396482.677561|swi|shortcuts used|
+1529396482.696776|short|register all hotkeys for current app|
+1529396482.697942|ASL|disable|
+1529396482.702839|ASL|enable|
+1529396482.703417|M|checking|
+1529396482.711759|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529396482.712046|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529396482.741903|short|register all hotkeys for current app|
+1529396483.234975|swi|check device class|
+1529396483.235000|swi|shortcuts used|
+1529396483.416085|short|register all hotkeys for current app|
+1529396484.720469|swi|check device class|
+1529396484.720493|swi|shortcuts used|
+1529396484.739561|short|register all hotkeys for current app|
+1529396489.363970|ASL|disable|
+1529396489.364707|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529396489.459834|ASL|enable|
+1529396489.460360|M|checking|
+1529396489.466265|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529396489.487744|short|register all hotkeys for current app|
+1529396489.806942|ASL|disable|
+1529396489.808086|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529396490.069081|ASL|enable|
+1529396490.069637|M|checking|
+1529396490.075525|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529396490.096036|short|register all hotkeys for current app|
+1529396492.578968|ASL|disable|
+1529396492.580486|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529396492.664011|ASL|enable|
+1529396492.664544|M|checking|
+1529396492.670119|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529396492.692294|short|register all hotkeys for current app|
+1529396492.850886|ASL|disable|
+1529396492.852109|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529396492.968073|ASL|enable|
+1529396492.968628|M|checking|
+1529396492.974071|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529396492.995426|short|register all hotkeys for current app|
+1529396494.787846|ASL|disable|
+1529396494.789409|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529396494.884966|ASL|enable|
+1529396494.885523|M|checking|
+1529396494.890911|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529396494.909478|short|register all hotkeys for current app|
+1529396494.952804|ASL|disable|
+1529396494.953914|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529396495.054108|ASL|enable|
+1529396495.054643|M|checking|
+1529396495.060057|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529396495.079233|short|register all hotkeys for current app|
+1529396495.141146|ASL|disable|
+1529396495.142306|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529396495.294119|ASL|enable|
+1529396495.294785|M|checking|
+1529396495.300165|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529396495.319720|short|register all hotkeys for current app|
+1529396503.372346|swi|check device class|
+1529396503.372367|swi|shortcuts used|
+1529396503.392183|short|register all hotkeys for current app|
+1529396504.593335|short|register all hotkeys for current app|
+1529396546.054434|ASL|disable|
+1529396546.055255|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529396546.147531|ASL|enable|
+1529396546.148120|M|checking|
+1529396546.153300|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529396546.169903|short|register all hotkeys for current app|
+1529396558.248605|SEC|SecureInputActive com.google.Chrome 855|
+1529396558.250581|short|register disable hotkeys|
+1529396558.253016|short|register all hotkeys for current app|
+1529396561.945624|short|register disable hotkeys|
+1529396561.948676|short|register all hotkeys for current app|
+1529396561.950286|short|register all hotkeys|
+1529396561.951381|SEC|SecureInputDisabled com.google.Chrome|
+1529396561.953830|short|register all hotkeys|
+1529396561.956703|short|register all hotkeys for current app|
+1529396563.137096|SEC|SecureInputActive com.google.Chrome 855|
+1529396563.139017|short|register disable hotkeys|
+1529396563.141188|short|register all hotkeys for current app|
+1529396574.302058|SEC|SecureInputDisabled com.google.Chrome|
+1529396574.304892|short|register all hotkeys|
+1529396574.308514|short|register all hotkeys for current app|
+1529396575.137183|SEC|SecureInputActive com.google.Chrome 855|
+1529396575.139446|short|register disable hotkeys|
+1529396575.141585|short|register all hotkeys for current app|
+1529396576.322877|swi|check device class|
+1529396576.322914|swi|shortcuts used|
+1529396576.342405|SEC|SecureInputDisabled com.google.Chrome|
+1529396576.347903|short|register all hotkeys|
+1529396576.350050|short|register all hotkeys for current app|
+1529396579.523790|swi|check device class|
+1529396579.523818|swi|shortcuts used|
+1529396579.544587|short|register all hotkeys for current app|
+1529396627.136940|SEC|SecureInputActive com.google.Chrome 855|
+1529396627.141710|short|register disable hotkeys|
+1529396627.143878|short|register all hotkeys for current app|
+1529396628.587659|short|register disable hotkeys|
+1529396628.589544|short|register all hotkeys for current app|
+1529396628.590794|short|register all hotkeys|
+1529396632.640173|SEC|SecureInputDisabled com.google.Chrome|
+1529396632.642064|short|register all hotkeys|
+1529396632.644316|short|register all hotkeys for current app|
+1529396633.533592|SEC|SecureInputActive com.google.Chrome 855|
+1529396633.535468|short|register disable hotkeys|
+1529396633.537608|short|register all hotkeys for current app|
+1529396635.427912|short|register disable hotkeys|
+1529396635.429280|short|register all hotkeys for current app|
+1529396635.430202|short|register all hotkeys|
+1529396636.676618|SEC|SecureInputDisabled com.google.Chrome|
+1529396636.678821|short|register all hotkeys|
+1529396636.681269|short|register all hotkeys for current app|
+1529396642.323503|SEC|SecureInputActive com.google.Chrome 855|
+1529396642.328062|short|register disable hotkeys|
+1529396642.330196|short|register all hotkeys for current app|
+1529396643.586761|short|register disable hotkeys|
+1529396643.588932|short|register all hotkeys for current app|
+1529396643.590112|short|register all hotkeys|
+1529396647.710627|SEC|SecureInputDisabled com.google.Chrome|
+1529396647.715104|short|register all hotkeys|
+1529396647.719819|short|register all hotkeys for current app|
+1529396743.747560|swi|check device class|
+1529396743.747665|swi|shortcuts used|
+1529396743.766499|short|register all hotkeys for current app|
+1529396746.335183|swi|check device class|
+1529396746.335217|swi|shortcuts used|
+1529396746.364490|short|register all hotkeys for current app|
+1529396771.701255|SEC|SecureInputActive com.google.Chrome 855|
+1529396771.702574|short|register disable hotkeys|
+1529396771.703849|short|register all hotkeys for current app|
+1529396775.158922|short|register disable hotkeys|
+1529396775.161201|short|register all hotkeys for current app|
+1529396775.163132|short|register all hotkeys|
+1529396791.138096|SEC|SecureInputDisabled com.google.Chrome|
+1529396791.141534|short|register all hotkeys|
+1529396791.144830|short|register all hotkeys for current app|
+1529396799.895735|SEC|SecureInputActive com.google.Chrome 855|
+1529396799.897852|short|register disable hotkeys|
+1529396799.899564|short|register all hotkeys for current app|
+1529396801.516078|SEC|SecureInputDisabled com.google.Chrome|
+1529396801.519576|short|register all hotkeys|
+1529396801.522575|short|register all hotkeys for current app|
+1529397146.996379|swi|check device class|
+1529397146.996418|swi|shortcuts used|
+1529397147.017170|short|register all hotkeys for current app|
+1529397227.555921|swi|check device class|
+1529397227.555948|swi|shortcuts used|
+1529397227.579571|short|register all hotkeys|
+1529397227.582105|short|register all hotkeys for current app|
+1529397680.813480|ASL|disable|
+1529397680.816720|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529397680.937887|ASL|enable|
+1529397680.938619|M|checking|
+1529397680.946805|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529397680.967088|short|register all hotkeys for current app|
+1529397680.970623|ASL|disable|
+1529397680.971991|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529397681.044578|ASL|enable|
+1529397681.045861|M|checking|
+1529397681.054634|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529397681.069997|short|register all hotkeys for current app|
+1529397681.105551|ASL|disable|
+1529397681.106853|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529397681.208357|ASL|enable|
+1529397681.209565|M|checking|
+1529397681.216517|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529397681.231732|short|register all hotkeys for current app|
+1529397682.875141|swi|check device class|
+1529397682.875162|swi|shortcuts used|
+1529397682.901342|short|register all hotkeys for current app|
+1529397683.689442|short|register all hotkeys for current app|
+1529397684.608987|swi|check device class|
+1529397684.609011|swi|shortcuts used|
+1529397684.626716|short|register all hotkeys for current app|
+1529397692.171064|swi|check device class|
+1529397692.171090|swi|shortcuts used|
+1529397692.192483|short|register all hotkeys for current app|
+1529397761.218615|swi|check device class|
+1529397761.218795|swi|shortcuts used|
+1529397761.246829|short|register all hotkeys for current app|
+1529398497.609340|swi|check device class|
+1529398497.609373|swi|shortcuts used|
+1529398497.631988|short|register all hotkeys for current app|
+1529398503.834365|swi|check device class|
+1529398503.834394|swi|shortcuts used|
+1529398503.859501|short|register all hotkeys for current app|
+1529398791.890285|swi|check device class|
+1529398791.890315|swi|shortcuts used|
+1529398791.915323|short|register all hotkeys for current app|
+1529398806.958996|swi|check device class|
+1529398806.959035|swi|shortcuts used|
+1529398806.985394|short|register all hotkeys for current app|
+1529399375.497868|ASL|disable|
+1529399375.498411|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529399375.814808|ASL|enable|
+1529399375.815303|M|checking|
+1529399375.822167|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529399375.841212|short|register all hotkeys for current app|
+1529399438.074253|swi|check device class|
+1529399438.074278|swi|shortcuts used|
+1529399438.096022|short|register all hotkeys for current app|
+1529399445.300010|swi|check device class|
+1529399445.300036|swi|shortcuts used|
+1529399445.320346|short|register all hotkeys for current app|
+1529399583.576378|ASL|disable|
+1529399583.577482|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529399583.985077|ASL|enable|
+1529399583.985919|M|checking|
+1529399583.991776|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529399584.015504|short|register all hotkeys for current app|
+1529400153.663761|swi|check device class|
+1529400153.663870|swi|shortcuts used|
+1529400153.687381|short|register all hotkeys for current app|
+1529400163.536466|swi|check device class|
+1529400163.536496|swi|shortcuts used|
+1529400163.566321|short|register all hotkeys for current app|
+1529400775.781356|swi|check device class|
+1529400775.781386|swi|shortcuts used|
+1529400775.806239|short|register all hotkeys for current app|
+1529400783.823535|swi|check device class|
+1529400783.823563|swi|shortcuts used|
+1529400783.843814|short|register all hotkeys for current app|
+1529401071.680549|swi|check device class|
+1529401071.680596|swi|shortcuts used|
+1529401071.701638|short|register all hotkeys for current app|
+1529401078.177216|swi|check device class|
+1529401078.177244|swi|shortcuts used|
+1529401078.207834|short|register all hotkeys for current app|
+1529402583.319456|swi|check device class|
+1529402583.319503|swi|shortcuts used|
+1529402583.350606|short|register all hotkeys for current app|
+1529402607.258066|swi|check device class|
+1529402607.258119|swi|shortcuts used|
+1529402607.280528|short|register all hotkeys for current app|
+1529402624.094821|swi|check device class|
+1529402624.094840|swi|shortcuts used|
+1529402624.118683|short|register all hotkeys for current app|
+1529402625.901680|swi|check device class|
+1529402625.901706|swi|shortcuts used|
+1529402625.923048|short|register all hotkeys for current app|
+1529402691.865468|SEC|SecureInputActive com.google.Chrome 855|
+1529402691.867020|short|register disable hotkeys|
+1529402691.868497|short|register all hotkeys for current app|
+1529402693.068176|short|register disable hotkeys|
+1529402693.070436|short|register all hotkeys for current app|
+1529402693.071649|short|register all hotkeys|
+1529402696.866513|SEC|SecureInputDisabled com.google.Chrome|
+1529402696.870650|short|register all hotkeys|
+1529402696.874543|short|register all hotkeys for current app|
+1529402704.653186|SEC|SecureInputActive com.google.Chrome 855|
+1529402704.656789|short|register disable hotkeys|
+1529402704.658272|short|register all hotkeys for current app|
+1529402705.455017|short|register disable hotkeys|
+1529402705.457247|short|register all hotkeys for current app|
+1529402705.458607|short|register all hotkeys|
+1529402707.286441|SEC|SecureInputDisabled com.google.Chrome|
+1529402707.290133|short|register all hotkeys|
+1529402707.293777|short|register all hotkeys for current app|
+1529402723.723439|swi|check device class|
+1529402723.723464|swi|shortcuts used|
+1529402723.742786|short|register all hotkeys for current app|
+1529402730.556393|swi|check device class|
+1529402730.556419|swi|shortcuts used|
+1529402730.579113|short|register all hotkeys for current app|
+1529402736.533868|swi|check device class|
+1529402736.533892|swi|shortcuts used|
+1529402736.554484|short|register all hotkeys for current app|
+1529402739.289659|SEC|SecureInputActive 2BUA8C4S2C.com.agilebits.onepassword-osx-helper 520|
+1529402739.293232|short|register disable hotkeys|
+1529402739.294863|short|register all hotkeys for current app|
+1529402741.517899|short|register disable hotkeys|
+1529402741.520177|short|register all hotkeys for current app|
+1529402741.521383|short|register all hotkeys|
+1529402751.787820|SEC|SecureInputDisabled 2BUA8C4S2C.com.agilebits.onepassword-osx-helper|
+1529402751.791325|short|register all hotkeys|
+1529402751.795055|short|register all hotkeys for current app|
+1529402753.784803|swi|check device class|
+1529402753.784840|swi|shortcuts used|
+1529402753.804290|short|register all hotkeys for current app|
+1529402757.618375|SEC|SecureInputActive com.google.Chrome 855|
+1529402757.621961|short|register disable hotkeys|
+1529402757.623844|short|register all hotkeys for current app|
+1529402758.462953|SEC|SecureInputDisabled com.google.Chrome|
+1529402758.467385|short|register all hotkeys|
+1529402758.471951|short|register all hotkeys for current app|
+1529402780.466726|ASL|disable|
+1529402780.467715|ASL|adapting icon state global 1 perApp 0 clip 0|
+1529402780.552275|ASL|enable|
+1529402780.553392|M|checking|
+1529402780.562425|ASL|adapting icon state global 0 perApp 0 clip 0|
+1529402780.581560|short|register all hotkeys for current app|
+1529402899.714665|swi|check device class|
+1529402899.714685|swi|shortcuts used|
+1529402899.731627|short|register all hotkeys for current app|
+1529402900.806810|SEC|SecureInputActive 2BUA8C4S2C.com.agilebits.onepassword-osx-helper 520|
+1529402900.807763|short|register disable hotkeys|
+1529402900.808771|short|register all hotkeys for current app|
+1529402902.901248|short|register disable hotkeys|
+1529402902.903378|short|register all hotkeys for current app|
+1529402902.904559|short|register all hotkeys|
+1529402906.310666|SEC|SecureInputDisabled 2BUA8C4S2C.com.agilebits.onepassword-osx-helper|
+1529402906.313103|short|register all hotkeys|
+1529402906.316330|short|register all hotkeys for current app|
+1529402909.144379|swi|check device class|
+1529402909.144402|swi|shortcuts used|
+1529402909.162261|short|register all hotkeys for current app|
+1529402967.704835|WISNA|Focus doesn't match window pid|
+1529402968.739978|WISNA|Focus doesn't match window pid|

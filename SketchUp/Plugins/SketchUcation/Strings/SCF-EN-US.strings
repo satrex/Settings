@@ -1,0 +1,160 @@
+# Translation Constants used in SCF Plugins Repository tool
+# CONSTANT="Phrase"
+# Only edit between the "", never change the CONSTANT=
+# Make a copy of the file with your own locale suffix...
+# e.g. it would be SCF-FR.strings for the French version
+# Any empty lines and lines starting with a '#' are ignored.
+# Note how \n adds a newline and \t adds a tab [where used]
+# Also ALL " within the "" must be 'escaped' \ thus "color=\"Red\"",
+# Any ' within the "" - must be 'escaped' \\ thus "it\\'s OK" - when used
+# inside any of the HTML localizations to avoid js errors !
+# Note \\x0A to force newline and \t in tooltips etc...
+#
+### Cloud stuff
+YOUR="Your '"
+SUCPLUGINSMADE="' was missing.\nIt has been made, BUT you now need to link it to your 'sketchUcloud' page to ensuring syncing..."
+SUCPLUGINSFAIL="' is missing.\nIt could not been made for some unknown reason.\nTry using 'sketchUcloud' > 'Setup...' and then link it to your page to ensuring syncing..."
+USINGCLOUD="AutoInstalled into your 'Cloud' plugins:"
+SUCDISABLED="NOTE: that folder is NOT Setup to AutoLoad at startup,\nhowever, it might still be synced in 'sketchUcloud'..."
+SUCAVAILABLE="BUT you can still use the 'Cloud' button to AutoInstall Plugins into your synced folder"
+### Update stuff
+UPDATED="Updated"
+ENABLEDIN="Enabled in"
+DISABLEDIN="Disabled in"
+UPDATEALL="'Update All' Report"
+BUNDLEREPORT="'Bundle Install' Report"
+### If reinstalled we force restart
+RESTARTx="SketchUcation Toolset:\n\nAfter the Installation...\nYou MUST Restart SketchUp to Complete this Update..."
+###
+### Toolbar toggler menu txt
+TOOLBARTOGGLE="SketchUcation Toolbar: ON/OFF"
+###
+### General txt
+TOOLSS="Toolset"
+DESC="SketchUcation Plugin Store"
+SBT="Browse through the Plugin Store's vast collection of Plugins and Extensions.  Use 'AutoInstall', or read 'More Info', or *rate* them.  Use 'My Setup' to review, update and sync your installed and downloaded files: use one-click 'Update all' to AutoInstall all available updates..."
+###
+MDESC="SketchUcation Plugins Manager"
+MSBT="Easily Load/Temporarily-Load/Disable your Plugins.  Save your own Plugins 'Sets' for quick changes of setup..."
+###
+XDESC="SketchUcation Extensions Manager"
+XSBT="Easily Load/Temporarily-Load/UnLoad your Extensions.  Save your own Extensions 'Sets' for quick changes of setup..."
+###
+CDESC="SketchUcation Archive Installer..."
+SDESCP="Plugin-Sets"
+SDESCX="Extension-Sets"
+IDESC="AutoInstall: Choose Folder"
+AND="and"
+### Manager error msgs
+ERROR="ERROR"
+LOADERR="NOT Loaded !"
+ENABERR="NOT Loaded !"
+### Managers' tooltips
+RTIP="Disable"
+CTIP="Load-Temporarily"
+LTIP="Load-Permanently"
+XTIP="Manage Sets..."
+TTIP="\\x0A Select items...\\x0A For multiple hold Ctrl/Cmd or Shift...\\x0A\\x0A Use buttons to: \\x0A\t Disable \\x0A\t Load-Temporarily \\x0A\t Load-Permanently \\x0A \\x0A\t Manage Sets... \\x0A "
+LTTIP="\\x0A \\'Black\\'\t Loaded at startup\\x0A\\x0A \\'Green\\'\t Loaded-Permanently this session\\x0A\t Loaded on restart \\x0A "
+DTTIP="\\x0A \\'Black\\'\t Disabled at startup\\x0A\\x0A \\'Red\\'\t Disabled this session\\x0A\t Remains Loaded\\x0A\t Disabled on restart \\x0A\\x0A \\'Orange\\' Loaded-Temporarily this session\\x0A\t Disabled on restart \\x0A "
+###
+DXTIP="\\x0A \\'Gray\\' Background = Disabled Extension"
+DPTIP="\\x0A \\'Gray\\' Background = Disabled Plugin"
+### Helper msgs
+HELPWARN="WARNING !\n\nIf a 'Helper' Plugin is Disabled, then other Plugins that require it might fail to auto-load properly when SketchUp is restarted.\n\nThis Plugin might be needed by other Plugins..."
+HELPMESS="Do you still want to Disable it ?"
+### Manager txt
+PERMISSIONS="NO Security Permission to Manage ANY Plugins Folder in the $LOAD_PATH.\nFULL Read/Write Permissions are needed to Manage Plugins within Plugins Folders..."
+### Plugins Manager dlg
+ENAPLG="Loaded Plugins"
+DISPLG="Disabled Plugins"
+### Extensions Manager dlg
+ENAEXT="Loaded Extensions"
+DISEXT="Disabled Extensions"
+EXDEFA="Highlight Extension to Show Its Details..."
+EXNAME="Name"
+EXDESC="Description"
+EXVERS="Version"
+EXCREA="Creator"
+EXCOPY="Copyright"
+EXPATH="Loader"
+EXSTAT="Status"
+### Custom Install dlg
+PLUGTXT="You can Write to the Main Plugins Folder, and..."
+NOPLUGTXT="No Write-Permission to the Main Plugins Folder, but..."
+IGNOREPLG="You Opted to ignore the Main Plugins Folder, but..."
+CUST1TXT="You have a Custom-Plugins Folder."
+CUST2TXT="You have Custom-Plugins Folders."
+CHOOSEBUT="Choose AutoInstall Folder"
+### Install Error & ZIP msgs
+UNWRITABLE="You Need FULL Read/Write Security Permissions to the Main Plugins Folder!"
+IGNOREPLUG="You Opted to Ignore the Main Plugins Folder."
+NOALTS="No other Folders are available for the Installation of Plugins!"
+CHECK="Check/Reset your Plugins Folder's Security Permissions to FULL Read/Write... and Retry."
+SAVEZIP="Do you want to Save this Archive to Disk\n[as a ZIP file], for manual installation later?"
+### AutoInstall Finished msgs
+FINISHD="Finished."
+FINISHED="AutoInstall Finished."
+USINGCUST="Using Custom-Plugins Folder."
+USINGPLUG="Using Main Plugins Folder."
+### ZIP msgs
+ZIPDIR="Choose a Folder for the ZIP Archive..."
+MUST="You MUST"
+RBZZIP="Choose .RBZ or .ZIP Archive to Install"
+CHOI="Choose a Custom-Plugins Folder"
+### Error msgs
+ANSNO="No "
+ZIPERR="UnZIP Error "
+### Sets buttons
+SMADD="Add"
+SMAPPLY="Apply"
+SMREVERT="Revert"
+SMUPDATE="Update"
+SMDELETE="Delete"
+SMEXPORT="Export"
+SMEXPORTALL="Export All"
+SMIMPORT="Import"
+SMIMPORTALL="Import All"
+### Sets Manager tooltips
+SMADDTT="Add a New Set"
+SMAPPLYTT="Apply the Selected Set"
+SMREVERTTT="Revert to the Previous Settings"
+SMUPDATETT="Upate the Selected Set"
+SMDELETETT="Delete the Selected Set"
+SMEXPORTTT="Export the Selected Set into a Folder"
+SMEXPORTALLTT="Export ALL Sets into a Folder"
+SMIMPORTTT="Import a Set from a Folder"
+SMIMPORTALLTT="Import ALL Sets from a Folder"
+### Sets Manager msgs
+SETEXISTS="This Set Exists"
+SETUPDATE="Update Selected Set ?"
+SETREVERT="Reverted to the Previous Settings"
+SETNOREVERT="Cannot Revert !"
+SETDELETE="Delete Selected Set ?\nIt CANNOT be Undone !"
+SETEXPORT="Choose Folder for Exported Set..."
+SETEXPORTALL="Choose Folder for ALL Exported Sets..."
+SETIMPORT="Choose Set to Import..."
+SETIMPORTALL="Choose a Set to Import ALL in Folder..."
+### Uninstaller strings
+UDESC="SketchUcation Plugins Uninstaller"
+INST="Installed Plugins"
+UNINST="Uninstalled Plugins"
+INSTTIP="All Loaded AND Disabled Plugin Files "
+UNINSTTIP="Uninstalled Plugin Files"
+IUTIP="Select Plugins: \\x0A Red \t>\t to Uninstall \\x0A Green \t<\t to Reinstall "
+IUTIPX="\\x0APink Background If Duplicated "
+ITIP="Reinstall Selected Plugins"
+UTIP="Uninstall Selected Plugins"
+UHELPWARN="WARNING !\n\nIf a 'Helper' Plugin is Uninstalled, then other Plugins that require it might fail to auto-load properly when SketchUp is restarted.\n\nThis Plugin might be needed by other Plugins..."
+UHELPMESS="Do you still want to Uninstall it ?"
+INSTERR="NOT Reinstalled !"
+UNINSTERR="NOT Uninstalled !"
+### Bundles
+AUTOINSTALLING="AutoInstalling"
+AUTOINSTALLCOMPLETED="AutoInstall Completed"
+SUCCESS="Success"
+FAILED="Failed"
+OF="of"
+INTO="into"
+RESTART="You might need to restart SketchUp to complete Installation..."
+### EOF

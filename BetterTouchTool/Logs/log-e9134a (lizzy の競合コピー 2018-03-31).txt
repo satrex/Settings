@@ -1,0 +1,8 @@
+1522449576.228501|swi|check device class|
+1522449576.228528|swi|shortcuts NOT used|
+1522449576.260047|short|register all hotkeys for current app|
+1522450778.743854|swi|check device class|
+1522450778.743878|swi|shortcuts NOT used|
+1522450778.810201|short|register all hotkeys for current app|
+1522450779.653227|short|register all hotkeys for current app|
+1522450779.663924|short|register all hotkeys for current app|

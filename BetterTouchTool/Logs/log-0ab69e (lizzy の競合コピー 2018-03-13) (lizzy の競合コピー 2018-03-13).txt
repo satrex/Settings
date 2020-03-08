@@ -1,0 +1,552 @@
+1520730572.547268|usage|loading todays usage|
+1520730572.651456|ASL|[Crashlytics] Version 3.9.3 (128)|
+1520730572.810496|LIC|idate 2018-03-10 21:05:57 +0000|
+1520730572.818105|LIC|closing previous instance of BetterTouchTool relaunch|
+1520730572.892038|LAUNCH|DIDLaunch|
+1520730572.976535|ASL|new device connected|
+1520730572.999811|M|register internal trackpad|
+1520730573.000032|STDEV|63|
+1520730574.161772|LAUNCH|BTT INSTANCE LAUNCHED 503|
+1520730574.162084|SLEEP|STILL_SAME_USER 503|
+1520730585.147810|ASW|16b9e54c981844f2|
+1520730585.214499|M|checking|
+1520730585.214522|M|checking|
+1520730585.215555|M|unregister internal trackpad|
+1520730585.215749|M|checking|
+1520730585.215886|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1520730585.217105|M|register internal trackpad|
+1520730585.217304|STDEV|63|
+1520730585.218217|ASW|16b9e54c981844f2|
+1520730585.235670|M|checking|
+1520730585.235692|M|checking|
+1520730585.237832|M|checking|
+1520730585.371012|ASL|disabling touch for internal trackpad (clamshell)|
+1520730585.522546|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1520730617.107345|M|checking|
+1520730617.108713|M|unregister internal trackpad|
+1520730617.109232|M|checking|
+1520730617.109780|M|register internal trackpad|
+1520730617.109958|STDEV|63|
+1520732087.640411|usage|loading todays usage|
+1520732087.678673|ASL|[Crashlytics] Version 3.9.3 (128)|
+1520732087.749099|LIC|idate 2018-03-10 21:05:57 +0000|
+1520732087.760554|LIC|closing previous instance of BetterTouchTool relaunch|
+1520732087.800663|LAUNCH|DIDLaunch|
+1520732087.845049|ASL|new device connected|
+1520732087.879102|M|register internal trackpad|
+1520732087.879338|STDEV|63|
+1520732088.827250|LAUNCH|BTT INSTANCE LAUNCHED 503|
+1520732088.827583|SLEEP|STILL_SAME_USER 503|
+1520732101.485368|M|checking|
+1520732101.485389|M|checking|
+1520732101.873552|ASL|[Fabric] failed to download settings Error Domain=FABNetworkError Code=-6 "(null)" UserInfo={retryLimit=1, NSErrorFailingURLStringKey=https://settings.crashlytics.com/spi/v2/platforms/mac/apps/com.hegenberg.BetterTouchTool/settings?build_version=719&display_version=2.340&instance=7aa3b98d548b55f5c79049b5ca19182146f1cdde&icon_hash=8ddcbfedc97b34ed2aff82064e066fa843603c3a&source=1}|
+1520732102.495679|ASW|16b9e54c981844f2|
+1520732102.530954|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1520732102.532329|ASW|16b9e54c981844f2|
+1520732102.532401|M|unregister internal trackpad|
+1520732102.533906|M|register internal trackpad|
+1520732102.534121|STDEV|63|
+1520732102.554079|M|checking|
+1520732102.554252|M|checking|
+1520732102.561672|M|checking|
+1520732102.561705|M|checking|
+1520732102.657191|ASL|disabling touch for internal trackpad (clamshell)|
+1520732103.383754|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1520732134.019809|M|checking|
+1520732134.021016|M|unregister internal trackpad|
+1520732134.022239|M|checking|
+1520732134.023658|M|register internal trackpad|
+1520732134.023973|STDEV|63|
+1520735345.129297|M|checking|
+1520735345.130781|M|unregister internal trackpad|
+1520735345.131693|M|checking|
+1520735345.132421|M|register internal trackpad|
+1520735345.132657|STDEV|63|
+1520735345.184637|M|checking|
+1520735345.185877|M|unregister internal trackpad|
+1520735345.186866|M|checking|
+1520735345.187880|M|register internal trackpad|
+1520735345.188175|STDEV|63|
+1520735347.325693|M|checking|
+1520735347.327165|M|unregister internal trackpad|
+1520735347.328071|M|checking|
+1520735347.328817|M|register internal trackpad|
+1520735347.329081|STDEV|63|
+1520735350.608347|M|checking|
+1520735350.609885|M|unregister internal trackpad|
+1520735350.610802|M|checking|
+1520735350.611568|M|register internal trackpad|
+1520735350.611814|STDEV|63|
+1520735355.948063|M|checking|
+1520735355.949642|M|unregister internal trackpad|
+1520735355.950453|M|checking|
+1520735355.951313|M|register internal trackpad|
+1520735355.951546|STDEV|63|
+1520735391.095872|M|checking|
+1520735391.097252|M|unregister internal trackpad|
+1520735391.097763|M|checking|
+1520735391.098236|M|register internal trackpad|
+1520735391.098415|STDEV|63|
+1520899827.079334|M|checking|
+1520899827.081074|M|unregister internal trackpad|
+1520899827.082125|M|checking|
+1520899827.082706|M|register internal trackpad|
+1520899827.082929|STDEV|63|
+1520899827.216805|M|checking|
+1520899827.217957|M|unregister internal trackpad|
+1520899827.218828|M|checking|
+1520899827.219561|M|register internal trackpad|
+1520899827.219782|STDEV|63|
+1520899828.672108|usage|loading todays usage|
+1520899828.791970|ASL|enabling touch for internal trackpad (after clamshell)|
+1520899829.278559|M|checking|
+1520899829.279671|M|unregister internal trackpad|
+1520899829.280573|M|checking|
+1520899829.281325|M|register internal trackpad|
+1520899829.281580|STDEV|63|
+1520899832.531688|M|checking|
+1520899832.532868|M|unregister internal trackpad|
+1520899832.533620|M|checking|
+1520899832.534392|M|register internal trackpad|
+1520899832.534613|STDEV|63|
+1520899833.585552|ASW|3aea4af51f236e49|
+1520899838.021177|M|checking|
+1520899838.022792|M|unregister internal trackpad|
+1520899838.023646|M|checking|
+1520899838.024288|M|register internal trackpad|
+1520899838.024527|STDEV|63|
+1520899873.092341|M|checking|
+1520899873.093672|M|unregister internal trackpad|
+1520899873.094471|M|checking|
+1520899873.095211|M|register internal trackpad|
+1520899873.095432|STDEV|63|
+1520899856.406578|M|checking|
+1520899860.844884|multiclickdebug|ttc|
+1520899860.997276|multiclickdebug|ttc|
+1520900400.527433|ASW|75b13df0f6072c8d|
+1520900812.157328|M|checking|
+1520901909.804385|ASW|f54548ab2179de7a|
+1520901910.988563|ASW|16b9e54c981844f2|
+1520901911.067604|ASW|f54548ab2179de7a|
+1520902255.228647|ASW|75b13df0f6072c8d|
+1520902257.801149|ASW|5d1c5ff110b2c72a|
+1520902261.660546|ASW|3aea4af51f236e49|
+1520903137.210160|SLEEP|WILLSLEEP|
+1520903138.904256|ASW|16b9e54c981844f2|
+1520903432.160564|M|checking|
+1520903432.161871|M|unregister internal trackpad|
+1520903432.162806|M|checking|
+1520903432.163666|M|register internal trackpad|
+1520903432.163910|STDEV|63|
+1520903432.319716|M|checking|
+1520903432.321266|M|unregister internal trackpad|
+1520903432.321956|M|checking|
+1520903432.322697|M|register internal trackpad|
+1520903432.322917|STDEV|63|
+1520903434.323585|M|checking|
+1520903434.325064|M|unregister internal trackpad|
+1520903434.325810|M|checking|
+1520903434.326447|M|register internal trackpad|
+1520903434.326661|STDEV|63|
+1520903437.616664|M|checking|
+1520903437.617951|M|unregister internal trackpad|
+1520903437.618746|M|checking|
+1520903437.619484|M|register internal trackpad|
+1520903437.619769|STDEV|63|
+1520903443.070727|M|checking|
+1520903443.071975|M|unregister internal trackpad|
+1520903443.072908|M|checking|
+1520903443.073930|M|register internal trackpad|
+1520903443.074232|STDEV|63|
+1520903478.133251|M|checking|
+1520903478.134472|M|unregister internal trackpad|
+1520903478.134957|M|checking|
+1520903478.136790|M|register internal trackpad|
+1520903478.137042|STDEV|63|
+1520903748.160517|M|checking|
+1520903748.162052|M|unregister internal trackpad|
+1520903748.162782|M|checking|
+1520903748.163288|M|register internal trackpad|
+1520903748.163489|STDEV|63|
+1520903748.296660|M|checking|
+1520903748.298022|M|unregister internal trackpad|
+1520903748.299054|M|checking|
+1520903748.300216|M|register internal trackpad|
+1520903748.300557|STDEV|63|
+1520903750.345876|M|checking|
+1520903750.347210|M|unregister internal trackpad|
+1520903750.347897|M|checking|
+1520903750.348502|M|register internal trackpad|
+1520903750.348742|STDEV|63|
+1520903753.620458|M|checking|
+1520903753.621810|M|unregister internal trackpad|
+1520903753.622541|M|checking|
+1520903753.623191|M|register internal trackpad|
+1520903753.623412|STDEV|63|
+1520903759.076923|M|checking|
+1520903759.078524|M|unregister internal trackpad|
+1520903759.079324|M|checking|
+1520903759.080115|M|register internal trackpad|
+1520903759.080370|STDEV|63|
+1520903794.142856|M|checking|
+1520903794.145050|M|unregister internal trackpad|
+1520903794.145818|M|checking|
+1520903794.146527|M|register internal trackpad|
+1520903794.146769|STDEV|63|
+1520904065.178678|M|checking|
+1520904065.179757|M|unregister internal trackpad|
+1520904065.180406|M|checking|
+1520904065.180899|M|register internal trackpad|
+1520904065.181068|STDEV|63|
+1520904065.264609|M|checking|
+1520904065.266106|M|unregister internal trackpad|
+1520904065.267025|M|checking|
+1520904065.268126|M|register internal trackpad|
+1520904065.268370|STDEV|63|
+1520904067.250459|M|checking|
+1520904067.252063|M|unregister internal trackpad|
+1520904067.252761|M|checking|
+1520904067.253464|M|register internal trackpad|
+1520904067.253728|STDEV|63|
+1520904070.309958|M|checking|
+1520904070.311521|M|unregister internal trackpad|
+1520904070.312222|M|checking|
+1520904070.313016|M|register internal trackpad|
+1520904070.313240|STDEV|63|
+1520904075.728427|M|checking|
+1520904075.729557|M|unregister internal trackpad|
+1520904075.730381|M|checking|
+1520904075.731119|M|register internal trackpad|
+1520904075.731370|STDEV|63|
+1520904111.116579|M|checking|
+1520904111.118014|M|unregister internal trackpad|
+1520904111.118895|M|checking|
+1520904111.119708|M|register internal trackpad|
+1520904111.120081|STDEV|63|
+1520907268.124896|usage|loading todays usage|
+1520907268.348440|ASL|[Crashlytics] Version 3.9.3 (128)|
+1520907268.373991|LIC|idate 2018-03-11 02:15:40 +0000|
+1520907268.406477|LAUNCH|DIDLaunch|
+1520907269.479010|ASL|new device connected|
+1520907269.501311|tb|forced hidden 1|
+1520907269.512429|M|register touchbar mbp trackpad|
+1520907269.512481|M|register internal trackpad|
+1520907269.512708|STDEV|68|
+1520907270.813026|LAUNCH|BTT INSTANCE LAUNCHED 503|
+1520907270.813413|SLEEP|STILL_SAME_USER 503|
+1520907272.535576|ASW|79308b31fe055b6b|
+1520907272.620344|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1520907272.623432|M|unregister magic trackpad 2|
+1520907272.625071|M|register touchbar mbp trackpad|
+1520907272.625088|M|register internal trackpad|
+1520907272.625309|STDEV|68|
+1520907272.643447|M|checking|
+1520907272.643467|M|checking|
+1520907272.751557|ASW|79308b31fe055b6b|
+1520907272.789102|M|checking|
+1520907272.789119|M|checking|
+1520907273.068562|M|checking|
+1520907273.068576|M|checking|
+1520907273.404766|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(56900)|
+1520907274.614993|M|checking|
+1520907279.347827|ASW|967238dec1dfa230|
+1520907280.422631|M|checking|
+1520907282.284940|ASW|75b13df0f6072c8d|
+1520907282.780330|ASW|75b13df0f6072c8d|
+1520907283.379293|ASW|8cce1a147f257316|
+1520907283.403901|ASW|75b13df0f6072c8d|
+1520907286.913163|ASW|30a3725da245daf5|
+1520907287.544980|ASW|30a3725da245daf5|
+1520907305.974321|ASL|disable|
+1520907305.975951|ASL|adapting icon state global 1 perApp 0 clip 0|
+1520907306.107553|ASL|enable|
+1520907306.177548|ASL|disable|
+1520907306.186851|ASL|adapting icon state global 0 perApp 0 clip 0|
+1520907306.188362|ASW|30a3725da245daf5|
+1520907306.236409|ASL|adapting icon state global 1 perApp 0 clip 0|
+1520907306.238566|ASL|enable|
+1520907306.278528|M|checking|
+1520907306.279510|ASL|adapting icon state global 0 perApp 0 clip 0|
+1520907306.309684|ASW|30a3725da245daf5|
+1520907306.335245|M|checking|
+1520907306.346237|ASL|disable|
+1520907306.356369|ASL|adapting icon state global 1 perApp 0 clip 0|
+1520907306.423888|ASL|enable|
+1520907306.457681|ASL|adapting icon state global 0 perApp 0 clip 0|
+1520907306.458615|ASW|30a3725da245daf5|
+1520907306.491306|M|checking|
+1520907307.690466|ASW|3aea4af51f236e49|
+1520907307.725229|ASW|3aea4af51f236e49|
+1520907307.783443|ASW|30a3725da245daf5|
+1520907318.342410|ASW|30a3725da245daf5|
+1520907318.368590|ASW|30a3725da245daf5|
+1520907318.387991|ASW|30a3725da245daf5|
+1520908302.602844|usage|loading todays usage|
+1520908302.632325|ASL|[Crashlytics] Version 3.9.3 (128)|
+1520908302.756286|LIC|idate 2018-03-13 02:31:42 +0000|
+1520908302.764832|LIC|closing previous instance of BetterTouchTool relaunch|
+1520908302.795647|LAUNCH|DIDLaunch|
+1520908302.841582|ASL|new device connected|
+1520908302.870029|M|register internal trackpad|
+1520908302.870385|STDEV|63|
+1520908304.128698|LAUNCH|BTT INSTANCE LAUNCHED 503|
+1520908304.129028|SLEEP|STILL_SAME_USER 503|
+1520908316.355302|ASW|16b9e54c981844f2|
+1520908316.373814|M|checking|
+1520908316.373836|M|checking|
+1520908316.373949|M|unregister internal trackpad|
+1520908316.374885|M|checking|
+1520908316.374995|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1520908316.375288|M|register internal trackpad|
+1520908316.375457|STDEV|63|
+1520908316.376498|ASW|16b9e54c981844f2|
+1520908316.391218|M|checking|
+1520908316.391244|M|checking|
+1520908316.391251|M|checking|
+1520908316.457830|ASL|disabling touch for internal trackpad (clamshell)|
+1520908316.581223|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1520908348.180606|M|checking|
+1520908348.182357|M|unregister internal trackpad|
+1520908348.182966|M|checking|
+1520908348.183488|M|register internal trackpad|
+1520908348.183687|STDEV|63|
+1520908429.231018|M|checking|
+1520908429.232789|M|unregister internal trackpad|
+1520908429.233588|M|checking|
+1520908429.234350|M|register internal trackpad|
+1520908429.234558|STDEV|63|
+1520908429.321823|M|checking|
+1520908429.323095|M|unregister internal trackpad|
+1520908429.323910|M|checking|
+1520908429.324706|M|register internal trackpad|
+1520908429.324934|STDEV|63|
+1520908431.390982|M|checking|
+1520908431.392112|M|unregister internal trackpad|
+1520908431.392849|M|checking|
+1520908431.393413|M|register internal trackpad|
+1520908431.393598|STDEV|63|
+1520908434.392139|M|checking|
+1520908434.393754|M|unregister internal trackpad|
+1520908434.394569|M|checking|
+1520908434.395287|M|register internal trackpad|
+1520908434.395512|STDEV|63|
+1520908439.825132|M|checking|
+1520908439.826444|M|unregister internal trackpad|
+1520908439.827254|M|checking|
+1520908439.828023|M|register internal trackpad|
+1520908439.828234|STDEV|63|
+1520908475.141166|M|checking|
+1520908475.142812|M|unregister internal trackpad|
+1520908475.143531|M|checking|
+1520908475.144219|M|register internal trackpad|
+1520908475.144409|STDEV|63|
+1520908558.228736|M|checking|
+1520908558.230302|M|unregister internal trackpad|
+1520908558.231142|M|checking|
+1520908558.231894|M|register internal trackpad|
+1520908558.232118|STDEV|63|
+1520908558.306247|M|checking|
+1520908558.308032|M|unregister internal trackpad|
+1520908558.308614|M|checking|
+1520908558.309193|M|register internal trackpad|
+1520908558.309379|STDEV|63|
+1520908560.290086|M|checking|
+1520908560.291665|M|unregister internal trackpad|
+1520908560.292170|M|checking|
+1520908560.292651|M|register internal trackpad|
+1520908560.292828|STDEV|63|
+1520908563.527500|M|checking|
+1520908563.529076|M|unregister internal trackpad|
+1520908563.529668|M|checking|
+1520908563.530126|M|register internal trackpad|
+1520908563.530283|STDEV|63|
+1520908569.020370|M|checking|
+1520908569.021947|M|unregister internal trackpad|
+1520908569.022537|M|checking|
+1520908569.023105|M|register internal trackpad|
+1520908569.023279|STDEV|63|
+1520908604.180177|M|checking|
+1520908604.181544|M|unregister internal trackpad|
+1520908604.182468|M|checking|
+1520908604.183008|M|register internal trackpad|
+1520908604.183188|STDEV|63|
+1520908676.232039|M|checking|
+1520908676.233704|M|unregister internal trackpad|
+1520908676.234594|M|checking|
+1520908676.235262|M|register internal trackpad|
+1520908676.235475|STDEV|63|
+1520908676.331787|M|checking|
+1520908676.333026|M|unregister internal trackpad|
+1520908676.333699|M|checking|
+1520908676.334392|M|register internal trackpad|
+1520908676.334596|STDEV|63|
+1520908678.298036|M|checking|
+1520908678.299169|M|unregister internal trackpad|
+1520908678.299840|M|checking|
+1520908678.300508|M|register internal trackpad|
+1520908678.300707|STDEV|63|
+1520908681.584384|M|checking|
+1520908681.585608|M|unregister internal trackpad|
+1520908681.586292|M|checking|
+1520908681.586854|M|register internal trackpad|
+1520908681.587057|STDEV|63|
+1520908687.157917|M|checking|
+1520908687.159703|M|unregister internal trackpad|
+1520908687.160636|M|checking|
+1520908687.161263|M|register internal trackpad|
+1520908687.161444|STDEV|63|
+1520908722.224029|M|checking|
+1520908722.225077|M|unregister internal trackpad|
+1520908722.225731|M|checking|
+1520908722.226410|M|register internal trackpad|
+1520908722.226640|STDEV|63|
+1520918648.162627|M|checking|
+1520918648.163657|M|unregister internal trackpad|
+1520918648.164591|M|checking|
+1520918648.165507|M|register internal trackpad|
+1520918648.165746|STDEV|63|
+1520918648.352974|M|checking|
+1520918648.354019|M|unregister internal trackpad|
+1520918648.354766|M|checking|
+1520918648.355473|M|register internal trackpad|
+1520918648.355676|STDEV|63|
+1520918650.353417|M|checking|
+1520918650.354906|M|unregister internal trackpad|
+1520918650.355527|M|checking|
+1520918650.356100|M|register internal trackpad|
+1520918650.356286|STDEV|63|
+1520918653.648314|M|checking|
+1520918653.649449|M|unregister internal trackpad|
+1520918653.650234|M|checking|
+1520918653.650973|M|register internal trackpad|
+1520918653.651161|STDEV|63|
+1520918659.100239|M|checking|
+1520918659.101896|M|unregister internal trackpad|
+1520918659.102781|M|checking|
+1520918659.103459|M|register internal trackpad|
+1520918659.103673|STDEV|63|
+1520918694.192113|M|checking|
+1520918694.193425|M|unregister internal trackpad|
+1520918694.194245|M|checking|
+1520918694.195039|M|register internal trackpad|
+1520918694.195262|STDEV|63|
+1520925935.178919|M|checking|
+1520925935.180313|M|unregister internal trackpad|
+1520925935.181249|M|checking|
+1520925935.182060|M|register internal trackpad|
+1520925935.182299|STDEV|63|
+1520925935.300347|M|checking|
+1520925935.301644|M|unregister internal trackpad|
+1520925935.302502|M|checking|
+1520925935.303297|M|register internal trackpad|
+1520925935.303511|STDEV|63|
+1520925937.344355|M|checking|
+1520925937.345725|M|unregister internal trackpad|
+1520925937.346457|M|checking|
+1520925937.347217|M|register internal trackpad|
+1520925937.347437|STDEV|63|
+1520925940.569376|M|checking|
+1520925940.570961|M|unregister internal trackpad|
+1520925940.572102|M|checking|
+1520925940.572972|M|register internal trackpad|
+1520925940.573177|STDEV|63|
+1520925946.000285|M|checking|
+1520925946.001567|M|unregister internal trackpad|
+1520925946.002366|M|checking|
+1520925946.003176|M|register internal trackpad|
+1520925946.003398|STDEV|63|
+1520925980.711616|M|checking|
+1520925980.715637|M|unregister internal trackpad|
+1520925980.716718|M|checking|
+1520925980.717257|M|register internal trackpad|
+1520925980.717476|STDEV|63|
+1520927711.228889|M|checking|
+1520927711.229177|M|unregister internal trackpad|
+1520927711.230366|M|checking|
+1520927711.231028|M|register internal trackpad|
+1520927711.231234|STDEV|63|
+1520927711.354372|M|checking|
+1520927711.355531|M|unregister internal trackpad|
+1520927711.357723|M|checking|
+1520927711.358464|M|register internal trackpad|
+1520927711.358670|STDEV|63|
+1520927713.404368|M|checking|
+1520927713.405673|M|unregister internal trackpad|
+1520927713.406449|M|checking|
+1520927713.407286|M|register internal trackpad|
+1520927713.407504|STDEV|63|
+1520927716.658875|M|checking|
+1520927716.659936|M|unregister internal trackpad|
+1520927716.660685|M|checking|
+1520927716.661262|M|register internal trackpad|
+1520927716.661492|STDEV|63|
+1520927722.033951|M|checking|
+1520927722.034970|M|unregister internal trackpad|
+1520927722.035666|M|checking|
+1520927722.036307|M|register internal trackpad|
+1520927722.036519|STDEV|63|
+1520927757.157602|M|checking|
+1520927757.158765|M|unregister internal trackpad|
+1520927757.159402|M|checking|
+1520927757.159954|M|register internal trackpad|
+1520927757.160179|STDEV|63|
+1520929966.264571|M|checking|
+1520929966.266161|M|unregister internal trackpad|
+1520929966.266975|M|checking|
+1520929966.267761|M|register internal trackpad|
+1520929966.268048|STDEV|63|
+1520929966.372098|M|checking|
+1520929966.373691|M|unregister internal trackpad|
+1520929966.374500|M|checking|
+1520929966.375306|M|register internal trackpad|
+1520929966.375547|STDEV|63|
+1520929968.371210|M|checking|
+1520929968.372770|M|unregister internal trackpad|
+1520929968.373454|M|checking|
+1520929968.373946|M|register internal trackpad|
+1520929968.374171|STDEV|63|
+1520929971.649415|M|checking|
+1520929971.650504|M|unregister internal trackpad|
+1520929971.651353|M|checking|
+1520929971.651941|M|register internal trackpad|
+1520929971.652140|STDEV|63|
+1520929977.105831|M|checking|
+1520929977.107124|M|unregister internal trackpad|
+1520929977.108371|M|checking|
+1520929977.109633|M|register internal trackpad|
+1520929977.109964|STDEV|63|
+1520930012.197498|M|checking|
+1520930012.198986|M|unregister internal trackpad|
+1520930012.199750|M|checking|
+1520930012.200519|M|register internal trackpad|
+1520930012.200744|STDEV|63|
+1520932194.280433|M|checking|
+1520932194.281963|M|unregister internal trackpad|
+1520932194.282594|M|checking|
+1520932194.283187|M|register internal trackpad|
+1520932194.283388|STDEV|63|
+1520932194.411887|M|checking|
+1520932194.413438|M|unregister internal trackpad|
+1520932194.414154|M|checking|
+1520932194.414864|M|register internal trackpad|
+1520932194.415052|STDEV|63|
+1520932196.457391|M|checking|
+1520932196.459136|M|unregister internal trackpad|
+1520932196.459951|M|checking|
+1520932196.460358|M|register internal trackpad|
+1520932196.460566|STDEV|63|
+1520932199.755048|M|checking|
+1520932199.756144|M|unregister internal trackpad|
+1520932199.757177|M|checking|
+1520932199.757624|M|register internal trackpad|
+1520932199.757848|STDEV|63|
+1520932205.195045|M|checking|
+1520932205.196135|M|unregister internal trackpad|
+1520932205.196870|M|checking|
+1520932205.197577|M|register internal trackpad|
+1520932205.197786|STDEV|63|
+1520932240.215436|M|checking|
+1520932240.216925|M|unregister internal trackpad|
+1520932240.217510|M|checking|
+1520932240.218067|M|register internal trackpad|
+1520932240.218302|STDEV|63|

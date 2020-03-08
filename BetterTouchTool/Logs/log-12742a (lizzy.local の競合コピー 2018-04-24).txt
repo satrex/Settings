@@ -1,0 +1,231 @@
+1524552776.311007|SEC|SecureInputActive com.apple.loginwindow|
+1524552776.312237|short|register disable hotkeys|
+1524552776.313375|short|register all hotkeys for current app|
+1524552780.819825|swi|check device class|
+1524552780.819847|swi|shortcuts used|
+1524552780.846714|SEC|SecureInputDisabled com.apple.loginwindow|
+1524552780.848849|short|register all hotkeys|
+1524552785.329942|ASL|disable|
+1524552785.332015|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524552785.445565|ASL|enable|
+1524552785.447376|M|checking|
+1524552785.455107|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524552785.472779|short|register all hotkeys for current app|
+1524552785.526103|ASL|disable|
+1524552785.528735|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524552785.607015|ASL|enable|
+1524552785.608610|M|checking|
+1524552785.615558|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524552785.633478|short|register all hotkeys for current app|
+1524552785.701158|ASL|disable|
+1524552785.702286|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524552785.981449|ASL|enable|
+1524552785.982840|M|checking|
+1524552785.993047|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524552786.007899|short|register all hotkeys for current app|
+1524552786.043366|ASL|disable|
+1524552786.044573|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524552786.178032|ASL|enable|
+1524552786.179425|M|checking|
+1524552786.189523|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524552786.208269|short|register all hotkeys for current app|
+1524552786.244835|ASL|disable|
+1524552786.247414|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524552786.312784|ASL|enable|
+1524552786.313491|M|checking|
+1524552786.319199|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524552786.335978|short|register all hotkeys for current app|
+1524552787.292227|ASL|disable|
+1524552787.294600|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524552787.368447|ASL|enable|
+1524552787.369808|M|checking|
+1524552787.378638|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524552787.397365|short|register all hotkeys for current app|
+1524552787.463773|ASL|disable|
+1524552787.465056|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524552787.536484|ASL|enable|
+1524552787.537814|M|checking|
+1524552787.546478|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524552787.563403|short|register all hotkeys for current app|
+1524552787.605507|ASL|disable|
+1524552787.607826|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524552787.698192|ASL|enable|
+1524552787.699699|M|checking|
+1524552787.706578|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524552787.723169|short|register all hotkeys for current app|
+1524552820.871212|swi|check device class|
+1524552820.871232|swi|shortcuts used|
+1524552820.935453|short|register all hotkeys for current app|
+1524552864.318117|swi|check device class|
+1524552864.318180|swi|shortcuts used|
+1524552864.345202|short|register all hotkeys for current app|
+1524552867.824080|swi|check device class|
+1524552867.824103|swi|shortcuts used|
+1524552867.854344|short|register all hotkeys for current app|
+1524552913.248567|swi|check device class|
+1524552913.248600|swi|shortcuts used|
+1524552913.277093|short|register all hotkeys for current app|
+1524552982.201909|ASL|disable|
+1524552982.205101|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524552982.310433|ASL|enable|
+1524552982.311724|M|checking|
+1524552982.322237|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524552982.341230|short|register all hotkeys for current app|
+1524552982.386104|ASL|disable|
+1524552982.388671|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524552982.462407|ASL|enable|
+1524552982.463708|M|checking|
+1524552982.473138|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524552982.489220|short|register all hotkeys for current app|
+1524552982.538731|ASL|disable|
+1524552982.542091|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524552982.635082|ASL|enable|
+1524552982.636558|M|checking|
+1524552982.643664|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524552982.659854|short|register all hotkeys for current app|
+1524552987.478241|swi|check device class|
+1524552987.478262|swi|shortcuts used|
+1524552987.499445|short|register all hotkeys for current app|
+1524552988.179890|short|register all hotkeys for current app|
+1524553095.756823|swi|check device class|
+1524553095.756860|swi|shortcuts used|
+1524553095.778935|short|register all hotkeys for current app|
+1524553096.119402|ASL|disable|
+1524553096.120540|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524553096.204236|ASL|enable|
+1524553096.205657|M|checking|
+1524553096.212871|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524553096.230381|short|register all hotkeys for current app|
+1524553096.268025|ASL|disable|
+1524553096.269600|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524553096.363795|ASL|enable|
+1524553096.364626|M|checking|
+1524553096.370176|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524553096.384503|short|register all hotkeys for current app|
+1524553096.487062|ASL|disable|
+1524553096.489722|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524553096.715503|ASL|enable|
+1524553096.716807|M|checking|
+1524553096.723938|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524553096.738879|short|register all hotkeys for current app|
+1524553101.262812|swi|check device class|
+1524553101.262835|swi|shortcuts used|
+1524553101.285189|short|register all hotkeys for current app|
+1524553101.763127|short|register all hotkeys for current app|
+1524553241.709158|swi|check device class|
+1524553241.709183|swi|shortcuts used|
+1524553241.735875|short|register all hotkeys for current app|
+1524553298.291943|ASL|disable|
+1524553298.293821|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524553299.215869|ASL|enable|
+1524553299.217091|M|checking|
+1524553299.226076|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524553299.245287|short|register all hotkeys for current app|
+1524553299.320123|ASL|disable|
+1524553299.322074|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524553299.355838|ASL|enable|
+1524553299.356886|M|checking|
+1524553299.364386|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524553299.380472|short|register all hotkeys for current app|
+1524553299.479548|ASL|disable|
+1524553299.480706|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524553299.552370|ASL|enable|
+1524553299.553685|M|checking|
+1524553299.562536|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524553299.578855|short|register all hotkeys for current app|
+1524553303.615267|ASL|disable|
+1524553303.617574|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524553304.036278|ASL|enable|
+1524553304.037378|M|checking|
+1524553304.046407|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524553304.062959|short|register all hotkeys for current app|
+1524553304.195853|ASL|disable|
+1524553304.198270|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524553304.215215|ASL|enable|
+1524553304.216612|M|checking|
+1524553304.222567|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524553304.237903|short|register all hotkeys for current app|
+1524553309.352699|ASL|disable|
+1524553309.356488|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524553309.481085|ASL|enable|
+1524553309.482534|M|checking|
+1524553309.491589|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524553309.508323|short|register all hotkeys for current app|
+1524553480.029273|swi|check device class|
+1524553480.029302|swi|shortcuts used|
+1524553480.052154|short|register all hotkeys for current app|
+1524553481.943412|swi|check device class|
+1524553481.943436|swi|shortcuts used|
+1524553481.966941|short|register all hotkeys for current app|
+1524553484.058797|swi|check device class|
+1524553484.058834|swi|shortcuts used|
+1524553484.089118|short|register all hotkeys for current app|
+1524554515.883777|swi|check device class|
+1524554515.883801|swi|shortcuts used|
+1524554515.908196|short|register all hotkeys for current app|
+1524555278.486839|swi|check device class|
+1524555278.486871|swi|shortcuts used|
+1524555278.512490|short|register all hotkeys for current app|
+1524555891.029961|swi|check device class|
+1524555891.029989|swi|shortcuts used|
+1524555891.059365|short|register all hotkeys for current app|
+1524555921.288510|swi|check device class|
+1524555921.288536|swi|shortcuts used|
+1524555921.313260|short|register all hotkeys for current app|
+1524556205.336283|swi|check device class|
+1524556205.336310|swi|shortcuts used|
+1524556205.360092|short|register all hotkeys for current app|
+1524556240.761705|swi|check device class|
+1524556240.761858|swi|shortcuts used|
+1524556240.785667|short|register all hotkeys for current app|
+1524556264.807812|swi|check device class|
+1524556264.807842|swi|shortcuts used|
+1524556264.835545|short|register all hotkeys for current app|
+1524556266.478012|swi|check device class|
+1524556266.478036|swi|shortcuts used|
+1524556266.503656|short|register all hotkeys for current app|
+1524556686.779277|swi|check device class|
+1524556686.779309|swi|shortcuts used|
+1524556686.805435|short|register all hotkeys for current app|
+1524557189.637547|ASL|disable|
+1524557189.639625|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524557189.702182|ASL|enable|
+1524557189.702796|M|checking|
+1524557189.708406|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524557189.723266|short|register all hotkeys for current app|
+1524557189.936100|ASL|disable|
+1524557189.938613|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524557190.024850|ASL|enable|
+1524557190.026294|M|checking|
+1524557190.033427|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524557190.051323|short|register all hotkeys for current app|
+1524557190.089789|ASL|disable|
+1524557190.091016|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524557190.184959|ASL|enable|
+1524557190.187323|M|checking|
+1524557190.196644|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524557190.211698|short|register all hotkeys for current app|
+1524557190.251876|ASL|disable|
+1524557190.253231|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524557190.372803|ASL|enable|
+1524557190.374162|M|checking|
+1524557190.383220|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524557190.400016|short|register all hotkeys for current app|
+1524557190.462431|ASL|disable|
+1524557190.464981|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524557190.530178|ASL|enable|
+1524557190.530915|M|checking|
+1524557190.536770|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524557190.553168|short|register all hotkeys for current app|
+1524558818.148160|swi|check device class|
+1524558818.148184|swi|shortcuts used|
+1524558818.172735|short|register all hotkeys for current app|
+1524558818.916154|swi|check device class|
+1524558818.916177|swi|shortcuts used|
+1524558818.936429|short|register all hotkeys for current app|
+1524558818.938794|swi|check device class|
+1524558818.938814|swi|shortcuts used|
+1524558818.955965|short|register all hotkeys for current app|
+1524559432.873140|swi|check device class|
+1524559432.873167|swi|shortcuts used|
+1524559432.892743|short|register all hotkeys for current app|

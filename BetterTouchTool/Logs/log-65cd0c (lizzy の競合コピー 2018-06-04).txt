@@ -1,0 +1,9 @@
+1528105169.500838|SEC|SecureInputActive com.apple.loginwindow|
+1528105169.505368|short|register disable hotkeys|
+1528105169.507234|short|register all hotkeys for current app|
+1528106255.796555|M|mt_stop2|
+1528106255.796849|M|checking|
+1528106255.798882|M|unregister internal trackpad|
+1528106255.799720|M|checking|
+1528106255.804621|M|register internal trackpad|
+1528106255.805909|STDEV|63|

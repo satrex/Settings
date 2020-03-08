@@ -1,0 +1,16 @@
+# Load the normal support files.
+require 'sketchup.rb'
+require 'extensions.rb'
+
+
+# Create the extension.
+ext = SketchupExtension.new('WireTool', File.join('ae_WireTool', 'WireTool.rb'))
+
+# Attach some nice info.
+ext.creator     = 'Aerilius'
+ext.version     = '1.4.1'
+ext.copyright   = '2012-2013, Andreas Eisenbarth'
+ext.description = 'Tool to draw catenary curves.'
+
+# Register and load the extension on startup.
+Sketchup.register_extension(ext, true)

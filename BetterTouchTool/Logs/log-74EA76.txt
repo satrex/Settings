@@ -1,0 +1,81 @@
+1557367227.932748|ASL|shell script contains error and crashes BTT|
+1557367228.062344|ASL|interrupt reply|
+1557367261.916872|SLEEP|CONTINUESESSION|
+1557367261.917179|ASL|enable|
+1557367262.015840|short|register all hotkeys|
+1557367262.078773|ASL|using old relaunch|
+1557367262.595154|TERMINATE|SHOULDTERMINATE|
+1557367269.745556|usage|loading todays usage|
+1557367269.902130|ASL|[Crashlytics] Version 3.9.3 (128)|
+1557367269.933670|short|init|
+1557367270.334724|backup|backupped2.12|
+1557367270.337780|backup|backupped2.12|
+1557367270.377975|backup|backupped2.12|
+1557367270.380902|ASL|CoreData: Failed to load optimized model at path '/Applications/BetterTouchTool.app/Contents/Resources/BetterTouchTool_DataModel.momd/BetterTouchTool_DataModel 48.omo'|
+1557367270.437992|LIC|idate 2019-05-09 02:01:10 +0000|
+1557367270.446433|short|register all hotkeys|
+1557367270.460704|short|register disable hotkeys|
+1557367270.462610|short|register disable hotkeys|
+1557367270.464697|short|register all hotkeys|
+1557367271.052763|short|eventtap success|
+1557367271.541409|short|register disable hotkeys|
+1557367271.543494|short|register all hotkeys|
+1557367272.041974|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1557367280.034215|ASL|-[BetterTouchToolAppDelegate quitBTT]: unrecognized selector sent to instance 0x7fbaca418910|
+1557367303.447588|ASL|apple script contains error and crashes BTT|
+1557367303.548888|ASL|interrupt reply|
+1557369014.844775|ASL|apple script contains error and crashes BTT|
+1557369015.284575|ASL|interrupt reply|
+1557369050.151344|ASL|apple script contains error and crashes BTT|
+1557369050.653339|ASL|interrupt reply|
+1557369074.128424|ASL|apple script contains error and crashes BTT|
+1557369074.267297|ASL|interrupt reply|
+1557369089.209318|ASL|apple script contains error and crashes BTT|
+1557369089.391351|ASL|interrupt reply|
+1557369165.963945|ASL|apple script contains error and crashes BTT|
+1557369166.074504|ASL|interrupt reply|
+1557369198.118198|ASL|apple script contains error and crashes BTT|
+1557369198.473363|ASL|interrupt reply|
+1557369211.161362|ASL|apple script contains error and crashes BTT|
+1557369211.222512|ASL|interrupt reply|
+1557369226.209971|ASL|apple script contains error and crashes BTT|
+1557369226.341782|ASL|interrupt reply|
+1557369332.245580|ASL|apple script contains error and crashes BTT|
+1557369332.338655|ASL|interrupt reply|
+1557369354.332848|ASL|apple script contains error and crashes BTT|
+1557369354.454519|ASL|interrupt reply|
+1557369370.396856|ASL|apple script contains error and crashes BTT|
+1557369370.511053|ASL|interrupt reply|
+1557369382.442301|ASL|apple script contains error and crashes BTT|
+1557369382.540195|ASL|interrupt reply|
+1557369819.917134|ASL|apple script contains error and crashes BTT|
+1557369820.048274|ASL|interrupt reply|
+1557369853.070698|ASL|apple script contains error and crashes BTT|
+1557369853.181468|ASL|interrupt reply|
+1557369864.123886|ASL|apple script contains error and crashes BTT|
+1557369864.219265|ASL|interrupt reply|
+1557369880.184116|ASL|apple script contains error and crashes BTT|
+1557369880.286365|ASL|interrupt reply|
+1557369891.218947|ASL|apple script contains error and crashes BTT|
+1557369891.361161|ASL|interrupt reply|
+1557369904.268872|ASL|apple script contains error and crashes BTT|
+1557369904.386402|ASL|interrupt reply|
+1557369919.328503|ASL|apple script contains error and crashes BTT|
+1557369919.444942|ASL|interrupt reply|
+1557371448.682118|ASL|apple script contains error and crashes BTT|
+1557371448.821940|ASL|interrupt reply|
+1557371642.856787|TERMINATE|SHOULDTERMINATE|
+1557373673.071551|usage|loading todays usage|
+1557373673.132851|ASL|[Crashlytics] Version 3.9.3 (128)|
+1557373673.167061|short|init|
+1557373673.548663|ASL|CoreData: Failed to load optimized model at path '/Applications/BetterTouchTool.app/Contents/Resources/BetterTouchTool_DataModel.momd/BetterTouchTool_DataModel 48.omo'|
+1557373673.596340|LIC|idate 2019-05-09 03:47:53 +0000|
+1557373673.605354|short|register all hotkeys|
+1557373673.625330|short|register disable hotkeys|
+1557373673.626932|short|register disable hotkeys|
+1557373673.628990|short|register all hotkeys|
+1557373674.267085|short|eventtap success|
+1557373674.741756|short|register disable hotkeys|
+1557373674.743475|short|register all hotkeys|
+1557373675.300458|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1557373684.333895|ASL|-[BetterTouchToolAppDelegate quitBTT]: unrecognized selector sent to instance 0x7fd9e8648c30|

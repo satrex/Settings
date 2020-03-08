@@ -1,0 +1,4 @@
+1528292196.174570|swi|check device class|
+1528292196.174596|swi|shortcuts used|
+1528292196.207536|short|register all hotkeys for current app|
+1528297202.714016|usage|loading todays usage|

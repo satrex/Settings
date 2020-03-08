@@ -1,0 +1,131 @@
+1524623932.053360|usage|loading todays usage|
+1524623932.083354|ASL|[Crashlytics] Version 3.9.3 (128)|
+1524623932.113967|short|init|
+1524623932.113994|short|no event tap functionality used|
+1524623932.159967|LIC|idate 2018-04-19 10:50:23 +0000|
+1524623932.164205|short|register all hotkeys|
+1524623932.174277|LIC|closing previous instance of BetterTouchTool relaunch|
+1524623932.178322|short|register disable hotkeys|
+1524623932.179376|short|register disable hotkeys|
+1524623932.180526|short|register all hotkeys|
+1524623932.184445|LAUNCH|DIDLaunch|
+1524623932.219209|ASL|new multitouch device recognized|
+1524623932.219462|M|checking|
+1524623932.221476|short|call sharedInstance4|
+1524623932.223609|SEC|SecureInputActive com.apple.loginwindow|
+1524623932.237855|M|mt_stop10|
+1524623932.238018|M|checking|
+1524623932.240454|M|register touchbar mbp trackpad|
+1524623932.240474|M|register internal trackpad|
+1524623932.240640|STDEV|68|
+1524623932.240725|swi|check device class|
+1524623932.240732|swi|shortcuts used|
+1524623933.631209|short|eventtap success|
+1524623933.669507|short|register disable hotkeys|
+1524623933.671068|short|register all hotkeys for current app|
+1524623933.672330|short|register all hotkeys|
+1524623934.501804|short|register all hotkeys for current app|
+1524623934.503690|M|mt_stop2|
+1524623934.503858|M|checking|
+1524623934.505443|M|unregister magic trackpad 2|
+1524623934.505669|M|checking|
+1524623934.507518|M|register touchbar mbp trackpad|
+1524623934.507536|M|register internal trackpad|
+1524623934.507717|STDEV|68|
+1524623934.510297|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(51824)|
+1524623934.607851|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1524623934.613543|M|checking|
+1524623934.670243|M|checking|
+1524623935.430568|short|register all hotkeys for current app|
+1524623943.318911|swi|check device class|
+1524623943.318931|swi|shortcuts used|
+1524623943.343149|short|register all hotkeys for current app|
+1524623943.343804|SEC|SecureInputDisabled com.apple.loginwindow|
+1524623943.345090|short|register disable hotkeys|
+1524623943.346707|short|register all hotkeys for current app|
+1524623943.347932|short|register all hotkeys|
+1524623947.096339|M|checking|
+1524624000.082236|ASL|disable|
+1524624000.084648|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524624000.204024|ASL|enable|
+1524624000.206674|M|checking|
+1524624000.282711|ASL|disable|
+1524624000.289004|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524624000.307273|short|register all hotkeys for current app|
+1524624000.312455|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524624000.314081|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524624000.353552|ASL|enable|
+1524624000.355518|M|checking|
+1524624000.442278|short|register all hotkeys for current app|
+1524624002.867451|swi|check device class|
+1524624002.867472|swi|shortcuts used|
+1524624002.887284|short|register all hotkeys for current app|
+1524624003.471199|short|register all hotkeys for current app|
+1524624269.048487|ASL|disable|
+1524624269.058764|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524624269.113131|ASL|enable|
+1524624269.113717|M|checking|
+1524624269.154908|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524624269.181102|short|register all hotkeys for current app|
+1524624269.185836|ASL|disable|
+1524624269.199296|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524624269.254874|ASL|enable|
+1524624269.256137|M|checking|
+1524624269.302919|ASL|disable|
+1524624269.354887|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524624269.383207|short|register all hotkeys for current app|
+1524624269.383865|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524624269.400876|ASL|enable|
+1524624269.401380|M|checking|
+1524624269.421729|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524624269.463956|short|register all hotkeys for current app|
+1524624269.472505|ASL|disable|
+1524624269.481971|ASL|adapting icon state global 1 perApp 0 clip 0|
+1524624269.494751|ASL|enable|
+1524624269.495323|M|checking|
+1524624269.532215|ASL|adapting icon state global 0 perApp 0 clip 0|
+1524624269.558260|short|register all hotkeys for current app|
+1524624271.281639|swi|check device class|
+1524624271.281663|swi|shortcuts used|
+1524624271.307060|short|register all hotkeys for current app|
+1524624271.589278|M|checking|
+1524624271.615905|short|register all hotkeys for current app|
+1524624285.710923|M|checking|
+1524624285.718481|swi|check device class|
+1524624285.718508|swi|shortcuts used|
+1524624285.740853|short|register all hotkeys for current app|
+1524624406.486705|ASL|did hide|
+1524624406.486788|ASL|did hide|
+1524624593.998566|ASL|did hide|
+1524624593.998734|ASL|did hide|
+1524624636.906467|WISNA|Focus doesn't match window pid|
+1524624700.257107|ASL|did hide|
+1524624700.257180|ASL|did hide|
+1524624742.351507|ASL|apple script contains error and crashes BTT|
+1524624742.379405|ASL|interrupt reply|
+1524625888.370093|swi|check device class|
+1524625888.370133|swi|shortcuts used|
+1524625888.410289|short|register all hotkeys for current app|
+1524625889.182929|swi|check device class|
+1524625889.182953|swi|shortcuts used|
+1524625889.206073|short|register all hotkeys for current app|
+1524625889.208479|swi|check device class|
+1524625889.208497|swi|shortcuts used|
+1524625889.228025|short|register all hotkeys for current app|
+1524626022.469038|M|checking|
+1524626489.457437|swi|check device class|
+1524626489.457466|swi|shortcuts used|
+1524626489.478889|short|register all hotkeys for current app|
+1524626529.743608|lic|newest date 2016-02-08 07:53:59 +0000|
+1524626529.743652|lic|lict BOA160208-2092-68339|
+1524626529.819358|lic|in new updater method|
+1524629281.922400|SLEEP|WILLSLEEP|
+1524629478.761286|SEC|SecureInputActive com.apple.loginwindow|
+1524629478.763698|short|register disable hotkeys|
+1524629478.764860|short|register all hotkeys for current app|
+1524629479.921244|WAKE|DIDWAKE|
+1524629480.043563|ASL|disable|
+1524629480.115738|short|register disable hotkeys|
+1524629480.117062|short|register all hotkeys for current app|
+1524629480.118101|short|register all hotkeys|
+1524629480.455893|TERMINATE|SHOULDTERMINATE|

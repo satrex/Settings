@@ -1,0 +1,61 @@
+1554312031.694480|usage|loading todays usage|
+1554312031.728594|ASL|[Crashlytics] Version 3.10.8 (131)|
+1554312031.741525|short|init|
+1554312031.856964|LIC|idate 2019-04-01 05:30:59 +0000|
+1554312031.886381|LIC|closing previous instance of BetterTouchTool relaunch|
+1554312031.899247|short|register disable hotkeys|
+1554312031.900511|short|register disable hotkeys|
+1554312031.913233|LIC|license appears to be valid|
+1554312031.916815|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1554312031.916886|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1554312031.916903|LIC|using date 1525066439|
+1554312031.916927|lic|newest date 2018-04-30 05:33:59 +0000|
+1554312031.916939|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554312031.923421|lic|newest date 2018-04-30 05:33:59 +0000|
+1554312031.923451|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554312031.923689|LIC|License is valid for this version|
+1554312031.924588|LAUNCH|DIDLaunch|
+1554312032.039243|lic|newest date 2018-04-30 05:33:59 +0000|
+1554312032.039278|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554312032.242467|xw|is trusted|
+1554312032.244500|short|call sharedInstance4|
+1554312032.270325|M|mt_stop10|
+1554312032.272929|M|register touchbar mbp trackpad|
+1554312032.272963|M|register internal trackpad|
+1554312032.273171|STDEV|68|
+1554312034.423253|lic|newest date 2018-04-30 05:33:59 +0000|
+1554312034.423299|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554312034.426131|webserver|init|
+1554312034.428193|START|TB VISIBLE 1|
+1554312034.428228|START|TB FORCED HIDDEN 0|
+1554312034.479467|lic|newest date 2018-04-30 05:33:59 +0000|
+1554312034.479499|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554312034.484802|SLEEP|FORCESHOWAFTERSLEEP2|
+1554312034.498151|short|eventtap success|
+1554312034.974290|short|register disable hotkeys|
+1554312036.627860|M|mt_stop2|
+1554312036.628252|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1554312036.629496|M|unregister magic trackpad 2|
+1554312036.631797|M|register touchbar mbp trackpad|
+1554312036.631828|M|register internal trackpad|
+1554312036.632042|STDEV|68|
+1554312036.642629|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(56452)|
+1554312036.644709|xw|disabling touch for internal trackpad (clamshell)|
+1554312036.656061|lic|newest date 2018-04-30 05:33:59 +0000|
+1554312036.656092|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554312036.741205|SLEEP|FORCESHOWAFTERSLEEP3|
+1554312036.757996|lic|newest date 2018-04-30 05:33:59 +0000|
+1554312036.758031|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554315279.375287|lic|newest date 2018-04-30 05:33:59 +0000|
+1554315279.375384|lic|lict 16973469-chre33d9df9a9eb-5561352b58|

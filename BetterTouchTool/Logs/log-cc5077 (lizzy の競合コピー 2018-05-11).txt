@@ -1,0 +1,71 @@
+1526023237.877579|swi|check device class|
+1526023237.877604|swi|shortcuts used|
+1526023237.896081|short|register all hotkeys for current app|
+1526025789.911317|swi|check device class|
+1526025789.914240|swi|shortcuts used|
+1526025790.016887|short|register all hotkeys for current app|
+1526025790.381391|SEC|SecureInputActive com.apple.loginwindow|
+1526025790.384768|short|register disable hotkeys|
+1526025790.387519|short|register all hotkeys for current app|
+1526025795.181354|SEC|SecureInputDisabled com.apple.loginwindow|
+1526025795.183506|short|register all hotkeys|
+1526025795.614035|swi|check device class|
+1526025795.614070|swi|shortcuts used|
+1526025795.638277|short|register all hotkeys for current app|
+1526027174.554162|swi|check device class|
+1526027174.554187|swi|shortcuts used|
+1526027174.608898|short|register all hotkeys for current app|
+1526027175.218155|swi|check device class|
+1526027175.218180|swi|shortcuts used|
+1526027175.253389|short|register all hotkeys for current app|
+1526027175.257136|swi|check device class|
+1526027175.257160|swi|shortcuts used|
+1526027175.274069|short|register all hotkeys for current app|
+1526029398.833920|M|mt_stop2|
+1526029398.834279|M|checking|
+1526029398.836698|M|unregister internal trackpad|
+1526029398.838618|M|checking|
+1526029398.839555|M|register internal trackpad|
+1526029398.841387|STDEV|63|
+1526029400.301089|SLEEP|WILLSLEEP|
+1526029403.020787|swi|check device class|
+1526029403.020812|swi|shortcuts used|
+1526029403.031321|short|register all hotkeys for current app|
+1526029409.009397|ASL|shell script contains error and crashes BTT|
+1526029409.037950|ASL|interrupt reply|
+1526033148.312186|M|mt_stop2|
+1526033148.312487|M|checking|
+1526033148.314467|M|unregister internal trackpad|
+1526033148.315302|M|checking|
+1526033148.316222|M|register internal trackpad|
+1526033148.316551|STDEV|63|
+1526033148.710783|M|mt_stop2|
+1526033148.710929|M|checking|
+1526033148.712467|M|unregister internal trackpad|
+1526033148.713698|M|checking|
+1526033148.714536|M|register internal trackpad|
+1526033148.714799|STDEV|63|
+1526033150.510788|M|mt_stop2|
+1526033150.510988|M|checking|
+1526033150.512243|M|unregister internal trackpad|
+1526033150.512937|M|checking|
+1526033150.513586|M|register internal trackpad|
+1526033150.513746|STDEV|63|
+1526033153.808266|M|mt_stop2|
+1526033153.808450|M|checking|
+1526033153.809665|M|unregister internal trackpad|
+1526033153.810357|M|checking|
+1526033153.811161|M|register internal trackpad|
+1526033153.811394|STDEV|63|
+1526033159.308538|M|mt_stop2|
+1526033159.308720|M|checking|
+1526033159.310315|M|unregister internal trackpad|
+1526033159.310805|M|checking|
+1526033159.311330|M|register internal trackpad|
+1526033159.311484|STDEV|63|
+1526033194.162976|M|mt_stop2|
+1526033194.163102|M|checking|
+1526033194.165028|M|unregister internal trackpad|
+1526033194.165692|M|checking|
+1526033194.166302|M|register internal trackpad|
+1526033194.166469|STDEV|63|

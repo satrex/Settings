@@ -1,0 +1,170 @@
+html, body, select, .newtxt {
+	font-family: Tahoma, message-box, sans-serif;
+	font-size: 90%;
+	color: black;
+	vertical-align: top;
+	width: 100%;
+	overflow: hidden;
+	margin: 0.05em;
+	margin-left: 0.15em;
+	margin-right: 0em;
+	background: #F1F1F1;
+	cursor: auto;
+}
+html {
+	background : Window; /*, #FEFEFE;*/
+}
+body {
+	font-size: 100%;
+	color: WindowText;
+	background : Window; /*, #FEFEFE;*/
+}
+button {
+	cursor: pointer;
+}
+
+.wait {
+	cursor: wait;
+}
+
+.installer {
+	font-size: 92%;
+	color: #161616;
+	width: 100%;
+	padding: 0em;
+	padding-left: 0.3em;
+	margin: 0em;
+}
+
+.setbut {
+	cursor: pointer;
+}
+.setbut[disabled] {
+	cursor: auto;
+}
+
+.swapbuttonR {
+	height: 1.85em;
+	font-size: 180%;
+	font-weight: bold;
+	vertical-align: top;
+	color: red;
+	background-color: white;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: red;
+  margin-bottom: 0.35em;
+  cursor: pointer;
+}
+.swapbuttonC {
+	height: 1.85em;
+	font-size: 180%;
+	font-weight: bold;
+	vertical-align: top;
+	color: orange;
+	background-color: white;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: orange;
+  margin-bottom: 0.35em;
+  cursor: pointer;
+}
+.swapbuttonL {
+	height: 1.85em;
+	font-size: 180%;
+	font-weight: bold;
+	vertical-align: top;
+	color: green;
+	background-color: white;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: green;
+  margin-bottom: 0.35em;
+  cursor: pointer;
+}
+.buttonX {
+	height: 1.85em;
+	font-size: 180%;
+	font-weight: bold;
+	vertical-align: top;
+	color: blue;
+	background-color: white;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: blue;
+  margin-bottom: 0.35em;
+  cursor: pointer;
+}
+.buttonX:hover {
+	background-color: blue;
+	color: white;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: blue;
+}
+.swapbuttonR:hover {
+	background-color: red;
+	color: white;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: red;
+}
+.swapbuttonC:hover {
+	background-color: orange;
+	color: white;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: orange;
+}
+.swapbuttonL:hover {
+	background-color: green;
+	color: white;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: green;
+}
+.swapbuttonR[disabled] {
+	background-color: #EFEFEF;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: gray;
+	color: gray;
+	cursor: auto;
+}
+.swapbuttonC[disabled] {
+	background-color: #EFEFEF;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: gray;
+	color: gray;
+	cursor: auto;
+}
+.swapbuttonL[disabled] {
+	background-color: #EFEFEF;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: gray;
+	color: gray;
+	cursor: auto;
+}
+.swapbuttonR[disabled]:hover {
+	background-color: #EFEFEF;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: gray;
+	color: gray;
+}
+.swapbuttonC[disabled]:hover {
+	background-color: #EFEFEF;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: gray;
+	color: gray;
+}
+.swapbuttonL[disabled]:hover {
+	background-color: #EFEFEF;
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: gray;
+	color: gray;
+}

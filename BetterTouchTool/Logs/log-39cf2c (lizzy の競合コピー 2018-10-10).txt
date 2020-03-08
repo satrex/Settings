@@ -1,0 +1,175 @@
+1539124794.887761|usage|loading todays usage|
+1539124794.912829|ASL|[Crashlytics] Version 3.10.8 (131)|
+1539124794.923980|short|init|
+1539124795.058102|ASL|the new store already exists btt_data_store.version_2_645_build_0954|
+1539124795.079893|LIC|idate 2018-09-25 00:44:27 +0000|
+1539124795.083157|short|register all hotkeys|
+1539124795.095509|LIC|closing previous instance of BetterTouchTool relaunch|
+1539124795.099071|short|register disable hotkeys|
+1539124795.100195|short|register disable hotkeys|
+1539124795.101294|short|register all hotkeys|
+1539124795.108142|LIC|license appears to be valid|
+1539124795.109357|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1539124795.109370|LIC|short timestamp|
+1539124795.109426|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1539124795.109431|LIC|using date 1525066439|
+1539124795.109441|lic|newest date 2018-04-30 05:33:59 +0000|
+1539124795.109444|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1539124795.111595|LIC|license appears to be valid|
+1539124795.113064|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1539124795.113081|LIC|short timestamp|
+1539124795.113128|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1539124795.113136|LIC|using date 1525066439|
+1539124795.113155|lic|newest date 2018-04-30 05:33:59 +0000|
+1539124795.113159|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1539124795.113381|LIC|License is valid for this version|
+1539124795.113891|LAUNCH|DIDLaunch|
+1539124795.123708|LIC|license appears to be valid|
+1539124795.124927|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1539124795.124943|LIC|short timestamp|
+1539124795.124971|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1539124795.124976|LIC|using date 1525066439|
+1539124795.124990|lic|newest date 2018-04-30 05:33:59 +0000|
+1539124795.124995|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1539124795.192983|M|checking|
+1539124795.194470|xw|is trusted|
+1539124795.196542|short|call sharedInstance4|
+1539124795.199224|SEC|SecureInputActive com.apple.loginwindow 121|
+1539124795.208851|ASL|currently visible 0 1|
+1539124795.219531|M|mt_stop10|
+1539124795.219796|M|checking|
+1539124795.222668|M|register touchbar mbp trackpad|
+1539124795.222710|M|register internal trackpad|
+1539124795.223120|STDEV|68|
+1539124795.223385|swi|check device class|
+1539124795.223402|swi|shortcuts used|
+1539124796.303185|LIC|license appears to be valid|
+1539124796.304817|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1539124796.304835|LIC|short timestamp|
+1539124796.304871|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1539124796.304876|LIC|using date 1525066439|
+1539124796.304890|lic|newest date 2018-04-30 05:33:59 +0000|
+1539124796.304894|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1539124796.307131|webserver|init|
+1539124796.307579|START|TB VISIBLE 0|
+1539124796.307598|START|TB FORCED HIDDEN 1|
+1539124796.362753|short|eventtap success|
+1539124796.417658|short|register disable hotkeys|
+1539124796.419207|short|register all hotkeys for current app|
+1539124796.420374|short|register all hotkeys|
+1539124799.052726|SEC|SecureInputDisabled com.apple.loginwindow|
+1539124799.059076|M|mt_stop2|
+1539124799.059241|M|checking|
+1539124799.060745|M|unregister magic trackpad 2|
+1539124799.060988|M|checking|
+1539124799.062847|M|register touchbar mbp trackpad|
+1539124799.062882|M|register internal trackpad|
+1539124799.063060|STDEV|68|
+1539124799.090571|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(57341)|
+1539124799.097932|LIC|license appears to be valid|
+1539124799.099772|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1539124799.099789|LIC|short timestamp|
+1539124799.099829|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1539124799.099834|LIC|using date 1525066439|
+1539124799.099862|lic|newest date 2018-04-30 05:33:59 +0000|
+1539124799.099868|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1539124799.139297|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1539124799.143329|M|checking|
+1539124799.349540|swi|check device class|
+1539124799.349565|swi|shortcuts used|
+1539124799.355012|short|register disable hotkeys|
+1539124799.356562|short|register all hotkeys for current app|
+1539124799.358231|short|register all hotkeys|
+1539124799.365126|short|register all hotkeys for current app|
+1539124799.473335|LIC|license appears to be valid|
+1539124799.474613|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1539124799.474627|LIC|short timestamp|
+1539124799.474677|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1539124799.474721|LIC|using date 1525066439|
+1539124799.474737|lic|newest date 2018-04-30 05:33:59 +0000|
+1539124799.474740|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1539124799.476551|M|checking|
+1539125335.770976|LIC|license appears to be valid|
+1539125335.773182|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1539125335.773199|LIC|short timestamp|
+1539125335.773340|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1539125335.773349|LIC|using date 1525066439|
+1539125335.773367|lic|newest date 2018-04-30 05:33:59 +0000|
+1539125335.773372|lic|lict 16973469-chre33d9df9a9eb-5561352b58|

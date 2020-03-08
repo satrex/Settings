@@ -1,0 +1,19 @@
+1528175261.827047|swi|check device class|
+1528175261.827091|swi|shortcuts used|
+1528175261.848767|short|register all hotkeys for current app|
+1528179866.657695|swi|check device class|
+1528179866.657727|swi|shortcuts used|
+1528179866.945100|short|register all hotkeys for current app|
+1528179867.993503|short|register all hotkeys for current app|
+1528179868.005191|short|register all hotkeys for current app|
+1528181031.433355|swi|check device class|
+1528181031.433381|swi|shortcuts used|
+1528181031.501466|short|register all hotkeys for current app|
+1528181031.502536|SEC|SecureInputActive com.apple.loginwindow|
+1528181031.504191|short|register disable hotkeys|
+1528181031.506109|short|register all hotkeys for current app|
+1528181036.706659|SEC|SecureInputDisabled com.apple.loginwindow|
+1528181036.708762|short|register all hotkeys|
+1528181037.232589|swi|check device class|
+1528181037.232614|swi|shortcuts used|
+1528181037.314438|short|register all hotkeys for current app|

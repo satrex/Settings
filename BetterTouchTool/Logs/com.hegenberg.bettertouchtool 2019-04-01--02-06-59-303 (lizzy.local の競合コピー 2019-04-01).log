@@ -1,0 +1,111 @@
+1554084419.288992|usage|loading todays usage|
+1554084419.334889|ASL|[Crashlytics] Version 3.10.8 (131)|
+1554084420.165997|short|init|
+1554084420.293382|LIC|idate 2019-03-20 13:18:16 +0000|
+1554084420.312719|LIC|closing previous instance of BetterTouchTool relaunch|
+1554084420.328408|short|register disable hotkeys|
+1554084420.329840|short|register disable hotkeys|
+1554084420.351781|LIC|license appears to be valid|
+1554084420.353592|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1554084420.353705|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1554084420.353727|LIC|using date 1525066439|
+1554084420.353759|lic|newest date 2018-04-30 05:33:59 +0000|
+1554084420.353781|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554084420.361019|lic|newest date 2018-04-30 05:33:59 +0000|
+1554084420.361065|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554084420.361344|LIC|License is valid for this version|
+1554084420.361770|LAUNCH|DIDLaunch|
+1554084420.378584|lic|newest date 2018-04-30 05:33:59 +0000|
+1554084420.378626|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554084420.460536|xw|is trusted|
+1554084420.463300|short|call sharedInstance4|
+1554084420.505501|M|mt_stop10|
+1554084420.508012|M|register internal trackpad 0x0200000001000000,0x63|
+1554084420.508360|STDEV|63|
+1554084422.666009|lic|newest date 2018-04-30 05:33:59 +0000|
+1554084422.666050|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554084422.668574|webserver|init|
+1554084422.669450|START|TB VISIBLE 1|
+1554084422.669488|START|TB FORCED HIDDEN 0|
+1554084422.872933|SLEEP|FORCESHOWAFTERSLEEP2|
+1554084422.889094|short|eventtap success|
+1554084422.940278|short|register disable hotkeys|
+1554084424.547467|M|mt_stop2|
+1554084424.547706|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1554084424.549074|M|unregister internal trackpad|
+1554084424.550155|M|register internal trackpad 0x0200000001000000,0x63|
+1554084424.550340|STDEV|63|
+1554084424.574838|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(58745)|
+1554084424.603096|lic|newest date 2018-04-30 05:33:59 +0000|
+1554084424.603131|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554084424.703365|SLEEP|FORCESHOWAFTERSLEEP3|
+1554084424.755295|lic|newest date 2018-04-30 05:33:59 +0000|
+1554084424.755331|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554084447.771554|M|mt_stop2|
+1554084447.773258|M|unregister internal trackpad|
+1554084447.774893|M|register internal trackpad 0x0200000001000000,0x63|
+1554084447.775145|STDEV|63|
+1554085843.138169|usage|loading todays usage|
+1554085843.162872|ASL|[Crashlytics] Version 3.10.8 (131)|
+1554085843.175923|short|init|
+1554085843.245443|LIC|idate 2019-03-24 12:47:30 +0000|
+1554085843.259258|LIC|closing previous instance of BetterTouchTool relaunch|
+1554085843.263470|short|register disable hotkeys|
+1554085843.264722|short|register disable hotkeys|
+1554085843.270989|LIC|license appears to be valid|
+1554085843.272705|LIC|license dictionary {
+    CheckoutName = "\U8061 \U9234\U6728";
+    Email = "info@satrex.jp";
+    LicenseType = "paddle_lifetime";
+    Licenses = 1;
+    Name = "SATOSHI SUZUKI";
+    OrderID = d803f431a43d20521b60329116aba2ab;
+    Product = BetterTouchTool;
+    Signature = <5cd5b7e4 c385f0d0 dc430883 6278ebfa 1a1c8adb ca54c579 d4f911bb c71b1e0b 1d114528 c1177201 61ffaa4e e294087a c24aa4aa cb0068d1 8eead80c 9d123b5c 2ec35515 5f18c5c3 14127b4b f1e306d5 8b67949a dca42621 61c6bd2c 3856dde6 24344b68 3709bf8a c85eb82c 84530a83 1f05c269 bc2c84ad a0afd86a 4b1b2ea5>;
+    Timestamp = 1525066439;
+    TransactionID = "16973469-chre33d9df9a9eb-5561352b58";
+}|
+1554085843.272778|LIC|systemdate 2018-04-30 05:33:59 +0000|
+1554085843.272793|LIC|using date 1525066439|
+1554085843.272815|lic|newest date 2018-04-30 05:33:59 +0000|
+1554085843.272827|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554085843.277374|lic|newest date 2018-04-30 05:33:59 +0000|
+1554085843.277446|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554085843.277715|LIC|License is valid for this version|
+1554085843.278065|LAUNCH|DIDLaunch|
+1554085843.291738|lic|newest date 2018-04-30 05:33:59 +0000|
+1554085843.291768|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554085843.348619|xw|is trusted|
+1554085843.351150|short|call sharedInstance4|
+1554085843.375062|M|mt_stop10|
+1554085843.377144|M|register touchbar mbp trackpad|
+1554085843.377170|M|register internal trackpad|
+1554085843.377380|STDEV|68|
+1554085844.632747|lic|newest date 2018-04-30 05:33:59 +0000|
+1554085844.632792|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554085844.636766|webserver|init|
+1554085844.636921|START|TB VISIBLE 0|
+1554085844.636935|START|TB FORCED HIDDEN 1|
+1554085844.685518|short|eventtap success|
+1554085844.781910|short|register disable hotkeys|
+1554085845.666616|M|mt_stop2|
+1554085845.668409|M|unregister magic trackpad 2|
+1554085845.670486|M|register touchbar mbp trackpad|
+1554085845.670538|M|register internal trackpad|
+1554085845.670739|STDEV|68|
+1554085845.720040|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(56452)|
+1554085845.733598|lic|newest date 2018-04-30 05:33:59 +0000|
+1554085845.733626|lic|lict 16973469-chre33d9df9a9eb-5561352b58|
+1554085845.795556|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1554085845.795642|SLEEP|FORCESHOWAFTERSLEEP3|

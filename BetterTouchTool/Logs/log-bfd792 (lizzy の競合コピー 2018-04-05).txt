@@ -1,0 +1,40 @@
+1522851775.654306|usage|loading todays usage|
+1522851775.693373|ASL|[Crashlytics] Version 3.9.3 (128)|
+1522851775.759311|short|init|
+1522851775.759357|short|no event tap functionality used|
+1522851775.841249|LIC|idate 2018-03-29 03:15:07 +0000|
+1522851775.844675|short|register all hotkeys|
+1522851775.849966|LIC|closing previous instance of BetterTouchTool relaunch|
+1522851775.853803|short|register disable hotkeys|
+1522851775.854773|short|register disable hotkeys|
+1522851775.855695|short|register all hotkeys|
+1522851775.862032|LAUNCH|DIDLaunch|
+1522851775.898821|ASL|new multitouch device recognized|
+1522851775.899050|M|checking|
+1522851775.901003|short|call sharedInstance4|
+1522851775.903806|SEC|SecureInputActive com.apple.loginwindow|
+1522851775.914726|M|mt_stop10|
+1522851775.914895|M|checking|
+1522851775.918211|M|register touchbar mbp trackpad|
+1522851775.918231|M|register internal trackpad|
+1522851775.918446|STDEV|68|
+1522851775.918491|swi|check device class|
+1522851775.918500|swi|shortcuts NOT used|
+1522851777.095810|short|eventtap success|
+1522851777.126124|short|register disable hotkeys|
+1522851777.127520|short|register all hotkeys for current app|
+1522851777.128532|short|register all hotkeys|
+1522851777.912188|short|register all hotkeys for current app|
+1522851777.914156|M|mt_stop2|
+1522851777.914309|M|checking|
+1522851777.915799|M|unregister magic trackpad 2|
+1522851777.915830|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(56900)|
+1522851777.916115|M|checking|
+1522851777.917996|M|register touchbar mbp trackpad|
+1522851777.918009|M|register internal trackpad|
+1522851777.918161|STDEV|68|
+1522851777.949593|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1522851778.026663|M|checking|
+1522851778.029324|M|checking|
+1522851779.078356|short|register all hotkeys for current app|
+1522854008.162004|usage|loading todays usage|

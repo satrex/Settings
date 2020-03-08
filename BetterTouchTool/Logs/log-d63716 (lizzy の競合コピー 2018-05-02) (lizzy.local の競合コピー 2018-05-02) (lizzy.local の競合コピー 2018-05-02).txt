@@ -1,0 +1,690 @@
+1525212732.789973|usage|loading todays usage|
+1525212732.816396|ASL|[Crashlytics] Version 3.9.3 (128)|
+1525212732.840840|short|init|
+1525212732.874916|LIC|idate 2018-04-19 10:50:23 +0000|
+1525212732.877964|short|register all hotkeys|
+1525212732.886410|LIC|closing previous instance of BetterTouchTool relaunch|
+1525212732.889177|short|register disable hotkeys|
+1525212732.890271|short|register disable hotkeys|
+1525212732.891400|short|register all hotkeys|
+1525212732.894330|LAUNCH|DIDLaunch|
+1525212732.924705|ASL|new multitouch device recognized|
+1525212732.924907|M|checking|
+1525212732.926726|short|call sharedInstance4|
+1525212732.936606|M|mt_stop10|
+1525212732.936795|M|checking|
+1525212732.938514|M|register touchbar mbp trackpad|
+1525212732.938534|M|register internal trackpad|
+1525212732.938698|STDEV|68|
+1525212732.938754|swi|check device class|
+1525212732.938764|swi|shortcuts used|
+1525212733.551492|short|eventtap success|
+1525212733.814072|ASL|disabling touch for internal trackpad (clamshell)|
+1525212733.908470|short|register disable hotkeys|
+1525212733.909523|short|register all hotkeys for current app|
+1525212733.910338|short|register all hotkeys|
+1525212734.203153|short|register all hotkeys for current app|
+1525212734.207868|M|mt_stop2|
+1525212734.208017|M|checking|
+1525212734.209683|M|unregister magic trackpad 2|
+1525212734.209900|M|checking|
+1525212734.211116|M|register touchbar mbp trackpad|
+1525212734.211129|M|register internal trackpad|
+1525212734.211279|STDEV|68|
+1525212734.237783|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(51824)|
+1525212734.431763|M|checking|
+1525212734.966540|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1525212736.109488|short|register all hotkeys for current app|
+1525216014.822768|usage|loading todays usage|
+1525216014.877810|ASL|[Crashlytics] Version 3.9.3 (128)|
+1525216014.914244|short|init|
+1525216014.970168|LIC|idate 2018-04-19 10:50:23 +0000|
+1525216014.974099|short|register all hotkeys|
+1525216014.984339|LIC|closing previous instance of BetterTouchTool relaunch|
+1525216014.987519|short|register disable hotkeys|
+1525216014.988599|short|register disable hotkeys|
+1525216014.989667|short|register all hotkeys|
+1525216014.993066|LAUNCH|DIDLaunch|
+1525216015.096221|ASL|new multitouch device recognized|
+1525216015.096436|M|checking|
+1525216015.098465|short|call sharedInstance4|
+1525216015.111973|M|mt_stop10|
+1525216015.112141|M|checking|
+1525216015.114617|M|register touchbar mbp trackpad|
+1525216015.114636|M|register internal trackpad|
+1525216015.114857|STDEV|68|
+1525216015.114925|swi|check device class|
+1525216015.114940|swi|shortcuts used|
+1525216015.888774|short|eventtap success|
+1525216016.126859|short|register disable hotkeys|
+1525216016.128293|short|register all hotkeys for current app|
+1525216016.129476|short|register all hotkeys|
+1525216016.582576|short|register all hotkeys for current app|
+1525216016.622090|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(51824)|
+1525216016.623154|ASL|disabling touch for internal trackpad (clamshell)|
+1525216016.623488|M|mt_stop2|
+1525216016.623580|M|checking|
+1525216016.625008|M|unregister magic trackpad 2|
+1525216016.625163|M|checking|
+1525216016.626998|M|register touchbar mbp trackpad|
+1525216016.627017|M|register internal trackpad|
+1525216016.627182|STDEV|68|
+1525216016.648395|M|checking|
+1525216017.106640|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1525216018.220070|short|register all hotkeys for current app|
+1525219264.063061|usage|loading todays usage|
+1525219264.133029|ASL|[Crashlytics] Version 3.9.3 (128)|
+1525219264.143756|short|init|
+1525219264.203802|LIC|idate 2018-04-19 10:50:23 +0000|
+1525219264.207812|short|register all hotkeys|
+1525219264.220153|LIC|closing previous instance of BetterTouchTool relaunch|
+1525219264.223380|short|register disable hotkeys|
+1525219264.224481|short|register disable hotkeys|
+1525219264.225559|short|register all hotkeys|
+1525219264.229056|LAUNCH|DIDLaunch|
+1525219264.269779|ASL|new multitouch device recognized|
+1525219264.270027|M|checking|
+1525219264.272693|short|call sharedInstance4|
+1525219264.287011|M|mt_stop10|
+1525219264.287164|M|checking|
+1525219264.289573|M|register touchbar mbp trackpad|
+1525219264.289591|M|register internal trackpad|
+1525219264.289815|STDEV|68|
+1525219264.289878|swi|check device class|
+1525219264.289888|swi|shortcuts used|
+1525219265.143763|short|eventtap success|
+1525219265.350364|short|register disable hotkeys|
+1525219265.351674|short|register all hotkeys for current app|
+1525219265.352885|short|register all hotkeys|
+1525219265.816528|short|register all hotkeys for current app|
+1525219265.833104|M|mt_stop2|
+1525219265.833267|M|checking|
+1525219265.835453|M|unregister magic trackpad 2|
+1525219265.835696|M|checking|
+1525219265.837526|M|register touchbar mbp trackpad|
+1525219265.837543|M|register internal trackpad|
+1525219265.837747|STDEV|68|
+1525219265.862527|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(Joan) port(51824)|
+1525219265.908735|ASL|disabling touch for internal trackpad (clamshell)|
+1525219265.909702|M|checking|
+1525219266.328266|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1525219267.458351|short|register all hotkeys for current app|
+1525220235.695556|ASL|enabling touch for internal trackpad (after clamshell)|
+1525220235.926921|ASL|new multitouch device recognized|
+1525220236.756012|M|mt_stop2|
+1525220236.756267|M|checking|
+1525220236.757914|M|unregister magic trackpad 2|
+1525220236.758124|M|checking|
+1525220236.759443|M|register touchbar mbp trackpad|
+1525220236.759479|M|register internal trackpad|
+1525220236.761245|STDEV|68|
+1525220237.070933|ASL|did hide|
+1525220237.071024|ASL|did hide|
+1525220237.105818|M|mt_stop2|
+1525220237.105970|M|checking|
+1525220237.110209|M|unregister magic trackpad 2|
+1525220237.110568|M|checking|
+1525220237.113959|M|register touchbar mbp trackpad|
+1525220237.113982|M|register internal trackpad|
+1525220237.114616|STDEV|68|
+1525220240.096272|SEC|SecureInputActive com.apple.loginwindow|
+1525220240.097962|short|register disable hotkeys|
+1525220240.099284|short|register all hotkeys for current app|
+1525220242.497840|SEC|SecureInputDisabled com.apple.loginwindow|
+1525220242.500513|short|register all hotkeys|
+1525220244.806284|swi|check device class|
+1525220244.806305|swi|shortcuts used|
+1525220244.849150|short|register all hotkeys for current app|
+1525221037.549234|usage|loading todays usage|
+1525221037.596248|ASL|[Crashlytics] Version 3.9.3 (128)|
+1525221037.783350|short|init|
+1525221037.783374|short|no event tap functionality used|
+1525221037.942303|LIC|idate 2018-05-02 00:30:37 +0000|
+1525221037.946071|short|register all hotkeys|
+1525221037.956894|LIC|closing previous instance of BetterTouchTool relaunch|
+1525221038.029790|short|register disable hotkeys|
+1525221038.031298|short|register disable hotkeys|
+1525221038.032618|short|register all hotkeys|
+1525221038.036705|LAUNCH|DIDLaunch|
+1525221038.650077|ASL|new multitouch device recognized|
+1525221038.650328|M|checking|
+1525221038.652282|short|call sharedInstance4|
+1525221038.663717|M|mt_stop10|
+1525221038.663900|M|checking|
+1525221038.666073|M|register internal trackpad|
+1525221038.666288|STDEV|63|
+1525221038.666372|swi|check device class|
+1525221038.666387|swi|shortcuts used|
+1525221039.971217|short|eventtap success|
+1525221039.975317|short|register disable hotkeys|
+1525221039.976276|short|register all hotkeys for current app|
+1525221039.977040|short|register all hotkeys|
+1525221040.780519|short|register all hotkeys for current app|
+1525221040.783192|M|mt_stop2|
+1525221040.783365|M|checking|
+1525221040.783455|ASL|[Crashlytics:Crash] Warning: NSApplicationCrashOnExceptions is not set. This will result in poor top-level uncaught exception reporting.|
+1525221040.784433|ASL|Bonjour Service Published: domain(local.) type(_bttremote._tcp.) name(lizzy) port(56900)|
+1525221040.784677|M|unregister internal trackpad|
+1525221040.785647|M|checking|
+1525221040.786094|ASL|disabling touch for internal trackpad (clamshell)|
+1525221040.786497|M|register internal trackpad|
+1525221040.786699|STDEV|63|
+1525221040.793830|M|checking|
+1525221041.965936|short|register all hotkeys for current app|
+1525220954.304780|swi|check device class|
+1525220954.304808|swi|shortcuts used|
+1525220954.342341|short|register all hotkeys for current app|
+1525220959.819788|swi|check device class|
+1525220959.819818|swi|shortcuts used|
+1525220959.843158|short|register all hotkeys for current app|
+1525222204.470307|swi|check device class|
+1525222204.470347|swi|shortcuts used|
+1525222204.496110|short|register all hotkeys for current app|
+1525222205.572731|short|register all hotkeys for current app|
+1525222205.592253|short|register all hotkeys for current app|
+1525222819.320649|swi|check device class|
+1525222819.320711|swi|shortcuts used|
+1525222819.345936|short|register all hotkeys for current app|
+1525222886.776841|M|checking|
+1525222912.233245|SEC|SecureInputActive com.apple.loginwindow|
+1525222912.235227|short|register disable hotkeys|
+1525222912.236201|short|register all hotkeys for current app|
+1525222914.410684|swi|check device class|
+1525222914.410709|swi|shortcuts used|
+1525222914.434001|SEC|SecureInputDisabled com.apple.loginwindow|
+1525222914.436256|short|register all hotkeys|
+1525223032.028640|swi|check device class|
+1525223032.028663|swi|shortcuts used|
+1525223032.051624|short|register all hotkeys for current app|
+1525223051.340954|swi|check device class|
+1525223051.340978|swi|shortcuts used|
+1525223051.363146|short|register all hotkeys for current app|
+1525223080.616552|swi|check device class|
+1525223080.616576|swi|shortcuts used|
+1525223080.642528|short|register all hotkeys for current app|
+1525223087.029602|swi|check device class|
+1525223087.029626|swi|shortcuts used|
+1525223087.053011|short|register all hotkeys for current app|
+1525223089.802043|swi|check device class|
+1525223089.802070|swi|shortcuts used|
+1525223089.826223|short|register all hotkeys for current app|
+1525223335.098201|short|register all hotkeys for current app|
+1525223397.918745|swi|check device class|
+1525223397.918767|swi|shortcuts used|
+1525223397.944758|short|register all hotkeys for current app|
+1525223399.743256|swi|check device class|
+1525223399.743286|swi|shortcuts used|
+1525223399.770014|short|register all hotkeys for current app|
+1525223484.628774|swi|check device class|
+1525223484.628797|swi|shortcuts used|
+1525223484.660511|short|register all hotkeys for current app|
+1525223588.658620|swi|check device class|
+1525223588.658660|swi|shortcuts used|
+1525223588.686105|short|register all hotkeys for current app|
+1525223590.138249|swi|check device class|
+1525223590.138272|swi|shortcuts used|
+1525223590.166942|short|register all hotkeys for current app|
+1525223674.700082|swi|check device class|
+1525223674.700188|swi|shortcuts used|
+1525223674.728062|short|register all hotkeys for current app|
+1525223675.862044|swi|check device class|
+1525223675.862064|swi|shortcuts used|
+1525223675.885161|short|register all hotkeys for current app|
+1525223920.337660|ASL|disable|
+1525223920.338350|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525223920.428500|ASL|enable|
+1525223920.429133|M|checking|
+1525223920.440797|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525223920.460850|short|register all hotkeys for current app|
+1525223920.490066|ASL|disable|
+1525223920.491172|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525223920.618463|ASL|enable|
+1525223920.619058|M|checking|
+1525223920.625462|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525223920.641102|short|register all hotkeys for current app|
+1525223965.750436|ASL|disable|
+1525223965.751639|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525223965.842713|ASL|enable|
+1525223965.843228|M|checking|
+1525223965.848016|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525223965.863219|short|register all hotkeys for current app|
+1525223966.136478|ASL|disable|
+1525223966.137780|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525223966.212715|ASL|enable|
+1525223966.213344|M|checking|
+1525223966.220734|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525223966.238189|short|register all hotkeys for current app|
+1525223966.274671|ASL|disable|
+1525223966.277485|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525223966.358885|ASL|enable|
+1525223966.359524|M|checking|
+1525223966.366148|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525223966.380611|short|register all hotkeys for current app|
+1525223991.148107|swi|check device class|
+1525223991.148129|swi|shortcuts used|
+1525223991.171500|short|register all hotkeys for current app|
+1525223998.032211|swi|check device class|
+1525223998.032231|swi|shortcuts used|
+1525223998.058498|short|register all hotkeys for current app|
+1525224001.623434|swi|check device class|
+1525224001.623455|swi|shortcuts used|
+1525224001.642452|short|register all hotkeys for current app|
+1525224009.426186|swi|check device class|
+1525224009.426209|swi|shortcuts used|
+1525224009.448602|short|register all hotkeys for current app|
+1525224009.819117|short|register all hotkeys for current app|
+1525224047.445020|swi|check device class|
+1525224047.445040|swi|shortcuts used|
+1525224047.467165|short|register all hotkeys for current app|
+1525224051.164000|short|register all hotkeys for current app|
+1525224055.262409|swi|check device class|
+1525224055.262437|swi|shortcuts used|
+1525224055.282226|short|register all hotkeys for current app|
+1525224056.263028|SEC|SecureInputActive com.apple.SecurityAgent|
+1525224056.264800|short|register disable hotkeys|
+1525224056.265732|short|register all hotkeys for current app|
+1525224058.480303|swi|check device class|
+1525224058.480336|swi|shortcuts used|
+1525224058.506205|SEC|SecureInputDisabled com.apple.SecurityAgent|
+1525224058.508770|short|register all hotkeys|
+1525224061.037357|swi|check device class|
+1525224061.037380|swi|shortcuts used|
+1525224061.059503|short|register all hotkeys for current app|
+1525224070.951241|swi|check device class|
+1525224070.951262|swi|shortcuts used|
+1525224070.978061|short|register all hotkeys for current app|
+1525224071.694978|swi|check device class|
+1525224071.694999|swi|shortcuts used|
+1525224071.715348|short|register all hotkeys for current app|
+1525224075.466888|swi|check device class|
+1525224075.466909|swi|shortcuts used|
+1525224075.485655|short|register all hotkeys for current app|
+1525224077.771908|swi|check device class|
+1525224077.771928|swi|shortcuts used|
+1525224077.790304|short|register all hotkeys for current app|
+1525224092.190865|swi|check device class|
+1525224092.190889|swi|shortcuts used|
+1525224092.209235|short|register all hotkeys for current app|
+1525224098.755406|swi|check device class|
+1525224098.755425|swi|shortcuts used|
+1525224098.777120|short|register all hotkeys for current app|
+1525224098.919083|M|checking|
+1525224098.945072|short|register all hotkeys for current app|
+1525224146.947036|M|checking|
+1525224146.953669|swi|check device class|
+1525224146.953707|swi|shortcuts used|
+1525224146.973043|short|register all hotkeys for current app|
+1525224148.947816|swi|check device class|
+1525224148.947844|swi|shortcuts used|
+1525224148.967546|short|register all hotkeys for current app|
+1525224150.292666|swi|check device class|
+1525224150.292688|swi|shortcuts used|
+1525224150.312716|short|register all hotkeys for current app|
+1525224151.584625|swi|check device class|
+1525224151.584646|swi|shortcuts used|
+1525224151.601805|short|register all hotkeys for current app|
+1525224157.482367|swi|check device class|
+1525224157.482392|swi|shortcuts used|
+1525224157.503137|short|register all hotkeys for current app|
+1525224157.660750|M|checking|
+1525224157.685133|short|register all hotkeys for current app|
+1525224158.833994|M|checking|
+1525224158.850650|swi|check device class|
+1525224158.850671|swi|shortcuts used|
+1525224158.887827|short|register all hotkeys for current app|
+1525224177.682079|swi|check device class|
+1525224177.682109|swi|shortcuts used|
+1525224177.719572|short|register all hotkeys for current app|
+1525224225.570380|M|checking|
+1525224225.594363|swi|check device class|
+1525224225.594420|swi|shortcuts used|
+1525224225.648822|short|register all hotkeys for current app|
+1525224227.651836|swi|check device class|
+1525224227.651861|swi|shortcuts used|
+1525224227.681100|short|register all hotkeys for current app|
+1525224230.701028|swi|check device class|
+1525224230.701050|swi|shortcuts used|
+1525224230.727207|short|register all hotkeys for current app|
+1525224256.713613|swi|check device class|
+1525224256.713641|swi|shortcuts used|
+1525224256.737073|short|register all hotkeys for current app|
+1525224268.155349|swi|check device class|
+1525224268.155373|swi|shortcuts used|
+1525224268.181977|short|register all hotkeys for current app|
+1525224269.854089|short|register all hotkeys for current app|
+1525224270.108357|swi|check device class|
+1525224270.108378|swi|shortcuts used|
+1525224270.208397|short|register all hotkeys for current app|
+1525224270.482714|swi|check device class|
+1525224270.482734|swi|shortcuts used|
+1525224270.513024|short|register all hotkeys for current app|
+1525224272.676759|swi|check device class|
+1525224272.676779|swi|shortcuts used|
+1525224272.696620|short|register all hotkeys for current app|
+1525224273.846667|swi|check device class|
+1525224273.846689|swi|shortcuts used|
+1525224273.867175|short|register all hotkeys for current app|
+1525224299.181402|swi|check device class|
+1525224299.181428|swi|shortcuts used|
+1525224299.220322|short|register all hotkeys for current app|
+1525224299.954810|swi|check device class|
+1525224299.954837|swi|shortcuts used|
+1525224299.979348|short|register all hotkeys for current app|
+1525224301.788287|swi|check device class|
+1525224301.788310|swi|shortcuts used|
+1525224301.816373|short|register all hotkeys for current app|
+1525224321.275903|swi|check device class|
+1525224321.275930|swi|shortcuts used|
+1525224321.301969|short|register all hotkeys for current app|
+1525224324.786636|swi|check device class|
+1525224324.786660|swi|shortcuts used|
+1525224324.811325|short|register all hotkeys for current app|
+1525224324.829922|short|register all hotkeys for current app|
+1525224333.597580|ASL|disable|
+1525224333.599649|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525224333.691917|ASL|enable|
+1525224333.693209|M|checking|
+1525224333.700759|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525224333.715370|short|register all hotkeys for current app|
+1525224333.756854|ASL|disable|
+1525224333.758043|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525224333.836071|ASL|enable|
+1525224333.837315|M|checking|
+1525224333.846208|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525224333.864845|short|register all hotkeys for current app|
+1525224333.895385|ASL|disable|
+1525224333.896660|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525224333.966048|ASL|enable|
+1525224333.966623|M|checking|
+1525224333.972472|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525224333.989988|short|register all hotkeys for current app|
+1525224340.197904|swi|check device class|
+1525224340.197926|swi|shortcuts used|
+1525224340.228957|short|register all hotkeys for current app|
+1525224343.927630|ASL|shell script contains error and crashes BTT|
+1525224343.961414|ASL|interrupt reply|
+1525224457.114330|swi|check device class|
+1525224457.114354|swi|shortcuts used|
+1525224457.143117|short|register all hotkeys for current app|
+1525224459.727714|swi|check device class|
+1525224459.727738|swi|shortcuts used|
+1525224459.754306|short|register all hotkeys for current app|
+1525224464.411411|swi|check device class|
+1525224464.411435|swi|shortcuts used|
+1525224464.432502|short|register all hotkeys for current app|
+1525224465.382934|swi|check device class|
+1525224465.382961|swi|shortcuts used|
+1525224465.417436|short|register all hotkeys for current app|
+1525224534.292051|swi|check device class|
+1525224534.292076|swi|shortcuts used|
+1525224534.313735|short|register all hotkeys for current app|
+1525224540.208843|swi|check device class|
+1525224540.208885|swi|shortcuts used|
+1525224540.235820|short|register all hotkeys for current app|
+1525224547.915139|swi|check device class|
+1525224547.915165|swi|shortcuts used|
+1525224547.953738|short|register all hotkeys for current app|
+1525224552.647916|swi|check device class|
+1525224552.647941|swi|shortcuts used|
+1525224552.672669|short|register all hotkeys for current app|
+1525224563.437456|swi|check device class|
+1525224563.437478|swi|shortcuts used|
+1525224563.456169|short|register all hotkeys for current app|
+1525224589.760191|swi|check device class|
+1525224589.760218|swi|shortcuts used|
+1525224589.784648|short|register all hotkeys for current app|
+1525224590.696300|swi|check device class|
+1525224590.696332|swi|shortcuts used|
+1525224590.729662|short|register all hotkeys for current app|
+1525224596.086348|swi|check device class|
+1525224596.086371|swi|shortcuts used|
+1525224596.108097|short|register all hotkeys for current app|
+1525224597.672007|swi|check device class|
+1525224597.672032|swi|shortcuts used|
+1525224597.695510|short|register all hotkeys for current app|
+1525224606.696650|swi|check device class|
+1525224606.696674|swi|shortcuts used|
+1525224606.717172|short|register all hotkeys for current app|
+1525224608.815042|swi|check device class|
+1525224608.815088|swi|shortcuts used|
+1525224608.849731|short|register all hotkeys for current app|
+1525224613.214287|swi|check device class|
+1525224613.214314|swi|shortcuts used|
+1525224613.235318|short|register all hotkeys for current app|
+1525224615.040108|swi|check device class|
+1525224615.040172|swi|shortcuts used|
+1525224615.062561|short|register all hotkeys for current app|
+1525224616.338522|swi|check device class|
+1525224616.338547|swi|shortcuts used|
+1525224616.372298|short|register all hotkeys for current app|
+1525224651.395083|swi|check device class|
+1525224651.395106|swi|shortcuts used|
+1525224651.419635|short|register all hotkeys for current app|
+1525224652.082844|short|register all hotkeys for current app|
+1525224655.272735|swi|check device class|
+1525224655.272758|swi|shortcuts used|
+1525224655.301488|short|register all hotkeys for current app|
+1525224663.268868|swi|check device class|
+1525224663.268890|swi|shortcuts used|
+1525224663.286849|short|register all hotkeys for current app|
+1525224664.637564|swi|check device class|
+1525224664.637588|swi|shortcuts used|
+1525224664.664551|short|register all hotkeys for current app|
+1525224676.450229|swi|check device class|
+1525224676.450251|swi|shortcuts used|
+1525224676.472998|short|register all hotkeys for current app|
+1525224679.199153|swi|check device class|
+1525224679.199174|swi|shortcuts used|
+1525224679.225265|short|register all hotkeys for current app|
+1525224710.664276|swi|check device class|
+1525224710.664301|swi|shortcuts used|
+1525224710.685365|short|register all hotkeys for current app|
+1525224712.531662|ASL|disable|
+1525224712.532646|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525224712.631927|ASL|enable|
+1525224712.633074|M|checking|
+1525224712.640689|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525224712.656075|short|register all hotkeys for current app|
+1525224712.696932|ASL|disable|
+1525224712.699721|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525224712.781053|ASL|enable|
+1525224712.782481|M|checking|
+1525224712.790205|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525224712.805709|short|register all hotkeys for current app|
+1525224712.868205|ASL|disable|
+1525224712.869515|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525224712.904872|ASL|enable|
+1525224712.906223|M|checking|
+1525224712.914892|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525224712.930972|short|register all hotkeys for current app|
+1525224724.681638|swi|check device class|
+1525224724.681661|swi|shortcuts used|
+1525224724.704841|short|register all hotkeys for current app|
+1525224728.187124|swi|check device class|
+1525224728.187144|swi|shortcuts used|
+1525224728.207886|short|register all hotkeys for current app|
+1525225404.976071|swi|check device class|
+1525225404.976131|swi|shortcuts used|
+1525225405.004807|short|register all hotkeys for current app|
+1525225407.150392|swi|check device class|
+1525225407.150417|swi|shortcuts used|
+1525225407.179215|short|register all hotkeys for current app|
+1525225408.552854|swi|check device class|
+1525225408.552944|swi|shortcuts used|
+1525225408.589177|short|register all hotkeys for current app|
+1525225419.814103|ASL|disable|
+1525225419.814996|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525225419.922339|ASL|enable|
+1525225419.922952|M|checking|
+1525225419.929715|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525225419.945898|short|register all hotkeys for current app|
+1525225419.999025|ASL|disable|
+1525225420.000261|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525225420.071397|ASL|enable|
+1525225420.072029|M|checking|
+1525225420.077699|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525225420.096254|short|register all hotkeys for current app|
+1525225420.149839|ASL|disable|
+1525225420.151875|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525225420.188720|ASL|enable|
+1525225420.189654|M|checking|
+1525225420.201403|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525225420.229406|short|register all hotkeys for current app|
+1525225424.292174|swi|check device class|
+1525225424.292230|swi|shortcuts used|
+1525225424.442909|short|register all hotkeys for current app|
+1525225435.880910|swi|check device class|
+1525225435.880933|swi|shortcuts used|
+1525225435.908843|short|register all hotkeys for current app|
+1525225490.474004|swi|check device class|
+1525225490.474024|swi|shortcuts used|
+1525225490.495583|short|register all hotkeys for current app|
+1525225493.155549|swi|check device class|
+1525225493.155572|swi|shortcuts used|
+1525225493.178436|short|register all hotkeys for current app|
+1525225493.415681|short|register all hotkeys for current app|
+1525225503.132273|swi|check device class|
+1525225503.132298|swi|shortcuts used|
+1525225503.156208|short|register all hotkeys for current app|
+1525225505.464464|swi|check device class|
+1525225505.464488|swi|shortcuts used|
+1525225505.487087|short|register all hotkeys for current app|
+1525225516.443475|swi|check device class|
+1525225516.443498|swi|shortcuts used|
+1525225516.467456|short|register all hotkeys for current app|
+1525225521.205055|swi|check device class|
+1525225521.205080|swi|shortcuts used|
+1525225521.226790|short|register all hotkeys for current app|
+1525225566.795407|swi|check device class|
+1525225566.795427|swi|shortcuts used|
+1525225566.818887|short|register all hotkeys for current app|
+1525225568.879161|swi|check device class|
+1525225568.879181|swi|shortcuts used|
+1525225568.903682|short|register all hotkeys for current app|
+1525225621.347952|swi|check device class|
+1525225621.347973|swi|shortcuts used|
+1525225621.375429|short|register all hotkeys for current app|
+1525225630.656849|swi|check device class|
+1525225630.656873|swi|shortcuts used|
+1525225630.678514|short|register all hotkeys for current app|
+1525225806.531050|swi|check device class|
+1525225806.531066|swi|shortcuts used|
+1525225806.547154|short|register all hotkeys for current app|
+1525225806.859966|ASL|disable|
+1525225806.862141|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525225806.924518|ASL|enable|
+1525225806.926785|M|checking|
+1525225806.932784|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525225806.949292|short|register all hotkeys for current app|
+1525225806.994190|ASL|disable|
+1525225806.996288|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525225807.071345|ASL|enable|
+1525225807.072669|M|checking|
+1525225807.081133|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525225807.096947|short|register all hotkeys for current app|
+1525225807.133317|ASL|disable|
+1525225807.134437|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525225807.245616|ASL|enable|
+1525225807.246882|M|checking|
+1525225807.254277|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525225807.270226|short|register all hotkeys for current app|
+1525225810.195948|swi|check device class|
+1525225810.195972|swi|shortcuts used|
+1525225810.215627|short|register all hotkeys for current app|
+1525225811.282509|ASL|disable|
+1525225811.283533|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525225811.386381|ASL|enable|
+1525225811.387591|M|checking|
+1525225811.396703|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525225811.412276|short|register all hotkeys for current app|
+1525225811.458188|ASL|disable|
+1525225811.460605|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525225811.546368|ASL|enable|
+1525225811.547672|M|checking|
+1525225811.556662|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525225811.573992|short|register all hotkeys for current app|
+1525225813.505026|swi|check device class|
+1525225813.505048|swi|shortcuts used|
+1525225813.527177|short|register all hotkeys for current app|
+1525225815.393008|short|register all hotkeys for current app|
+1525225818.699512|swi|check device class|
+1525225818.699544|swi|shortcuts used|
+1525225818.726163|short|register all hotkeys for current app|
+1525225820.238512|swi|check device class|
+1525225820.238534|swi|shortcuts used|
+1525225820.263102|short|register all hotkeys for current app|
+1525225820.449486|WISNA|Focus doesn't match window pid|
+1525225820.477824|swi|check device class|
+1525225820.477863|swi|shortcuts used|
+1525225820.493209|short|register all hotkeys for current app|
+1525225821.963244|swi|check device class|
+1525225821.963274|swi|shortcuts used|
+1525225821.986175|short|register all hotkeys for current app|
+1525225822.860961|swi|check device class|
+1525225822.860984|swi|shortcuts used|
+1525225822.881759|short|register all hotkeys for current app|
+1525225824.477083|swi|check device class|
+1525225824.477125|swi|shortcuts used|
+1525225824.505259|short|register all hotkeys for current app|
+1525225827.902075|swi|check device class|
+1525225827.902098|swi|shortcuts used|
+1525225827.918970|short|register all hotkeys for current app|
+1525226994.184110|swi|check device class|
+1525226994.184160|swi|shortcuts used|
+1525226994.217481|short|register all hotkeys for current app|
+1525226997.050121|swi|check device class|
+1525226997.050145|swi|shortcuts used|
+1525226997.079691|short|register all hotkeys for current app|
+1525226997.631293|swi|check device class|
+1525226997.631315|swi|shortcuts used|
+1525226997.652905|short|register all hotkeys for current app|
+1525227006.320111|swi|check device class|
+1525227006.320135|swi|shortcuts used|
+1525227006.337845|short|register all hotkeys for current app|
+1525227130.597355|swi|check device class|
+1525227130.597410|swi|shortcuts used|
+1525227130.644815|short|register all hotkeys for current app|
+1525227151.097663|swi|check device class|
+1525227151.097685|swi|shortcuts used|
+1525227151.139054|short|register all hotkeys for current app|
+1525227156.052867|swi|check device class|
+1525227156.052892|swi|shortcuts used|
+1525227156.074856|short|register all hotkeys for current app|
+1525227678.592732|swi|check device class|
+1525227678.592761|swi|shortcuts used|
+1525227678.622736|short|register all hotkeys for current app|
+1525227698.695728|swi|check device class|
+1525227698.696604|swi|shortcuts used|
+1525227698.734604|short|register all hotkeys for current app|
+1525227720.199785|WISNA|Focus doesn't match window pid|
+1525227722.280572|WISNA|Focus doesn't match window pid|
+1525227770.606571|swi|check device class|
+1525227770.606594|swi|shortcuts used|
+1525227770.631543|short|register all hotkeys for current app|
+1525227815.912660|swi|check device class|
+1525227815.912698|swi|shortcuts used|
+1525227815.936149|short|register all hotkeys for current app|
+1525227818.013341|swi|check device class|
+1525227818.013393|swi|shortcuts used|
+1525227818.041578|short|register all hotkeys for current app|
+1525227821.703840|swi|check device class|
+1525227821.703870|swi|shortcuts used|
+1525227821.725652|short|register all hotkeys for current app|
+1525227892.167530|swi|check device class|
+1525227892.167551|swi|shortcuts used|
+1525227892.186587|short|register all hotkeys for current app|
+1525227897.583800|swi|check device class|
+1525227897.583822|swi|shortcuts used|
+1525227897.602397|short|register all hotkeys for current app|
+1525227990.342022|swi|check device class|
+1525227990.342047|swi|shortcuts used|
+1525227990.366810|short|register all hotkeys for current app|
+1525228016.876630|swi|check device class|
+1525228016.876680|swi|shortcuts used|
+1525228016.902739|short|register all hotkeys for current app|
+1525228049.625252|swi|check device class|
+1525228049.625272|swi|shortcuts used|
+1525228049.644344|short|register all hotkeys for current app|
+1525228053.226005|swi|check device class|
+1525228053.226026|swi|shortcuts used|
+1525228053.251138|short|register all hotkeys for current app|

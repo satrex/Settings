@@ -1,0 +1,74 @@
+1525128916.804207|swi|check device class|
+1525128916.804247|swi|shortcuts used|
+1525128916.898858|short|register all hotkeys for current app|
+1525133494.615532|swi|check device class|
+1525133494.616604|swi|shortcuts used|
+1525133494.908223|short|register all hotkeys for current app|
+1525133494.909302|SEC|SecureInputActive com.apple.loginwindow|
+1525133494.910854|short|register disable hotkeys|
+1525133494.912734|short|register all hotkeys for current app|
+1525133498.084368|SEC|SecureInputDisabled com.apple.loginwindow|
+1525133498.087439|short|register all hotkeys|
+1525133498.729547|swi|check device class|
+1525133498.729571|swi|shortcuts used|
+1525133498.754972|short|register all hotkeys for current app|
+1525133507.246314|swi|check device class|
+1525133507.246347|swi|shortcuts used|
+1525133507.334449|short|register all hotkeys for current app|
+1525133516.193805|swi|check device class|
+1525133516.193829|swi|shortcuts used|
+1525133516.209107|short|register all hotkeys for current app|
+1525133578.903887|swi|check device class|
+1525133578.903910|swi|shortcuts used|
+1525133579.289564|short|register all hotkeys for current app|
+1525133585.054595|swi|check device class|
+1525133585.054621|swi|shortcuts used|
+1525133585.070934|short|register all hotkeys for current app|
+1525133596.328937|swi|check device class|
+1525133596.328960|swi|shortcuts used|
+1525133596.363011|short|register all hotkeys for current app|
+1525133596.554258|swi|check device class|
+1525133596.554290|swi|shortcuts used|
+1525133596.570132|short|register all hotkeys for current app|
+1525133597.405931|short|register all hotkeys for current app|
+1525133597.439105|swi|check device class|
+1525133597.439128|swi|shortcuts used|
+1525133597.460862|short|register all hotkeys for current app|
+1525133600.385943|swi|check device class|
+1525133600.385968|swi|shortcuts used|
+1525133600.584289|short|register all hotkeys for current app|
+1525133603.407562|swi|check device class|
+1525133603.407590|swi|shortcuts used|
+1525133603.463418|short|register all hotkeys for current app|
+1525133605.964350|ASL|shell script contains error and crashes BTT|
+1525133605.993368|ASL|interrupt reply|
+1525133613.698780|swi|check device class|
+1525133613.698830|swi|shortcuts used|
+1525133613.721649|short|register all hotkeys for current app|
+1525133748.694856|ASL|shell script contains error and crashes BTT|
+1525133748.723311|ASL|interrupt reply|
+1525133786.821571|ASL|shell script contains error and crashes BTT|
+1525133786.850950|ASL|interrupt reply|
+1525133799.859834|ASL|shell script contains error and crashes BTT|
+1525133799.890266|ASL|interrupt reply|
+1525134154.028113|swi|check device class|
+1525134154.028141|swi|shortcuts used|
+1525134154.058680|short|register all hotkeys for current app|
+1525134154.686957|swi|check device class|
+1525134154.686985|swi|shortcuts used|
+1525134154.861404|short|register all hotkeys for current app|
+1525134476.516690|swi|check device class|
+1525134476.516735|swi|shortcuts used|
+1525134476.540893|short|register all hotkeys for current app|
+1525134478.282899|swi|check device class|
+1525134478.282925|swi|shortcuts used|
+1525134478.319385|short|register all hotkeys for current app|
+1525134490.430101|swi|check device class|
+1525134490.430130|swi|shortcuts used|
+1525134490.445554|short|register all hotkeys for current app|
+1525135985.305945|ASL|disable|
+1525135985.306534|ASL|adapting icon state global 1 perApp 0 clip 0|
+1525135985.918334|ASL|enable|
+1525135985.919539|M|checking|
+1525135985.932448|ASL|adapting icon state global 0 perApp 0 clip 0|
+1525135985.949937|short|register all hotkeys for current app|

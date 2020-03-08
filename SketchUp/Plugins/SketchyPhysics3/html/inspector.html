@@ -1,0 +1,503 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Sketchy Menu</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <!--<meta http-equiv="MSThemeCompatible" content="Yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />-->
+    <link href="../css/default.css" rel="stylesheet" type="text/css" />
+    <link media="screen" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/slider.js"></script>
+    <style type="text/css">
+        #dhtmlgoodies_xpPane{
+            background-color:#d6dff7;
+        }
+        body{
+            font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+            font-size:11px;
+            background-color:#4190e0;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            font-color:black;
+
+        }
+        input.formulaInput{
+            font-size:11px;
+            border-width:2px;
+            background-color:powderblue;
+        }
+        input{
+            font-size:11px;
+            border-width:2px;
+        }
+        textarea.formulaInput{
+            font-size:11px;
+            border-width:2px;
+            background-color:powderblue;
+        }
+        td {
+          padding: 1px 2px;
+        }
+        .propertyGrid {
+            border-width: 1px 1px 1px 1px;
+            border-spacing: 0px;
+            border-style: outset outset outset outset;
+            border-color: gray gray gray gray;
+            border-collapse: collapse;
+            background-color: white;
+            font-size: 11px;
+
+            INPUT{
+                font-size:11px;
+                border-width:2px;
+                color:FFFFFF;
+            }
+
+            select{
+                font-size:11px;
+                border-width:1px;
+                color:FFFFFF;
+            }
+            table.propertyGrid tr {
+                background-color: #d6dff7;
+                width:100%;
+            }
+            table.propertyGrid td {
+                border-width: 1px 1px 1px 1px;
+                padding: 1px 1px 1px 1px;
+                border-style: inset inset inset inset;
+                border-color: gray gray gray gray;
+                background-color: white;
+                width:100%;
+            }
+            table.selectGrid {
+                border-width: 2px 2px 2px 2px;
+                border-spacing: 0px;
+                border-style: inset inset inset inset;
+                border-color: gray gray gray gray;
+                border-collapse: separate;
+                background-color: white;
+                width:100%;
+            }
+            table.selectGrid th {
+                border-width: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+                border-style: solid solid solid solid;
+                border-color: gray gray gray gray;
+                background-color: white;
+                -moz-border-radius: 0px 0px 0px 0px;
+            }
+            table.selectGrid td {
+                cursor:default;
+                border-width: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+                border-style: solid solid solid solid;
+                border-color: gray gray gray gray;
+                background-color: white;
+                -moz-border-radius: 0px 0px 0px 0px;
+                width:33%;
+            }
+    </style>
+</head>
+
+<body onunload="windowCloseing();">
+
+    <div id="mainDiv" style="background-color:#d6dff7;border-width: 1px;border-style:inset;border-color:black;padding: 4px 4px 4px 4px;">
+        <div id="hingePropertyGrid">
+            <table class="propertyGrid" style="width:100%;">
+                <tr>
+                    <th colspan="2" style="text-align:left; display:none;" id="selectedObjectName">Name</th>
+                </tr>
+                <tr><th>Joints</th></tr>
+                <tr>
+                    <td colspan="1">
+                        <table class="propertyGrid" style="width:100%;">
+                            <tr>
+                                <td>
+                                    <table id="parentJointsContainer" class="selectGrid">
+                                        <tr><td></td></tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table id="childJointsGrid" class="selectGrid">
+                                        <tr><td></td></tr>
+                                    </table>
+                                    <div id="childJointProperties"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr><th>State</th></tr>
+                <tr>
+                    <td colspan="1">
+                        <div id="stateContainer" class='propertyGrid'></div>
+                    </td>
+                </tr>
+                <tr><th>Properties</th></tr>
+                <tr>
+                    <td colspan="1">
+                        <div id="propertiesContainer" class='propertyGrid'></div>
+                    </td>
+                </tr>
+                <tr><th>Shapes</th></tr>
+                <tr>
+                    <td colspan="1">
+                        <div id="childObjectsContainer" class='propertyGrid'></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <TABLE id="propertyGridTable" class="propertyGrid" style="display:none; width:100%;">
+                            <tr><td></td></tr>
+                        </TABLE>
+                        <div class="propertyGridForm"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+
+    function callback(name, data) {
+        if (!data) data = '';
+        window.location.href = 'skp:' + name + '@' + data;
+    }
+
+    function open_link(ref) {
+        callback('open_link', ref);
+        return false;
+    }
+
+    function open_ruby_core(ref) {
+        callback('open_ruby_core');
+        return false;
+    }
+
+    function setScriptCode(str)
+    {
+        editor.setCode(str)
+    }
+
+    //Tell sketchup window is closing
+    function windowCloseing()
+    {
+        //Call the Sketchup callback
+        window.location='skp:windowClosed@';
+    }
+
+    //Functions that feed data back to Sketchup ruby.
+    function setSkpAttribute(attribute,value)
+    {
+        lastEditedElement=null
+        window.location='skp:setAttribute@'+attribute+'='+value;
+    }
+
+    function setSkpAttributeString(attribute, value)
+    {
+        lastEditedElement=null
+        window.location='skp:setAttributeString@'+attribute+'='+value;
+    }
+
+    function setSkpAttributeString2(attribute, value)
+    {
+        lastEditedElement=null
+        window.location='skp:setAttributeString2@'+attribute+'='+value;
+    }
+
+    function setSkpAttributeBool(attribute, value)
+    {
+        lastEditedElement=null
+        window.location='skp:setAttributeBool@'+attribute+'='+value;
+    }
+
+    function evalToNumeric(name)
+    {
+        window.location = 'skp:evalToNumeric@' + name;
+    }
+
+//Helper functions for creating a table that changes shape as the area changes.
+//Use to for the State section checkboxes.
+    function clearFlowTable(tblID)
+    {
+        tbl=document.getElementById(tblID);
+        while(tbl.rows.length>0)
+        {
+            tbl.deleteRow(0);
+        }
+    }
+
+    function addFlowTableHeader(tblID,text)
+    {
+        tbl=document.getElementById(tblID);
+        row=tbl.insertRow(tbl.rows.length);
+        cell=row.insertCell();
+        cell.colSpan=3;
+        cell.innerHTML="<b>"+text+"<\/b>";
+        cell.style.color="blue"
+        //cell.style.backgroundColor="gray"
+        row=tbl.insertRow(tbl.rows.length);
+    }
+
+    function addFlowTableCell(tblID,id,name,html)
+    {
+        tbl=document.getElementById(tblID);
+
+        row=null;
+        if(tbl.rows.length==0)
+            row=tbl.insertRow(tbl.rows.length);
+        else
+            row=tbl.rows(tbl.rows.length-1);
+
+        if(row.cells.length>2)
+            row=tbl.insertRow(tbl.rows.length);
+        cell=row.insertCell();
+
+        cell.innerHTML=html;
+        cell.id=id;
+        cell.name=name;
+        cell.style.backgroundColor="white"
+        cell.onclick=function() {window.location='skp:onSelectJoint@'+this.id+','+this.name;selectTableCell(tblID,id)}
+    }
+
+    function unselectAllTableCells(tblID)
+    {
+        tbl=document.getElementById(tblID);
+        for(i=0;i<tbl.cells.length;i++)
+        {
+            tbl.cells[i].style.backgroundColor='white';
+        }
+    }
+
+    function selectTableCell(tblID,cellID)
+    {
+        tbl=document.getElementById(tblID);
+        for(i=0;i<tbl.cells.length;i++)
+        {
+            if(tbl.cells[i].id==cellID)
+                tbl.cells[i].style.backgroundColor='yellow';
+            else
+                tbl.cells[i].style.backgroundColor='white';
+        }
+    }
+
+    function setDivVisibility(divid,bVisible){
+//toggleDiv(divid)
+//return;
+        if(bVisible)
+        {
+            document.getElementById(divid).style.display = 'block';
+        }
+        else
+        {
+            document.getElementById(divid).style.display = 'none';
+        }
+    }
+
+    function toggleDiv(divid){
+        if(document.getElementById(divid).style.display == 'none')
+        {
+            document.getElementById(divid).style.display = 'block';
+        }
+        else
+        {
+            document.getElementById(divid).style.display = 'none';
+        }
+    }
+//Helper functions for verifying input.
+    function getCaretPosition(element)
+    {
+        // To get cursor position, get empty selection range
+        var oSel = document.selection.createRange();
+
+        // Move selection start to 0 position
+        oSel.moveStart('character', -element.value.length);
+
+        // The caret position is selection length
+        iCaretPos = oSel.text.length;
+
+        return(iCaretPos);
+    }
+    function isDigit ( evt )
+    {
+       var keyCode = evt.which ? evt.which : evt.keyCode;
+       digit = !isNaN ( parseInt ( String.fromCharCode ( keyCode ) ) ) ||
+          ( keyCode == 190 || keyCode == 110 ) ||
+          ( keyCode >= 8 && keyCode <= 46 &&
+          keyCode !=16 && keyCode !=32 );
+
+        ie4up=true;
+       digit = ie4up ? digit || ( keyCode >= 96 && keyCode <=105 ) : digit;
+       return ( digit );
+    }
+
+    function markDirty(element,name,value)
+    {
+        //puts("onChange:"+name+"="+value)
+        lastEditedElement=element
+        window.location='skp:valueUpdated@'+name+"="+value;
+    }
+    function validateNumber()
+    {
+        //lastEditedElement=event.srcElement
+        if(event.keyCode==45 && getCaretPosition(event.srcElement)==0)
+        {
+            //puts("Caret at "+getCaretPosition(event.srcElement))
+            lastEditedElement=event.srcElement
+            return;
+        }
+
+        if(event.keyCode==46 && event.srcElement.value.indexOf(".")==-1)
+        {
+            lastEditedElement=event.srcElement
+            return;
+        }
+        if ((event.keyCode < 48) || (event.keyCode > 57))
+            event.returnValue = false;
+    }
+
+//Functions to allow name/value pairs to made into editable html tables.
+//These are used to build editable properties and text field sections.
+    function clearPropertyGrid()
+    {
+        while(propertyGridTable.rows.length>0)
+        {
+            propertyGridTable.deleteRow(0);
+        }
+    }
+
+    function addPropertyGridHeader(text)
+    {
+        th = document.createElement("TH");
+        th.innerHTML = text;
+        th.colSpan=2;
+        tr=document.getElementById('propertyGridTable').insertRow();
+        tr.appendChild(th);
+    }
+
+
+    function addPropertyGridRow(id, name,value,type)
+    {
+        tbl=document.getElementById('propertyGridTable')
+
+        tr=tbl.insertRow();
+        td=tr.insertCell();
+        td.innerHTML=name;
+        td=tr.insertCell();
+
+        switch(type)
+        {
+            case "float":
+            case "string":
+            case "static":
+                td.innerHTML=value;
+                break;
+            case "int":
+                var textInput=document.createElement('input');
+                textInput.setAttribute('type','text');
+                textInput.setAttribute('value',value);
+                textInput.align="right";
+                textInput.name=name;
+                //textInput.onclick=function(){puts(this.name+"="+this.value)}
+                //textInput.onchange=function(){puts(id+":"+this.parent+"."+this.name+"="+this.value)}
+                td.appendChild(textInput);
+                break;
+
+            case "bool":
+                var boolInput=document.createElement('input');
+                boolInput.setAttribute('type','checkbox');
+                td.appendChild(boolInput);
+                break;
+
+            case "bools":
+                boolSelect=document.getElementById('trueFalseSelect').cloneNode(true)
+                td.appendChild(boolSelect);
+                break;
+        }
+    }
+//Clear form called by ruby anytime the form needs a full refresh.
+    function clearForm()
+    {
+        td=document.getElementById('childObjectsContainer')
+        td.innerHTML=""
+        clearFlowTable('parentJointsContainer');
+        clearFlowTable('childJointsGrid');
+        td=document.getElementById('childJointProperties')
+        td.innerHTML=""
+        document.getElementById('stateContainer').innerHTML=""
+        document.getElementById('propertiesContainer').innerHTML=""
+    }
+//do a clear on page load.
+    clearForm();
+
+    //This javascript function will print a message in the Ruby console
+    function puts( str )
+    {
+        window.location='skp:puts@'+str;
+    }
+
+//This section is to try to get Safari to register an onBlur command.
+
+    //place to save the last edited element so it can be sent if the window blurs.
+    var lastEditedElement=null
+
+    //onblur handler
+    function handleWindowBlur()
+    {
+
+        var ua = navigator.userAgent.toLowerCase();
+        if ( ua.indexOf( "mac" ) != -1 )
+        {
+            //puts ("Mac onblur")
+            if(lastEditedElement!=null)
+            {
+                lastEditedElement.onchange()
+                lastEditedElement=null
+            }
+        //alert("did blur");
+        }
+        //print message in sketchup ruby console.
+        //puts("did blur");
+        //if(lastEditedElement!=null)
+        //{
+        //    puts("lastEdited:"+lastEditedElement.id);
+        //}
+    }
+
+//Hook up window onblur event.
+    window.onblur = function() {
+        handleWindowBlur();
+    }
+function AllowTabCharacter() {
+   if (event != null) {
+      if (event.srcElement) {
+         if (event.srcElement.value) {
+            if (event.keyCode == 9) {  // tab character
+               if (document.selection != null) {
+
+                  document.selection.createRange().text = '   ';
+                  event.returnValue = false;
+               }
+               else {
+                  event.srcElement.value += '   ';
+                  return false;
+               }
+            }
+          }
+      }
+   }
+}
+    </script>
+</body>
+</html>
