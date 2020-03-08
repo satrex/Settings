@@ -18,4 +18,3 @@ git clone https://github.com/gmarik/Vundle.vim.git $HOME.vim/bundle/Vundle.vim
 git clone https://github.com/tomasr/molokai
 mv molokai/colors/molokai.vim $HOME.vim/colors
 
-vim -u .vimrc -c "BundleInstall" -c "q" -c "q"
