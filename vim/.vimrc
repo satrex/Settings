@@ -23,13 +23,20 @@ set showcmd		" display incomplete commands
 "source $VIMRUNTIME/mswin.vim
 "behave mswin
 
+let s:user = system('whoami')
+if s:user == 'root'
+    let home_dir = '/'
+else
+    let home_dir = '/Users/'. s:user .'/'
+endif
+
 "ファイルの上書きの前にバックアップを作る/作らない
 "set writebackupを指定してもオプション 'backup' がオンでない限り、
 "バックアップは上書きに成功した後に削除される。
 set nowritebackup
 "バックアップ/スワップファイルを作成する/しない
-"set nobackup
-"set noswapfile
+set nobackup
+set noswapfile
 "viminfoを作成しない
 "set viminfo=
 "クリップボードを共有
@@ -272,15 +279,6 @@ nnoremap bd :Kwbd<CR>
 nnoremap bn :bn<CR>
 nnoremap bp :bp<CR>
 
-"swapファイルをまとめて置く場所(DropBox対策)
-set swapfile
-set directory=~/.vimswap
-
-"backupファイルをまとめて置く場所(DropBox対策)
-set backup
-set backupdir=~/.vimbackup
-
-
 highlight zenkakuda cterm=underline ctermfg=black guibg=black
 if has('win32') && !has('gui_running')
 	" win32のコンソールvimはsjisで設定ファイルを読むので、
@@ -428,7 +426,7 @@ endfunction
 map <silent> <F12> :call MagicComment()<CR>
 " magic comment }}}
 " octoeditor {{{images/
-let g:octopress_path = '~/satrex.github.com/octopress'
+let g:octopress_path = s:home_dir . 'satrex.github.com/octopress'
 map <Leader>on  :OctopressNew<CR>
 map <Leader>ol  :OctopressList<CR>
 map <Leader>og  :OctopressGrep<CR>
@@ -486,7 +484,7 @@ noremap <C-b> <ESC>:bn<CR>
 
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=$home_dir.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -539,7 +537,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'thinca/vim-quickrun'
 Plugin 'thinca/vim-ref'
 Plugin 'closetag.vim'
-Plugin 'glidenote/memolist.vim'
 Plugin 'mattn/zencoding-vim'
 Plugin 'mattn/emmet-vim'
 " Bundle 'Markdown'
@@ -547,7 +544,6 @@ Plugin 'kana/vim-textobj-user'
 
 "Plugin 'Shougo/vimshell'
 Plugin 'Shougo/vimproc'
-Plugin 'satrex/VimSketchUpRuby'
 Plugin 'scrooloose/nerdtree'
 ":w
 "Bundle 'kana/vim-smartinput'
@@ -567,15 +563,6 @@ let g:gista#github_user = 'satrex'
  
 " Required:
 filetype plugin indent on
- 
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-
-" memolist.vim
-map <Leader>mn  :MemoNew<CR>
-map <Leader>ml  :MemoList<CR>
-map <Leader>mg  :MemoGrep<CR>
-let g:memolist_path = "~/Dropbox/Documents/memo/"
 
 " surround.vim
   let g:surround_insert_tail = "<++>"
@@ -588,15 +575,6 @@ augroup MyBrowserReload
   command! -bar BrowserReload silent !osascript $HOME/bin/reload.scpt
 augroup END
 nnoremap <silent> <Leader>rl :BrowserReload<CR>
-
-" VimSketchUp {{{
-let g:su_plugin_path = "/Library/Application\ Support/Google\ SketchUp\ 8/SketchUp/Plugins/"
-nnoremap <Leader>sun  :SketchUpRubyNew<CR>
-nnoremap <Leader>sul  :SketchUpRubyList<CR>
-nnoremap <Leader>sug  :SketchUpRubyGrep<CR>
-nnoremap <leader>sur :SketchUpRubyRun<CR>
-nnoremap <leader>sud :SketchUpRubyDeploy<CR>
-" VimSketchUp }}}
 
 " vim-ruby{{{
 compiler ruby
