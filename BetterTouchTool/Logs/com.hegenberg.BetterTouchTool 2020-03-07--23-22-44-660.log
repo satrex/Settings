@@ -307,3 +307,38 @@
 1583667010.674380|WISNA|Focus doesn't match window pid|
 1583669292.845302|WISNA|Focus doesn't match window pid|
 1583669295.336833|WISNA|Focus doesn't match window pid|
+1583670660.479473|xw|shell script contains error and crashes BTT|
+1583670660.565421|xw|interrupt reply|
+1583670674.874141|SWI|PID MISMATCH FIX|
+1583670683.296101|TB|PresentationMode functionKeys {
+    app = functionKeys;
+    appWithControlStrip = functionKeys;
+    fullControlStrip = app;
+    functionKeys = fullControlStrip;
+}|
+1583670686.460790|SWI|PID MISMATCH FIX|
+1583670852.437154|SWI|PID MISMATCH FIX|
+1583671314.532432|WISNA|Focus doesn't match window pid|
+1583671582.204985|SWI|PID MISMATCH FIX|
+1583672848.235262|SWI|PID MISMATCH FIX|
+1583673947.022700|xw|disable|
+1583673947.023897|xw|disable & dismiss touch bar|
+1583673947.046498|xw|adapting icon state global 1 perApp 0 clip 0|
+1583673947.565409|xw|enable|
+1583673947.625946|xw|adapting icon state global 0 perApp 0 clip 0|
+1583674002.685310|SWI|PID MISMATCH FIX|
+1583674088.014194|xw|disable|
+1583674088.014560|xw|disable & dismiss touch bar|
+1583674088.022097|xw|adapting icon state global 1 perApp 0 clip 0|
+1583674088.458373|xw|enable|
+1583674088.496145|xw|adapting icon state global 0 perApp 0 clip 0|
+1583674191.012527|xw|shell script contains error and crashes BTT|
+1583674191.074971|xw|interrupt reply|
+1583674426.397940|SWI|PID MISMATCH FIX|
+1583674848.164248|SWI|PID MISMATCH FIX|
+1583675064.921159|SWI|PID MISMATCH FIX|
+1583675184.547944|SWI|PID MISMATCH FIX|
+1583675331.587223|WISNA|Focus doesn't match window pid|
+1583675404.890761|SWI|PID MISMATCH FIX|
+1583675873.373658|xw|shell script contains error and crashes BTT|
+1583675873.418809|xw|interrupt reply|
