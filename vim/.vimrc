@@ -30,13 +30,20 @@ else
     let home_dir = '/Users/'. s:user .'/'
 endif
 
+"swapファイルをまとめて置く場所(DropBox対策)
+set swapfile
+set directory=$home_dir.vimswap
+"backupファイルをまとめて置く場所(DropBox対策)
+set backup
+set backupdir=$home_dir.vimbackup
+
 "ファイルの上書きの前にバックアップを作る/作らない
 "set writebackupを指定してもオプション 'backup' がオンでない限り、
 "バックアップは上書きに成功した後に削除される。
 set nowritebackup
 "バックアップ/スワップファイルを作成する/しない
-set nobackup
-set noswapfile
+"set nobackup
+"set noswapfile
 "viminfoを作成しない
 "set viminfo=
 "クリップボードを共有
