@@ -22,20 +22,23 @@ set showcmd		" display incomplete commands
 "mswin.vimを読み込む
 "source $VIMRUNTIME/mswin.vim
 "behave mswin
+function! Chomp(string)
+    return substitute(a:string, '\n\+$', '', '')
+endfunction
 
-let s:user = system('whoami')
-if s:user == 'root'
+let user = Chomp( system('whoami'))
+if user == 'root'
     let home_dir = '/'
 else
-    let home_dir = '/Users/'. s:user .'/'
+    let home_dir = '/Users/'.user.'/'
 endif
 
 "swapファイルをまとめて置く場所(DropBox対策)
 set swapfile
-set directory=$home_dir.vimswap
+set directory=$HOME/.vimswap
 "backupファイルをまとめて置く場所(DropBox対策)
 set backup
-set backupdir=$home_dir.vimbackup
+set backupdir=$HOME/.vimbackup
 
 "ファイルの上書きの前にバックアップを作る/作らない
 "set writebackupを指定してもオプション 'backup' がオンでない限り、
@@ -365,45 +368,6 @@ let g:quickrun_config.markdown = {
 \ }
 
 " QuickRun }}}
-
-" rubycomplete.vim
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-
-"------------------------------------
-" vim-rails
-"------------------------------------
-""{{{
-"有効化
-let g:rails_default_file='config/database.yml'
-let g:rails_level = 4
-let g:rails_mappings=1
-let g:rails_modelines=0
-" let g:rails_some_option = 1
-" let g:rails_statusline = 1
-" let g:rails_subversion=0
-" let g:rails_syntax = 1
-" let g:rails_url='http://localhost:3000'
-" let g:rails_ctags_arguments='--languages=-javascript'
-" let g:rails_ctags_arguments = ''
-
-"<TAB>で補完
-function! InsertTabWrapper()
-  if pumvisible()
-    return "\<c-n>"
-  endif
-  let col = col('.') - 1
-  if !col || getline('.')[col -1] !~ '\k\|<\|/'
-    return "\<tab>"
-  elseif exists('&omnifunc') && &omnifunc == ''
-    return "\<c-n>"
-  else
-    return "\<c-x>\<c-o>"
-  endif
-endfunction
-
 "inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 " Set augroup.
 augroup MyAutoCmd
@@ -432,24 +396,7 @@ endfunction
 
 map <silent> <F12> :call MagicComment()<CR>
 " magic comment }}}
-" octoeditor {{{images/
-let g:octopress_path = s:home_dir . 'satrex.github.com/octopress'
-map <Leader>on  :OctopressNew<CR>
-map <Leader>ol  :OctopressList<CR>
-map <Leader>og  :OctopressGrep<CR>
-nmap ,og  :OctopressGenerate<CR>
-nmap ,od  :OctopressDeploy<CR>:!open http://blog.satrex.jp<CR>
-let g:octopress_post_suffix = "md"
-let g:octopress_post_date = "%Y-%m-%d %H:%M"
-" octoeditor }}}
-let g:screenshot_dir = "$HOME" . "\/Desktop"
-let g:octopress_bundle_exec = 1
-" octopressの絡みで、zshとrvmを有効にしたい
-nmap ,om :!ruby ~/tool/content_build.rb %<CR>:tabnew ~/Documents/output.html<CR>
 
-
-
-       
 nnoremap ,to :NERDTree<CR>
 nnoremap <C-E> :NERDTree<CR>
 " NERDTree {{{
@@ -491,7 +438,7 @@ noremap <C-b> <ESC>:bn<CR>
 
 
 " set the runtime path to include Vundle and initialize
-set rtp+=$home_dir.vim/bundle/Vundle.vim
+set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
